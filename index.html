@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Tianshu Huang</title>
+<title>Tianshu Huang | Main</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
@@ -11,6 +11,13 @@ ul li {
 }
 h4 {
 	white-space: normal;
+}
+hr {
+	width: 40%;
+	margin: 20px 30%;
+}
+img {
+	width: 100%;
 }
 .content {
 	max-width: 1300px;
@@ -25,13 +32,63 @@ h4 {
 	float: left;
 	width: 49.99999%;
 	padding: 0.01em 16px;
+	min-width: 350px;
+	min-height: 800px;
 }
-
-
+.button, .button-card, .button-menu {
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+	white-space: normal;
+}
+.button:hover, .button-menu:hover, .button-card:hover {
+	color: #000;
+	background-color: #ccc;
+}
+.button:disabled, .button-menu:disabled, .button-menu:disabled {
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+.button-menu {
+	color: #fff;
+	background-color: #000;
+	width: 100%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.button-card {
+	padding: 12px 24px;
+	text-align: left;
+}
+.img-icon {
+	width: 25%;
+	display: inline-block;
+}
+.desc {
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px;
+}
+.hide {
+	display: none;
+}
 </style>
 
 <body class="content">
-
 
 	<div class="row">
 		<div class="half-block w3-black w3-center" style="height:700px">
@@ -39,21 +96,22 @@ h4 {
 				<h1>Tianshu Huang</h1>
 			</div>
 			<div class="w3-padding-64">
-				<a href="https://github.com/thetianshuhuang" target="_blank" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">GitHub</a>
-				<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">LinkedIn</a>
-				<a href="#projects" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Projects</a>
-				<a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
-				<a href="other/index.html" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Other Interests</a>
-				<a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
+				<a href="#resume" class="button-menu w3-hover-dark-grey">Resume</a>
+				<a href="#projects" class="button-menu w3-hover-blue-grey">Projects</a>
+				<a href="other/index.html" class="button-menu w3-hover-dark-grey">Other Interests</a>
+				<a href="#contact" class="button-menu w3-hover-brown">Resources</a>
+				<a href="https://github.com/thetianshuhuang" target="_blank" class="button-menu w3-hover-blue-grey">GitHub</a>
+				<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank" class="button-menu w3-hover-blue-grey">LinkedIn</a>
 			</div>
 		</div>
-		<div class="w3-half w3-blue-grey w3-container" style="height:700px">
+		<div class="half-block w3-blue-grey" style="height:700px">
 			<div class="w3-padding-64 w3-center">
 				<h1>About Me</h1>
 				<img src="icon/hs.png" class="w3-margin w3-circle" style="width:50%">
 				<div class="w3-left-align w3-padding-large">
-					<p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-					<p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+					<p>I'm an ECE student at UT Austin interested in Data Science and Embedded Systems. Specifically, I'm interested in using data science techniques (especially machine learning) to engage in real time decision making.</p>
+					<p>I have work experience as a data engineer / full stack developer, and am currently a Test Analysis Systems Consultant at SLD Laser. My favorite language is Python, but I am also fluent in C/C++ and JavaScript, with working proficiency in ARM Assembly, Java, and SQL.</p>
+					<p>You can contact me at <a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a>.</p>
 				</div>
 			</div>
 		</div>
@@ -61,10 +119,10 @@ h4 {
 
 	<div class="w3-row" id="resume">
 
-		<div class="w3-half w3-dark-grey w3-container" style="min-height:900px">
+		<div class="half-block w3-dark-grey">
 
 			<div class="w3-padding-64 w3-center">
-				<h2>Resume</h2>
+				<h1>Resume</h1>
 
 				<div class="w3-padding-16">
 					See full resume <a href="">here</a>.
@@ -106,51 +164,36 @@ h4 {
 							<br><i>SLD Laser</i></td>
 						<td>June 2018 - Aug 2018</td>
 					</tr>
-					<tr>
-						<td>Math Teacher
-							<br><i>SpiderSmart Learning Center</i></td>
-						<td>July 2017 - Aug 2017</td>
-					</tr>
 				</table>
-
-
-
 			</div>
 		</div>
 
-		<div class="w3-half w3-teal w3-container w3-center" style="min-height:900px">
+		<div class="half-block w3-teal w3-center">
 			<div class="w3-padding-64">
-				<h2>Skills</h2>
+				<h1>Skills</h1>
 
 				<h4>Languages</h4>
 				Python, Javascript, C, ARM Assembly, C++, Java, SQL, HTML, CSS, LaTeX
-
-				<hr style="width: 40%; margin: 20px 30%">
-
+				<hr>
 				<h4>Libraries and Frameworks</h4>
 				 OpenCV, Django, Celery, D3.js, Node.js
-
- 				<hr style="width: 40%; margin: 20px 30%">
-
+ 				<hr>
  				<h4>Platforms</h4>
  				Apache, Arduino, RabbitMQ, Git (Github, Self-hosted Gitlab), Subversion, Ubuntu / Ubuntu Server, FreeBSD,Virtualbox, ESXi, MySQL / MariaDB / Sqlite, FreeRadius
-
- 				<hr style="width: 40%; margin: 20px 30%">
-
+ 				<hr>
  				<h4>Hardware</h4>
  				Board design (EagleCAD), fabrication (OtherMill), and assembly; CAD (Solidworks, Sketchup); 3D Printing
-
 			</div>
 		</div>
 	</div>
 
 	<div class="w3-row" id="projects">
-		<div class="w3-half w3-light-grey w3-container" style="min-height:900px">
+		<div class="half-block w3-light-grey">
 			<div class="w3-padding-64">
-				<h2 class="w3-center">Data Science & Engineering</h2>
-				<div class="w3-padding-large w3-button" style="text-align: left" onclick="window.open('https://sldlaser.com/', '_blank');">
-					<div style="width: 25%; display: inline-block"><img src="icon/sld_bc.png" style="width: 100%"></div>
-					<div style="width: 75%; display: inline-block; vertical-align: top; padding: 8px">
+				<h1 class="w3-center">Data Science & Engineering</h1>
+				<div class="button-card" onclick="window.open('https://sldlaser.com/', '_blank');">
+					<div class="img-icon"><img src="icon/sld_bc.png"></div>
+					<div class="desc">
 						<h4>SLD Blue Cloud | SLD Laser</h4>
 						<ul>
 							<li>Interactive visualizations of laser test data</li>
@@ -158,24 +201,20 @@ h4 {
                 		</ul>
 					</div>
 				</div>
-				<div class="w3-padding-large w3-button" style="text-align: left" onclick="window.open('https://github.com/ut-ras/r5-2019', '_blank');">
-					<div style="width: 25%; display: inline-block"><img src="icon/generic.png" style="width: 100%"></div>
-					<div style="width: 75%; display: inline-block; vertical-align: top; padding: 8px">
-						<h4>
-							UT RAS Region V Robotics
-						</h4>
+				<div class="button-card" onclick="window.open('https://github.com/ut-ras/r5-2019', '_blank');">
+					<div class="img-icon"><img src="icon/generic.png"></div>
+					<div class="desc">
+						<h4>UT RAS Region V Robotics</h4>
 						<ul>
 							<li>Working on a task involving OpenCV, SLAM, and swarms</li>
 							<li>Set up GitHub-based workflow for 15+ developers including pull requests and code reviews</li>
                 		</ul>
 					</div>
 				</div>
-				<div class="w3-padding-large w3-button" style="text-align: left" onclick="window.open('https://github.com/thetianshuhuang/cv-inventory', '_blank');">
-					<div style="width: 25%; display: inline-block"><img src="icon/cv.png" style="width: 100%"></div>
-					<div style="width: 75%; display: inline-block; vertical-align: top; padding: 8px">
-						<h4>
-							CV Inventory
-						</h4>
+				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/cv-inventory', '_blank');">
+					<div class="img-icon"><img src="icon/cv.png" style="width: 100%"></div>
+					<div class="desc">
+						<h4>CV Inventory</h4>
 						<ul>
 							<li>OpenCV Based inventory management system</li>
 							<li>Partially completed / in progress</li>
@@ -184,12 +223,12 @@ h4 {
 				</div>
 			</div>
 		</div>
-		<div class="w3-half w3-indigo w3-container" style="min-height:900px">
+		<div class="half-block w3-indigo">
 			<div class="w3-padding-64">
-				<h2 class="w3-center">Embedded Systems</h2>
-				<div class="w3-padding-large w3-button" style="text-align: left" onclick="window.open('https://github.com/thetianshuhuang/rock-band', '_blank');">
-					<div style="width: 25%; display: inline-block"><img src="icon/rb.png" style="width: 100%"></div>
-					<div style="width: 75%; display: inline-block; vertical-align: top; padding: 8px">
+				<h1 class="w3-center">Embedded Systems</h1>
+				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/rock-band', '_blank');">
+					<div class="img-icon"><img src="icon/rb.png" style="width: 100%"></div>
+					<div class="desc">
 						<h4>Rock Band | Embedded Systems Final Project</h4>
 						<ul>
 							<li>Rock Band on the TM4C (ARM Cortex M4; 80MHz, 32KB RAM)</li>
@@ -199,9 +238,9 @@ h4 {
                 		</ul>
 					</div>
 				</div>
-				<div class="w3-padding-large w3-button" style="text-align: left" onclick="window.open('https://github.com/thetianshuhuang/serial-vis', '_blank');">
-					<div style="width: 25%; display: inline-block"><img src="icon/generic.png" style="width: 100%"></div>
-					<div style="width: 75%; display: inline-block; vertical-align: top; padding: 8px">
+				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/serial-vis', '_blank');">
+					<div class="img-icon"><img src="icon/generic.png"></div>
+					<div class="desc">
 						<h4>Serial Vis</h4>
 						<ul>
 							<li>Library for serial driven visual debug output</li>
@@ -213,15 +252,14 @@ h4 {
 		</div>
 	</div>
 
+	<div class="w3-row">
 
-	<div class="w3-row" id="contact">
-
-		<div class="w3-half w3-dark-grey w3-container" style="min-height:900px">
+		<div class="half-block w3-dark-grey">
 			<div class="w3-padding-64">
-				<h2 class="w3-center">Utilities</h2>
-				<div class="w3-padding-large w3-button" style="text-align: left" onclick="window.open('https://github.com/thetianshuhuang/simple-radius', '_blank');">
-					<div style="width: 25%; display: inline-block"><img src="icon/radius.png" style="width: 100%"></div>
-					<div style="width: 75%; display: inline-block; vertical-align: top; padding: 8px">
+				<h1 class="w3-center">Utilities</h1>
+				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/simple-radius', '_blank');">
+					<div class="img-icon"><img src="icon/radius.png"></div>
+					<div class="desc">
 						<h4>Simple Radius</h4>
 						<ul>
 							<li>Django Integration for FreeRadius</li>
@@ -229,9 +267,9 @@ h4 {
                 		</ul>
 					</div>
 				</div>
-				<div class="w3-padding-large w3-button" style="text-align: left" onclick="window.open('https://github.com/thetianshuhuang/file-explorer', '_blank');">
-					<div style="width: 25%; display: inline-block"><img src="icon/generic.png" style="width: 100%"></div>
-					<div style="width: 75%; display: inline-block; vertical-align: top; padding: 8px">
+				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/file-explorer', '_blank');">
+					<div class="img-icon"><img src="icon/generic.png"></div>
+					<div class="desc">
 						<h4>File Explorer Utility for Sublime Text</h4>
 						<ul>
 							<li>Plugin for Sublime Text 3</li>
@@ -239,9 +277,9 @@ h4 {
                 		</ul>
 					</div>
 				</div>
-				<div class="w3-padding-large w3-button" style="text-align: left" onclick="window.open('https://github.com/thetianshuhuang/ascii-div', '_blank');">
-					<div style="width: 25%; display: inline-block"><img src="icon/generic.png" style="width: 100%"></div>
-					<div style="width: 75%; display: inline-block; vertical-align: top; padding: 8px">
+				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/ascii-div', '_blank');">
+					<div class="img-icon"><img src="icon/generic.png"></div>
+					<div class="desc">
 						<h4>Divider creation utility for Sublime Text</h4>
 						<ul>
 							<li>Plugin for Sublime Text 3</li>
@@ -252,18 +290,31 @@ h4 {
 			</div>
 		</div>
 
-		<div class="w3-half w3-teal w3-container w3-center" style="min-height:900px">
+		<div id="contact" class="half-block w3-teal w3-center">
 			<div class="w3-padding-64">
-				<h2>Contact</h2>
+				<h1>Resources & Downloads</h1>
 
-				tianshu.huang@utexas.edu
+				<div class="w3-padding-32">
+					<a href="resources/tianshu-huang-resume.pdf" target="_blank" class="button-menu w3-hover-blue-grey w3-teal">PDF Resume</a>
+					<a href="resources/rsa.pub" target="_blank" class="button-menu w3-hover-blue-grey w3-teal">Public Key</a>
+					<a href="resources/jensen-inequality.pdf" target="_blank" class="button-menu w3-hover-blue-grey w3-teal">Rudin's Proof of Jensen, Explained</a>
+					<a href="https://github.com/thetianshuhuang/style" target="_blank" class="button-menu w3-hover-blue-grey w3-teal">Style & Standards</a>
+				</div>
+
+				<img src="icon/profile.jpg" style="width: 40%">
 			</div>
 		</div>
 	</div>
 
-	<!-- Footer -->
-	<footer class="w3-container w3-black w3-padding-16">
-		<p>tmp</p>
+	<footer class="w3-container w3-black w3-padding-16" style="width: 100%">
+		<p>
+			Tianshu Huang |
+			<a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a> |
+			<a href="https://github.com/thetianshuhuang">GitHub</a> |
+			<a href="https://www.linkedin.com/in/tianshuhuang/">LinkedIn</a> |
+			<a href="resources/rsa.pub">Public Key</a>
+			<!-- <a href="http://home.tianshu.io">Homelab</a> -->
+		</p>
 	</footer>
 
 </body>
