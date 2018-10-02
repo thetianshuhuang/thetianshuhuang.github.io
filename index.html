@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 
 <style>
 ul li {
@@ -20,20 +22,14 @@ img {
 	width: 100%;
 }
 .content {
-	max-width: 1300px;
+	max-width: 95vw;
 	margin: auto;
 }
-.row:before, .row:after, .half-block:before, .half-block:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.half-block {
-	float: left;
-	width: 49.99999%;
-	padding: 0.01em 16px;
-	min-width: 350px;
-	min-height: 800px;
+.header {
+	width: 100vw;
+	color: #fff;
+	background-color: #000;
+	padding: 32px 64px;
 }
 .button, .button-card, .button-menu {
 	border: none;
@@ -86,25 +82,38 @@ img {
 .hide {
 	display: none;
 }
+.grid-item {
+	width: 600px;
+	padding: 16px;
+	margin: 16px;
+}
+
 </style>
 
-<body class="content">
+<body>
 
-	<div class="row">
-		<div class="half-block w3-black w3-center" style="height:700px">
+	<div class="header" style="font-size: 32px; position: fixed; top: 0; z-index: 10; width: 100%">
+		Tianshu Huang
+	</div>
+	<div style="width: 100%; height: 125px"></div>
+
+	<div class="grid content" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 650 }'>
+		<!--
+		<div class="grid-item w3-black w3-center">
 			<div class="w3-padding-64">
 				<h1>Tianshu Huang</h1>
 			</div>
 			<div class="w3-padding-64">
-				<a href="#resume" class="button-menu w3-hover-dark-grey">Resume</a>
-				<a href="#projects" class="button-menu w3-hover-blue-grey">Projects</a>
-				<a href="other/index.html" class="button-menu w3-hover-dark-grey">Other Interests</a>
-				<a href="#contact" class="button-menu w3-hover-brown">Resources</a>
-				<a href="https://github.com/thetianshuhuang" target="_blank" class="button-menu w3-hover-blue-grey">GitHub</a>
-				<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank" class="button-menu w3-hover-blue-grey">LinkedIn</a>
+				<a href="#resume" class="button-menu">Resume</a>
+				<a href="#projects" class="button-menu">Projects</a>
+				<a href="other/index.html" class="button-menu">Other Interests</a>
+				<a href="#contact" class="button-menu">Resources</a>
+				<a href="https://github.com/thetianshuhuang" target="_blank" class="button-menu">GitHub</a>
+				<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank" class="button-menu">LinkedIn</a>
 			</div>
 		</div>
-		<div class="half-block w3-blue-grey" style="height:700px">
+	-->
+		<div class="grid-item w3-blue-grey">
 			<div class="w3-padding-64 w3-center">
 				<h1>About Me</h1>
 				<img src="icon/hs.png" class="w3-margin w3-circle" style="width:50%">
@@ -115,12 +124,7 @@ img {
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="w3-row" id="resume">
-
-		<div class="half-block w3-dark-grey">
-
+		<div class="grid-item w3-dark-grey">
 			<div class="w3-padding-64 w3-center">
 				<h1>Resume</h1>
 
@@ -167,8 +171,7 @@ img {
 				</table>
 			</div>
 		</div>
-
-		<div class="half-block w3-teal w3-center">
+		<div class="grid-item w3-teal w3-center">
 			<div class="w3-padding-64">
 				<h1>Skills</h1>
 
@@ -185,10 +188,7 @@ img {
  				Board design (EagleCAD), fabrication (OtherMill), and assembly; CAD (Solidworks, Sketchup); 3D Printing
 			</div>
 		</div>
-	</div>
-
-	<div class="w3-row" id="projects">
-		<div class="half-block w3-light-grey">
+		<div class="grid-item w3-light-grey">
 			<div class="w3-padding-64">
 				<h1 class="w3-center">Data Science & Engineering</h1>
 				<div class="button-card" onclick="window.open('https://sldlaser.com/', '_blank');">
@@ -223,7 +223,7 @@ img {
 				</div>
 			</div>
 		</div>
-		<div class="half-block w3-indigo">
+		<div class="grid-item w3-indigo">
 			<div class="w3-padding-64">
 				<h1 class="w3-center">Embedded Systems</h1>
 				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/rock-band', '_blank');">
@@ -250,11 +250,7 @@ img {
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="w3-row">
-
-		<div class="half-block w3-dark-grey">
+		<div class="grid-item w3-dark-grey">
 			<div class="w3-padding-64">
 				<h1 class="w3-center">Utilities</h1>
 				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/simple-radius', '_blank');">
@@ -289,8 +285,8 @@ img {
 				</div>
 			</div>
 		</div>
-
-		<div id="contact" class="half-block w3-teal w3-center">
+		<!--
+		<div id="contact" class="grid-item w3-teal w3-center">
 			<div class="w3-padding-64">
 				<h1>Resources & Downloads</h1>
 
@@ -304,18 +300,23 @@ img {
 				<img src="icon/profile.jpg" style="width: 40%">
 			</div>
 		</div>
+		-->
+
+	<div id="links-ref" style="position: absolute; visibility: hidden; height: auto; width: auto; white-space: nowrap; font-size: 12px;">
+	    &#x25c0 Tianshu Huang &copy; 2018 | GitHub | LinkedIn | Resources | Public Key &#x25c0
+	</div>
+	<div id="links" style="position: fixed; right: 20px; bottom: 20px; width: 10px; height: 20px; overflow-x: hidden; overflow-y: hidden; transition: 0.3s; z-index: 10; font-size: 12px;"
+	    onmouseover="this.style.width =(document.getElementById('links-ref').clientWidth + 1) + 'px';"
+	    onmouseout="this.style.width = '10px';">
+	    &#x25c0
+	    Tianshu Huang &copy; 2018 |
+		<a href="https://github.com/thetianshuhuang" target="_blank">GitHub</a> |
+		<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank">LinkedIn</a> |
+		<a href="resources/index.html" target="_blank">Resources</a> |
+		<a href="resources/rsa.pub" target="_blank">Public Key</a>
+	    &#x25c0
 	</div>
 
-	<footer class="w3-container w3-black w3-padding-16" style="width: 100%">
-		<p>
-			Tianshu Huang |
-			<a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a> |
-			<a href="https://github.com/thetianshuhuang">GitHub</a> |
-			<a href="https://www.linkedin.com/in/tianshuhuang/">LinkedIn</a> |
-			<a href="resources/rsa.pub">Public Key</a>
-			<!-- <a href="http://home.tianshu.io">Homelab</a> -->
-		</p>
-	</footer>
 
 </body>
 </html>
