@@ -5,95 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-
-<style>
-ul li {
-	white-space: normal;
-}
-h4 {
-	white-space: normal;
-}
-hr {
-	width: 40%;
-	margin: 20px 30%;
-}
-img {
-	width: 100%;
-}
-.content {
-	max-width: 95vw;
-	margin: auto;
-}
-.header {
-	width: 100vw;
-	color: #fff;
-	background-color: #000;
-	padding: 32px 64px;
-}
-.button, .button-card, .button-menu {
-	border: none;
-	display: inline-block;
-	padding: 8px 16px;
-	vertical-align: middle;
-	overflow: hidden;
-	text-decoration: none;
-	color: inherit;
-	background-color: inherit;
-	cursor: pointer;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-align: center;
-	white-space: normal;
-}
-.button:hover, .button-menu:hover, .button-card:hover {
-	color: #000;
-	background-color: #ccc;
-}
-.button:disabled, .button-menu:disabled, .button-menu:disabled {
-	cursor: not-allowed;
-	opacity: 0.3;
-}
-.button-menu {
-	color: #fff;
-	background-color: #000;
-	width: 100%;
-	padding-top: 16px;
-	padding-bottom: 16px;
-}
-.button-card {
-	padding: 12px 24px;
-	text-align: left;
-}
-.img-icon {
-	width: 25%;
-	display: inline-block;
-}
-.desc {
-	width: 70%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 8px;
-}
-.hide {
-	display: none;
-}
-.grid-item {
-	width: 600px;
-	padding: 16px;
-	margin: 16px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 <body>
 
-	<div class="header" style="font-size: 32px; position: fixed; top: 0; z-index: 10; width: 100%">
-		Tianshu Huang
+	<div class="header" style="font-size: 32px; position: fixed; top: 0; z-index: 10; width: 100%;">
+		<a class="button" style="position: absolute; left: 0; top: 0; height: 100%; padding: 24px" href="">Tianshu Huang</a>
 	</div>
 	<div style="width: 100%; height: 125px"></div>
 
@@ -113,7 +30,7 @@ img {
 			</div>
 		</div>
 	-->
-		<div class="grid-item w3-blue-grey">
+		<div class="grid-item block">
 			<div class="w3-padding-64 w3-center">
 				<h1>About Me</h1>
 				<img src="icon/hs.png" class="w3-margin w3-circle" style="width:50%">
@@ -124,12 +41,12 @@ img {
 				</div>
 			</div>
 		</div>
-		<div class="grid-item w3-dark-grey">
+		<div class="grid-item block">
 			<div class="w3-padding-64 w3-center">
 				<h1>Resume</h1>
 
 				<div class="w3-padding-16">
-					See full resume <a href="">here</a>.
+					You can see my full resume <a href="resources/tianshu-huang-resume.pdf">here</a>.
 				</div>
 
 				<table class="w3-table">
@@ -144,7 +61,7 @@ img {
 							Courses:
 							<ul>
 								<li>Theory of Probability (Graduate)</li>
-								<li>Geometric Foundations of Data Science (Graudate)</li>
+								<li>Geometric Foundations of Data Science (Graduate)</li>
 								<li>Real Analysis I, II</li>
 								<li>Introduction to Embedded Systems</li>
 								<li>Circuit Theory</li>
@@ -171,7 +88,7 @@ img {
 				</table>
 			</div>
 		</div>
-		<div class="grid-item w3-teal w3-center">
+		<div class="grid-item block w3-center">
 			<div class="w3-padding-64">
 				<h1>Skills</h1>
 
@@ -188,7 +105,7 @@ img {
  				Board design (EagleCAD), fabrication (OtherMill), and assembly; CAD (Solidworks, Sketchup); 3D Printing
 			</div>
 		</div>
-		<div class="grid-item w3-light-grey">
+		<div class="grid-item block">
 			<div class="w3-padding-64">
 				<h1 class="w3-center">Data Science & Engineering</h1>
 				<div class="button-card" onclick="window.open('https://sldlaser.com/', '_blank');">
@@ -223,7 +140,7 @@ img {
 				</div>
 			</div>
 		</div>
-		<div class="grid-item w3-indigo">
+		<div class="grid-item block">
 			<div class="w3-padding-64">
 				<h1 class="w3-center">Embedded Systems</h1>
 				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/rock-band', '_blank');">
@@ -250,7 +167,7 @@ img {
 				</div>
 			</div>
 		</div>
-		<div class="grid-item w3-dark-grey">
+		<div class="grid-item block">
 			<div class="w3-padding-64">
 				<h1 class="w3-center">Utilities</h1>
 				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/simple-radius', '_blank');">
@@ -263,6 +180,16 @@ img {
                 		</ul>
 					</div>
 				</div>
+				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/ssh-manage', '_blank');">
+					<div class="img-icon"><img src="icon/generic.png"></div>
+					<div class="desc">
+						<h4>SSH Management</h4>
+						<ul>
+							<li>Manage multiple SSH devices simulatenously, or even programmatically</li>
+							<li>Written for Region V Robotics' swarm management</li>
+						</ul>
+					</div>
+				</div>
 				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/file-explorer', '_blank');">
 					<div class="img-icon"><img src="icon/generic.png"></div>
 					<div class="desc">
@@ -271,6 +198,20 @@ img {
 							<li>Plugin for Sublime Text 3</li>
 							<li>Emulates Emacs' <code>Ctrl-x Ctrl-f</code> behavior</li>
                 		</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item block">
+			<div class="w3-padding-64">
+				<h1 class="w3-center">Python Tools & Libraries</h1>
+				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/print', '_blank');">
+					<div class="img-icon"><img src="icon/print.png"></div>
+					<div class="desc">
+						<h4>Print Library</h4>
+						<ul>
+							<li>Python library to integrate ANSI escape codes and PyFiglet</li>
+						</ul>
 					</div>
 				</div>
 				<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/ascii-div', '_blank');">
@@ -282,6 +223,19 @@ img {
 							<li>Create nicely-formatted dividers</li>
                 		</ul>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item block">
+			<div class="w3-padding-64">
+				<h1 class="w3-center">Contact</h1>
+				<div class="w3-center w3-padding-16">
+					You can contact me at <a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a>.
+					<br>
+					My private key can be found <a href="resources/rsa.pub" target="_blank">here</a>.
+				</div>
+				<div class="w3-center">
+					<img src="icon/profile.jpg" style="width: 60%">
 				</div>
 			</div>
 		</div>
@@ -316,7 +270,6 @@ img {
 		<a href="resources/rsa.pub" target="_blank">Public Key</a>
 	    &#x25c0;&#xfe0e;
 	</div>
-
 
 </body>
 </html>

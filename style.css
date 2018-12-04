@@ -1,0 +1,96 @@
+
+:root {
+	--dark: #000;
+	--normal: #154697;
+	--light: #fff;
+}
+
+.block {
+	background-color: var(--normal);
+	color: #fff;
+}
+
+ul li {
+	white-space: normal;
+}
+h4 {
+	white-space: normal;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+hr {
+	width: 40%;
+	margin: 20px 30%;
+}
+img {
+	width: 100%;
+}
+body {
+	background-color: #fff;
+}
+.content {
+	max-width: 95vw;
+	margin: auto;
+}
+.header {
+	width: 100vw;
+	color: #fff;
+	background-color: var(--dark);
+	padding: 48px 64px;
+}
+.button, .button-card, .button-menu {
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+	white-space: normal;
+}
+.button:hover, .button-menu:hover, .button-card:hover {
+	color: #000;
+	background-color: var(--light);
+}
+.button:disabled, .button-menu:disabled, .button-menu:disabled {
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+.button-menu {
+	color: #fff;
+	background-color: #000;
+	width: 100%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.button-card {
+	padding: 12px 24px;
+	text-align: left;
+}
+.img-icon {
+	width: 25%;
+	display: inline-block;
+}
+.desc {
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 8px;
+}
+.hide {
+	display: none;
+}
+.grid-item {
+	width: 600px;
+	padding: 16px;
+	margin: 16px;
+}
