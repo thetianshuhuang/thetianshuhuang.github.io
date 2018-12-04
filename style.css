@@ -110,4 +110,9 @@ body {
 }
 .patch {
 	width: 20%;
+	min-width: 200px;
+}
+.cc {
+	height: 3vh;
+	width: 3vh;
 }
