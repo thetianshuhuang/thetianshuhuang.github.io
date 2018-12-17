@@ -65,7 +65,12 @@
 							<li>Geometric Foundations of Data Science (Graduate)</li>
 							<li>Real Analysis I, II</li>
 							<li>Introduction to Embedded Systems</li>
-							<li>Circuit Theory</li>
+						</ul>
+						In progress:
+						<ul>
+							<li>Computer Architecture</li>
+							<li>Digital Logic Design</li>
+							<li>Algorithms</li>
 						</ul>
 					</td>
 				</tr>
@@ -100,7 +105,7 @@
 
 				<tr class="highlight"><th colspan=2>Libraries and Frameworks</th></tr>
 				<tr><th>Web</th><td>Django | Celery | D3.js | Node.js</td></tr>
-				<tr><th>Data Science</th><td>OpenCV | Numpy</td></tr>
+				<tr><th>Data Science</th><td>OpenCV | Numpy | SciKit-Learn</td></tr>
 
 				<tr class="highlight"><th colspan=2>Platforms</th></tr>
 				<tr><th>Web</th><td>Apache | RabbitMQ | MySQL / MariaDB / Sqlite</td></tr>
@@ -127,6 +132,16 @@
             		</ul>
 				</div>
 			</div>
+			<div class="button-card" onclick="window.open('https://github.com/qw3rtman/rf', '_blank');">
+				<div class="img-icon"><img src="icon/rf.png"></div>
+				<div class="desc">
+					<h4>Fast Random Features</h4>
+					<ul>
+						<li>Application of Random Features for Large Scale Kernel Machines (Rahimi & Recht, 2008) to data with dimensionality 10 times higher than previous attempts</li>
+						<li>Matched accuracy of Kernel SVM in IDC Classification with a 100-fold speed increase</li>
+            		</ul>
+				</div>
+			</div>
 			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/eigenface', '_blank');">
 				<div class="img-icon"><img src="icon/eigenface.png"></div>
 				<div class="desc">
@@ -134,16 +149,6 @@
 					<ul>
 						<li>Linear and Kernel Eigenface implementations; project for Geometric Foundations of Data Science</li>
 						<li>Implements input space recovery method described by S. Mika et al, "Kernel PCA and De-Noising in Feature Spaces"</li>
-            		</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/cv-inventory', '_blank');">
-				<div class="img-icon"><img src="icon/cv.png" style="width: 100%"></div>
-				<div class="desc">
-					<h4>CV Inventory</h4>
-					<ul>
-						<li>OpenCV Based inventory management system</li>
-						<li>Partially completed / in progress</li>
             		</ul>
 				</div>
 			</div>
@@ -209,8 +214,23 @@
 					</ul>
 				</div>
 			</div>
+			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/pycalc', '_blank');">
+				<div class="img-icon"><img src="icon/pycalc.png"></div>
+				<div class="desc">
+					<h4>Pycalc</h4>
+					<ul>
+						<li>Python dynamic module loader with global variable management</li>
+						<li>Uses various overloading tricks to create a convenient command-line calculator</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="grid-item block">
+		<div class="w3-padding-64">
+			<h1 class="w3-center">Plugins</h1>
 			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/file-explorer', '_blank');">
-				<div class="img-icon"><img src="icon/generic.png"></div>
+				<div class="img-icon"><img src="icon/explorer.png"></div>
 				<div class="desc">
 					<h4>File Explorer Utility for Sublime Text</h4>
 					<ul>
@@ -219,28 +239,47 @@
             		</ul>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="grid-item block">
-		<div class="w3-padding-64">
-			<h1 class="w3-center">Python Tools & Libraries</h1>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/print', '_blank');">
-				<div class="img-icon"><img src="icon/print.png"></div>
-				<div class="desc">
-					<h4>Print Library</h4>
-					<ul>
-						<li>Python library to integrate ANSI escape codes and PyFiglet</li>
-					</ul>
-				</div>
-			</div>
 			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/ascii-div', '_blank');">
-				<div class="img-icon"><img src="icon/generic.png"></div>
+				<div class="img-icon"><img src="icon/div.png"></div>
 				<div class="desc">
 					<h4>Divider creation utility for Sublime Text</h4>
 					<ul>
 						<li>Plugin for Sublime Text 3</li>
 						<li>Create nicely-formatted dividers</li>
             		</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="grid-item block">
+		<div class="w3-padding-64">
+			<h1 class="w3-center">Libraries</h1>
+			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/print', '_blank');">
+				<div class="img-icon"><img src="icon/print.png"></div>
+				<div class="desc">
+					<h4>Print</h4>
+					<ul>
+						<li>Python library to integrate ANSI escape codes and PyFiglet</li>
+					</ul>
+				</div>
+			</div>
+			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/print', '_blank');">
+				<div class="img-icon"><img src="icon/generic.png"></div>
+				<div class="desc">
+					<h4>Syllabus</h4>
+					<ul>
+						<li>Python machine learning task management library</li>
+						<li>Multiprocessing and multithreading pool implementations</li>
+					</ul>
+				</div>
+			</div>
+			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/sample', '_blank');">
+				<div class="img-icon"><img src="icon/sample.png"></div>
+				<div class="desc">
+					<h4>Sample</h4>
+					<ul>
+						<li>Low-discrepancy sequence sampling in Python using Halton and Hammersley sequences</li>
+					</ul>
 				</div>
 			</div>
 		</div>
