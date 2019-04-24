@@ -109,6 +109,18 @@ body {
 	width: 18vw;
 	min-width: 300px;
 }
+.poster {
+	width: 18vw;
+	min-width: 300px;
+	padding: 8px;
+}
+.poster:hover {
+	background-color: var(--highlight);
+}
+.photo-large {
+	width: 36vw;
+	min-width: 600px;
+}
 .patch {
 	width: 20%;
 	min-width: 200px;
@@ -118,8 +130,14 @@ body {
 	width: 3vh;
 }
 .a-desc {
-	max-width: 600px;
+	max-width: 400px;
 	min-width: 300px;
 	color: white;
 	background: var(--highlight);
+}
+.h-highlight {
+	color: white;
+	background: var(--highlight);
+	padding: 8px;
+	margin: 8px 0px;
 }
