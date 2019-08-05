@@ -1,0 +1,58 @@
+{% extends base %}
+
+{% block content %}
+<div class="content">
+<div class="intro">
+	<h1>Photography</h1>
+
+	I enjoy creating ludicrously large panoramas by taking many pictures and assembling them in Photoshop. For the largest panoramas, I use a 70-300mm lens, and take each image at maximum zoom. Using this technique, I've been able to take panoramas up to 56,000 pixels wide with file sizes over 600MB.
+	<br><br>
+	With such a high resolution, images have interesting details at any scale. See if you can find where these detail patches came from!
+	<br><br>
+	Full size images are available on request. All images <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+	<br>
+	<img class="cc" src="icon/cc.large.png">
+	<img class="cc" src="icon/by.large.png">
+	<img class="cc" src="icon/nc.large.png">
+</div>
+<table class="patch-table">
+	<tr>
+		<td><img src="photos/sunset_yellow_patch.jpg"></td>
+		<td><img class="patch" src="photos/far_ridge_noon_patch.jpg"></td>
+	</tr>
+	<tr>
+		<td><img src="photos/marsh_4_patch.jpg"></td>
+		<td><img src="photos/sunrise_3_patch.jpg"></td>
+	</tr>
+</table>
+
+<h1 style="font-size: 50px">Panoramas</h1>
+
+<table class="pano">
+{% for k, pano in panoramas.iterrows() %}
+	<tr>
+		<td>
+			<div>{{pano.title}}</div>
+			{{pano.location}}
+		</td>
+		<td>
+			<span>{{pano.width}} x {{pano.height}}</span
+			><span>f/{{pano.fstop}}</span
+			><span>{{pano.exposure}}s</span
+			><span>ISO-{{pano.iso}}</span
+			><span>{{pano.focal}}mm</span>
+		</td>
+		<td><img src="photos/{{pano.file}}"></td>
+	</tr>
+{% endfor %}
+</table>
+
+<div class="w3-padding-32">
+<h1 style="font-size: 50px">Non-panoramic Photos</h1>
+{% for k, img in landscapes.iterrows() %}
+	<img src="photos/{{img.file}}" class="photo">
+{% endfor %}
+</div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>Tianshu Huang | Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<div class="header" style="font-size: 32px; position: fixed; top: 0; z-index: 10; width: 100%;">
+	<a class="button" style="position: absolute; left: 0; top: 0; height: 100%; padding: 24px" href="index.html">Tianshu Huang</a>
+</div>
+<div style="width: 100%; height: 125px"></div>
+
+{% block content %}
+{% endblock %}
+
+<div id="links-ref" style="position: absolute; visibility: hidden; height: auto; width: auto; white-space: nowrap; font-size: 12px;">
+    &#x25c0;&#xfe0e; Tianshu Huang &copy; 2018 | GitHub | LinkedIn | Resources &#x25c0;&#xfe0e;
+</div>
+<div id="links" style="position: fixed; right: 20px; bottom: 20px; width: 10px; height: 20px; overflow-x: hidden; overflow-y: hidden; transition: 0.3s; z-index: 10; font-size: 12px;"
+    onmouseover="this.style.width =(document.getElementById('links-ref').clientWidth + 1) + 'px';"
+    onmouseout="this.style.width = '10px';">
+    &#x25c0;&#xfe0e;
+    Tianshu Huang &copy; 2018 |
+	<a href="https://github.com/thetianshuhuang" target="_blank">GitHub</a> |
+	<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank">LinkedIn</a> |
+	<a href="resources/index.html" target="_blank">Resources</a>
+    &#x25c0;&#xfe0e;
+</div>
+
+</body>
+</html>
