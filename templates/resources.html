@@ -1,0 +1,16 @@
+{% extends base %}
+
+{% block title %}
+| Resources
+{% endblock %}
+
+{% block content %}
+<div class="w3-padding-large">
+	<h1>Resources</h1>
+	<ul>
+		{% for k, f in resources.iterrows() %}
+		<li><a href="resources/{{f.file}}" target="_blank">{{f.desc}}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends base %}
+
+{% block title %}
+| Photos
+{% endblock %}
+
+{% block content %}
+<div class="content">
+<div class="intro">
+	<h1>Photos</h1>
+
+	I also take more traditionally sized photos. I particularly enjoy trying to capture the "glowing" effect created by a strong light source behind a partially translucent object (such as leaves and other vegetation at sunrise or sunset), as well as playing around with interesting lighting conditions.
+	<br><br>
+	Click on an image to open in a new tab. Full size images are available on request. All images <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+	<br>
+	<img class="cc" src="icon/cc.large.png">
+	<img class="cc" src="icon/by.large.png">
+	<img class="cc" src="icon/nc.large.png">
+</div>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<div class="grid" data-masonry='{ "itemSelector": ".photo-item", "columnWidth": 400, "isFitWidth": true }'>
+	{% for k, img in photos.iterrows() %}
+		<div class="photo-item" onclick="window.open('photos/{{img.file}}', '_blank')">
+			<img src="photos/{{img.file}}" class="photo">
+			<div style="top: 4px; left: 4px; position: absolute">
+				<span class="tag-title">{{img.title}}</span
+				><span class="tag-desc">{{img.location}}</span>
+			</div>
+			<div style="bottom: 4px; right: 4px; position: absolute" class="tags">
+				<span>{{img.width}} x {{img.height}}</span
+				><span>f/{{img.fstop}}</span
+				><span>{{img.exposure}}s</span
+				><span>ISO-{{img.iso}}</span
+				><span>{{img.focal}}mm</span>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+
+</div>
+{% endblock %}

@@ -1,9 +1,9 @@
-title,location,width,height,fstop,exposure,iso,focal,file,type
-Ridge at Far Noon,"Taos Ski Valley, New Mexico",16307,3888,10,1/320,400,110,far_ridge_noon_1M.jpg,pano
-Pueblo Peak at Late Noon,"Arroyo Seco, New Mexico",30000,5336,5.6,1/320,100,70,sunset_tree_1M.jpg,pano
-Pueblo Peak at Night,"Arroyo Seco, New Mexico",19097,4012,6.3,15,3200,70,night_pano_1M.jpg,pano
-Sunset by the Rio Grande,"Arroyo Seco, New Mexico",18817,3578,6.3,1/200,160,300,sunset_yellow_1M.jpg,pano
-Sunsrise Over Enchanted Rock,"Enchanted Rock State Natural Area, Texas",31681,3463,6.3,Jan-80,100,24,sunrise_3_1M.jpg,pano
-Marsh in Coyote Hills (East),"Coyote Hills Regional Park, California",36651,3825,7.1,1/800,200,70,marsh_1_1M.jpg,pano
-Marsh in Coyote Hills (North),"Coyote Hills Regional Park, California",56554,3743,7.1,1/800,200,85,marsh_4_1M.jpg,pano
-View of San Francisco,"Coyote Hills Regional Park, California",22715,2723,6.3,Jan-00,250,300,peninsula_wide_1M.jpg,pano
+title,location,width,height,fstop,exposure,iso,focal,file
+Ridge at Far Noon,"Taos Ski Valley, New Mexico",16307,3888,10,1/320,400,110,far_ridge_noon_1M.jpg
+Pueblo Peak at Late Noon,"Arroyo Seco, New Mexico",30000,5336,5.6,1/320,100,70,sunset_tree_1M.jpg
+Pueblo Peak at Night,"Arroyo Seco, New Mexico",19097,4012,6.3,15,3200,70,night_pano_1M.jpg
+Sunset by the Rio Grande,"Arroyo Seco, New Mexico",18817,3578,6.3,1/200,160,300,sunset_yellow_1M.jpg
+Sunrise Over Enchanted Rock,"Enchanted Rock, Texas",31681,3463,6.3,Jan-80,100,24,sunrise_3_1M.jpg
+Marsh in Coyote Hills (East),"Coyote Hills, California",36651,3825,7.1,1/800,200,70,marsh_1_1M.jpg
+Marsh in Coyote Hills (North),"Coyote Hills, California",56554,3743,7.1,1/800,200,85,marsh_4_1M.jpg
+View of San Francisco,"Coyote Hills, California",22715,2723,6.3,Jan-00,250,300,peninsula_wide_1M.jpg
