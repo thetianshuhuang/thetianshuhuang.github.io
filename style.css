@@ -1,16 +1,47 @@
 
+/*
+ * Main Settings
+ */
 :root {
 	--dark: #000;
 	--highlight: #005cf1;
 	--light: #fff;
-	--highlight-tl: rgba(0, 92, 241, 0.7);
-	--light-tl: rgba(255, 255, 255, 0.7);
+	--highlight-tl: rgba(0, 92, 241, 0.8);
+	--light-tl: rgba(255, 255, 255, 0.8);
+	--item-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	--card-width: 400px;
+	--width: 80vw;
 }
+
+/*
+ * Mobile Management
+ */
+.div-only-mobile {
+    display: none;
+}
+.div-no-mobile {
+    display: block;
+}
+
+@media screen and (max-width: 849px) {
+	.div-no-mobile {
+	    display:none
+	}
+
+	.div-only-mobile {
+	    display: block;
+	}
+	:root {
+		--width: 95vw;
+		--card-width: 300px;
+	};
+}
+
 
 .block {
 	background: white;
 	color: black;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: var(--item-shadow);
 }
 .highlight {
 	background: var(--highlight);
@@ -25,10 +56,6 @@ h4 {
 	padding-top: 0px;
 	margin-top: 0px;
 }
-hr {
-	width: 40%;
-	margin: 20px 30%;
-}
 img {
 	width: 100%;
 }
@@ -36,8 +63,8 @@ body {
 	background-color: #f3f3f3;
 }
 .content {
-	max-width: 80vw;
 	margin: auto;
+	width: var(--width);
 }
 .header {
 	width: 100vw;
@@ -70,11 +97,11 @@ body {
 }
 
 .photo, .photo-item {
-	width: 400px;
+	width: var(--card-width);
 }
 .photo-item {
 	margin-bottom: 10px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: var(--item-shadow);
 }
 
 .poster {
@@ -93,12 +120,6 @@ body {
 .cc {
 	height: 3vh;
 	width: 3vh;
-}
-.a-desc {
-	max-width: 400px;
-	min-width: 300px;
-	color: white;
-	background: var(--highlight);
 }
 .h-highlight {
 	color: white;
@@ -146,6 +167,33 @@ body {
 }
 
 /*
+ * Architecture Page
+ */
+.render-item {
+	margin-bottom: 10px;
+	width: var(--card-width);
+    box-shadow: var(--item-shadow);
+}
+.a-desc {
+	width: var(--card-width);
+	background: var(--light);
+}
+.a-desc h2 {
+	background: var(--highlight);
+	padding: 32px 16px 4px 16px;
+	margin: 0px;
+	color: var(--light);
+}
+.a-desc div {
+	padding: 4px 16px 32px 16px;
+	color: var(--dark);
+}
+.a-hr {
+	border-top: 1px solid var(--dark);
+	margin: 32px 15%;
+}
+
+/*
  * Panorama Table
  */
 .pano {
@@ -185,7 +233,7 @@ body {
  * Page Introduction
  */
 .intro {
-	max-width: 800px;
+	max-width: calc(var(--card-width) * 2);
 	padding-right: 32px;
 	padding-bottom: 32px;
 	display: inline-block;
@@ -262,12 +310,12 @@ body {
 }
 .div-no-mobile .button-image img {
 	object-fit: cover;
-	width: 40vw;
+	width: calc(var(--width) * 0.5);
 	height: 200px;
 }
 .div-only-mobile .button-image img {
 	object-fit: cover;
-	width: 80vw;
+	width: var(--width);
 	height: 200px;
 }
 .button-image a {
@@ -280,6 +328,7 @@ body {
 	text-align: left;
 	vertical-align: top;
 	background-color: rgba(0, 0, 0, 0);
+	color: var(--light);
 	font-weight: 700;
 	font-size: 20px;
 }
@@ -288,20 +337,49 @@ body {
 }
 
 /*
- * Mobile Management
+ * Projects
  */
-.div-only-mobile {
-    display: none;
+.project-item {
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+	white-space: normal;
+	background: var(--light);
+	box-shadow: var(--item-shadow);
+	width: var(--card-width);
+	position: absolute;
+	margin-bottom: 10px;
 }
-.div-no-mobile {
-    display: block;
-}
-@media screen and (max-width: 849px) {
-	.div-no-mobile {
-	    display:none
-	}
 
-	.div-only-mobile {
-	    display: block;
-	}
+.project-item h4:hover {
+	color: var(--light);
+	background-color: var(--dark);
+}
+.project-item img {
+	width: 100%;
+}
+.project-item h4 {
+	background-color: var(--highlight);
+	color: var(--light);
+	padding: 8px 8px 8px 16px;
+	margin: 0px;
+	vertical-align: bottom;
+}
+.project-item ul {
+	padding: 8px 16px 16px 32px;
+	margin: 0px;
+}
+.organization {
+	font-size: 12px;
+	font-weight: 700;
 }

@@ -1,0 +1,2 @@
+Library for serial driven visual debug output
+Pause, skip forward, skip backwards, or even set triggers to automatically pause

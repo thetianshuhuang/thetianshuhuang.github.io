@@ -1,0 +1,4 @@
+Rock Band on the TM4C (ARM Cortex M4; 80MHz, 32KB RAM)
+44.1kHz audio from SD
+Hand-soldered, error-matched resistor DAC
+N-player multiplayer

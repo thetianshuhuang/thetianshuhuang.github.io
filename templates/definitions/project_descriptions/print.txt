@@ -1,0 +1,2 @@
+Python library to integrate ANSI escape codes and PyFiglet
+Install with <code>pip install printtools</code>

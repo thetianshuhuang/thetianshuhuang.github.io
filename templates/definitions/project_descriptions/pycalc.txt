@@ -1,0 +1,2 @@
+Python dynamic module loader with global variable management
+Uses various overloading tricks to create a convenient command-line calculator

@@ -1,0 +1,2 @@
+Plugin for Sublime Text 3
+Emulates Emacs' <code>Ctrl-x Ctrl-f</code> behavior

@@ -1,0 +1,37 @@
+{% extends base %}
+
+{% block content %}
+<div class="content">
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<div class="grid" data-masonry='{ "itemSelector": ".project-item", "gutter": 10, "columnWidth": ".project-item", "isFitWidth": true }'>
+
+	{% for project in projects %}
+
+	<div class="project-item">
+		<div style="position: absolute; width: 100%;">
+			<div class="tags" style="position: absolute; top: 0px; right: 0px">
+				{% for tag in project.tags %}<span>{{tag}}</span>{% endfor %}
+			</div>
+		</div>
+		<img src="icon/{{project.icon}}">
+		<div>
+			<h4 onclick='window.open("{{project.link}}", target="_blank")'>
+				{{project.name}}
+				{% if project.organization %}
+				<span class="organization">&#x25B8; {{project.organization}}</span>
+				{% endif %}
+			</h4>
+			<ul>
+				{% for line in project.desc %}
+				<li>{{line}}</li>
+				{% endfor %}
+    		</ul>
+		</div>
+	</div>
+	{% endfor %}
+
+</div>
+
+</div>
+{% endblock %}

@@ -1,9 +1,5 @@
 {% extends base %}
 
-{% block title %}
-| Photos
-{% endblock %}
-
 {% block content %}
 <div class="content">
 <div class="intro">
@@ -20,7 +16,7 @@
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-<div class="grid" data-masonry='{ "itemSelector": ".photo-item", "columnWidth": 400, "gutter": 10, "isFitWidth": true }'>
+<div class="grid" data-masonry='{ "itemSelector": ".photo-item", "columnWidth": ".photo-item", "gutter": 10, "isFitWidth": true }'>
 	{% for k, img in photos.iterrows() %}
 		<div class="photo-item">
 			<a href="photos/{{img.file}}" target="_blank"></a>

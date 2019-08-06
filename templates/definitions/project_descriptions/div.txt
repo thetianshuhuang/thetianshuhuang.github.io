@@ -1,0 +1,2 @@
+Plugin for Sublime Text 3
+Create nicely-formatted dividers and large ASCII-art headings

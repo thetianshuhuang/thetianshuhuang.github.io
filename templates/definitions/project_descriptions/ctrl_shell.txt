@@ -1,0 +1,2 @@
+Rewrite of explorer: emulates Emacs' <code>Ctrl-x Ctrl-f</code> behavior in Sublime Text 3
+Additional macros for various shortcuts on the file explorer shell

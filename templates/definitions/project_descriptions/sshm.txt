@@ -1,0 +1,2 @@
+Manage multiple SSH devices simulatenously, or even programmatically
+Written for Region V Robotics' swarm management

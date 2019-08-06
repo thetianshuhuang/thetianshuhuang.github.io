@@ -1,0 +1,3 @@
+A design of a 1km x 1km sized college campus, in part inspired by some of my frustrations with UT Austin's campus design. This project features many experiments in street design, with only the form of each building specified.
+<br><br>
+The campus is based around a three-level design. The ground level hosts vehicular traffic, public transportation, a small canal network, and a network of bike paths, the second level contains skybridges that connect all buildings together, and the third level contains a second network of bike paths. The idea is that one can get to any building using either the ground level or second level bike path networks.
