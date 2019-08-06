@@ -35,7 +35,8 @@
 <table class="pano">
 {% for k, pano in panoramas.iterrows() %}
 	<tr>
-		<td onclick="window.open('photos/{{pano.file}}', '_blank')">
+		<td>
+			<a href="photos/{{pano.file}}" target='_blank'></a>
 			<img src="photos/{{pano.file}}">
 			<div style="top: 4px; left: 4px">
 				<span class="tag-title">{{pano.title}}</span

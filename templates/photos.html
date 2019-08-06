@@ -20,9 +20,10 @@
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-<div class="grid" data-masonry='{ "itemSelector": ".photo-item", "columnWidth": 400, "isFitWidth": true }'>
+<div class="grid" data-masonry='{ "itemSelector": ".photo-item", "columnWidth": 400, "gutter": 10, "isFitWidth": true }'>
 	{% for k, img in photos.iterrows() %}
-		<div class="photo-item" onclick="window.open('photos/{{img.file}}', '_blank')">
+		<div class="photo-item">
+			<a href="photos/{{img.file}}" target="_blank"></a>
 			<img src="photos/{{img.file}}" class="photo">
 			<div style="top: 4px; left: 4px; position: absolute">
 				<span class="tag-title">{{img.title}}</span

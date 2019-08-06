@@ -69,14 +69,14 @@ body {
 	margin: 16px;
 }
 
-.photo {
-	width: 18vw;
-	min-width: 300px;
+.photo, .photo-item {
+	width: 400px;
 }
 .photo-item {
-	width: 18vw;
-	min-width: 300px;
+	margin-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
+
 .poster {
 	width: 18vw;
 	min-width: 300px;
@@ -158,6 +158,7 @@ body {
 	padding: 0px;
 	vertical-align: top;
 	position: relative;
+	background-color: rgba(0, 0, 0, 0);
 }
 .pano td div {
 	position: absolute;
@@ -166,6 +167,18 @@ body {
 	width: 100%;
 	height: 150px;
 	object-fit: cover;
+}
+.pano a, .photo-item a {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.pano a:hover, .photo-item a:hover {
+	background-color: var(--highlight-tl);
 }
 
 /*
