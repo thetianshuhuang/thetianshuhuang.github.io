@@ -260,9 +260,14 @@ body {
 	height: 200px;
 	display: inline-block;
 }
-.button-image img {
+.div-no-mobile .button-image img {
 	object-fit: cover;
 	width: 40vw;
+	height: 200px;
+}
+.div-only-mobile .button-image img {
+	object-fit: cover;
+	width: 80vw;
 	height: 200px;
 }
 .button-image a {
@@ -280,4 +285,23 @@ body {
 }
 .button-image:hover a {
 	background-color: var(--highlight-tl);
+}
+
+/*
+ * Mobile Management
+ */
+.div-only-mobile {
+    display: none;
+}
+.div-no-mobile {
+    display: block;
+}
+@media screen and (max-width: 849px) {
+	.div-no-mobile {
+	    display:none
+	}
+
+	.div-only-mobile {
+	    display: block;
+	}
 }
