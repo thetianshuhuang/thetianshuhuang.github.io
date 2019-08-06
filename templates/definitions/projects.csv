@@ -1,17 +1,17 @@
 name,organization,icon,tag,link,description
 Serial Vis,,generic.png,"embedded,lib,python",https://github.com/thetianshuhuang/serial-vis,sv.txt
-File Explorer Utility for Sublime Text,,explorer.png,"python,util,st3",https://github.com/thetianshuhuang/file-explorer,explorer.txt
+File Explorer Utility,,explorer.jpg,"python,util,st3",https://github.com/thetianshuhuang/file-explorer,explorer.txt
 Rock Band,Embedded Systems Final Project,rb.jpg,"embedded,class,c",https://github.com/thetianshuhuang/rock-band,rb.txt
 SLD Blue Cloud,SLD Laser,sld_bc.jpg,"ds,web,python,javascript",https://sldlaser.com/,sld_bc.txt
 Simple Radius,,radius.png,"web,python,util",https://github.com/thetianshuhuang/simple-radius,radius.txt
 Region V Robotics,UT IEEE RAS,region-v.png,"embedded,ds,python,c",https://github.com/ut-ras/r5-2019,region-v.txt
-SSH Batch Management,,generic.png,"python,util",https://github.com/thetianshuhuang/ssh-manage,sshm.txt
-Sample,,sample.png,"python,lib,ds",https://github.com/thetianshuhuang/sample,sample.txt
-Eigenfaces,,eigenface.png,"ds,class,python",https://github.com/thetianshuhuang/eigenface,eigenface.txt
-Divider Creation utility for Sublime Text,,div.png,"python,util,st3",https://github.com/thetianshuhuang/ascii-div,div.txt
-Fast Random Features,,rf.png,"ds,class,python",https://github.com/qw3rtman/rf,rf.txt
+SSH Batch Management,,,"python,util",https://github.com/thetianshuhuang/ssh-manage,sshm.txt
+Sample,Data Science Project,sample.jpg,"python,lib,ds",https://github.com/thetianshuhuang/sample,sample.txt
+Eigenfaces,Data Science Project,eigenface.png,"ds,class,python",https://github.com/thetianshuhuang/eigenface,eigenface.txt
+Divider Creation Plugin,,div.png,"python,util,st3",https://github.com/thetianshuhuang/ascii-div,div.txt
+Fast Random Features,Data Science Final Project,rf.png,"ds,class,python",https://github.com/qw3rtman/rf,rf.txt
 Syllabus,,syllabus.png,"python,lib,PyPI:syllabus,ds",https://github.com/thetianshuhuang/syllabus,syllabus.txt
 Print!,,print.png,"python,lib,PyPI:printtools",https://github.com/thetianshuhuang/print,print.txt
-Pycalc,,pycalc.png,"python,util",https://github.com/thetianshuhuang/pycalc,pycalc.txt
-Ctrl-Shell,,explorer.png,"python,util,st3",https://github.com/thetianshuhuang/ctrl-shell,ctrl_shell.txt
-pyc3b: Python LC3b Assembler,,pyc3b.png,"arch,util,python",https://github.com/thetianshuhuang/pyc3b,pyc3b.txt
+Pycalc,,pycalc.jpg,"python,util",https://github.com/thetianshuhuang/pycalc,pycalc.txt
+Ctrl-Shell,,explorer.jpg,"python,util,st3",https://github.com/thetianshuhuang/ctrl-shell,ctrl_shell.txt
+pyc3b: Python LC3b Assembler,,pyc3b.jpg,"arch,util,python",https://github.com/thetianshuhuang/pyc3b,pyc3b.txt

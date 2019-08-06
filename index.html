@@ -24,7 +24,7 @@
 		</div>
 		<div class="w3-padding-32">
 			<a href="#resume" class="button-menu">Resume</a>
-			<a href="#projects" class="button-menu">Projects</a>
+			<a href="projects.html" class="button-menu">Projects</a>
 			<a href="#contact" class="button-menu">Contact</a>
 			<a href="#other" class="button-menu">Other Interests</a>
 			<a href="resources.html" class="button-menu">Resources</a>
@@ -105,13 +105,13 @@
 			<table class="w3-table">
 				<tr class="highlight"><th colspan=2>Languages</th></tr>
 				<tr><th>Scripting</th><td>Python | Javascript</td></tr>
-				<tr><th>Compiled</th><td>C | C++ | Rust | Java</td></tr>
+				<tr><th>Compiled</th><td>C | C++ | CUDA | Rust | Java</td></tr>
 				<tr><th>Other</th><td>ARM Assembly | Verilog </td></tr>
 				<tr><th>Web</th><td>HTML / CSS | SQL | LaTeX</td></tr>
 
 				<tr class="highlight"><th colspan=2>Libraries and Frameworks</th></tr>
 				<tr><th>Web</th><td>Django | Celery | D3.js | Node.js</td></tr>
-				<tr><th>Data Science</th><td>OpenCV | Numpy | SciKit-Learn</td></tr>
+				<tr><th>Data Science</th><td>Python C API | OpenCV | Numpy | SciKit-Learn</td></tr>
 
 				<tr class="highlight"><th colspan=2>Platforms</th></tr>
 				<tr><th>Web</th><td>Apache | RabbitMQ | MySQL / MariaDB / Sqlite</td></tr>
@@ -123,181 +123,6 @@
 				<tr><th>Board Design</th><td>EagleCAD | Board Fabrication (OtherMill)</td></tr>
 				<tr><th>Mechanical</th><td>CAD (SolidWorks, Sketchup) | 3D Printing</td></tr>
 			</table>
-		</div>
-	</div>
-	<div class="grid-item block" id="projects">
-		<div class="w3-padding-64">
-			<h1 class="w3-center">Data Science & Engineering</h1>
-			<div class="button-card" onclick="window.open('https://sldlaser.com/', '_blank');">
-				<div class="img-icon"><img src="icon/sld_bc.jpg"></div>
-				<div class="desc">
-					<h4>SLD Blue Cloud | SLD Laser</h4>
-					<ul>
-						<li>Interactive visualizations of laser test data</li>
-						<li>Full stack web app using Djano and d3.js</li>
-            		</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/qw3rtman/rf', '_blank');">
-				<div class="img-icon"><img src="icon/rf.png"></div>
-				<div class="desc">
-					<h4>Fast Random Features</h4>
-					<ul>
-						<li>Application of Random Features for Large Scale Kernel Machines (Rahimi & Recht, 2008) to data with dimensionality 10 times higher than previous attempts</li>
-						<li>Matched accuracy of Kernel SVM in IDC Classification with a 100-fold speed increase</li>
-            		</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/eigenface', '_blank');">
-				<div class="img-icon"><img src="icon/eigenface.png"></div>
-				<div class="desc">
-					<h4>Eigenfaces</h4>
-					<ul>
-						<li>Linear and Kernel Eigenface implementations; project for Geometric Foundations of Data Science</li>
-						<li>Implements input space recovery method described by S. Mika et al, "Kernel PCA and De-Noising in Feature Spaces"</li>
-            		</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="grid-item block">
-		<div class="w3-padding-64">
-			<h1 class="w3-center">Embedded Systems</h1>
-			<div class="button-card" onclick="window.open('https://github.com/ut-ras/r5-2019', '_blank');">
-				<div class="img-icon"><img src="icon/region-v.png"></div>
-				<div class="desc">
-					<h4>UT RAS Region V Robotics</h4>
-					<ul>
-						<li>Working on a task involving OpenCV, SLAM, and swarms</li>
-						<li>Set up GitHub-based workflow for 15+ developers including pull requests and code reviews</li>
-            		</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/rock-band', '_blank');">
-				<div class="img-icon"><img src="icon/rb.jpg" style="width: 100%"></div>
-				<div class="desc">
-					<h4>Rock Band | Embedded Systems Final Project</h4>
-					<ul>
-						<li>Rock Band on the TM4C (ARM Cortex M4; 80MHz, 32KB RAM)</li>
-						<li>44.1kHz audio from SD</li>
-						<li>Hand-soldered, error-matched resistor DAC</li>
-						<li>N-player multiplayer</li>
-            		</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/serial-vis', '_blank');">
-				<div class="img-icon"><img src="icon/generic.png"></div>
-				<div class="desc">
-					<h4>Serial Vis</h4>
-					<ul>
-						<li>Library for serial driven visual debug output</li>
-						<li>Pause, skip forward, skip backwards, or even set triggers to automatically pause</li>
-            		</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="grid-item block">
-		<div class="w3-padding-64">
-			<h1 class="w3-center">Utilities</h1>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/pyc3b', '_blank');">
-				<div class="img-icon"><img src="icon/pyc3b.png"></div>
-				<div class="desc">
-					<h4>pyc3b: Python LC3b Assembler</h4>
-					<ul>
-						<li>Fully featured LC3b assembler written in python</li>
-						<li>Informative error message and side-by-side assembly output</li>
-            		</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/simple-radius', '_blank');">
-				<div class="img-icon"><img src="icon/radius.png"></div>
-				<div class="desc">
-					<h4>Simple Radius</h4>
-					<ul>
-						<li>Django Integration for FreeRadius</li>
-						<li>Simple and easy until you find out your router doesn't support EAP-MD5 or TLS</li>
-            		</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/ssh-manage', '_blank');">
-				<div class="img-icon"><img src="icon/generic.png"></div>
-				<div class="desc">
-					<h4>SSH Management</h4>
-					<ul>
-						<li>Manage multiple SSH devices simulatenously, or even programmatically</li>
-						<li>Written for Region V Robotics' swarm management</li>
-					</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/pycalc', '_blank');">
-				<div class="img-icon"><img src="icon/pycalc.png"></div>
-				<div class="desc">
-					<h4>Pycalc</h4>
-					<ul>
-						<li>Python dynamic module loader with global variable management</li>
-						<li>Uses various overloading tricks to create a convenient command-line calculator</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="grid-item block">
-		<div class="w3-padding-64">
-			<h1 class="w3-center">Plugins</h1>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/file-explorer', '_blank');">
-				<div class="img-icon"><img src="icon/explorer.png"></div>
-				<div class="desc">
-					<h4>File Explorer Utility for Sublime Text</h4>
-					<ul>
-						<li>Plugin for Sublime Text 3</li>
-						<li>Emulates Emacs' <code>Ctrl-x Ctrl-f</code> behavior</li>
-            		</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/ascii-div', '_blank');">
-				<div class="img-icon"><img src="icon/div.png"></div>
-				<div class="desc">
-					<h4>Divider creation utility for Sublime Text</h4>
-					<ul>
-						<li>Plugin for Sublime Text 3</li>
-						<li>Create nicely-formatted dividers</li>
-            		</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="grid-item block">
-		<div class="w3-padding-64">
-			<h1 class="w3-center">Libraries</h1>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/print', '_blank');">
-				<div class="img-icon"><img src="icon/print.png"></div>
-				<div class="desc">
-					<h4>Print</h4>
-					<ul>
-						<li>Python library to integrate ANSI escape codes and PyFiglet</li>
-					</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/print', '_blank');">
-				<div class="img-icon"><img src="icon/syllabus.png"></div>
-				<div class="desc">
-					<h4>Syllabus</h4>
-					<ul>
-						<li>Python machine learning task management library</li>
-						<li>Multiprocessing and multithreading pool implementations</li>
-					</ul>
-				</div>
-			</div>
-			<div class="button-card" onclick="window.open('https://github.com/thetianshuhuang/sample', '_blank');">
-				<div class="img-icon"><img src="icon/sample.png"></div>
-				<div class="desc">
-					<h4>Sample</h4>
-					<ul>
-						<li>Low-discrepancy sequence sampling in Python using Halton and Hammersley sequences</li>
-					</ul>
-				</div>
-			</div>
 		</div>
 	</div>
 	<div class="grid-item block" id="other">

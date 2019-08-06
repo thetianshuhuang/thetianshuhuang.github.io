@@ -144,7 +144,7 @@ body {
 .tags span, .tag {
 	font-size: 10px;
 	padding: 3px;
-	margin: 2px;
+	margin: 2px 0px;
 	border: 1px;
 	border-style: solid;
 }
@@ -279,7 +279,7 @@ body {
 }
 .button:hover, .button-menu:hover, .button-card:hover, .button-navbar:hover {
 	color: #fff;
-	background-color: var(--highlight);
+	background-color: var(--highlight) !important;
 }
 .button:disabled, .button-menu:disabled, .button-menu:disabled, .button-navbar:disabled {
 	cursor: not-allowed;
@@ -360,7 +360,6 @@ body {
 	position: absolute;
 	margin-bottom: 10px;
 }
-
 .project-item h4:hover {
 	color: var(--light);
 	background-color: var(--dark);
@@ -382,4 +381,19 @@ body {
 .organization {
 	font-size: 12px;
 	font-weight: 700;
+}
+
+/*
+ * Project filter
+ */
+
+.filter-buttons button.active {
+	background-color: var(--dark);
+	color: var(--light);
+}
+.filter-buttons button {
+	margin: 4px;
+}
+div.inactive {
+	display: none;
 }

@@ -64,26 +64,52 @@ def nan_to_null(x):
         return x
 
 
-TAG_MAP = {
-    "embedded": "Embedded Systems",
-    "util": "Utility",
-    "lib": "Library",
-    "python": "Language:Python",
-    "c": "Language:C",
-    "javascript": "Language:JavaScript",
-    "st3": "Plugin:Sublime Text 3",
-    "class": "Class Project",
-    "web": "Web",
-    "ds": "Data Science",
-    "arch": "Computer Architecture"
+TAGS = {
+    "Languages": {
+        "python": "Language:Python",
+        "c": "Language:C",
+        "javascript": "Language:JavaScript",
+    },
+    "Field": {
+        "embedded": "Embedded Systems",
+        "web": "Web",
+        "ds": "Data Science",
+        "arch": "Computer Architecture",
+    },
+    "Project Type": {
+        "st3": "Sublime Text 3 Plugin",
+        "util": "Utility",
+        "lib": "Library",
+        "class": "Class Project",
+        "pypi": "Python Package"
+    }
 }
 
 
-def tag_map(t):
+TAGS_ALL = {}
+for k, v in TAGS.items():
+    TAGS_ALL.update(v)
+
+
+def tag_class_map(t):
+    # PyPI -> use same tag
+    if t.startswith('PyPI'):
+        return 'tag-pypi'
+    # Normal tag
+    elif t in TAGS_ALL:
+        return 'tag-' + t
+    # Unrecognized tag -> misc
+    else:
+        print("Warning: Unrecognized Tag:", t)
+        return ''
+
+
+def tag_display_map(t):
     try:
-        return TAG_MAP[t]
+        disp = TAGS_ALL[t]
     except KeyError:
-        return t
+        disp = t
+    return disp.replace(" ", "&nbsp;")
 
 
 def get_descriptions(ctx):
@@ -92,12 +118,17 @@ def get_descriptions(ctx):
             {
                 "name": project["name"],
                 "organization": nan_to_null(project["organization"]),
-                "icon": project["icon"],
-                "tags": [tag_map(t) for t in project["tag"].split(',')],
+                "icon": nan_to_null(project["icon"]),
+                "tags": [
+                    tag_display_map(t) for t in project["tag"].split(',')
+                ],
+                "tag_names": ' '.join(
+                    [tag_class_map(t) for t in project["tag"].split(',')]),
                 "link": project["link"],
                 "desc": get_project_desc(project["description"])
-            } for _, project in ctx["projects"].iterrows()
-        ]
+            } for _, project in ctx["projects"][::-1].iterrows()
+        ],
+        "available_tags": TAGS,
     }
 
 
