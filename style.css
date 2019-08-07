@@ -305,10 +305,11 @@ body {
 .button-image {
 	height: 200px;
 	display: inline-block;
+	box-shadow: var(--item-shadow);
 }
 .div-no-mobile .button-image img {
 	object-fit: cover;
-	width: calc(var(--width) * 0.5);
+	width: calc(var(--width) * 0.5 - 10px);
 	height: 200px;
 }
 .div-only-mobile .button-image img {
