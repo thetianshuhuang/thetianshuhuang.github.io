@@ -1,8 +1,16 @@
 {% extends base %}
 
+{% block top %}
+{% endblock %}
+
 {% block content %}
+<div style="width: 100%; box-shadow: var(--header-shadow); margin-bottom: 32px; background-color: var(--light)">
 <div class="content">
 <div class="intro">
+
+	<div class="div-only-mobile" style="width: 100%; height: 60px"></div>
+	<div class="div-no-mobile" style="width: 100%; height: 70px"></div>
+
 	<h1>Photos</h1>
 
 	I also take more traditionally sized photos. I particularly enjoy trying to capture the "glowing" effect created by a strong light source behind a partially translucent object (such as leaves and other vegetation at sunrise or sunset), as well as playing around with interesting lighting conditions.
@@ -13,6 +21,10 @@
 	<img class="cc" src="icon/by.large.png">
 	<img class="cc" src="icon/nc.large.png">
 </div>
+</div>
+</div>
+
+<div class="content">
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
