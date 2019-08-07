@@ -6,6 +6,8 @@ import json
 
 def render(target, context=[], path=[], title=None, process_context=None):
 
+    print("Rendering: ", target)
+
     with open(target) as f:
         template = Template(f.read())
     with open('base.html') as f:
@@ -18,6 +20,9 @@ def render(target, context=[], path=[], title=None, process_context=None):
 
     if process_context is not None:
         context = process_context(context)
+
+    if len(context) > 0:
+        print("    Context:", list(context.keys()))
 
     with open(os.path.join('..', target), 'w') as res:
         res.write(template.render(
@@ -120,6 +125,39 @@ def get_descriptions(ctx):
     }
 
 
+def dictify(ctx):
+    return [
+        {
+            "name": category, "data": [
+                {
+                    "name": subcategory, "data": [
+                        {
+                            "name": row["name"].replace(" ", "&nbsp;"),
+                            "tag": nan_to_null(row["tag"])
+                        } for _, row in df_subcat.iterrows()
+                    ]
+                }
+                for subcategory, df_subcat
+                in df_cat.groupby('subcategory', sort=False)
+            ]
+        } for category, df_cat in ctx.groupby('category', sort=False)
+    ]
+
+
+def index_ctx(ctx):
+    return {
+        "skills": dictify(ctx["skills"]),
+        "work_experience": [
+            {
+                "title": row["title"],
+                "date": row["date"],
+                "tags": row["tags"].split(','),
+                "description": row["description"]
+            } for _, row in ctx["work_experience"].iterrows()
+        ]
+    }
+
+
 if __name__ == '__main__':
     render(
         "panoramas.html",
@@ -151,7 +189,6 @@ if __name__ == '__main__':
         "miscellaneous.html",
         title="Miscellaneous",
         path=[['miscellaneous.html', 'Miscellaneous']])
-    render("index.html")
     render(
         "resources.html",
         title="Resources",
@@ -163,4 +200,8 @@ if __name__ == '__main__':
         context=['projects'],
         path=[['projects.html', 'Projects']],
         process_context=get_descriptions)
-    render("index.html", context=[], path=[])
+    render(
+        "index.html",
+        context=["skills", "work_experience"],
+        path=[],
+        process_context=index_ctx)

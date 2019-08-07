@@ -6,21 +6,79 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="style.css">
 
+<style>
+.button-navbar {
+	font-size: 20px;
+	padding: 20px;
+}
+@media screen and (max-width: 849px) {
+	.button-navbar {
+		font-size: 20px;
+		padding: 12px;
+	}
+}
+.header {
+	width: 100vw;
+	color: #fff;
+	background-color: var(--dark);
+    box-shadow: var(--header-shadow);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+</style>
+
 <head>
 
+<style>
+.render-item {
+    margin-bottom: 10px;
+    width: var(--card-width);
+    box-shadow: var(--item-shadow);
+}
+.a-desc {
+    width: var(--card-width);
+    background: var(--light);
+}
+.a-desc h2 {
+    background: var(--highlight);
+    padding: 32px 16px 4px 16px;
+    margin: 0px;
+    color: var(--light);
+}
+.a-desc div {
+    padding: 4px 16px 32px 16px;
+    color: var(--dark);
+}
+.a-hr {
+    border-top: 1px solid var(--dark);
+    margin: 32px 15%;
+}
+</style>
 
 </head>
 
 <body>
 
-<div class="header">
-	<a class="button-navbar" style='font-weight: 700;' href="index.html">Tianshu Huang</a>
+<div class="header div-no-mobile">
+	<a class="button button-navbar" style="font-weight: 600" href="index.html">Tianshu Huang</a>
 	
 	&#x25BA;
-	<a class="button-navbar" href="architecture.html">Architecture</a>
+	<a class="button button-navbar" href="architecture.html">Architecture</a>
 	
 </div>
-<div style="width: 100%; height: 60px"></div>
+<div class="header div-only-mobile">
+	
+		<a class="button button-navbar" style="font-weight: 600" href="index.html">TH</a>
+		&#x25BA;
+		<a class="button button-navbar" href="architecture.html">Architecture</a>
+	
+</div>
+
+
+<div class="div-only-mobile" style="width: 100%; height: 60px"></div>
+<div class="div-no-mobile" style="width: 100%; height: 70px"></div>
 
 
 

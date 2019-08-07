@@ -50,6 +50,7 @@ div.inactive {
 </style>
 {% endblock %}
 
+
 {% block content %}
 <div class="content">
 
@@ -195,9 +196,9 @@ function applyAll(show) {
 
 // Query -> hide all other tags
 if(window.location.search.length > 1) {
-	var allTags = new Set([{% for t in tag_list %}"{{t}}",{% endfor %}]);
-	allTags.delete(window.location.search.substring(1));
-	allTags.forEach(toggleTagVisibility);
+	var tmp = new Set([{% for t in tag_list %}"{{t}}",{% endfor %}]);
+	tmp.delete(window.location.search.substring(1));
+	tmp.forEach(toggleTagVisibility);
 }
 
 </script>

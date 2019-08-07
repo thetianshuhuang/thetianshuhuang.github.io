@@ -6,6 +6,29 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="style.css">
 
+<style>
+.button-navbar {
+	font-size: 20px;
+	padding: 20px;
+}
+@media screen and (max-width: 849px) {
+	.button-navbar {
+		font-size: 20px;
+		padding: 12px;
+	}
+}
+.header {
+	width: 100vw;
+	color: #fff;
+	background-color: var(--dark);
+    box-shadow: var(--header-shadow);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+</style>
+
 <head>
 
 
@@ -13,109 +36,149 @@
 
 <body>
 
-<div class="header">
-	<a class="button-navbar" style='font-weight: 700;' href="index.html">Tianshu Huang</a>
+<div class="header div-no-mobile">
+	<a class="button button-navbar" style="font-weight: 600" href="index.html">Tianshu Huang</a>
 	
 </div>
-<div style="width: 100%; height: 60px"></div>
+<div class="header div-only-mobile">
+	
+		<a class="button button-navbar" style="font-weight: 600" href="index.html">Tianshu Huang</a>
+	
+</div>
+
+
+<div class="div-only-mobile" style="width: 100%; height: 60px"></div>
+<div class="div-no-mobile" style="width: 100%; height: 70px"></div>
 
 
 
 <style>
-#project-bar {
-	width: 20vw;
-	height: 100vh;
-	overflow: hidden;
-	display: inline-block;
-	position: fixed;
-	left: 0;
-	top: 0;
+#content, #content-other {
+	width: 90vw;
+	margin: auto;
 }
-#project-bar>div {
-	width: 20vw;
-	border-right: 20px solid var(--dark);
-}
-#project-bar>div:hover {
-	border-right: 20px solid var(--highlight);
-}
-#project-bar img {
-	width: calc(20vw - 20px);
-	height: 12.5vh;
-	object-fit: cover;
-}
-#main {
-	position: absolute;
-	left: 20vw;
-	display: inline-block;
-	vertical-align: top;
-	padding: 64px 32px;
-	margin: 0px;
-	width: 80vw;
-}
-#main>div {
-	width: 600px;
+#content>div, #content-other>div {
+	width: 90vw;
+	max-width: 500px;
 	background: white;
 	color: black;
 	box-shadow: var(--item-shadow);
-	padding: 20px;
 	margin-bottom: 20px;
+}
+#skills h1 {
+	text-align: center;
+}
+#skills table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	display: table
+}
+#skills table th, #skills table td {
+	padding: 8px 8px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+}
+
+#about>div {
+	text-align: center;
+}
+#about>div>img {
+	width: 60%;
+	border-radius: 50%;
+}
+#about>div>div {
+	text-align: left;
+	padding: 20px;
+}
+#about>div>h1 {
+	background-color: var(--highlight);
+	color: var(--light);
+	width: 100%;
+	margin: 32px 0px;
+}
+#links {
+	padding: 32px 0px;
+}
+#skills, #education, #work-experience {
+	padding: 32px 20px;
+}
+#other {
+    border-top: 1px solid var(--dark);
+    margin: 32px 15%;
+}
+#work-experience>div, #work-experience>div>div {
+	padding: 10px;
 }
 </style>
 
-<div id="project-bar">
-	<div onclick="window.open('projects.html?embedded')"><img src=icon/rb.jpg></img></div>
-	<div onclick="window.open('projects.html?web')"><img src=icon/sld_bc.jpg></img></div>
-	<div onclick="window.open('projects.html?ds')"><img src=icon/rf.png></img></div>
-	<div onclick="window.open('projects.html?arch')"><img src=icon/pyc3b.jpg></img></div>
-	<div onclick="window.open('projects.html?st3')"><img src=icon/explorer.jpg></img></div>
-	<div onclick="window.open('projects.html?util')"><img src=icon/radius.png></img></div>
-	<div onclick="window.open('projects.html?lib')"><img src=icon/generic.png></img></div>
-	<div onclick="window.open('projects.html?pypi')"><img src=icon/syllabus.png></img></div>
-</div>
-
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<div id="main" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-item", "gutter": 20}'>
 
-<div class="grid-item">
-	<div class="w3-padding-64 w3-center">
+<div style="width: 100%; height: 60px"></div>
+
+<div style="width: 90vw; max-width: 1500px; margin: auto">
+
+<div id="content" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-item", "gutter": 20, "isFitWidth": true }'>
+
+<div class="grid-item" id="about">
+	<div>
 		<h1>Tianshu Huang</h1>
-	</div>
-	<div class="w3-padding-32">
-		<a href="#resume" class="button-menu">Resume</a>
-		<a href="projects.html" class="button-menu">Projects</a>
-		<a href="#contact" class="button-menu">Contact</a>
-		<a href="#other" class="button-menu">Other Interests</a>
-		<a href="resources.html" class="button-menu">Resources</a>
-		<a href="https://github.com/thetianshuhuang" target="_blank" class="button-menu">GitHub</a>
-		<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank" class="button-menu">LinkedIn</a>
-	</div>
-</div>
-
-<div class="grid-item">
-	<div class="w3-padding-64 w3-center">
-		<h1>About Me</h1>
-		<img src="icon/hs.jpg" class="w3-margin w3-circle" style="width:50%">
-		<div class="w3-left-align w3-padding-large">
+		<img src="icon/hs.jpg">
+		<div>
 			<p>I'm an ECE student at UT Austin interested in Data Science and Embedded Systems. Specifically, I'm interested in using data science techniques (especially machine learning) to engage in real time decision making.</p>
-			<p>I have work experience as a data engineer / full stack developer, and am currently a Test Analysis Systems Consultant at SLD Laser. My favorite language is Python, but I am also fluent in C/C++ and JavaScript, with working proficiency in ARM Assembly, Java, and SQL.</p>
+			<p>I have work experience as a data engineer / full stack developer, and am currently a Test Analysis Systems Consultant at SLD Laser. My favorite language is Python, but I am also fluent in C/C++, R, and JavaScript, with working proficiency in CUDA, Rust, ARM Assembly, Java, and SQL.</p>
 			<p>You can contact me at <a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a>.</p>
 		</div>
 	</div>
 </div>
 
-<div class="grid-item">
-	<div class="w3-padding-64 w3-center">
-		<h1>Resume</h1>
+<div class="grid-item" id="links">
+	<div>
+		<a href="#resume" class="button-menu">Resume</a>
+		<a href="#education" class="button-menu">Education</a>
+		<a href="#work-experience" class="button-menu">Work Experience</a>
+		<a href="#skills" class="button-menu">Skills</a>
+		<a href="projects.html" class="button-menu">Projects</a>
+		<a href="#other" class="button-menu">Other Interests</a>
+		<a href="resources.html" class="button-menu">Resources</a>
+		<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank" class="button-menu">LinkedIn</a>
+	</div>
+</div>
 
-		<div class="w3-padding-16">
-			You can see my full resume <a href="resources/tianshu-huang-resume.pdf">here</a>.
-		</div>
+<div class="grid-item square-card">
+	<a href="projects.html?ds"><h1>Data Science</h1></a>
+	<img src="icon/gs-gpu.jpg">
+</div>
+
+<div class="grid-item square-card">
+	<a href="projects.html?embedded"><h1>Embedded Systems</h1></a>
+	<img src="icon/rb.jpg">
+</div>
+
+<div class="grid-item square-card">
+	<a href="projects.html?lib"><h1>Libraries</h1></a>
+	<img src="icon/syllabus.png">
+</div>
+
+<div class="grid-item square-card">
+	<a href="projects.html?util"><h1>Utilities</h1></a>
+	<img src="icon/explorer.jpg">
+</div>
+
+<div class="grid-item square-card" id="resume">
+	<a href="resources/tianshu-huang-resume.pdf"><h1>PDF Resume</h1></a>
+	<img src="icon/resume.png">
+</div>
+
+<div class="grid-item" id="education">
+	<div class="w3-center">
+		<h1>Education</h1>
 
 		<table class="w3-table">
-			<tr class="highlight"><th colspan=2>Education</th></tr>
-			<tr>
+			<tr class="highlight">
 				<td>University of Texas at Austin
-					<br><i>GPA: 4.00</i></td>
+					<br><i>GPA: 3.96</i></td>
 				<td>Aug 2017 - Present</td>
 			</tr>
 			<tr>
@@ -139,71 +202,318 @@
 					</ul>
 				</td>
 			</tr>
-			<tr>
+			<tr class="highlight">
 				<td>Texas A&M University
-					<br><i>Concurrent enrollment while attending high school</i></td>
+					<br><i>GPA: 4.0</i></td>
 				<td>May 2016 - Aug 2017</td>
 			</tr>
-
-			<tr class="highlight"><th colspan=2>Work Experience</th></tr>
 			<tr>
-				<td>Test Analysis Systems Consultant<br><i>SLD Laser</i></td>
-				<td>Aug 2018 - Present</td>
-			</tr>
-			<tr>
-				<td>Full Stack Developer Intern<br><i>SLD Laser</i></td>
-				<td>June 2018 - Aug 2018</td>
+				<td colspan=2><i>Concurrent enrollment while attending high school</i></td>
 			</tr>
 		</table>
 	</div>
 </div>
 
-<div class="grid-item">
-	<h1 class="w3-center">Skills</h1>
+<div class="grid-item" id="work-experience">
+	<div>
+		<h1>Work Experience</h1>
 
-	<table class="w3-table">
-		<tr class="highlight"><th colspan=2>Languages</th></tr>
-		<tr><th>Scripting</th><td>Python | Javascript</td></tr>
-		<tr><th>Compiled</th><td>C | C++ | CUDA | Rust | Java</td></tr>
-		<tr><th>Other</th><td>ARM Assembly | Verilog </td></tr>
-		<tr><th>Web</th><td>HTML / CSS | SQL | LaTeX</td></tr>
-
-		<tr class="highlight"><th colspan=2>Libraries and Frameworks</th></tr>
-		<tr><th>Web</th><td>Django | Celery | D3.js | Node.js</td></tr>
-		<tr><th>Data Science</th><td>Python C API | OpenCV | Numpy | SciKit-Learn</td></tr>
-
-		<tr class="highlight"><th colspan=2>Platforms</th></tr>
-		<tr><th>Web</th><td>Apache | RabbitMQ | MySQL / MariaDB / Sqlite</td></tr>
-		<tr><th>Version Control</th><td>Subversion | Git (Github, Self-hosted Gitlab)</td></tr>
-		<tr><th>OS and System Management</th><td>Ubuntu / Ubuntu Server | FreeBSD | Virtualbox
-		ESXi | FreeRadius</td></tr>
-
-		<tr class="highlight"><th colspan=2>Embedded Systems and Hardware</th></tr>
-		<tr><th>Board Design</th><td>EagleCAD | Board Fabrication (OtherMill)</td></tr>
-		<tr><th>Mechanical</th><td>CAD (SolidWorks, Sketchup) | 3D Printing</td></tr>
-	</table>
-</div>
-
-<div class="grid-item">
-	<div class="w3-padding-64">
-		<h1 class="w3-center w3-padding-32">Other Interests</h1>
-		<a href="architecture.html" class="button-menu">Architecture</a>
-		<a href="photography.html" class="button-menu">Photography</a>
-		<a href="miscellaneous.html" class="button-menu">Miscellaneous</a>
+		
+			<div class="highlight">Research Intern</div>
+			<div>
+				<div>
+					<span class="tag">June 2019 - Present</span>
+					
+					<span class="tag">Texas A&M University</span>
+					
+					<span class="tag">Statistics</span>
+					
+				</div>
+				Research Area: Bayesian Clustering
+			</div>
+		
+			<div class="highlight">Research Intern</div>
+			<div>
+				<div>
+					<span class="tag">June 2019 - Present</span>
+					
+					<span class="tag">Texas A&M University</span>
+					
+					<span class="tag">Construction Science</span>
+					
+				</div>
+				Research Area: Exploratory data analysis on bid data
+			</div>
+		
+			<div class="highlight">Test Analysis Systems Consultant</div>
+			<div>
+				<div>
+					<span class="tag">Aug 2018 - Present</span>
+					
+					<span class="tag">SLD Laser</span>
+					
+				</div>
+				Maintain web app built previously
+			</div>
+		
+			<div class="highlight">Full Stack Developer Intern</div>
+			<div>
+				<div>
+					<span class="tag">June 2018 - Aug 2018</span>
+					
+					<span class="tag">SLD Laser</span>
+					
+				</div>
+				Built full-stack web app to visualize and analyze laser test data
+			</div>
+		
 	</div>
 </div>
 
-<div class="grid-item">
-	<div class="w3-padding-64">
-		<h1 class="w3-center">Contact</h1>
-		<div class="w3-center w3-padding-16">
-			You can contact me at <a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a>.
-			<br>
-			My public key can be found <a href="resources/rsa.pub" target="_blank">here</a>.
-		</div>
-		<div class="w3-center">
-			<img src="icon/profile.jpg" style="width: 60%">
-		</div>
+<div class="grid-item" id="skills">
+	<h1>Skills</h1>
+
+	<table>
+	
+	<tr class="highlight"><th colspan=2>Languages</th></tr>
+	
+	<tr>
+		<td>
+		Scripting&nbsp;&#x25BA;
+		
+			
+				<a class="tag tag-link" href="projects.html?python">Python</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?r">R</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?javascript">JavaScript</a>
+			
+		
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>
+		Compiled&nbsp;&#x25BA;
+		
+			
+				<a class="tag tag-link" href="projects.html?c">C</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?c">C++</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?cuda">CUDA</a>
+			
+		
+			
+				<span class="tag">Rust</span>
+			
+		
+			
+				<span class="tag">Java</span>
+			
+		
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>
+		Other&nbsp;&#x25BA;
+		
+			
+				<span class="tag">ARM&nbsp;Assembly</span>
+			
+		
+			
+				<span class="tag">Verilog</span>
+			
+		
+		</td>
+	</tr>
+
+	
+	
+	<tr class="highlight"><th colspan=2>Libraries and Frameworks</th></tr>
+	
+	<tr>
+		<td>
+		Web&nbsp;&#x25BA;
+		
+			
+				<a class="tag tag-link" href="projects.html?web">Django</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?web">Celery</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?web">D3.js</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?web">Node.js</a>
+			
+		
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>
+		Data Science&nbsp;&#x25BA;
+		
+			
+				<a class="tag tag-link" href="projects.html?python">Python&nbsp;C&nbsp;API</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?ds">OpenCV</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?ds">Numpy</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?ds">SciKit-Learn</a>
+			
+		
+		</td>
+	</tr>
+
+	
+	
+	<tr class="highlight"><th colspan=2>Platforms</th></tr>
+	
+	<tr>
+		<td>
+		Web&nbsp;&#x25BA;
+		
+			
+				<a class="tag tag-link" href="projects.html?web">Apache</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?web">RabbitMQ</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?web">SQL</a>
+			
+		
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>
+		Platforms&nbsp;&#x25BA;
+		
+			
+				<span class="tag">Ubuntu</span>
+			
+		
+			
+				<span class="tag">FreeBSD</span>
+			
+		
+			
+				<span class="tag">VirtualBox</span>
+			
+		
+			
+				<span class="tag">ESXi</span>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?util">FreeRadius</a>
+			
+		
+		</td>
+	</tr>
+
+	
+	
+	<tr class="highlight"><th colspan=2>Hardware</th></tr>
+	
+	<tr>
+		<td>
+		Board Design&nbsp;&#x25BA;
+		
+			
+				<a class="tag tag-link" href="projects.html?embedded">EagleCAD</a>
+			
+		
+			
+				<a class="tag tag-link" href="projects.html?embedded">Board&nbsp;Fabrication</a>
+			
+		
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>
+		Mechanical&nbsp;&#x25BA;
+		
+			
+				<span class="tag">Sketchup</span>
+			
+		
+			
+				<span class="tag">SolidWorks</span>
+			
+		
+			
+				<span class="tag">3D&nbsp;Printing</span>
+			
+		
+		</td>
+	</tr>
+
+	
+	
+	</table>
+</div>
+
+<div class="grid-item square-card" id="resume">
+	<a href="https://github.com/thetianshuhuang" target="_blank"><h1>Github</i></h1></a>
+	<img src="icon/github.png">
+</div>
+
+<div class="grid-item square-card" id="resume">
+	<a href="https://pypi.org/user/thetianshuhuang/" target="_blank"><h1>PyPI Page</i></h1></a>
+	<img src="icon/pypi.svg">
+</div>
+
+</div>
+
+<hr id="other">
+
+<div id="content-other" data-masonry='{ "itemSelector": ".other-item", "columnWidth": ".other-item", "gutter": 20, "isFitWidth": true }'>
+	<div class="other-item square-card" style="padding: 0px; position: absolute">
+		<a href="architecture.html"><h1>Architecture</h1></a>
+		<img src="renders/diagonal_house/top.jpg">
+	</div>
+
+	<div class="other-item square-card" style="padding: 0px; position: absolute">
+		<a href="photography.html"><h1>Photography</h1></a>
+		<img src="photos/sunset_yellow_patch.jpg">
+	</div>
+
+	<div class="other-item square-card" style="padding: 0px; position: absolute">
+		<a href="miscellaneous.html"><h1>Miscellaneous</h1></a>
+		<img src="misc/lc3b/lc3b_blue.svg">
 	</div>
 </div>
 

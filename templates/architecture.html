@@ -1,5 +1,33 @@
 {% extends base %}
 
+{% block style %}
+<style>
+.render-item {
+    margin-bottom: 10px;
+    width: var(--card-width);
+    box-shadow: var(--item-shadow);
+}
+.a-desc {
+    width: var(--card-width);
+    background: var(--light);
+}
+.a-desc h2 {
+    background: var(--highlight);
+    padding: 32px 16px 4px 16px;
+    margin: 0px;
+    color: var(--light);
+}
+.a-desc div {
+    padding: 4px 16px 32px 16px;
+    color: var(--dark);
+}
+.a-hr {
+    border-top: 1px solid var(--dark);
+    margin: 32px 15%;
+}
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="content">
 

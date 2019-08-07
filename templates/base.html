@@ -6,6 +6,29 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="style.css">
 
+<style>
+.button-navbar {
+	font-size: 20px;
+	padding: 20px;
+}
+@media screen and (max-width: 849px) {
+	.button-navbar {
+		font-size: 20px;
+		padding: 12px;
+	}
+}
+.header {
+	width: 100vw;
+	color: #fff;
+	background-color: var(--dark);
+    box-shadow: var(--header-shadow);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+</style>
+
 <head>
 {% block style %}
 {% endblock %}
@@ -13,15 +36,33 @@
 
 <body>
 
-<div class="header">
-	<a class="button-navbar" style='font-weight: 700;' href="index.html">Tianshu Huang</a>
+<div class="header div-no-mobile">
+	<a class="button button-navbar" style="font-weight: 600" href="index.html">Tianshu Huang</a>
 	{% for link, page in path %}
 	&#x25BA;
-	<a class="button-navbar" href="{{link}}">{{page}}</a>
+	<a class="button button-navbar" href="{{link}}">{{page}}</a>
 	{% endfor %}
 </div>
-<div style="width: 100%; height: 60px"></div>
+<div class="header div-only-mobile">
+	{% if path|length > 1 %}
+		&nbsp;
+		{% for link, page in path[-2:] %}
+		&#x25BA;
+		<a class="button button-navbar" href="{{link}}">{{page}}</a>
+		{% endfor %}
+	{% elif path|length == 1 %}
+		<a class="button button-navbar" style="font-weight: 600" href="index.html">TH</a>
+		&#x25BA;
+		<a class="button button-navbar" href="{{path[0][0]}}">{{path[0][1]}}</a>
+	{% else %}
+		<a class="button button-navbar" style="font-weight: 600" href="index.html">Tianshu Huang</a>
+	{% endif %}
+</div>
 
+{% block top %}
+<div class="div-only-mobile" style="width: 100%; height: 60px"></div>
+<div class="div-no-mobile" style="width: 100%; height: 70px"></div>
+{% endblock %}
 
 {% block content %}
 {% endblock %}
