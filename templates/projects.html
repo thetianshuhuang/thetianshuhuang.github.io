@@ -6,7 +6,7 @@
 <div class="intro">
 	<h1>Projects</h1>
 
-	A mix of class projects, personal projects, and paid projects. Click each tag to toggle visibility. Projects are displayed if any tags match.
+	A mix of class projects, personal projects, and paid projects. Click tag to toggle visibility; projects are displayed if any tags match.
 	<br><br>
 	Licenses Vary.
 </div>
@@ -66,7 +66,7 @@
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 <script>
-var disabledTags = new Set();
+var disabledTags = new Set()
 
 var msnry = new Masonry(
 	document.getElementById('project-grid'),
@@ -112,6 +112,14 @@ function toggleTagVisibility(category) {
 	// Redraw masonry
 	msnry.layout();
 }
+
+// Query -> hide all other tags
+if(window.location.search.length > 1) {
+	var allTags = new Set([{% for t in tag_list %}"{{t}}",{% endfor %}]);
+	allTags.delete(window.location.search.substring(1));
+	allTags.forEach(toggleTagVisibility);
+}
+
 </script>
 
 </div>

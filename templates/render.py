@@ -1,6 +1,7 @@
 from jinja2 import Template
 import pandas as pd
 import os
+import json
 
 
 def render(target, context=[], path=[], title=None, process_context=None):
@@ -64,27 +65,8 @@ def nan_to_null(x):
         return x
 
 
-TAGS = {
-    "Languages": {
-        "python": "Language:Python",
-        "c": "Language:C",
-        "javascript": "Language:JavaScript",
-    },
-    "Field": {
-        "embedded": "Embedded Systems",
-        "web": "Web",
-        "ds": "Data Science",
-        "arch": "Computer Architecture",
-    },
-    "Project Type": {
-        "st3": "Sublime Text 3 Plugin",
-        "util": "Utility",
-        "lib": "Library",
-        "class": "Class Project",
-        "pypi": "Python Package"
-    }
-}
-
+with open('definitions/tags.json') as f:
+    TAGS = json.loads(f.read())
 
 TAGS_ALL = {}
 for k, v in TAGS.items():
@@ -112,6 +94,10 @@ def tag_display_map(t):
     return disp.replace(" ", "&nbsp;")
 
 
+def get_primary_tag(tags):
+    return tag_class_map(tags.split(',')[0]).split('-')[1]
+
+
 def get_descriptions(ctx):
     return {
         "projects": [
@@ -122,6 +108,7 @@ def get_descriptions(ctx):
                 "tags": [
                     tag_display_map(t) for t in project["tag"].split(',')
                 ],
+                "primary_tag": get_primary_tag(project["tag"]),
                 "tag_names": ' '.join(
                     [tag_class_map(t) for t in project["tag"].split(',')]),
                 "link": project["link"],
@@ -129,6 +116,7 @@ def get_descriptions(ctx):
             } for _, project in ctx["projects"][::-1].iterrows()
         ],
         "available_tags": TAGS,
+        "tag_list": list(TAGS_ALL.keys()),
     }
 
 
@@ -175,3 +163,5 @@ if __name__ == '__main__':
         context=['projects'],
         path=[['projects.html', 'Projects']],
         process_context=get_descriptions)
+    render(
+        "index_tmp.html", title="Test", context=[], path=[])

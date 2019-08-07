@@ -1,0 +1,20 @@
+{
+    "Languages": {
+        "python": "Python",
+        "c": "C",
+        "javascript": "JavaScript"
+    },
+    "Field": {
+        "embedded": "Embedded Systems",
+        "web": "Web",
+        "ds": "Data Science",
+        "arch": "Computer Architecture"
+    },
+    "Project Type": {
+        "st3": "Sublime Text 3 Plugin",
+        "util": "Utility",
+        "lib": "Library",
+        "class": "Class Project",
+        "pypi": "Python Package"
+    }
+}
