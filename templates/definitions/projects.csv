@@ -14,4 +14,7 @@ Syllabus,,syllabus.png,"PyPI:syllabus,ds,python,lib",https://github.com/thetians
 Print!,,print.png,"PyPI:printtools,python,lib",https://github.com/thetianshuhuang/print,print.txt
 Pycalc,,pycalc.jpg,"util,python",https://github.com/thetianshuhuang/pycalc,pycalc.txt
 Ctrl-Shell,,explorer.jpg,"st3,python,util",https://github.com/thetianshuhuang/ctrl-shell,ctrl_shell.txt
-pyc3b: Python LC3b Assembler,,pyc3b.jpg,"arch,util,python",https://github.com/thetianshuhuang/pyc3b,pyc3b.txt
+pyc3b,,pyc3b.jpg,"arch,util,python,asm",https://github.com/thetianshuhuang/pyc3b,pyc3b.txt
+Decoding by LP,,decoding-lp.png,"ds,python",https://github.com/thetianshuhuang/decoding-lp,decoding-lp.txt
+BMCC,TAMU Statistics,bmcc.png,"ds,python,c,PyPI:bmcc,lib,r",https://github.com/thetianshuhuang/bmcc,bmcc.txt
+GPU GeoStat,TAMU Construction Science,gs-gpu.jpg,"ds,python,cuda,lib",https://github.com/thetianshuhuang/gs-gpu,gs-gpu.txt

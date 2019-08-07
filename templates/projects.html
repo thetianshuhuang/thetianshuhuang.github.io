@@ -12,7 +12,16 @@
 </div>
 
 <div class="filter-buttons">
-<h2>Filter</h2>
+<h2>
+	Filter
+</h2>
+
+<div>
+	Apply All &#x25BA;
+	<button class="button active" onclick="applyAll(true)" id="btn-all">All</button>
+	<button class="button" onclick="applyAll(false)" id="btn-none">None</button>
+</div>
+
 {% for name, tags in available_tags.items() %}
 <div>
 	<span>{{name}} &#x25BA;</span>
@@ -33,17 +42,11 @@
 	{% for project in projects %}
 	<div class="project-item {{project.tag_names}}">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				{% for tag in project.tags %}
-				<span>{{tag}}</span>
-				{% endfor %}
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			{% for tag in project.tags %}
+			<span>{{tag}}</span>
+			{% endfor %}
 		</div>
-
-		{% if project.icon %}
-		<img src="icon/{{project.icon}}">
-		{% endif %}
 
 		<div>
 			<h4 onclick='window.open("{{project.link}}", target="_blank")'>
@@ -58,6 +61,11 @@
 				{% endfor %}
     		</ul>
 		</div>
+
+		{% if project.icon %}
+		<img src="icon/{{project.icon}}">
+		{% endif %}
+
 	</div>
 	{% endfor %}
 
@@ -67,12 +75,13 @@
 
 <script>
 var disabledTags = new Set()
+var allTags = [{% for t in tag_list %}"{{t}}",{% endfor %}];
 
 var msnry = new Masonry(
 	document.getElementById('project-grid'),
 	{
 		"itemSelector": ".project-item",
-		"gutter": 10,
+		"gutter": 32,
 		"columnWidth": parseInt(
 			getComputedStyle(document.documentElement)
 			.getPropertyValue('--card-width')),
@@ -111,6 +120,27 @@ function toggleTagVisibility(category) {
 	}
 	// Redraw masonry
 	msnry.layout();
+
+	// Handle all/none button
+	var btn_all = document.getElementById("btn-all");
+	var btn_none = document.getElementById("btn-none");
+
+	if(disabledTags.size > 0) { btn_all.classList.remove('active'); }
+	else { btn_all.classList.add('active'); }
+
+	if(disabledTags.size < allTags.length) { btn_none.classList.remove('active'); }
+	else { btn_none.classList.add('active'); }
+}
+
+function applyAll(show) {
+	for(var i = 0; i < allTags.length; i++) {
+		if(!show && !disabledTags.has('tag-' + allTags[i])) {
+			toggleTagVisibility(allTags[i]);
+		}
+		if(show && disabledTags.has('tag-' + allTags[i])) {
+			toggleTagVisibility(allTags[i]);
+		}
+	}
 }
 
 // Query -> hide all other tags

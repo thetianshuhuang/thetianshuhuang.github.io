@@ -1,0 +1,4 @@
+Implementation of Markov Chain Monte Carlo Bayesian Clustering techniques
+Mixture models include DPM (Dirichlet Process Mixture Models; Neal, 2000) and MFM (Mixture of Finite Mixtures; Miller & Harrison, 2018))
+Abstract Mixture Model and Component Model API
+R and Python Package

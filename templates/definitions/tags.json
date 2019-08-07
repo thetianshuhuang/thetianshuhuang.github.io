@@ -2,12 +2,15 @@
     "Languages": {
         "python": "Python",
         "c": "C",
-        "javascript": "JavaScript"
+        "javascript": "JavaScript",
+        "asm": "Assembly",
+        "r": "R",
+        "cuda": "CUDA"
     },
     "Field": {
+        "ds": "Data Science",
         "embedded": "Embedded Systems",
         "web": "Web",
-        "ds": "Data Science",
         "arch": "Computer Architecture"
     },
     "Project Type": {

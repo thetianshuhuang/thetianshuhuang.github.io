@@ -1,0 +1,2 @@
+GPU implementation of IDW and other geostatistical interpolation techniques
+Integration with Folium to draw interactive interpolation maps

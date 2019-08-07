@@ -163,5 +163,4 @@ if __name__ == '__main__':
         context=['projects'],
         path=[['projects.html', 'Projects']],
         process_context=get_descriptions)
-    render(
-        "index.html", title="Tianshu Huang", context=[], path=[])
+    render("index.html", context=[], path=[])

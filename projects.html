@@ -30,7 +30,16 @@
 </div>
 
 <div class="filter-buttons">
-<h2>Filter</h2>
+<h2>
+	Filter
+</h2>
+
+<div>
+	Apply All &#x25BA;
+	<button class="button active" onclick="applyAll(true)" id="btn-all">All</button>
+	<button class="button" onclick="applyAll(false)" id="btn-none">None</button>
+</div>
+
 
 <div>
 	<span>Languages &#x25BA;</span>
@@ -47,10 +56,26 @@
 		JavaScript
 	</button>
 	
+	<button id='tag-btn-asm' class="button active" onclick="toggleTagVisibility('asm')">
+		Assembly
+	</button>
+	
+	<button id='tag-btn-r' class="button active" onclick="toggleTagVisibility('r')">
+		R
+	</button>
+	
+	<button id='tag-btn-cuda' class="button active" onclick="toggleTagVisibility('cuda')">
+		CUDA
+	</button>
+	
 </div>
 
 <div>
 	<span>Field &#x25BA;</span>
+	
+	<button id='tag-btn-ds' class="button active" onclick="toggleTagVisibility('ds')">
+		Data Science
+	</button>
 	
 	<button id='tag-btn-embedded' class="button active" onclick="toggleTagVisibility('embedded')">
 		Embedded Systems
@@ -58,10 +83,6 @@
 	
 	<button id='tag-btn-web' class="button active" onclick="toggleTagVisibility('web')">
 		Web
-	</button>
-	
-	<button id='tag-btn-ds' class="button active" onclick="toggleTagVisibility('ds')">
-		Data Science
 	</button>
 	
 	<button id='tag-btn-arch' class="button active" onclick="toggleTagVisibility('arch')">
@@ -103,27 +124,135 @@
 <div class="grid" id="project-grid">
 
 	
-	<div class="project-item tag-arch tag-util tag-python">
+	<div class="project-item tag-ds tag-python tag-cuda tag-lib">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Python</span>
+			
+			<span>CUDA</span>
+			
+			<span>Library</span>
+			
+		</div>
+
+		<div>
+			<h4 onclick='window.open("https://github.com/thetianshuhuang/gs-gpu", target="_blank")'>
+				GPU GeoStat
 				
-				<span>Computer&nbsp;Architecture</span>
+				<span class="organization">&#x25B8; TAMU Construction Science</span>
 				
-				<span>Utility</span>
+			</h4>
+			<ul>
 				
-				<span>Python</span>
+				<li>GPU implementation of IDW and other geostatistical interpolation techniques
+</li>
 				
-			</div>
+				<li>Integration with Folium to draw interactive interpolation maps</li>
+				
+    		</ul>
 		</div>
 
 		
-		<img src="icon/pyc3b.jpg">
+		<img src="icon/gs-gpu.jpg">
 		
+
+	</div>
+	
+	<div class="project-item tag-ds tag-python tag-c tag-pypi tag-lib tag-r">
+
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Python</span>
+			
+			<span>C</span>
+			
+			<span>PyPI:bmcc</span>
+			
+			<span>Library</span>
+			
+			<span>R</span>
+			
+		</div>
+
+		<div>
+			<h4 onclick='window.open("https://github.com/thetianshuhuang/bmcc", target="_blank")'>
+				BMCC
+				
+				<span class="organization">&#x25B8; TAMU Statistics</span>
+				
+			</h4>
+			<ul>
+				
+				<li>Implementation of Markov Chain Monte Carlo Bayesian Clustering techniques
+</li>
+				
+				<li>Mixture models include DPM (Dirichlet Process Mixture Models; Neal, 2000) and MFM (Mixture of Finite Mixtures; Miller & Harrison, 2018))
+</li>
+				
+				<li>Abstract Mixture Model and Component Model API
+</li>
+				
+				<li>R and Python Package</li>
+				
+    		</ul>
+		</div>
+
+		
+		<img src="icon/bmcc.png">
+		
+
+	</div>
+	
+	<div class="project-item tag-ds tag-python">
+
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Python</span>
+			
+		</div>
+
+		<div>
+			<h4 onclick='window.open("https://github.com/thetianshuhuang/decoding-lp", target="_blank")'>
+				Decoding by LP
+				
+			</h4>
+			<ul>
+				
+				<li>Implementation of "Decoding by Linear Programming" (E. J. Candes, T. Tao, 2004)</li>
+				
+    		</ul>
+		</div>
+
+		
+		<img src="icon/decoding-lp.png">
+		
+
+	</div>
+	
+	<div class="project-item tag-arch tag-util tag-python tag-asm">
+
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Computer&nbsp;Architecture</span>
+			
+			<span>Utility</span>
+			
+			<span>Python</span>
+			
+			<span>Assembly</span>
+			
+		</div>
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/pyc3b", target="_blank")'>
-				pyc3b: Python LC3b Assembler
+				pyc3b
 				
 			</h4>
 			<ul>
@@ -135,25 +264,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/pyc3b.jpg">
+		
+
 	</div>
 	
 	<div class="project-item tag-st3 tag-python tag-util">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Sublime&nbsp;Text&nbsp;3&nbsp;Plugin</span>
-				
-				<span>Python</span>
-				
-				<span>Utility</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Sublime&nbsp;Text&nbsp;3&nbsp;Plugin</span>
+			
+			<span>Python</span>
+			
+			<span>Utility</span>
+			
 		</div>
-
-		
-		<img src="icon/explorer.jpg">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/ctrl-shell", target="_blank")'>
@@ -169,23 +297,22 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/explorer.jpg">
+		
+
 	</div>
 	
 	<div class="project-item tag-util tag-python">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Utility</span>
-				
-				<span>Python</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Utility</span>
+			
+			<span>Python</span>
+			
 		</div>
-
-		
-		<img src="icon/pycalc.jpg">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/pycalc", target="_blank")'>
@@ -201,25 +328,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/pycalc.jpg">
+		
+
 	</div>
 	
 	<div class="project-item tag-pypi tag-python tag-lib">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>PyPI:printtools</span>
-				
-				<span>Python</span>
-				
-				<span>Library</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>PyPI:printtools</span>
+			
+			<span>Python</span>
+			
+			<span>Library</span>
+			
 		</div>
-
-		
-		<img src="icon/print.png">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/print", target="_blank")'>
@@ -235,27 +361,26 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/print.png">
+		
+
 	</div>
 	
 	<div class="project-item tag-pypi tag-ds tag-python tag-lib">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>PyPI:syllabus</span>
-				
-				<span>Data&nbsp;Science</span>
-				
-				<span>Python</span>
-				
-				<span>Library</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>PyPI:syllabus</span>
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Python</span>
+			
+			<span>Library</span>
+			
 		</div>
-
-		
-		<img src="icon/syllabus.png">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/syllabus", target="_blank")'>
@@ -274,25 +399,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/syllabus.png">
+		
+
 	</div>
 	
 	<div class="project-item tag-ds tag-class tag-python">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Data&nbsp;Science</span>
-				
-				<span>Class&nbsp;Project</span>
-				
-				<span>Python</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Class&nbsp;Project</span>
+			
+			<span>Python</span>
+			
 		</div>
-
-		
-		<img src="icon/rf.png">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/qw3rtman/rf", target="_blank")'>
@@ -310,25 +434,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/rf.png">
+		
+
 	</div>
 	
 	<div class="project-item tag-st3 tag-python tag-util">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Sublime&nbsp;Text&nbsp;3&nbsp;Plugin</span>
-				
-				<span>Python</span>
-				
-				<span>Utility</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Sublime&nbsp;Text&nbsp;3&nbsp;Plugin</span>
+			
+			<span>Python</span>
+			
+			<span>Utility</span>
+			
 		</div>
-
-		
-		<img src="icon/div.png">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/ascii-div", target="_blank")'>
@@ -344,25 +467,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/div.png">
+		
+
 	</div>
 	
 	<div class="project-item tag-ds tag-class tag-python">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Data&nbsp;Science</span>
-				
-				<span>Class&nbsp;Project</span>
-				
-				<span>Python</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Class&nbsp;Project</span>
+			
+			<span>Python</span>
+			
 		</div>
-
-		
-		<img src="icon/eigenface.png">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/eigenface", target="_blank")'>
@@ -380,25 +502,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/eigenface.png">
+		
+
 	</div>
 	
 	<div class="project-item tag-ds tag-python tag-lib">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Data&nbsp;Science</span>
-				
-				<span>Python</span>
-				
-				<span>Library</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Python</span>
+			
+			<span>Library</span>
+			
 		</div>
-
-		
-		<img src="icon/sample.jpg">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/sample", target="_blank")'>
@@ -413,21 +534,22 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/sample.jpg">
+		
+
 	</div>
 	
 	<div class="project-item tag-util tag-python">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Utility</span>
-				
-				<span>Python</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Utility</span>
+			
+			<span>Python</span>
+			
 		</div>
-
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/ssh-manage", target="_blank")'>
@@ -443,27 +565,24 @@
 				
     		</ul>
 		</div>
+
+		
+
 	</div>
 	
 	<div class="project-item tag-embedded tag-ds tag-python tag-c">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Embedded&nbsp;Systems</span>
-				
-				<span>Data&nbsp;Science</span>
-				
-				<span>Python</span>
-				
-				<span>C</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Embedded&nbsp;Systems</span>
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Python</span>
+			
+			<span>C</span>
+			
 		</div>
-
-		
-		<img src="icon/region-v.png">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/ut-ras/r5-2019", target="_blank")'>
@@ -481,25 +600,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/region-v.png">
+		
+
 	</div>
 	
 	<div class="project-item tag-web tag-python tag-util">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Web</span>
-				
-				<span>Python</span>
-				
-				<span>Utility</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Web</span>
+			
+			<span>Python</span>
+			
+			<span>Utility</span>
+			
 		</div>
-
-		
-		<img src="icon/radius.png">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/simple-radius", target="_blank")'>
@@ -515,27 +633,26 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/radius.png">
+		
+
 	</div>
 	
 	<div class="project-item tag-web tag-ds tag-python tag-javascript">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Web</span>
-				
-				<span>Data&nbsp;Science</span>
-				
-				<span>Python</span>
-				
-				<span>JavaScript</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Web</span>
+			
+			<span>Data&nbsp;Science</span>
+			
+			<span>Python</span>
+			
+			<span>JavaScript</span>
+			
 		</div>
-
-		
-		<img src="icon/sld_bc.jpg">
-		
 
 		<div>
 			<h4 onclick='window.open("https://sldlaser.com/", target="_blank")'>
@@ -553,25 +670,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/sld_bc.jpg">
+		
+
 	</div>
 	
 	<div class="project-item tag-embedded tag-class tag-c">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Embedded&nbsp;Systems</span>
-				
-				<span>Class&nbsp;Project</span>
-				
-				<span>C</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Embedded&nbsp;Systems</span>
+			
+			<span>Class&nbsp;Project</span>
+			
+			<span>C</span>
+			
 		</div>
-
-		
-		<img src="icon/rb.jpg">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/rock-band", target="_blank")'>
@@ -595,25 +711,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/rb.jpg">
+		
+
 	</div>
 	
 	<div class="project-item tag-st3 tag-python tag-util">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Sublime&nbsp;Text&nbsp;3&nbsp;Plugin</span>
-				
-				<span>Python</span>
-				
-				<span>Utility</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Sublime&nbsp;Text&nbsp;3&nbsp;Plugin</span>
+			
+			<span>Python</span>
+			
+			<span>Utility</span>
+			
 		</div>
-
-		
-		<img src="icon/explorer.jpg">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/file-explorer", target="_blank")'>
@@ -629,25 +744,24 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/explorer.jpg">
+		
+
 	</div>
 	
 	<div class="project-item tag-embedded tag-lib tag-python">
 
-		<div style="position: absolute; width: 100%;">
-			<div class="tags" style="position: absolute; top: 0px; right: 0px">
-				
-				<span>Embedded&nbsp;Systems</span>
-				
-				<span>Library</span>
-				
-				<span>Python</span>
-				
-			</div>
+		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
+			
+			<span>Embedded&nbsp;Systems</span>
+			
+			<span>Library</span>
+			
+			<span>Python</span>
+			
 		</div>
-
-		
-		<img src="icon/generic.png">
-		
 
 		<div>
 			<h4 onclick='window.open("https://github.com/thetianshuhuang/serial-vis", target="_blank")'>
@@ -663,6 +777,11 @@
 				
     		</ul>
 		</div>
+
+		
+		<img src="icon/generic.png">
+		
+
 	</div>
 	
 
@@ -672,12 +791,13 @@
 
 <script>
 var disabledTags = new Set()
+var allTags = ["python","c","javascript","asm","r","cuda","ds","embedded","web","arch","st3","util","lib","class","pypi",];
 
 var msnry = new Masonry(
 	document.getElementById('project-grid'),
 	{
 		"itemSelector": ".project-item",
-		"gutter": 10,
+		"gutter": 32,
 		"columnWidth": parseInt(
 			getComputedStyle(document.documentElement)
 			.getPropertyValue('--card-width')),
@@ -716,11 +836,32 @@ function toggleTagVisibility(category) {
 	}
 	// Redraw masonry
 	msnry.layout();
+
+	// Handle all/none button
+	var btn_all = document.getElementById("btn-all");
+	var btn_none = document.getElementById("btn-none");
+
+	if(disabledTags.size > 0) { btn_all.classList.remove('active'); }
+	else { btn_all.classList.add('active'); }
+
+	if(disabledTags.size < allTags.length) { btn_none.classList.remove('active'); }
+	else { btn_none.classList.add('active'); }
+}
+
+function applyAll(show) {
+	for(var i = 0; i < allTags.length; i++) {
+		if(!show && !disabledTags.has('tag-' + allTags[i])) {
+			toggleTagVisibility(allTags[i]);
+		}
+		if(show && disabledTags.has('tag-' + allTags[i])) {
+			toggleTagVisibility(allTags[i]);
+		}
+	}
 }
 
 // Query -> hide all other tags
 if(window.location.search.length > 1) {
-	var allTags = new Set(["python","c","javascript","embedded","web","ds","arch","st3","util","lib","class","pypi",]);
+	var allTags = new Set(["python","c","javascript","asm","r","cuda","ds","embedded","web","arch","st3","util","lib","class","pypi",]);
 	allTags.delete(window.location.search.substring(1));
 	allTags.forEach(toggleTagVisibility);
 }
