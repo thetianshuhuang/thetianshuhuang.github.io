@@ -146,6 +146,7 @@ body {
 .tags span, .tag, .tag-desc, .tag-title {
 	display: inline;
 	width: fit-content;
+	white-space: nowrap;
 }
 .tags span, .tag, .tag-desc {
 	background: var(--light-tl);
@@ -171,11 +172,6 @@ body {
 	background: var(--highlight-tl);
 	font-weight: 700;
 	color: var(--light);
-	border-width: 1px 0 1px 1px;
-
-}
-.tag-desc {
-	border-width: 1px 1px 1px 0;
 }
 .tag-link {
 	text-decoration: none;
