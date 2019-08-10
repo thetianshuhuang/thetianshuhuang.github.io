@@ -47,14 +47,24 @@
 </div>
 
 
-<div class="div-only-mobile" style="width: 100%; height: 60px"></div>
-<div class="div-no-mobile" style="width: 100%; height: 70px"></div>
-
-
-
 <style>
+.resume-card {
+	padding: 32px 20px;
+}
+.resume-card>div {
+	padding: 8px;
+}
+.resume-card h1 {
+	text-align: center;
+}
+.resume-card table {
+	width: 100%;
+}
+.resume-card table tr td:nth-child(2) {
+	text-align: right;
+	font-weight: normal;
+}
 #content, #content-other {
-	width: 90vw;
 	margin: auto;
 }
 #content>div, #content-other>div {
@@ -65,67 +75,28 @@
 	box-shadow: var(--item-shadow);
 	margin-bottom: 20px;
 }
-#skills h1 {
-	text-align: center;
-}
-#skills table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	display: table
-}
-#skills table th, #skills table td {
-	padding: 8px 8px;
-	display: table-cell;
-	text-align: left;
-	vertical-align: top;
-}
-
-#about>div {
-	text-align: center;
-}
-#about>div>img {
-	width: 60%;
-	border-radius: 50%;
-}
-#about>div>div {
-	text-align: left;
-	padding: 20px;
-}
-#about>div>h1 {
-	background-color: var(--highlight);
-	color: var(--light);
-	width: 100%;
-	margin: 32px 0px;
-}
-#links {
-	padding: 32px 0px;
-}
-#skills, #education, #work-experience {
-	padding: 32px 20px;
-}
-#other {
-    border-top: 1px solid var(--dark);
-    margin: 32px 15%;
-}
-#work-experience>div, #work-experience>div>div {
-	padding: 10px;
-}
 </style>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-<div style="width: 100%; height: 60px"></div>
+<!--
+<div class="intro-card">
+<div class="content">
+<div class="intro">
+</div>
+</div>
+</div>
+-->
 
-<div style="width: 90vw; max-width: 1500px; margin: auto">
+<div class="content-limited" style="margin-top: 100px">
 
 <div id="content" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-item", "gutter": 20, "isFitWidth": true }'>
 
 <div class="grid-item" id="about">
-	<div>
-		<h1>Tianshu Huang</h1>
-		<img src="icon/hs.jpg">
-		<div>
+	<div style="text-align: center">
+		<h1 style="background-color: var(--highlight); color: var(--light); width: 100%; margin: 32px 0px; padding: 8px">Tianshu Huang</h1>
+		<img src="icon/hs.jpg" style="width: 60%; border-radius: 50%">
+		<div style="text-align: left; padding: 20px">
 			<p>I'm an ECE student at UT Austin interested in Data Science and Embedded Systems. Specifically, I'm interested in using data science techniques (especially machine learning) to engage in real time decision making.</p>
 			<p>I'm currently working with Prof. Bani Mallick, Anirban Bhattacharya, and Depdeep Pati at Texas A&M University on Bayesian Clustering using various MCMC-based methods; we hope to have a review paper out some time this year.</p>
 			<p>You can contact me at <a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a>.</p>
@@ -133,7 +104,7 @@
 	</div>
 </div>
 
-<div class="grid-item" id="links">
+<div class="grid-item" id="links" style="padding: 64px 0px">
 	<div>
 		<a href="#resume" class="button-menu">Resume</a>
 		<a href="#education" class="button-menu">Education</a>
@@ -171,114 +142,124 @@
 	<img src="icon/resume.png">
 </div>
 
-<div class="grid-item" id="education">
-	<div class="w3-center">
-		<h1>Education</h1>
+<div class="grid-item resume-card" id="education">
+	<h1>Education</h1>
 
-		<table class="w3-table">
-			<tr class="highlight">
-				<td>University of Texas at Austin
-					<br><i>GPA: 3.96</i></td>
-				<td>Aug 2017 - Present</td>
-			</tr>
-			<tr>
-				<td colspan=2>
-					Courses:
-					<ul>
-						<li>Theory of Probability (Graduate)</li>
-						<li>Geometric Foundations of Data Science (Graduate)</li>
-						<li>Real Analysis I, II</li>
-						<li>Introduction to Embedded Systems</li>
-						<li>Computer Architecture</li>
-						<li>Digital Logic Design</li>
-						<li>Algorithms</li>
-						<li>Linear Signals</li>
-					</ul>
-					Registered Fall 2019:
-					<ul>
-						<li>Probability and Stochastic Processes I (Graduate)</li>
-						<li>Operating Systems</li>
-						<li>Automatic Control</li>
-					</ul>
-				</td>
-			</tr>
-			<tr class="highlight">
-				<td>Texas A&M University
-					<br><i>GPA: 4.0</i></td>
-				<td>May 2016 - Aug 2017</td>
-			</tr>
-			<tr>
-				<td colspan=2><i>Concurrent enrollment while attending high school</i></td>
-			</tr>
-		</table>
+	<div class="highlight">
+		<table><tr>
+			<td>University of Texas at Austin</td>
+			<td>Aug 2017 - Present</td>
+		</tr></table>
 	</div>
-</div>
-
-<div class="grid-item" id="work-experience">
 	<div>
-		<h1 style="text-align: center">Work Experience</h1>
+		GPA: 3.96<br>
+		Courses:
+		<ul>
+			<li>Theory of Probability (Graduate)</li>
+			<li>Geometric Foundations of Data Science (Graduate)</li>
+			<li>Real Analysis I, II</li>
+			<li>Introduction to Embedded Systems</li>
+			<li>Computer Architecture</li>
+			<li>Digital Logic Design</li>
+			<li>Algorithms</li>
+			<li>Linear Signals</li>
+		</ul>
+		Registered Fall 2019:
+		<ul>
+			<li>Probability and Stochastic Processes I (Graduate)</li>
+			<li>Operating Systems</li>
+			<li>Automatic Control</li>
+		</ul>
+	</div>
 
-		
-			<div class="highlight">Research Intern</div>
-			<div>
-				<div>
-					<span class="tag">June 2019 - Present</span>
-					
-					<span class="tag">Texas A&M University</span>
-					
-					<span class="tag">Statistics</span>
-					
-				</div>
-				Research Area: Bayesian Clustering
-			</div>
-		
-			<div class="highlight">Research Intern</div>
-			<div>
-				<div>
-					<span class="tag">June 2019 - Present</span>
-					
-					<span class="tag">Texas A&M University</span>
-					
-					<span class="tag">Construction Science</span>
-					
-				</div>
-				Research Area: Exploratory data analysis on bid data
-			</div>
-		
-			<div class="highlight">Test Analysis Systems Consultant</div>
-			<div>
-				<div>
-					<span class="tag">Aug 2018 - Present</span>
-					
-					<span class="tag">SLD Laser</span>
-					
-				</div>
-				Maintain web app built previously
-			</div>
-		
-			<div class="highlight">Full Stack Developer Intern</div>
-			<div>
-				<div>
-					<span class="tag">June 2018 - Aug 2018</span>
-					
-					<span class="tag">SLD Laser</span>
-					
-				</div>
-				Built full-stack web app to visualize and analyze laser test data
-			</div>
-		
+	<div class="highlight">
+		<table><tr>
+			<td>Texas A&M University</td>
+			<td>May 2016 - Aug 2017</td>
+		</tr></table>
+	</div>
+	<div>
+		GPA: 3.96<br>
+		<span style="font-style: italic">
+			Concurrent enrollment while attending high school
+		</span><br>
+		Courses:
+		<ul>
+			<li>Discrete Math</li>
+			<li>Linear Algebra</li>
+		</ul>
 	</div>
 </div>
 
-<div class="grid-item" id="skills">
+<div class="grid-item resume-card" id="work-experience">
+	<h1>Work Experience</h1>
+
+	
+	<div class="highlight">
+		<table><tr>
+			<td>Research Intern</td>
+			<td>June 2019 - Present</td>
+		</tr></table>
+	</div>
+	<div>
+		
+		<span class="tag">Texas A&M University</span>
+		
+		<span class="tag">Statistics</span>
+		
+	</div>
+	<div>Research Area: Bayesian Clustering</div>
+	
+	<div class="highlight">
+		<table><tr>
+			<td>Research Intern</td>
+			<td>June 2019 - Present</td>
+		</tr></table>
+	</div>
+	<div>
+		
+		<span class="tag">Texas A&M University</span>
+		
+		<span class="tag">Construction Science</span>
+		
+	</div>
+	<div>Research Area: Exploratory data analysis on bid data</div>
+	
+	<div class="highlight">
+		<table><tr>
+			<td>Test Analysis Systems Consultant</td>
+			<td>Aug 2018 - Present</td>
+		</tr></table>
+	</div>
+	<div>
+		
+		<span class="tag">SLD Laser</span>
+		
+	</div>
+	<div>Maintain web app built previously</div>
+	
+	<div class="highlight">
+		<table><tr>
+			<td>Full Stack Developer Intern</td>
+			<td>June 2018 - Aug 2018</td>
+		</tr></table>
+	</div>
+	<div>
+		
+		<span class="tag">SLD Laser</span>
+		
+	</div>
+	<div>Built full-stack web app to visualize and analyze laser test data</div>
+	
+</div>
+
+<div class="grid-item resume-card" id="skills">
 	<h1>Skills</h1>
 
-	<table>
 	
-	<tr class="highlight"><th colspan=2>Languages</th></tr>
+	<div class="highlight">Languages</div>
 	
-	<tr>
-		<td>
+	<div>
 		Scripting&nbsp;&#x25BA;
 		
 			
@@ -293,12 +274,10 @@
 				<a class="tag tag-link" href="projects.html?javascript">JavaScript</a>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
-	<tr>
-		<td>
+	<div>
 		Compiled&nbsp;&#x25BA;
 		
 			
@@ -321,12 +300,10 @@
 				<span class="tag">Java</span>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
-	<tr>
-		<td>
+	<div>
 		Other&nbsp;&#x25BA;
 		
 			
@@ -337,15 +314,13 @@
 				<span class="tag">Verilog</span>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
 	
-	<tr class="highlight"><th colspan=2>Libraries and Frameworks</th></tr>
+	<div class="highlight">Libraries and Frameworks</div>
 	
-	<tr>
-		<td>
+	<div>
 		Web&nbsp;&#x25BA;
 		
 			
@@ -364,12 +339,10 @@
 				<a class="tag tag-link" href="projects.html?web">Node.js</a>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
-	<tr>
-		<td>
+	<div>
 		Data Science&nbsp;&#x25BA;
 		
 			
@@ -388,15 +361,13 @@
 				<a class="tag tag-link" href="projects.html?ds">SciKit-Learn</a>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
 	
-	<tr class="highlight"><th colspan=2>Platforms</th></tr>
+	<div class="highlight">Platforms</div>
 	
-	<tr>
-		<td>
+	<div>
 		Web&nbsp;&#x25BA;
 		
 			
@@ -411,12 +382,10 @@
 				<a class="tag tag-link" href="projects.html?web">SQL</a>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
-	<tr>
-		<td>
+	<div>
 		Platforms&nbsp;&#x25BA;
 		
 			
@@ -439,15 +408,13 @@
 				<a class="tag tag-link" href="projects.html?util">FreeRadius</a>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
 	
-	<tr class="highlight"><th colspan=2>Hardware</th></tr>
+	<div class="highlight">Hardware</div>
 	
-	<tr>
-		<td>
+	<div>
 		Board Design&nbsp;&#x25BA;
 		
 			
@@ -458,12 +425,10 @@
 				<a class="tag tag-link" href="projects.html?embedded">Board&nbsp;Fabrication</a>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
-	<tr>
-		<td>
+	<div>
 		Mechanical&nbsp;&#x25BA;
 		
 			
@@ -478,27 +443,25 @@
 				<span class="tag">3D&nbsp;Printing</span>
 			
 		
-		</td>
-	</tr>
+	</div>
 
 	
 	
-	</table>
 </div>
 
 <div class="grid-item square-card" id="resume">
-	<a href="https://github.com/thetianshuhuang" target="_blank"><h1>Github</i></h1></a>
+	<a href="https://github.com/thetianshuhuang" target="_blank"><h1>Github</h1></a>
 	<img src="icon/github.png">
 </div>
 
 <div class="grid-item square-card" id="resume">
-	<a href="https://pypi.org/user/thetianshuhuang/" target="_blank"><h1>PyPI Page</i></h1></a>
+	<a href="https://pypi.org/user/thetianshuhuang/" target="_blank"><h1>PyPI Page</h1></a>
 	<img src="icon/pypi.svg">
 </div>
 
 </div>
 
-<hr id="other">
+<hr id="other" style="border-top: 1px solid var(--dark); margin: 32px 10%">
 
 <div id="content-other" data-masonry='{ "itemSelector": ".other-item", "columnWidth": ".other-item", "gutter": 20, "isFitWidth": true }'>
 	<div class="other-item square-card" style="padding: 0px; position: absolute">
@@ -524,7 +487,7 @@
 <div id="links-ref" style="position: absolute; visibility: hidden; height: auto; width: auto; white-space: nowrap; font-size: 12px;">
     &#x25c0;&#xfe0e; Tianshu Huang &copy; 2018 | GitHub | LinkedIn | Resources &#x25c0;&#xfe0e;
 </div>
-<div id="links" style="position: fixed; right: 20px; bottom: 20px; width: 10px; height: 20px; overflow-x: hidden; overflow-y: hidden; transition: 0.3s; z-index: 10; font-size: 12px;"
+<div id="links" style="position: fixed; right: 20px; bottom: 20px; width: 10px; height: 15px; overflow-x: hidden; overflow-y: hidden; transition: 0.3s; z-index: 10; font-size: 12px;"
     onmouseover="this.style.width =(document.getElementById('links-ref').clientWidth + 1) + 'px';"
     onmouseout="this.style.width = '10px';">
     &#x25c0;&#xfe0e;

@@ -4,12 +4,9 @@
 {% endblock %}
 
 {% block content %}
-<div style="width: 100%; box-shadow: var(--header-shadow); margin-bottom: 32px; background-color: var(--light)">
+<div class="intro-card">
 <div class="content">
 <div class="intro">
-
-	<div class="div-only-mobile" style="width: 100%; height: 60px"></div>
-	<div class="div-no-mobile" style="width: 100%; height: 70px"></div>
 
 	<h1>Photos</h1>
 
@@ -33,11 +30,11 @@
 		<div class="photo-item">
 			<a href="photos/{{img.file}}" target="_blank"></a>
 			<img src="photos/{{img.file}}" class="photo">
-			<div style="top: 4px; left: 4px; position: absolute">
+			<div style="top: 8px; left: 4px; position: absolute; line-height: 2">
 				<span class="tag-title">{{img.title}}</span>
 				<span class="tag-desc">{{img.location}}</span>
 			</div>
-			<div style="bottom: 4px; right: 4px; position: absolute" class="tags">
+			<div style="bottom: 8px; right: 4px; position: absolute" class="tags">
 				<span>{{img.width}} x {{img.height}}</span>
 				<span>f/{{img.fstop}}</span>
 				<span>{{img.exposure}}s</span>

@@ -29,8 +29,8 @@
 {% endblock %}
 
 {% block content %}
+<div class="intro-card">
 <div class="content">
-
 <div class="intro">
     <h1>Architecture</h1>
 
@@ -42,9 +42,12 @@
     <img class="cc" src="icon/by.large.png">
     <img class="cc" src="icon/nc.large.png">
 </div>
+</div>
+</div>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
+<div class="content">
 {% for proj in projects %}
 <div class="grid" data-masonry='{ "itemSelector": ".render-item", "gutter": 10, "columnWidth": ".render-item", "isFitWidth": true }'>
    <div class="a-desc render-item">

@@ -25,7 +25,7 @@
 	height: 150px;
 	object-fit: cover;
 }
-.pano a, .photo-item a {
+.pano a {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0);
@@ -51,12 +51,8 @@
 {% endblock %}
 
 {% block content %}
-<div style="width: 100%; box-shadow: var(--header-shadow); margin-bottom: 32px; background-color: var(--light)">
+<div class="intro-card">
 <div class="content">
-
-<div class="div-only-mobile" style="width: 100%; height: 60px"></div>
-<div class="div-no-mobile" style="width: 100%; height: 70px"></div>
-
 <div class="intro">
 
 	<h1>Panoramas</h1>
@@ -84,6 +80,7 @@
 </div>
 </div>
 
+
 <div class="content">
 
 <table class="pano">
@@ -92,7 +89,7 @@
 		<td>
 			<a href="photos/{{pano.file}}" target='_blank'></a>
 			<img src="photos/{{pano.file}}">
-			<div style="top: 4px; left: 4px">
+			<div style="top: 4px; left: 4px; line-height: 2">
 				<span class="tag-title">{{pano.title}}</span>
 				<span class="tag-desc">{{pano.location}}</span>
 			</div>
