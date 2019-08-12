@@ -1,7 +1,5 @@
 {% extends base %}
 
-{% block top %}
-{% endblock %}
 
 {% block content %}
 <div class="intro-card">
@@ -25,11 +23,11 @@
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-<div class="grid" data-masonry='{ "itemSelector": ".photo-item", "columnWidth": ".photo-item", "gutter": 10, "isFitWidth": true }'>
+<div class="grid" data-masonry='{ "itemSelector": ".brick", "columnWidth": ".brick", "gutter": 10, "isFitWidth": true }'>
 	{% for k, img in photos.iterrows() %}
-		<div class="photo-item">
+		<div class="brick">
 			<a href="photos/{{img.file}}" target="_blank"></a>
-			<img src="photos/{{img.file}}" class="photo">
+			<img src="photos/{{img.file}}">
 			<div style="top: 8px; left: 4px; position: absolute; line-height: 2">
 				<span class="tag-title">{{img.title}}</span>
 				<span class="tag-desc">{{img.location}}</span>

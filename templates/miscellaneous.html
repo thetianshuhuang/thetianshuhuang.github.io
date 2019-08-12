@@ -1,41 +1,65 @@
 {% extends base %}
 
 {% block content %}
+<div class="intro-card">
 <div class="content">
-<h1 style="font-size: 50px">Miscellaneous Projects & Ideas</h1>
-
-<div style="width: 40%; padding-bottom: 32px">
-Miscellaneous other projects and ideas that haven't made it into projects that I think are worth sharing.
+<div class="intro">
+    <h1 style="font-size: 50px">Miscellaneous Projects & Ideas</h1>
+    Miscellaneous other projects and ideas that haven't made it into projects that I think are worth sharing.
+</div>
+</div>
 </div>
 
-<table class="w3-table">
-    <tr>
-        <td class="a-desc"><h2>Poster | LC-3b Microarchitecture</h2>
-            A gate-level (where possible, at least) depiction of the LC-3b microarchitecture, as used by Yale Patt's Computer Architecture class (EE 460N) at UT Austin. The various diagrams specifying the datapath and microarchitecture are compiled into one massive poster, and monolithic data path components (Register File, ALU, etc) are elaborated into specific gate-level implementations. This project was mostly an excuse to properly learn how to use Adobe Illustrator.
-        </td>
-        <td>
-            <a href="misc/lc3b/lc3b_blue.svg"><img class="poster" src="misc/lc3b/lc3b_blue_150ppi.png"></a>
-            <a href="misc/lc3b/lc3b_bw.svg"><img class="poster" src="misc/lc3b/lc3b_bw_150ppi.png"></a>
-        </td>
-    </tr>
-    <tr>
-        <td class="a-desc">
-            <h2>Transcriptions | <span style="font-style: italic">for solo piano</span> </h2>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
+<div class="content">
+<div class="grid" data-masonry='{ "itemSelector": ".brick", "gutter": 10, "columnWidth": ".brick", "isFitWidth": true }'>
+    <div class="brick card-desc">
+        <h2>LC-3b Microarchitecture <span style="font-style: italic">Poster</span></h2>
+        <div>
+            A gate-level (where possible, at least) depiction of the LC-3b microarchitecture, as used by Yale Patt's Computer Architecture class (EE 460N) at UT Austin.
+            <br><br>
+            The various diagrams specifying the datapath and microarchitecture are compiled into one massive poster, and monolithic data path components (Register File, ALU, etc) are elaborated into specific gate-level implementations.
+            <br><br>
+            This project was mostly an excuse to properly learn how to use Adobe Illustrator.
+        </div>
+    </div>
+
+    <div class="brick">
+        <a href="misc/lc3b/lc3b_blue.svg"></a>
+        <img class="poster" src="misc/lc3b/lc3b_blue.svg">
+    </div>
+
+    <div class="brick">
+        <a href="misc/lc3b/lc3b_bw.svg"></a>
+        <img class="poster" src="misc/lc3b/lc3b_bw.svg">
+    </div>
+</div>
+
+<hr>
+
+<div class="grid" data-masonry='{ "itemSelector": ".brick", "gutter": 10, "columnWidth": ".brick", "isFitWidth": true }'>
+    <div class="brick card-desc">
+        <h2>Transcriptions <span style="font-style: italic">for solo piano</span> </h2>
+
+        <div>
             <h3>Vulfpeck - Fugue State</h3>
             A transcription of Vulfpeck's fugue state. With a minimal composition and arrangement, it isn't too difficult to transcribe Vulfpeck's works for solo piano with a high degree of accuracy.
-
             <h3>Wintergatan - Sommarf&aring;gel</h3>
             Another transcription, similarly focused on groove over accuracy.
+        </div>
+    </div>
 
-        </td>
-        <td>
-            <a href="https://musescore.com/user/4567701/scores/5401526"><img class="poster" src="misc/fs_cover.png"></a>
-            <a href="https://musescore.com/user/4567701/scores/5579123"><img class="poster" src="misc/sf_cover.png"></a>
-        </td>
-    </tr>
+    <div class="brick">
+        <a href="https://musescore.com/user/4567701/scores/5401526"></a>
+        <img class="poster" src="misc/fs_cover.png">
+    </div>
 
-</table>
+    <div class="brick">
+        <a href="https://musescore.com/user/4567701/scores/5579123"></a>
+        <img class="poster" src="misc/sf_cover.png">
+    </div>
+</div>
 
 </div>
 {% endblock %}

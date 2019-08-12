@@ -46,6 +46,11 @@ h5{font-size:18px}
 h6{font-size:16px}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
 
+hr {
+	border-top: 1px solid var(--dark);
+	margin: 20px 10%;
+}
+
 
 /*
  * Mobile Management
@@ -71,6 +76,46 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 	}
 }
 
+/*
+ * Masonry
+ */
+.brick {
+	width: var(--card-width);
+	margin-bottom: 10px;
+	box-shadow: var(--item-shadow);
+}
+.brick>a:hover {
+	background-color: var(--highlight-tl);
+}
+.brick>a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*
+ * Description Card
+ */
+.card-desc {
+	background: var(--light);
+}
+.card-desc>h2 {
+	background: var(--highlight);
+	padding: 32px 16px 4px 16px;
+	margin: 0px;
+	color: var(--light);
+}
+.card-desc>div {
+	padding: 4px 16px 32px 16px;
+	color: var(--dark);
+}
+
+/*
+ * highlight
+ */
 .highlight {
 	background: var(--highlight);
 	color: var(--light);
@@ -78,71 +123,12 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 	padding: 8px;
 }
 
-.img-icon {
-	width: 25%;
-	display: inline-block;
-}
-.desc {
-	width: 70%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 0px 8px;
-}
-.hide {
-	display: none;
-}
-
-.photo, .photo-item {
-	width: var(--card-width);
-}
-.photo-item {
-	margin-bottom: 10px;
-    box-shadow: var(--item-shadow);
-}
-.photo-item a:hover {
-	background-color: var(--highlight-tl);
-}
-
-.poster {
-	width: 18vw;
-	min-width: 300px;
-	padding: 8px;
-}
-.poster:hover {
-	background-color: var(--highlight);
-}
-.photo-large {
-	width: 36vw;
-	min-width: 600px;
-}
-
+/*
+ * CC Logo
+ */
 .cc {
 	height: 3vh;
 	width: 3vh;
-}
-
-/*
- * Square card
- */
-.square-card>a {
-	color: var(--light);
-	text-align: center;
-	vertical-align: middle;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-}
-.square-card>a>h1 {
-	background-color: var(--highlight);
-	margin: 32px 0px;
-	position: absolute;
-	width: 100%;
-}
-.square-card>a:hover {
-	background-color: var(--highlight-tl);
 }
 
 /*

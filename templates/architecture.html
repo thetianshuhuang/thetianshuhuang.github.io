@@ -1,32 +1,5 @@
 {% extends base %}
 
-{% block style %}
-<style>
-.render-item {
-    margin-bottom: 10px;
-    width: var(--card-width);
-    box-shadow: var(--item-shadow);
-}
-.a-desc {
-    width: var(--card-width);
-    background: var(--light);
-}
-.a-desc h2 {
-    background: var(--highlight);
-    padding: 32px 16px 4px 16px;
-    margin: 0px;
-    color: var(--light);
-}
-.a-desc div {
-    padding: 4px 16px 32px 16px;
-    color: var(--dark);
-}
-.a-hr {
-    border-top: 1px solid var(--dark);
-    margin: 32px 15%;
-}
-</style>
-{% endblock %}
 
 {% block content %}
 <div class="intro-card">
@@ -49,18 +22,18 @@
 
 <div class="content">
 {% for proj in projects %}
-<div class="grid" data-masonry='{ "itemSelector": ".render-item", "gutter": 10, "columnWidth": ".render-item", "isFitWidth": true }'>
-   <div class="a-desc render-item">
+<div class="grid" data-masonry='{ "itemSelector": ".brick", "gutter": 10, "columnWidth": ".brick", "isFitWidth": true }'>
+    <div class="card-desc brick">
         <h2>{{proj.name}} ({{proj.date}})</h2>
         <div>{{proj.desc}}</div>
     </div>
 
     {% for img in proj.images %}
-    <div class="render-item"><img class="photo" src="renders/{{proj.folder}}/{{img}}"></div>
+    <div class="brick"><img src="renders/{{proj.folder}}/{{img}}"></div>
     {% endfor %}
 </div>
 
-<hr class="a-hr">
+<hr>
 
 {% endfor %}
 
