@@ -6,6 +6,21 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="style.css">
 
+<script>
+var theme = 'light';
+
+function setTheme() {
+	document.documentElement.setAttribute('data-theme', theme);
+}
+
+function toggleTheme() {
+	if(theme == 'dark') { theme = 'light'; }
+	else { theme = 'dark'; }
+	setTheme();
+}
+
+</script>
+
 <style>
 .button-navbar {
 	font-size: 20px;
@@ -19,9 +34,8 @@
 }
 .header {
 	width: 100vw;
-	color: #fff;
-	background-color: var(--dark);
-    box-shadow: var(--header-shadow);
+	color: var(--header-text);
+	background-color: var(--header);
     position: fixed;
     left: 0;
     top: 0;
@@ -37,12 +51,12 @@
 <body>
 
 <div class="header div-no-mobile">
-	<a class="button button-navbar" style="font-weight: 600" href="index.html">Tianshu Huang</a>
+	<a class="button button-navbar" style="font-weight: var(--semi-bold)" href="index.html">Tianshu Huang</a>
 	
 </div>
 <div class="header div-only-mobile">
 	
-		<a class="button button-navbar" style="font-weight: 600" href="index.html">Tianshu Huang</a>
+		<a class="button button-navbar" style="font-weight: var(--semi-bold)" href="index.html">Tianshu Huang</a>
 	
 </div>
 
@@ -50,7 +64,7 @@
 <style>
 .square-card>a>h1 {
 	text-align: center;
-	color: var(--light);
+	color: var(--heading-text);
 	background-color: var(--highlight);
 	margin: 32px 0px;
 	position: absolute;
@@ -70,7 +84,7 @@
 }
 .resume-card table tr td:nth-child(2) {
 	text-align: right;
-	font-weight: normal;
+	font-weight: var(--normal);
 }
 </style>
 
@@ -83,7 +97,7 @@
 
 <div class="brick-large" id="about">
 	<div style="text-align: center">
-		<h1 style="background-color: var(--highlight); color: var(--light); width: 100%; margin: 32px 0px; padding: 8px">Tianshu Huang</h1>
+		<h1 style="background-color: var(--highlight); color: var(--heading-text); width: 100%; margin: 32px 0px; padding: 8px">Tianshu Huang</h1>
 		<img src="icon/hs.jpg" style="width: 60%; border-radius: 50%">
 		<div style="text-align: left; padding: 20px">
 			<p>I'm an ECE student at UT Austin interested in Data Science and Embedded Systems. Specifically, I'm interested in using data science techniques (especially machine learning) to engage in real time decision making.</p>
@@ -473,6 +487,7 @@
 
 
 
+<div class="div-no-mobile">
 <div id="links-ref" style="position: absolute; visibility: hidden; height: auto; width: auto; white-space: nowrap; font-size: 12px;">
     &#x25c0;&#xfe0e; Tianshu Huang &copy; 2018 | GitHub | LinkedIn | Resources &#x25c0;&#xfe0e;
 </div>
@@ -480,11 +495,12 @@
     onmouseover="this.style.width =(document.getElementById('links-ref').clientWidth + 1) + 'px';"
     onmouseout="this.style.width = '10px';">
     &#x25c0;&#xfe0e;
-    Tianshu Huang &copy; 2018 |
+    Tianshu Huang &copy; 2019 |
 	<a href="https://github.com/thetianshuhuang" target="_blank">GitHub</a> |
 	<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank">LinkedIn</a> |
-	<a href="resources/index.html" target="_blank">Resources</a>
+	<a href="resources.html" target="_blank">Resources</a>
     &#x25c0;&#xfe0e;
+</div>
 </div>
 
 </body>

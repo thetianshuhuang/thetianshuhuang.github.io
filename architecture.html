@@ -6,6 +6,21 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="style.css">
 
+<script>
+var theme = 'light';
+
+function setTheme() {
+	document.documentElement.setAttribute('data-theme', theme);
+}
+
+function toggleTheme() {
+	if(theme == 'dark') { theme = 'light'; }
+	else { theme = 'dark'; }
+	setTheme();
+}
+
+</script>
+
 <style>
 .button-navbar {
 	font-size: 20px;
@@ -19,9 +34,8 @@
 }
 .header {
 	width: 100vw;
-	color: #fff;
-	background-color: var(--dark);
-    box-shadow: var(--header-shadow);
+	color: var(--header-text);
+	background-color: var(--header);
     position: fixed;
     left: 0;
     top: 0;
@@ -37,7 +51,7 @@
 <body>
 
 <div class="header div-no-mobile">
-	<a class="button button-navbar" style="font-weight: 600" href="index.html">Tianshu Huang</a>
+	<a class="button button-navbar" style="font-weight: var(--semi-bold)" href="index.html">Tianshu Huang</a>
 	
 	&#x25BA;
 	<a class="button button-navbar" href="architecture.html">Architecture</a>
@@ -45,7 +59,7 @@
 </div>
 <div class="header div-only-mobile">
 	
-		<a class="button button-navbar" style="font-weight: 600" href="index.html">TH</a>
+		<a class="button button-navbar" style="font-weight: var(--semi-bold)" href="index.html">TH</a>
 		&#x25BA;
 		<a class="button button-navbar" href="architecture.html">Architecture</a>
 	
@@ -262,6 +276,7 @@ Around the center courtyard, on one side, intersecting diagonal supports and dow
 </div>
 
 
+<div class="div-no-mobile">
 <div id="links-ref" style="position: absolute; visibility: hidden; height: auto; width: auto; white-space: nowrap; font-size: 12px;">
     &#x25c0;&#xfe0e; Tianshu Huang &copy; 2018 | GitHub | LinkedIn | Resources &#x25c0;&#xfe0e;
 </div>
@@ -269,11 +284,12 @@ Around the center courtyard, on one side, intersecting diagonal supports and dow
     onmouseover="this.style.width =(document.getElementById('links-ref').clientWidth + 1) + 'px';"
     onmouseout="this.style.width = '10px';">
     &#x25c0;&#xfe0e;
-    Tianshu Huang &copy; 2018 |
+    Tianshu Huang &copy; 2019 |
 	<a href="https://github.com/thetianshuhuang" target="_blank">GitHub</a> |
 	<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank">LinkedIn</a> |
-	<a href="resources/index.html" target="_blank">Resources</a>
+	<a href="resources.html" target="_blank">Resources</a>
     &#x25c0;&#xfe0e;
+</div>
 </div>
 
 </body>
