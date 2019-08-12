@@ -2,9 +2,7 @@
 
 
 {% block content %}
-<div class="intro-card">
-<div class="content">
-<div class="intro">
+<div class="content-intro"><div><div>
     <h1>Architecture</h1>
 
     Architecture is a hobby of mine that emerged from thinking and planning about playing minecraft instead of actually doing anything in-game. I use Sketchup and V-Ray for rendering.
@@ -14,15 +12,13 @@
     <img class="cc" src="icon/cc.large.png">
     <img class="cc" src="icon/by.large.png">
     <img class="cc" src="icon/nc.large.png">
-</div>
-</div>
-</div>
+</div></div></div>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 <div class="content">
 {% for proj in projects %}
-<div class="grid" data-masonry='{ "itemSelector": ".brick", "gutter": 10, "columnWidth": ".brick", "isFitWidth": true }'>
+<div data-masonry='{ "itemSelector": ".brick", "gutter": 20, "columnWidth": ".brick", "isFitWidth": true }'>
     <div class="card-desc brick">
         <h2>{{proj.name}} ({{proj.date}})</h2>
         <div>{{proj.desc}}</div>

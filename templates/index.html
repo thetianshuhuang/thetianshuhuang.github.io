@@ -2,25 +2,13 @@
 
 {% block content %}
 <style>
-.square-card>a {
-	color: var(--light);
-	text-align: center;
-	vertical-align: middle;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-}
 .square-card>a>h1 {
+	text-align: center;
+	color: var(--light);
 	background-color: var(--highlight);
 	margin: 32px 0px;
 	position: absolute;
 	width: 100%;
-}
-.square-card>a:hover {
-	background-color: var(--highlight-tl);
 }
 .resume-card {
 	padding: 32px 20px;
@@ -38,35 +26,16 @@
 	text-align: right;
 	font-weight: normal;
 }
-#content, #content-other {
-	margin: auto;
-}
-#content>div, #content-other>div {
-	width: 90vw;
-	max-width: 500px;
-	background: white;
-	color: black;
-	box-shadow: var(--item-shadow);
-	margin-bottom: 20px;
-}
 </style>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-<!--
-<div class="intro-card">
-<div class="content">
-<div class="intro">
-</div>
-</div>
-</div>
--->
 
-<div class="content-limited" style="margin-top: 100px">
+<div class="container-limited" style="margin-top: 100px">
 
-<div id="content" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-item", "gutter": 20, "isFitWidth": true }'>
+<div class="content-masonry" data-masonry='{ "itemSelector": ".brick-large", "columnWidth": ".brick-large", "gutter": 32, "isFitWidth": true }'>
 
-<div class="grid-item" id="about">
+<div class="brick-large" id="about">
 	<div style="text-align: center">
 		<h1 style="background-color: var(--highlight); color: var(--light); width: 100%; margin: 32px 0px; padding: 8px">Tianshu Huang</h1>
 		<img src="icon/hs.jpg" style="width: 60%; border-radius: 50%">
@@ -78,7 +47,7 @@
 	</div>
 </div>
 
-<div class="grid-item" id="links" style="padding: 64px 0px">
+<div class="brick-large" id="links" style="padding: 64px 0px">
 	<div>
 		<a href="#resume" class="button-menu">Resume</a>
 		<a href="#education" class="button-menu">Education</a>
@@ -91,32 +60,32 @@
 	</div>
 </div>
 
-<div class="grid-item square-card">
+<div class="brick-large square-card">
 	<a href="projects.html?ds"><h1>Data Science</h1></a>
 	<img src="icon/gs-gpu.jpg">
 </div>
 
-<div class="grid-item square-card">
+<div class="brick-large square-card">
 	<a href="projects.html?embedded"><h1>Embedded Systems</h1></a>
 	<img src="icon/rb.jpg">
 </div>
 
-<div class="grid-item square-card">
+<div class="brick-large square-card">
 	<a href="projects.html?lib"><h1>Libraries</h1></a>
 	<img src="icon/syllabus.png">
 </div>
 
-<div class="grid-item square-card">
+<div class="brick-large square-card">
 	<a href="projects.html?util"><h1>Utilities</h1></a>
 	<img src="icon/explorer.jpg">
 </div>
 
-<div class="grid-item square-card" id="resume">
+<div class="brick-large square-card" id="resume">
 	<a href="resources/tianshu-huang-resume.pdf"><h1>PDF Resume</h1></a>
 	<img src="icon/resume.png">
 </div>
 
-<div class="grid-item resume-card" id="education">
+<div class="brick-large resume-card" id="education">
 	<h1>Education</h1>
 
 	<div class="highlight">
@@ -165,7 +134,7 @@
 	</div>
 </div>
 
-<div class="grid-item resume-card" id="work-experience">
+<div class="brick-large resume-card" id="work-experience">
 	<h1>Work Experience</h1>
 
 	{% for job in work_experience %}
@@ -184,7 +153,7 @@
 	{% endfor %}
 </div>
 
-<div class="grid-item resume-card" id="skills">
+<div class="brick-large resume-card" id="skills">
 	<h1>Skills</h1>
 
 	{% for category in skills %}
@@ -205,32 +174,32 @@
 	{% endfor %}
 </div>
 
-<div class="grid-item square-card" id="resume">
+<div class="brick-large square-card" id="resume">
 	<a href="https://github.com/thetianshuhuang" target="_blank"><h1>Github</h1></a>
 	<img src="icon/github.png">
 </div>
 
-<div class="grid-item square-card" id="resume">
+<div class="brick-large square-card" id="resume">
 	<a href="https://pypi.org/user/thetianshuhuang/" target="_blank"><h1>PyPI Page</h1></a>
 	<img src="icon/pypi.svg">
 </div>
 
 </div>
 
-<hr id="other" style="border-top: 1px solid var(--dark); margin: 32px 10%">
+<hr>
 
-<div id="content-other" data-masonry='{ "itemSelector": ".other-item", "columnWidth": ".other-item", "gutter": 20, "isFitWidth": true }'>
-	<div class="other-item square-card" style="padding: 0px; position: absolute">
+<div class="content-masonry" data-masonry='{ "itemSelector": ".brick-large", "columnWidth": ".brick-large", "gutter": 32, "isFitWidth": true }'>
+	<div class="brick-large square-card" style="padding: 0px; position: absolute">
 		<a href="architecture.html"><h1>Architecture</h1></a>
 		<img src="renders/diagonal_house/top.jpg">
 	</div>
 
-	<div class="other-item square-card" style="padding: 0px; position: absolute">
+	<div class="brick-large square-card" style="padding: 0px; position: absolute">
 		<a href="photography.html"><h1>Photography</h1></a>
 		<img src="photos/sunset_yellow_patch.jpg">
 	</div>
 
-	<div class="other-item square-card" style="padding: 0px; position: absolute">
+	<div class="brick-large square-card" style="padding: 0px; position: absolute">
 		<a href="miscellaneous.html"><h1>Miscellaneous</h1></a>
 		<img src="misc/lc3b/lc3b_blue.svg">
 	</div>

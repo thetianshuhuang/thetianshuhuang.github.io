@@ -32,25 +32,9 @@
 <head>
 
 <style>
-.project-item {
-	border: none;
-	display: inline-block;
-	vertical-align: middle;
-	overflow: hidden;
-    text-align: left;
-	white-space: normal;
-	background: var(--light);
-	box-shadow: var(--item-shadow);
-	width: var(--card-width);
-	position: absolute;
-	margin-bottom: 32px;
-}
 .project-item h4:hover {
 	color: var(--light);
 	background-color: var(--dark);
-}
-.project-item img {
-	width: 100%;
 }
 .project-item h4 {
 	background-color: var(--highlight);
@@ -66,6 +50,9 @@
 .organization {
 	font-size: 12px;
 	font-weight: 700;
+}
+.filter-buttons {
+	padding-top: 32px;
 }
 .filter-buttons button.active {
 	background-color: var(--dark);
@@ -99,14 +86,9 @@ div.inactive {
 </div>
 
 
-<div style="width: 100%; box-shadow: var(--header-shadow); padding-bottom: 32px; background-color: var(--light)">
-<div class="content">
+<div class="content-intro"><div>
 
-<div class="intro">
-
-	<div class="div-only-mobile" style="width: 100%; height: 60px"></div>
-	<div class="div-no-mobile" style="width: 100%; height: 70px"></div>
-
+<div>
 	<h1>Projects</h1>
 
 	A mix of class projects, personal projects, and paid projects. Click tag to toggle visibility; projects are displayed if any tags match.
@@ -114,106 +96,101 @@ div.inactive {
 	Licenses Vary.
 </div>
 
-<div class="filter-buttons">
-<h2>
-	Filter
-</h2>
+<div class="filter-buttons" style="display: block">
+	<h2>
+		Filter
+	</h2>
 
-<div>
-	Apply All &#x25BA;
-	<button class="button active" onclick="applyAll(true)" id="btn-all">All</button>
-	<button class="button" onclick="applyAll(false)" id="btn-none">None</button>
+	<div>
+		Apply All &#x25BA;
+		<button class="button active" onclick="applyAll(true)" id="btn-all">All</button>
+		<button class="button" onclick="applyAll(false)" id="btn-none">None</button>
+	</div>
+
+	
+	<div>
+		<span>Languages &#x25BA;</span>
+		
+		<button id='tag-btn-python' class="button active" onclick="toggleTagVisibility('python')">
+			Python
+		</button>
+		
+		<button id='tag-btn-c' class="button active" onclick="toggleTagVisibility('c')">
+			C/C++
+		</button>
+		
+		<button id='tag-btn-javascript' class="button active" onclick="toggleTagVisibility('javascript')">
+			JavaScript
+		</button>
+		
+		<button id='tag-btn-asm' class="button active" onclick="toggleTagVisibility('asm')">
+			Assembly
+		</button>
+		
+		<button id='tag-btn-r' class="button active" onclick="toggleTagVisibility('r')">
+			R
+		</button>
+		
+		<button id='tag-btn-cuda' class="button active" onclick="toggleTagVisibility('cuda')">
+			CUDA
+		</button>
+		
+	</div>
+	
+	<div>
+		<span>Field &#x25BA;</span>
+		
+		<button id='tag-btn-ds' class="button active" onclick="toggleTagVisibility('ds')">
+			Data Science
+		</button>
+		
+		<button id='tag-btn-embedded' class="button active" onclick="toggleTagVisibility('embedded')">
+			Embedded Systems
+		</button>
+		
+		<button id='tag-btn-web' class="button active" onclick="toggleTagVisibility('web')">
+			Web
+		</button>
+		
+		<button id='tag-btn-arch' class="button active" onclick="toggleTagVisibility('arch')">
+			Computer Architecture
+		</button>
+		
+	</div>
+	
+	<div>
+		<span>Project Type &#x25BA;</span>
+		
+		<button id='tag-btn-st3' class="button active" onclick="toggleTagVisibility('st3')">
+			Sublime Text 3 Plugin
+		</button>
+		
+		<button id='tag-btn-util' class="button active" onclick="toggleTagVisibility('util')">
+			Utility
+		</button>
+		
+		<button id='tag-btn-lib' class="button active" onclick="toggleTagVisibility('lib')">
+			Library
+		</button>
+		
+		<button id='tag-btn-class' class="button active" onclick="toggleTagVisibility('class')">
+			Class Project
+		</button>
+		
+		<button id='tag-btn-pypi' class="button active" onclick="toggleTagVisibility('pypi')">
+			Python Package
+		</button>
+		
+	</div>
+	
 </div>
 
+</div></div>
 
-<div>
-	<span>Languages &#x25BA;</span>
-	
-	<button id='tag-btn-python' class="button active" onclick="toggleTagVisibility('python')">
-		Python
-	</button>
-	
-	<button id='tag-btn-c' class="button active" onclick="toggleTagVisibility('c')">
-		C/C++
-	</button>
-	
-	<button id='tag-btn-javascript' class="button active" onclick="toggleTagVisibility('javascript')">
-		JavaScript
-	</button>
-	
-	<button id='tag-btn-asm' class="button active" onclick="toggleTagVisibility('asm')">
-		Assembly
-	</button>
-	
-	<button id='tag-btn-r' class="button active" onclick="toggleTagVisibility('r')">
-		R
-	</button>
-	
-	<button id='tag-btn-cuda' class="button active" onclick="toggleTagVisibility('cuda')">
-		CUDA
-	</button>
-	
-</div>
-
-<div>
-	<span>Field &#x25BA;</span>
-	
-	<button id='tag-btn-ds' class="button active" onclick="toggleTagVisibility('ds')">
-		Data Science
-	</button>
-	
-	<button id='tag-btn-embedded' class="button active" onclick="toggleTagVisibility('embedded')">
-		Embedded Systems
-	</button>
-	
-	<button id='tag-btn-web' class="button active" onclick="toggleTagVisibility('web')">
-		Web
-	</button>
-	
-	<button id='tag-btn-arch' class="button active" onclick="toggleTagVisibility('arch')">
-		Computer Architecture
-	</button>
-	
-</div>
-
-<div>
-	<span>Project Type &#x25BA;</span>
-	
-	<button id='tag-btn-st3' class="button active" onclick="toggleTagVisibility('st3')">
-		Sublime Text 3 Plugin
-	</button>
-	
-	<button id='tag-btn-util' class="button active" onclick="toggleTagVisibility('util')">
-		Utility
-	</button>
-	
-	<button id='tag-btn-lib' class="button active" onclick="toggleTagVisibility('lib')">
-		Library
-	</button>
-	
-	<button id='tag-btn-class' class="button active" onclick="toggleTagVisibility('class')">
-		Class Project
-	</button>
-	
-	<button id='tag-btn-pypi' class="button active" onclick="toggleTagVisibility('pypi')">
-		Python Package
-	</button>
-	
-</div>
-
-</div>
-
-</div>
-</div>
-
-<div class="content">
-
-<div style="width: 100%; padding: 32px;"></div>
-
-<div class="grid" id="project-grid">
+<div class="content"><div class="grid" id="project-grid">
 
 	
-	<div class="project-item tag-ds tag-python tag-cuda tag-lib">
+	<div class="project-item brick tag-ds tag-python tag-cuda tag-lib">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -250,7 +227,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-ds tag-python tag-c tag-pypi tag-lib tag-r">
+	<div class="project-item brick tag-ds tag-python tag-c tag-pypi tag-lib tag-r">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -297,7 +274,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-ds tag-python">
+	<div class="project-item brick tag-ds tag-python">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -325,7 +302,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-arch tag-util tag-python tag-asm">
+	<div class="project-item brick tag-arch tag-util tag-python tag-asm">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -360,7 +337,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-st3 tag-python tag-util">
+	<div class="project-item brick tag-st3 tag-python tag-util">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -393,7 +370,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-util tag-python">
+	<div class="project-item brick tag-util tag-python">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -424,7 +401,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-pypi tag-python tag-lib">
+	<div class="project-item brick tag-pypi tag-python tag-lib">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -457,7 +434,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-pypi tag-ds tag-python tag-lib">
+	<div class="project-item brick tag-pypi tag-ds tag-python tag-lib">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -495,7 +472,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-ds tag-class tag-python">
+	<div class="project-item brick tag-ds tag-class tag-python">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -530,7 +507,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-st3 tag-python tag-util">
+	<div class="project-item brick tag-st3 tag-python tag-util">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -563,7 +540,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-ds tag-class tag-python">
+	<div class="project-item brick tag-ds tag-class tag-python">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -598,7 +575,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-ds tag-python tag-lib">
+	<div class="project-item brick tag-ds tag-python tag-lib">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -630,7 +607,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-util tag-python">
+	<div class="project-item brick tag-util tag-python">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -659,7 +636,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-embedded tag-ds tag-python tag-c">
+	<div class="project-item brick tag-embedded tag-ds tag-python tag-c">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -696,7 +673,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-web tag-python tag-util">
+	<div class="project-item brick tag-web tag-python tag-util">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -729,7 +706,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-web tag-ds tag-python tag-javascript">
+	<div class="project-item brick tag-web tag-ds tag-python tag-javascript">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -766,7 +743,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-embedded tag-class tag-c">
+	<div class="project-item brick tag-embedded tag-class tag-c">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -807,7 +784,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-st3 tag-python tag-util">
+	<div class="project-item brick tag-st3 tag-python tag-util">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -840,7 +817,7 @@ div.inactive {
 
 	</div>
 	
-	<div class="project-item tag-embedded tag-lib tag-python">
+	<div class="project-item brick tag-embedded tag-lib tag-python">
 
 		<div class="tags" style="position: absolute; bottom: 4px; right: 4px">
 			
@@ -874,10 +851,9 @@ div.inactive {
 	</div>
 	
 
-</div>
+</div></div>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
 <script>
 var disabledTags = new Set()
 var allTags = ["python","c","javascript","asm","r","cuda","ds","embedded","web","arch","st3","util","lib","class","pypi",];
@@ -886,7 +862,7 @@ var msnry = new Masonry(
 	document.getElementById('project-grid'),
 	{
 		"itemSelector": ".project-item",
-		"gutter": 32,
+		"gutter": 20,
 		"columnWidth": parseInt(
 			getComputedStyle(document.documentElement)
 			.getPropertyValue('--card-width')),
@@ -957,7 +933,6 @@ if(window.location.search.length > 1) {
 
 </script>
 
-</div>
 
 
 <div id="links-ref" style="position: absolute; visibility: hidden; height: auto; width: auto; white-space: nowrap; font-size: 12px;">

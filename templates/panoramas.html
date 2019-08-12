@@ -2,40 +2,10 @@
 
 {% block style %}
 <style>
-.pano {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	display: table;
-}
-.pano tr {
-	box-shadow: var(--item-shadow);
-}
-.pano td {
-	padding: 0px;
-	vertical-align: top;
-	position: relative;
-	background-color: rgba(0, 0, 0, 0);
-}
-.pano td div {
-	position: absolute;
-}
-.pano td img {
+.pano img {
 	width: 100%;
 	height: 150px;
 	object-fit: cover;
-}
-.pano a {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0);
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.pano a:hover {
-	background-color: var(--highlight-tl);
 }
 .patch-table {
 	width: 300px;
@@ -51,10 +21,9 @@
 {% endblock %}
 
 {% block content %}
-<div class="intro-card">
-<div class="content">
-<div class="intro">
+<div class="content-intro"><div>
 
+<div style="vertical-align: top">
 	<h1>Panoramas</h1>
 
 	I enjoy creating ludicrously large panoramas by taking many pictures and assembling them in Photoshop. For the largest panoramas, I use a 70-300mm lens, and take each image at maximum zoom. Using this technique, I've been able to take panoramas up to 56,000 pixels wide with file sizes over 600MB.
@@ -67,44 +36,42 @@
 	<img class="cc" src="icon/by.large.png">
 	<img class="cc" src="icon/nc.large.png">
 </div>
-<table class="patch-table">
-	<tr>
-		<td><img src="photos/sunset_yellow_patch.jpg"></td>
-		<td><img class="patch" src="photos/far_ridge_noon_patch.jpg"></td>
-	</tr>
-	<tr>
-		<td><img src="photos/marsh_4_patch.jpg"></td>
-		<td><img src="photos/sunrise_3_patch.jpg"></td>
-	</tr>
-</table>
+
+<div>
+	<table class="patch-table">
+		<tr>
+			<td><img src="photos/sunset_yellow_patch.jpg"></td>
+			<td><img class="patch" src="photos/far_ridge_noon_patch.jpg"></td>
+		</tr>
+		<tr>
+			<td><img src="photos/marsh_4_patch.jpg"></td>
+			<td><img src="photos/sunrise_3_patch.jpg"></td>
+		</tr>
+	</table>
 </div>
-</div>
+
+</div></div>
 
 
 <div class="content">
 
-<table class="pano">
 {% for k, pano in panoramas.iterrows() %}
-	<tr>
-		<td>
-			<a href="photos/{{pano.file}}" target='_blank'></a>
-			<img src="photos/{{pano.file}}">
-			<div style="top: 4px; left: 4px; line-height: 2">
-				<span class="tag-title">{{pano.title}}</span>
-				<span class="tag-desc">{{pano.location}}</span>
-			</div>
-			<div style="bottom: 4px; right: 4px" class="tags">
-				<span>{{pano.width}} x {{pano.height}}</span>
-				<span>f/{{pano.fstop}}</span>
-				<span>{{pano.exposure}}s</span>
-				<span>ISO-{{pano.iso}}</span>
-				<span>{{pano.focal}}mm</span>
-			</div>
-		</td>
-	</tr>
-	<tr style="height: 15px; box-shadow: none"></tr>
+<div class="brick-wide pano">
+	<a href="photos/{{pano.file}}" target='_blank'></a>
+	<img src="photos/{{pano.file}}">
+	<div style="position: absolute; top: 4px; left: 4px; line-height: 2">
+		<span class="tag-title">{{pano.title}}</span>
+		<span class="tag-desc">{{pano.location}}</span>
+	</div>
+	<div style="position: absolute; bottom: 4px; right: 4px" class="tags">
+		<span>{{pano.width}} x {{pano.height}}</span>
+		<span>f/{{pano.fstop}}</span>
+		<span>{{pano.exposure}}s</span>
+		<span>ISO-{{pano.iso}}</span>
+		<span>{{pano.focal}}mm</span>
+	</div>
+</div>
 {% endfor %}
-</table>
 
 </div>
 {% endblock %}

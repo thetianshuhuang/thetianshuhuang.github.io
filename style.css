@@ -77,17 +77,74 @@ hr {
 }
 
 /*
+ * Content Box
+ */
+.content {
+	margin: auto;
+	width: var(--width);
+}
+.container-limited {
+	margin: auto;
+	width: var(--width);
+	max-width: 1200px;
+}
+
+.content-intro {
+	width: 100vw;
+	padding-top: 80px;
+	padding-bottom: 32px;
+	margin-bottom: 32px;
+	background-color: var(--light);
+	box-shadow: var(--header-shadow);
+}
+.content-intro h1 {
+	font-size: 50px;
+}
+@media screen and (max-width: 849px) {
+	.content-intro {
+		padding-top: 60px;
+	}
+}
+.content-intro>div {
+	width: var(--width);
+	margin: auto;
+}
+.content-intro>div>div {
+	max-width: calc(2 * var(--card-width));
+	display: inline-block;
+}
+
+.content-masonry {
+	margin: auto;
+}
+
+
+/*
  * Masonry
  */
 .brick {
 	width: var(--card-width);
-	margin-bottom: 10px;
-	box-shadow: var(--item-shadow);
+	margin-bottom: 20px;
 }
-.brick>a:hover {
+.brick-large {
+	width: var(--width);
+	max-width: 500px;
+	margin-bottom: 32px;
+}
+.brick-wide {
+	width: var(--width);
+	margin-bottom: 20px;
+}
+
+.brick, .brick-large, .brick-wide {
+	box-shadow: var(--item-shadow);
+	background: var(--light);
+	position: relative;
+}
+.brick>a:hover, .brick-large>a:hover, .brick-wide>a:hover {
 	background-color: var(--highlight-tl);
 }
-.brick>a {
+.brick>a, .brick-large>a, .brick-wide>a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -134,6 +191,9 @@ hr {
 /*
  * Tags
  */
+.tags {
+	line-height: 2;
+}
 .tags span, .tag, .tag-desc, .tag-title {
 	display: inline;
 	width: fit-content;
@@ -170,41 +230,6 @@ hr {
 .tag-link:hover {
 	background: var(--highlight);
 	color: var(--light);
-}
-
-/*
- * Page Introduction
- */
-.intro {
-	max-width: calc(var(--card-width) * 2);
-	padding-top: 32px;
-	padding-bottom: 32px;
-	display: inline-block;
-	vertical-align: top;
-}
-.intro h1 {
-	font-size: 50px;
-}
-.intro-card {
-	width: 100%;
-	box-shadow: var(--header-shadow);
-	background-color: var(--light);
-	margin-bottom: 32px;
-	padding-top: 64px;
-}
-@media screen and (min-width: 849px) {
-	.intro-card {
-		padding-top: 64px;
-	}
-}
-.content {
-	margin: auto;
-	width: var(--width);
-}
-.content-limited {
-	margin: auto;
-	width: var(--width);
-	max-width: 1200px;
 }
 
 /*

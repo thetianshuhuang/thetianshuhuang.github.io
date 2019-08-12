@@ -1,11 +1,9 @@
 {% extends base %}
 
-
 {% block content %}
-<div class="intro-card">
-<div class="content">
-<div class="intro">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
+<div class="content-intro"><div><div>
 	<h1>Photos</h1>
 
 	I also take more traditionally sized photos. I particularly enjoy trying to capture the "glowing" effect created by a strong light source behind a partially translucent object (such as leaves and other vegetation at sunrise or sunset), as well as playing around with interesting lighting conditions.
@@ -15,34 +13,25 @@
 	<img class="cc" src="icon/cc.large.png">
 	<img class="cc" src="icon/by.large.png">
 	<img class="cc" src="icon/nc.large.png">
-</div>
-</div>
-</div>
+</div></div></div>
 
-<div class="content">
-
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-<div class="grid" data-masonry='{ "itemSelector": ".brick", "columnWidth": ".brick", "gutter": 10, "isFitWidth": true }'>
+<div class="content"><div class="grid" data-masonry='{ "itemSelector": ".brick", "columnWidth": ".brick", "gutter": 20, "isFitWidth": true }'>
 	{% for k, img in photos.iterrows() %}
-		<div class="brick">
-			<a href="photos/{{img.file}}" target="_blank"></a>
-			<img src="photos/{{img.file}}">
-			<div style="top: 8px; left: 4px; position: absolute; line-height: 2">
-				<span class="tag-title">{{img.title}}</span>
-				<span class="tag-desc">{{img.location}}</span>
-			</div>
-			<div style="bottom: 8px; right: 4px; position: absolute" class="tags">
-				<span>{{img.width}} x {{img.height}}</span>
-				<span>f/{{img.fstop}}</span>
-				<span>{{img.exposure}}s</span>
-				<span>ISO-{{img.iso}}</span>
-				<span>{{img.focal}}mm</span>
-			</div>
+	<div class="brick">
+		<a href="photos/{{img.file}}" target="_blank"></a>
+		<img src="photos/{{img.file}}">
+		<div style="top: 8px; left: 4px; position: absolute; line-height: 2">
+			<span class="tag-title">{{img.title}}</span>
+			<span class="tag-desc">{{img.location}}</span>
 		</div>
+		<div style="bottom: 8px; right: 4px; position: absolute" class="tags">
+			<span>{{img.width}} x {{img.height}}</span>
+			<span>f/{{img.fstop}}</span>
+			<span>{{img.exposure}}s</span>
+			<span>ISO-{{img.iso}}</span>
+			<span>{{img.focal}}mm</span>
+		</div>
+	</div>
 	{% endfor %}
-</div>
-
-
-</div>
+</div></div>
 {% endblock %}
