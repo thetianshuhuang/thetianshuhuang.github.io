@@ -88,12 +88,9 @@ function toggleTheme() {
 }
 </style>
 
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-
 <div class="container-limited" style="margin-top: 100px">
 
-<div class="content-masonry" data-masonry='{ "itemSelector": ".brick-large", "columnWidth": ".brick-large", "gutter": 32, "isFitWidth": true }'>
+<div class="content-masonry" id="main-grid">
 
 <div class="brick-large" id="about">
 	<div style="text-align: center">
@@ -484,6 +481,20 @@ function toggleTheme() {
 </div>
 
 </div>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+var msnry = new Masonry(
+	document.getElementById('main-grid'),
+	{
+		"itemSelector": ".brick-large",
+		"gutter": 32,
+		"columnWidth": ".brick-large",
+		"isFitWidth": true
+	});
+function reload() { msnry.layout(); }
+window.addEventListener('load', reload);
+</script>
 
 
 

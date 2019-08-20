@@ -1,7 +1,6 @@
 {% extends base %}
 
 {% block content %}
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 <div class="content-intro"><div><div>
 	<h1>Photos</h1>
@@ -15,7 +14,7 @@
 	<img class="cc" src="icon/nc.large.png">
 </div></div></div>
 
-<div class="content"><div class="grid" data-masonry='{ "itemSelector": ".brick", "columnWidth": ".brick", "gutter": 20, "isFitWidth": true }'>
+<div class="content"><div id='photo-grid' class="grid">
 	{% for k, img in photos.iterrows() %}
 	<div class="brick">
 		<a href="photos/{{img.file}}" target="_blank"></a>
@@ -34,4 +33,19 @@
 	</div>
 	{% endfor %}
 </div></div>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+var msnry = new Masonry(
+	document.getElementById('photo-grid'),
+	{
+		"itemSelector": ".brick",
+		"gutter": 20,
+		"columnWidth": ".brick",
+		"isFitWidth": true
+	});
+function reload() { msnry.layout(); }
+window.addEventListener('load', reload);
+</script>
+
 {% endblock %}

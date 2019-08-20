@@ -74,7 +74,6 @@ function toggleTheme() {
 </div>
 
 
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 <div class="content-intro"><div><div>
 	<h1>Photos</h1>
@@ -88,7 +87,7 @@ function toggleTheme() {
 	<img class="cc" src="icon/nc.large.png">
 </div></div></div>
 
-<div class="content"><div class="grid" data-masonry='{ "itemSelector": ".brick", "columnWidth": ".brick", "gutter": 20, "isFitWidth": true }'>
+<div class="content"><div id='photo-grid' class="grid">
 	
 	<div class="brick">
 		<a href="photos/8-3_MC_0595_mount_chapin_slopes.jpg" target="_blank"></a>
@@ -267,6 +266,21 @@ function toggleTheme() {
 	</div>
 	
 </div></div>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+var msnry = new Masonry(
+	document.getElementById('photo-grid'),
+	{
+		"itemSelector": ".brick",
+		"gutter": 20,
+		"columnWidth": ".brick",
+		"isFitWidth": true
+	});
+function reload() { msnry.layout(); }
+window.addEventListener('load', reload);
+</script>
+
 
 
 <div class="div-no-mobile">

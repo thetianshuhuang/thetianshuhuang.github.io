@@ -869,9 +869,7 @@ div.inactive {
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-var disabledTags = new Set()
-var allTags = ["python","c","javascript","asm","r","cuda","ds","embedded","web","arch","st3","util","lib","class","pypi",];
-
+// Make masonry
 var msnry = new Masonry(
 	document.getElementById('project-grid'),
 	{
@@ -881,8 +879,15 @@ var msnry = new Masonry(
 			getComputedStyle(document.documentElement)
 			.getPropertyValue('--card-width')),
 		"isFitWidth": true
-	}
-);
+	});
+
+// Setup layout() onload
+function reload() { msnry.layout(); }
+window.addEventListener('load', reload);
+
+// Tags
+var disabledTags = new Set()
+var allTags = ["python","c","javascript","asm","r","cuda","ds","embedded","web","arch","st3","util","lib","class","pypi",];
 
 function isDisabled(project) {
 	for(var i = 0; i < project.classList.length; i++) {
