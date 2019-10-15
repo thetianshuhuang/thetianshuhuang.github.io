@@ -461,7 +461,7 @@ function toggleTheme() {
 
 <hr>
 
-<div id="other" class="content-masonry" data-masonry='{ "itemSelector": ".brick-large", "columnWidth": ".brick-large", "gutter": 32, "isFitWidth": true }'>
+<div id="other-grid" class="content-masonry">
 	<div class="brick-large square-card" style="padding: 0px; position: absolute">
 		<a href="architecture.html"><h1>Architecture</h1></a>
 		<img src="renders/diagonal_house/top.jpg">
@@ -482,15 +482,17 @@ function toggleTheme() {
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-var msnry = new Masonry(
-	document.getElementById('main-grid'),
-	{
-		"itemSelector": ".brick-large",
-		"gutter": 32,
-		"columnWidth": ".brick-large",
-		"isFitWidth": true
-	});
-function reload() { msnry.layout(); }
+var settings = {
+	"itemSelector": ".brick-large",
+	"gutter": 32,
+	"columnWidth": ".brick-large",
+	"isFitWidth": true
+}
+
+var msnry_main = new Masonry(document.getElementById('main-grid'), settings);
+var msnry_other = new Masonry(document.getElementById('other-grid'), settings);
+
+function reload() { msnry_main.layout(); msnry_other.layout(); }
 window.addEventListener('load', reload);
 </script>
 
