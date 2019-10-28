@@ -18,7 +18,7 @@
 
 <div class="content">
 {% for proj in projects %}
-<div data-masonry='{ "itemSelector": ".brick", "gutter": 20, "columnWidth": ".brick", "isFitWidth": true }'>
+<div id=project-{{proj.id}}>
     <div class="card-desc brick">
         <h2>{{proj.name}} ({{proj.date}})</h2>
         <div>{{proj.desc}}</div>
@@ -28,10 +28,25 @@
     <div class="brick"><img src="renders/{{proj.folder}}/{{img}}"></div>
     {% endfor %}
 </div>
-
 <hr>
-
 {% endfor %}
+
+<script>
+var settings = {
+    "itemSelector": ".brick",
+    "gutter": 20,
+    "columnWidth": ".brick",
+    "isFitWidth": true
+}
+var msnry = [];
+{% for proj in projects %}
+msnry.push(new Masonry(
+    document.getElementById("project-{{proj.id}}"), settings));
+{% endfor %}
+
+function reload() { for(m of msnry) { m.layout(); } }
+window.addEventListener('load', reload);
+</script>
 
 </div>
 {% endblock %}

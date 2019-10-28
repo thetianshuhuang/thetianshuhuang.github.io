@@ -2,6 +2,7 @@ from jinja2 import Template
 import pandas as pd
 import os
 import json
+import uuid
 
 
 def render(target, context=[], path=[], title=None, process_context=None):
@@ -52,7 +53,8 @@ def get_images(ctx):
                     os.listdir(
                         os.path.join("..", "renders", project["folder"]))
                     if f != 'desc.txt'
-                ]
+                ],
+                "id": uuid.uuid4(),
             } for _, project in ctx["architecture"].iterrows()
         ]
     }
