@@ -37,48 +37,35 @@
 		<h1 style="background-color: var(--highlight); color: var(--heading-text); width: 100%; margin: 32px 0px; padding: 8px">Tianshu Huang</h1>
 		<img src="icon/hs.jpg" style="width: 60%; border-radius: 50%">
 		<div style="text-align: left; padding: 20px">
-			<p>I'm an ECE student at UT Austin interested in Data Science and Embedded Systems. Specifically, I'm interested in using data science techniques (especially machine learning) to engage in real time decision making.</p>
-			<p>I'm currently working with Prof. Bani Mallick, Anirban Bhattacharya, and Depdeep Pati at Texas A&M University on Bayesian Clustering using various MCMC-based methods; we hope to have a review paper out some time this year.</p>
-			<p>You can contact me at <a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a>.</p>
+			<p>
+                I'm an ECE student at UT Austin interested in Machine Learning.
+                Specifically, I'm interested developing machine learning methods that decrease the cost to use machine learning such as hardware-aware methods that decrease the training or inference cost.
+            </p>
+			<p>
+                You can contact me at <a href="mailto:tianshu.huang@utexas.edu">tianshu.huang@utexas.edu</a>.
+            </p>
 		</div>
 	</div>
 </div>
 
 <div class="brick-large" id="links" style="padding: 64px 0px">
 	<div>
-		<a href="#resume" class="button-menu">Resume</a>
-		<a href="projects.html" class="button-menu">Projects</a>
-		<a href="#other" class="button-menu">Other Interests</a>
-		<a href="resources.html" class="button-menu">Resources</a>
-		<a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank" class="button-menu">LinkedIn</a>
+		<a href="resources/tianshu-huang-cv.pdf" class="button-menu">CV</a>
+        <a href="#current-research" class="button-menu">Research Experience</a>
+        <a href="projects.html?ml" class="button-menu">Projects</a>
 		<a href="https://github.com/thetianshuhuang" class="button-menu">Github</a>
+        <a href="#other" class="button-menu">Other Interests</a>
+		<a href="resources.html" class="button-menu">Resources</a>
+		<!-- <a href="https://www.linkedin.com/in/tianshuhuang/" target="_blank" class="button-menu">LinkedIn</a> -->
 	</div>
 </div>
 
-<div class="brick-large square-card">
-	<a href="projects.html?ds"><h1>Data Science</h1></a>
-	<img src="icon/gs-gpu.jpg">
-</div>
-
-<div class="brick-large square-card">
-	<a href="projects.html?embedded"><h1>Embedded Systems</h1></a>
-	<img src="icon/rb.jpg">
-</div>
-
-<div class="brick-large square-card">
-	<a href="projects.html?lib"><h1>Libraries</h1></a>
-	<img src="icon/syllabus.png">
-</div>
-
-<div class="brick-large square-card">
-	<a href="projects.html?util"><h1>Utilities</h1></a>
-	<img src="icon/explorer.jpg">
-</div>
-
+<!--
 <div class="brick-large square-card" id="resume">
-	<a href="resources/tianshu-huang-resume.pdf"><h1>PDF Resume</h1></a>
+	<a href="resources/tianshu-huang-cv.pdf"><h1>PDF CV</h1></a>
 	<img src="icon/resume.png">
 </div>
+-->
 
 <div class="brick-large resume-card" id="education">
 	<h1>Education</h1>
@@ -92,7 +79,8 @@
 	<div>
 		GPA: 3.95<br>
 		Math:
-		<ul style="margin-top: 0px">
+        <ul style="margin-top: 0px">
+            <li>Convex Optimization</li>
 			<li>Probability and Stochastic Processes I (Graduate)</li>
 			<li>Theory of Probability (Graduate)</li>
 			<li>Geometric Foundations of Data Science (Graduate)</li>
@@ -132,6 +120,36 @@
 		</ul>
 	</div>
 </div>
+
+<div class="brick-large resume-card" id="current-research">
+    <h1>Current Research</h1>
+
+    My current research with Prof. Atlas Wang on deep learning methodology is in <b>Learning to Optimize</b>.
+    In this field, gradient-optimizers for deep learning models (i.e. Adam, RMSProp) are parameterized most often as recurrent neural networks which are treated as policies to be trained.
+    <br><br>
+    In my individual work, I designed and implemented a learning to optimize framework in TensorFlow, combining four papers and tens of thousands of lines of code into a single library and API.
+    I then showed that using multiple teachers in imitation learning improves performance in a way that cannot be explained by memorization of the teachers, and am currently working on further research regarding multiple teachers.
+</div>
+
+<div class="brick-large resume-card" id="research-experience">
+	<h1>Research Experience</h1>
+
+	{% for job in research_experience %}
+	<div class="highlight">
+		<table><tr>
+			<td>{{job.title}}</td>
+			<td>{{job.date}}</td>
+		</tr></table>
+	</div>
+	<div>
+		{% for tag in job.tags %}
+		<span class="tag">{{tag}}</span>
+		{% endfor %}
+	</div>
+	<div>{{job.description}}</div>
+	{% endfor %}
+</div>
+
 
 <div class="brick-large resume-card" id="work-experience">
 	<h1>Work Experience</h1>
@@ -185,7 +203,32 @@
 
 </div>
 
+
 <hr>
+
+<div id="showcase-grid" class="content-masonry">
+    <div class="brick-large square-card">
+        <a href="projects.html?ml"><h1>Machine Learning</h1></a>
+        <img src="icon/region-v.png">
+    </div>
+    
+    <div class="brick-large square-card">
+        <a href="projects.html?embedded"><h1>Embedded Systems</h1></a>
+        <img src="icon/rb.jpg">
+    </div>
+    
+    <div class="brick-large square-card">
+        <a href="projects.html?lib"><h1>Libraries</h1></a>
+        <img src="icon/syllabus.png">
+    </div>
+    
+    <div class="brick-large square-card">
+        <a href="projects.html?util"><h1>Utilities</h1></a>
+        <img src="icon/explorer.jpg">
+    </div>
+</div>
+
+<hr id="other">
 
 <div id="other-grid" class="content-masonry">
 	<div class="brick-large square-card" style="padding: 0px; position: absolute">
@@ -198,7 +241,7 @@
 		<img src="photos/sunset_yellow_patch.jpg">
 	</div>
 
-	<div class="brick-large square-card" style="padding: 0px; position: absolute">
+	<div class="brick-large square-card" style="padding: 0px; position: absolute; height: calc(var(--card-width) * 0.7); overflow: hidden">
 		<a href="miscellaneous.html"><h1>Miscellaneous</h1></a>
 		<img src="misc/lc3b/lc3b_blue.svg">
 	</div>
@@ -215,10 +258,19 @@ var settings = {
 	"isFitWidth": true
 }
 
-var msnry_main = new Masonry(document.getElementById('main-grid'), settings);
-var msnry_other = new Masonry(document.getElementById('other-grid'), settings);
 
-function reload() { msnry_main.layout(); msnry_other.layout(); }
+var sections = ["main", "other", "showcase"];
+
+
+var msnry = {};
+for(var s of sections) {
+    msnry[s] = new Masonry(document.getElementById(s + '-grid'), settings);
+}
+
+function reload() {
+    for(var k in msnry) { msnry[k].layout(); }
+}
+
 window.addEventListener('load', reload);
 </script>
 

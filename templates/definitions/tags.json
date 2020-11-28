@@ -1,4 +1,10 @@
 {
+    "Field": {
+        "ml": "Machine Learning",
+        "embedded": "Embedded Systems",
+        "web": "Web",
+        "arch": "Computer Architecture"
+    },
     "Languages": {
         "python": "Python",
         "c": "C/C++",
@@ -7,14 +13,8 @@
         "r": "R",
         "cuda": "CUDA"
     },
-    "Field": {
-        "ds": "Data Science",
-        "embedded": "Embedded Systems",
-        "web": "Web",
-        "arch": "Computer Architecture"
-    },
     "Project Type": {
-        "st3": "Sublime Text 3 Plugin",
+        "research": "Research",
         "util": "Utility",
         "lib": "Library",
         "class": "Class Project",

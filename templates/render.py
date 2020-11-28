@@ -146,17 +146,22 @@ def dictify(ctx):
     ]
 
 
+def parse_experience(data):
+    return [
+        {
+            "title": row["title"],
+            "date": row["date"],
+            "tags": row["tags"].split(','),
+            "description": row["description"]
+        } for _, row in data.iterrows()
+    ]
+
+
 def index_ctx(ctx):
     return {
         "skills": dictify(ctx["skills"]),
-        "work_experience": [
-            {
-                "title": row["title"],
-                "date": row["date"],
-                "tags": row["tags"].split(','),
-                "description": row["description"]
-            } for _, row in ctx["work_experience"].iterrows()
-        ]
+        "research_experience": parse_experience(ctx["research_experience"]),
+        "work_experience": parse_experience(ctx["work_experience"])
     }
 
 
@@ -204,6 +209,6 @@ if __name__ == '__main__':
         process_context=get_descriptions)
     render(
         "index.html",
-        context=["skills", "work_experience"],
+        context=["skills", "work_experience", "research_experience"],
         path=[],
         process_context=index_ctx)
