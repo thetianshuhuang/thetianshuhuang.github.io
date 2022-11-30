@@ -170,3 +170,18 @@ hr {
 .container .section:not(:first-child) {
     margin-top: calc(min(1000px, 90vw) * 0.02);
 }
+
+/*
+ * Images
+ */
+.image-800, .image-600, .image-500, .image-400 {
+    width: 100%;
+}
+.image-800 > img, .image-600 > img, .image-500 > img, .image-400 > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.image-600 > img { width: calc(min(100%, 600px)); }
+.image-500 > img { width: calc(min(100%, 500px)); }
+.image-400 > img { width: calc(min(100%, 400px)); }
