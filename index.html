@@ -6,15 +6,24 @@
 <body>
 <link rel="stylesheet" href="style.css">
 
+<!--
+<div class="no-mobile sidebar">
+    <a href="#section-research">Research</a>
+    <a href="#section-publications">Publications</a>
+    <a href="#section-talks">Talks</a>
+    <a href="#section-students">Students</a>
+    <a href="#section-teaching">Teaching</a>
+</div>
+-->
 
 <div class="container"><div style="height: 5vw"></div>
     <div class="section">
-        <div style="width: var(--width-img); display: inline-block; vertical-align: top; padding-right: var(--width-gap)">
-            <img src="profile.jpg" style="width: 100%">
-        </div><div class="only-mobile" style="width: var(--width-right); display: inline-block; vertical-align: top">
-            <h1 style="margin-top: 0; line-height: 36px; word-break: normal">Tianshu Huang</h1>
-        </div><div style="width: var(--width-text); display: inline-block; vertical-align: top">
-            <h1 class="no-mobile" style="margin-top: 0; line-height: 36px">Tianshu Huang</h1>
+        <div class="profile">
+            <img src="profile.jpg">
+        </div><div class="only-mobile name-mobile">
+            <h1>Tianshu Huang</h1>
+        </div><div class="biography">
+            <h1 class="no-mobile">Tianshu Huang</h1>
             <p>
                 I am a PhD student co-advised by
                 <a href="https://wise.ece.cmu.edu/about.html" target="_blank">Anthony Rowe</a>
@@ -34,7 +43,7 @@
         </div>
     </div>
     <div class="section">
-        <h3>Current Research</h3>
+        <h3 id="section-research">Current Research</h3>
         <ul>
             <li>
                 <b>Data-Driven Edge Orchestration for Distributed Systems</b>
@@ -58,7 +67,7 @@
             </li>
         </ul>
 
-        <h3>Publications</h3>
+        <h3 id="section-publications">Publications</h3>
         <ul>
             <li>
                 Bytecode Runtime Prediction by Matrix Factorization (In Review)
@@ -75,7 +84,7 @@
             </li>
         </ul>
 
-        <h3>Invited Talks</h3>
+        <h3 id="section-talks">Invited Talks</h3>
         <ul>
             <li>
                 Giving the Cloud an Edge with WebAssembly,
@@ -84,7 +93,7 @@
             </li>
         </ul>
 
-        <h3>Students</h3>
+        <h3 id="section-students">Students</h3>
         <ul>
             <li>Quentin Oschatz (Spring 2023-) &mdash; Towards Digital Twins by Observation</li>
             <li>Hanke Chen, Undergraduate (Summer 2022-) &mdash; Real Time Neural Radiance Fields</li>
@@ -96,7 +105,7 @@
             <li>Anish Singhani, Undergraduate (Spring 2022) &mdash; LIDAR-guided depth estimation</li>
         </ul>
 
-        <h3>Teaching</h3>
+        <h3 id="section-teaching">Teaching</h3>
         <ul>
             <li>
                 Guest Lecture: (Duke) ECE/COMPSCI 654 Edge Computing
@@ -108,9 +117,10 @@
             </li>
             <li>
                 TA: (CMU) 18-661 Introduction to Machine Learning for Engineers, Spring 2022
-                <br>
-                <a href="resources/18661-Lecture-Python.pdf">[Lecture - Python]</a>
-                <a href="resources/18661-Lecture-Pytorch.pdf">[Lecture - Pytorch]</a>
+                <ul>
+                    <li>Lecture: <a href="resources/18661-Lecture-Python.pdf">Better and Faster Python</a></li>
+                    <li>Lecture: <a href="resources/18661-Lecture-Pytorch.pdf">Pytorch (and how we got here)</a></li>
+                </ul>
             </li>
             <li>TA: (UT Austin) EE 351k Probability, Statistics and Random Processes, Fall 2020 - Spring 2021</li>
         </ul>
@@ -121,12 +131,14 @@
             <li><a href="resources/TopicsOnTheEdge.pdf">Topics on the Edge (of Federated Learning)</a></li>
         </ul>
 
+        <!--
         <h3>Reviewer</h3>
         <ul>
             <li>ICML, 2022-2023</li>
             <li>NeurIPS, 2022</li>
             <li>CrossFL @ MLSys, 2022</li>
         </ul>
+        -->
     </div>
 
 <div style="height: 5vw"></div></div>
@@ -134,13 +146,13 @@
 
 <div class="no-mobile">
     <div id="links-ref" style="position: absolute; visibility: hidden; height: auto; width: auto; white-space: nowrap; font-size: 12px;">
-        &#x25c0;&#xfe0e; Tianshu Huang &copy; 2022 | GitHub | LIONS | WiseLab &#x25c0;&#xfe0e;
+        &#x25c0;&#xfe0e; Tianshu Huang &copy; 2023 | GitHub | LIONS | WiseLab &#x25c0;&#xfe0e;
     </div>
     <div id="links" style="position: fixed; right: 20px; bottom: 20px; width: 10px; height: 15px; overflow-x: hidden; overflow-y: hidden; transition: 0.3s; z-index: 10; font-size: 12px;"
         onmouseover="this.style.width =(document.getElementById('links-ref').clientWidth + 1) + 'px';"
         onmouseout="this.style.width = '10px';">
         &#x25c0;&#xfe0e;
-        Tianshu Huang &copy; 2022 |
+        Tianshu Huang &copy; 2023 |
         <a href="https://github.com/thetianshuhuang" target="_blank">GitHub</a> |
         <a href="https://research.ece.cmu.edu/lions/people.html" target="_blank">LIONS</a> |
         <a href="https://wise.ece.cmu.edu/about.html" target="_blank">WiseLab</a>
