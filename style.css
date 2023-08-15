@@ -11,15 +11,25 @@
 }
 
 /*
- * Paper-style lists
+ * Paper-style paragraph
  */
-ol {
-    counter-reset: list;
+.p {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-ol > li {
+.p ol, .p ul {
+    counter-reset: list;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.p p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.p ol > li {
     list-style: none;
 }
-ol > li:before {
+.p ol > li:before {
     content: "(" counter(list) ") ";
     counter-increment: list;
 }
