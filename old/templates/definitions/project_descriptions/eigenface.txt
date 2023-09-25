@@ -1,2 +1,0 @@
-Linear and Kernel Eigenface implementations; project for Geometric Foundations of Data Science
-Implements input space recovery method described by S. Mika et al, "Kernel PCA and De-Noising in Feature Spaces"

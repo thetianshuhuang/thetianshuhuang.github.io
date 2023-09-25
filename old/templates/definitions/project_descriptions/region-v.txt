@@ -1,2 +1,0 @@
-Developed computer vision algorithms and navigation algorithms for an autonomous swarm
-Set up GitHub-based workflow for 15+ developers including pull requests and code reviews

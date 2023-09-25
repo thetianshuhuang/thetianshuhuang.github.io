@@ -1,2 +1,0 @@
-Application of Random Features for Large Scale Kernel Machines (Rahimi & Recht, 2008) to data with dimensionality 10 times higher than previous attempt
-Matched accuracy of Kernel SVM in IDC Classification with a 100-fold speed increase

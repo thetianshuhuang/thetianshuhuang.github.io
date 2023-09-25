@@ -1,2 +1,0 @@
-Interactive visualizations of laser test data
-Full stack web app using Djano and d3.js

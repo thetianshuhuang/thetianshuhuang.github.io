@@ -1,2 +1,0 @@
-Created a L2O (Learning to Optimize) library framework using Tensorflow and Keras and implemented state of the art L2O methods
-Currently working on methods to improve L2O training using methods borrowed from Reinforcement Learning

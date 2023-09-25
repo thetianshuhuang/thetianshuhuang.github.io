@@ -1,2 +1,0 @@
-Django Integration for FreeRadius
-Simple and easy until you find out your router doesn't support EAP-MD5 or TLS

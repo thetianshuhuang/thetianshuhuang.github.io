@@ -1,1 +1,0 @@
-Implementation of "Decoding by Linear Programming" (E. J. Candes, T. Tao, 2004)

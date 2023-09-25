@@ -1,1 +1,0 @@
-Low-discrepancy sequence sampling in Python using Halton and Hammersley sequences

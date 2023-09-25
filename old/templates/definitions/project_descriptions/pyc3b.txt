@@ -1,2 +1,0 @@
-Fully featured LC3b assembler written in python
-Informative error message and side-by-side assembly output

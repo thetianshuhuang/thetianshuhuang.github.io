@@ -1,3 +1,0 @@
-Python machine learning task management library
-Multiprocessing and multithreading pool implementations
-Install with <code>pip install syllabus</code>

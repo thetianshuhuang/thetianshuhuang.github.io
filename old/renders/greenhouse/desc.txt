@@ -1,3 +1,0 @@
-The house is targeted at a northern climate with cold winters (probably not Vancouver), and integrates a greenhouse with the structure. The structure has a raw, industrial style with exposed structural supports and metal railings.
-<br><br>
-This house is designed according to a typical house footprint in Vancouver. The lot is long and thin (40m x 12m), and has a access road running along the back that the garage opens to. As such, most of the windows open either to the front, or the central greenhouse section. Also, since neighbor to the right is closer than the neighbor to the left (a restriction that is completely arbitrary here, but realistic for a dense suburb), no windows open to the right, and the greenhouse section has a solid stone wall on the first floor.

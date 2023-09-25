@@ -1,2 +1,0 @@
-Our goal is to create a "full stack" vision-based activity recognition system.
-We are working on prototyping a glasses-like wearable device and an activity recognition algorithm.
