@@ -1,0 +1,47 @@
+<div class="section">
+    <div class="profile">
+        <img src="profile_p.jpg">
+    </div><div class="only-mobile name-mobile">
+        <h1 style="margin-top: 0px">Tianshu Huang</h1>
+    </div><div class="biography">
+        <h1 class="no-mobile">Tianshu Huang</h1>
+        <p>
+            I'm an amateur photographer who mostly takes travel photos with a specific interest in detailed cityscapes and landscapes which capture the character of a place. I started (somewhat) seriously trying to learn photography in 2022; this page documents my best work so far.
+        </p>
+        <p>
+            Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
+            You can find my academic page <a href="index.html">here</a>.
+        </p>
+    </div>
+</div>
+
+<div class="section" style="padding-top: 50px">
+
+<div class="photos">
+    {% for photo in photos -%}
+    <div class="{{photo.aspect}}">
+        <div onclick="selected = 'photos/{{photo.path}}'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/{{photo.path}}">
+    </div>
+    {% endfor -%}
+</div>  
+
+<div class="overlay">
+<div id="overlay-pre" style="display: none">
+    <img id="overlay-pre-img" style="position: absolute; max-width: 100vw; max-height: 100vh; width: auto; height: auto; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);" onclick="close_pre();">
+</div>
+</div>
+
+<script>
+var selected = '';
+
+function open_pre() {
+    document.getElementById("overlay-pre").style.display = 'block';
+    document.getElementById("overlay-pre-img").src = selected;
+}
+function close_pre() {
+    document.getElementById('overlay-pre').style.display = 'none';
+    document.getElementById("overlay-pre-img").src = '';
+}
+</script>

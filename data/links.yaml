@@ -1,0 +1,13 @@
+footer_links:
+- name: Academic Site
+  url: index.html
+  exclude: template/index.html
+- name: Photography
+  url: photography.html
+  exclude: template/photography.html
+- name: GitHub
+  url: https://github.com/thetianshuhuang
+- name: LIONS
+  url: https://research.ece.cmu.edu/lions/people.html
+- name: WiseLab
+  url: https://wise.ece.cmu.edu/about.html

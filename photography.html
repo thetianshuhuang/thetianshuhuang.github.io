@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>Tianshu Huang | Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<link rel="stylesheet" href="style.css">
+
+<div class="container">
+<div class="section">
+    <div class="profile">
+        <img src="profile_p.jpg">
+    </div><div class="only-mobile name-mobile">
+        <h1 style="margin-top: 0px">Tianshu Huang</h1>
+    </div><div class="biography">
+        <h1 class="no-mobile">Tianshu Huang</h1>
+        <p>
+            I'm an amateur photographer who mostly takes travel photos with a specific interest in detailed cityscapes and landscapes which capture the character of a place. I started (somewhat) seriously trying to learn photography in 2022; this page documents my best work so far.
+        </p>
+        <p>
+            Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
+            You can find my academic page <a href="index.html">here</a>.
+        </p>
+    </div>
+</div>
+
+<div class="section" style="padding-top: 50px">
+
+<div class="photos">
+    <div class="x23">
+        <div onclick="selected = 'photos/taipei-market.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/taipei-market.jpg">
+    </div>
+    <div class="x32">
+        <div onclick="selected = 'photos/hk-night.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/hk-night.jpg">
+    </div>
+    <div class="x32">
+        <div onclick="selected = 'photos/hk-tram.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/hk-tram.jpg">
+    </div>
+    <div class="x31">
+        <div onclick="selected = 'photos/lianhuashan.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/lianhuashan.jpg">
+    </div>
+    <div class="x23">
+        <div onclick="selected = 'photos/zhaoqing.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/zhaoqing.jpg">
+    </div>
+    <div class="x23">
+        <div onclick="selected = 'photos/gz-beijingroad.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/gz-beijingroad.jpg">
+    </div>
+    <div class="x21">
+        <div onclick="selected = 'photos/sz-construction.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/sz-construction.jpg">
+    </div>
+    <div class="x23">
+        <div onclick="selected = 'photos/sz-mixc.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/sz-mixc.jpg">
+    </div>
+    <div class="x32">
+        <div onclick="selected = 'photos/san-bruno.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/san-bruno.jpg">
+    </div>
+    <div class="x31">
+        <div onclick="selected = 'photos/flagstaff-hill.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/flagstaff-hill.jpg">
+    </div>
+    <div class="x32">
+        <div onclick="selected = 'photos/lisbon-bridge.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/lisbon-bridge.jpg">
+    </div>
+    <div class="x32">
+        <div onclick="selected = 'photos/miradouro-da-graca.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/miradouro-da-graca.jpg">
+    </div>
+    <div class="x31">
+        <div onclick="selected = 'photos/riu-espana.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/riu-espana.jpg">
+    </div>
+    <div class="x11">
+        <div onclick="selected = 'photos/wasen.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/wasen.jpg">
+    </div>
+    <div class="x32">
+        <div onclick="selected = 'photos/surfliner.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/surfliner.jpg">
+    </div>
+    <div class="x11">
+        <div onclick="selected = 'photos/potato-chip.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/potato-chip.jpg">
+    </div>
+    <div class="x23">
+        <div onclick="selected = 'photos/lha-6.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/lha-6.jpg">
+    </div>
+    <div class="x23">
+        <div onclick="selected = 'photos/big-bend-camper.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/big-bend-camper.jpg">
+    </div>
+    <div class="x21">
+        <div onclick="selected = 'photos/persimmon-gap.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/persimmon-gap.jpg">
+    </div>
+    <div class="x23">
+        <div onclick="selected = 'photos/chestnut-hyde.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/chestnut-hyde.jpg">
+    </div>
+    <div class="x23">
+        <div onclick="selected = 'photos/ca-aqueduct.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/ca-aqueduct.jpg">
+    </div>
+    <div class="x23">
+        <div onclick="selected = 'photos/presque-isle.jpg'; open_pre();"></div>
+        <span></span>
+        <img src="thumbs/presque-isle.jpg">
+    </div>
+    </div>  
+
+<div class="overlay">
+<div id="overlay-pre" style="display: none">
+    <img id="overlay-pre-img" style="position: absolute; max-width: 100vw; max-height: 100vh; width: auto; height: auto; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);" onclick="close_pre();">
+</div>
+</div>
+
+<script>
+var selected = '';
+
+function open_pre() {
+    document.getElementById("overlay-pre").style.display = 'block';
+    document.getElementById("overlay-pre-img").src = selected;
+}
+function close_pre() {
+    document.getElementById('overlay-pre').style.display = 'none';
+    document.getElementById("overlay-pre-img").src = '';
+}
+</script>
+</div>
+
+<div class="no-mobile">
+<div id="footer-ref">
+    Tianshu Huang &copy; 2023| Academic Site  | GitHub | LIONS | WiseLab </div>
+<div id="footer-links"
+    onmouseover="this.style.width =(document.getElementById('footer-ref').clientWidth + 1) + 'px';"
+    onmouseout="this.style.width = '10px';">
+    Tianshu Huang &copy; 2023
+    | <a href="index.html" target="_blank">Academic Site</a>
+    | <a href="https://github.com/thetianshuhuang" target="_blank">GitHub</a>
+    | <a href="https://research.ece.cmu.edu/lions/people.html" target="_blank">LIONS</a>
+    | <a href="https://wise.ece.cmu.edu/about.html" target="_blank">WiseLab</a>
+    </div>
+</div>
+
+</body>
+</html>

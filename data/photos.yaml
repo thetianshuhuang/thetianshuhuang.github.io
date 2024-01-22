@@ -1,0 +1,71 @@
+photos:
+- path: taipei-market.jpg
+  aspect: x23
+  desc: Shilin night market in Taipei with steam coming from a stall.
+  thumb: 100
+- path: hk-night.jpg
+  aspect: x32
+  desc: A seedy Hong Kong crime thriller, complete with sketchy characters sitting in the shadows.
+  thumb: 50
+- path: hk-tram.jpg
+  aspect: x32
+  desc: Riding the Hong Kong tram at night; the ride is quite shaky, especially on the upper deck, replicating Hong Kong&apos;s signature blurry look.
+  thumb: 50
+- path: lianhuashan.jpg
+  desc: Large panorama of the Shenzhen Futian CBD at sunset from the Deng XiaoPing monument in Lianhuashan.
+  aspect: x31
+  thumb: 40
+- path: zhaoqing.jpg
+  aspect: x23
+  thumb: 50
+- path: gz-beijingroad.jpg
+  aspect: x23
+  thumb: 50
+- path: sz-construction.jpg
+  aspect: x21
+  thumb: 0
+- path: sz-mixc.jpg
+  aspect: x23
+  thumb: 100
+- path: san-bruno.jpg
+  desc: San Bruno caltrain station taken while landing at SFO; the distortion caused by the window and engine exhaust happens to create a tilt shift-like effect.
+  aspect: x32
+  thumb: 50
+- path: flagstaff-hill.jpg
+  aspect: x31
+  thumb: 50
+- path: lisbon-bridge.jpg
+  aspect: x32
+  thumb: 100
+- path: miradouro-da-graca.jpg
+  aspect: x32
+  thumb: 50
+- path: riu-espana.jpg
+  aspect: x31
+  thumb: 35
+- path: wasen.jpg
+  aspect: x11
+- path: surfliner.jpg
+  aspect: x32
+  thumb: 50
+- path: potato-chip.jpg
+  aspect: x11
+- path: lha-6.jpg
+  desc: USS America (LHA-6) performing airlift exercises off the coast between San Diego and LA, taken while stuck in traffic.
+  aspect: x23
+  thumb: 50
+- path: big-bend-camper.jpg
+  aspect: x23
+  thumb: 50
+- path: persimmon-gap.jpg
+  aspect: x21
+  thumb: 50
+- path: chestnut-hyde.jpg
+  aspect: x23
+  thumb: 50
+- path: ca-aqueduct.jpg
+  aspect: x23
+  thumb: 50
+- path: presque-isle.jpg
+  aspect: x23
+  thumb: 50
