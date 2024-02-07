@@ -1,0 +1,100 @@
+papers:
+- title: "DART: Implicit Doppler Tomography for Radar Novel View Synthesis"
+  tags: ["radar", "primary"]
+  figure: resources/dart.svg
+  authors:
+  - Tianshu Huang*
+  - John Miller*
+  - Akarsh Prabhakara
+  - Tao Jin
+  - Tarana Laroia
+  - Zico Kolter
+  - Anthony Rowe
+- title: "WebAssembly Debugging Paper (In Review)"
+  tags: ["wasm", "consulting"]
+  authors:
+  - Arjun Ramesh
+  - Tianshu Huang
+  - Jaspreet Singh Riar
+  - Ben Titzer
+  - Anthony Rowe
+- title: "WebAssembly System Interfaces Paper (In Review)"
+  tags: ["wasm", "consulting"]
+  authors:
+  - Arjun Ramesh
+  - Tianshu Huang
+  - Ben Titzer
+  - Anthony Rowe
+- title: "Program Runtime Prediction Paper (In Review)"
+  tags: ["wasm", "primary"]
+  figure: resources/pitot.png
+  authors:
+  - Tianshu Huang
+  - Arjun Ramesh
+  - Jaspreet Singh Riar
+  - Emily Ruppel
+  - Nuno Pereira
+  - Anthony Rowe
+  - Carlee Joe-Wong
+- title: "Optimizer Amalgamation (ICLR 2022)"
+  tags: ["primary"]
+  url: https://arxiv.org/abs/2203.06474
+  figure: resources/optimizer_amalgamation.png
+  resources:
+    Poster: resources/OptimizerAmalgamation-Poster.pdf
+    Github: https://github.com/VITA-Group/OptimizerAmalgamation
+  authors:
+  - Tianshu Huang
+  - Tianlong Chen
+  - Sijia Liu
+  - Shiyu Chang
+  - Lisa Amini
+  - Zhangyang Wang
+
+people:
+  Akarsh Prabhakara: https://akarsh-prabhakara.github.io/
+  Anthony Rowe: https://users.ece.cmu.edu/~agr/
+  Arjun Ramesh: https://users.ece.cmu.edu/~arjunr2/
+  Ben Titzer: https://s3d.cmu.edu/people/core-faculty/titzer-ben.html
+  Carlee Joe-Wong: https://www.andrew.cmu.edu/user/cjoewong/
+  Tao Jin: https://taojin-6.github.io/
+  Tarana Laroia: https://wise.ece.cmu.edu/about.html
+  Tianlong Chen: https://tianlong-chen.github.io/
+  Zhangyang Wang: https://vita-group.github.io/research.html
+  Zico Kolter: https://zicokolter.com/
+
+students:
+- name: Quentin Oschatz
+  type: Masters
+  date: Spring 2023-
+  topic: Machine Learning for Radar
+- name: Hanke Chen
+  type: Undergraduate
+  date: Summer 2022 - Summer 2023
+  topic: Neural Radiance Fields in Real Time
+- name: Rahul Jha
+  type: Masters
+  date: Summer 2022 - Fall 2022
+  topic: Silverline Demo
+- name: Jeremy (Zhanfan) Yu
+  type: Masters
+  date: Summer 2022
+  topic: Silverline File Store
+- name: Anish Singhani
+  type: Undergraduate
+  date: Spring 2022
+  topic: Lidar-guided depth estimation
+
+students_hidden:
+- name: Kriti Kukreja
+  type: Masters
+  date: Fall 2022
+  topic: ML for ARENA network flow understanding
+- name: Shreyashri Biswas
+  type: Masters
+  date: Fall 2022
+  topic: RL for distributed resource management
+- Name: Rituraj Singh
+  type: Masters
+  date: Spring 2022
+  topic: Neural Networks in WebAssembly

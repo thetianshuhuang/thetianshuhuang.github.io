@@ -1,170 +1,167 @@
 <div class="section">
-    <div class="profile">
-        <img src="profile.jpg">
-    </div><div class="only-mobile name-mobile">
-        <h1>Tianshu Huang</h1>
-    </div><div class="biography">
-        <h1 class="no-mobile">Tianshu Huang</h1>
-        <p>
-            I am a PhD student co-advised by
-            <a href="https://wise.ece.cmu.edu/about.html" target="_blank">Anthony Rowe</a>
-            and <a href="https://research.ece.cmu.edu/lions/people.html" target="_blank">Carlee Joe-Wong</a>
-            at the Department of <a href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a> at Carnegie Mellon University.
+<div class="profile">
+    <img src="profile.jpg">
+</div><div class="only-mobile name-mobile">
+    <h1>Tianshu Huang</h1>
+</div><div class="biography">
+    <h1 class="no-mobile">Tianshu Huang</h1>
+    <p>
+        I am a PhD student co-advised by
+        <a href="https://wise.ece.cmu.edu/about.html" target="_blank">Anthony Rowe</a>
+        and <a href="https://research.ece.cmu.edu/lions/people.html" target="_blank">Carlee Joe-Wong</a>
+        at the Department of <a href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a> at Carnegie Mellon University.
 
-            I'm interested in <b>Learning for Systems</b>: applying machine learning to (cyber-physical) systems in ways that leverage both data-driven learning techniques and a theoretical and intuitive understanding of system properties.
-        </p>
-        <p>
-            Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021. While at UT Austin, I worked on Learning to Optimize research with
-            <a href="https://vita-group.github.io/index.html">Atlas Wang</a>.
-        </p>
-        <p>
-            Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
-            You can find my GitHub page <a href="https://github.com/thetianshuhuang" target="_blank">here</a>;
-            I also have a <a href="photography.html">photography site</a>.
-        </p>
-        <!--
-        <p>
-            <b>MS/Undergrad Students:</b> Please <a href="readme.html">click here</a> for an updated project list and other information.
-        </p>
-        -->
-    </div>
+        I'm interested in <b>Learning for Systems</b>: applying machine learning to (cyber-physical) systems in ways that leverage both data-driven learning techniques and a theoretical and intuitive understanding of system properties.
+    </p>
+    <p>
+        Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021. While at UT Austin, I worked on Learning to Optimize research with
+        <a href="https://vita-group.github.io/index.html">Atlas Wang</a>.
+    </p>
+    <p>
+        Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
+        You can find my GitHub page <a href="https://github.com/thetianshuhuang" target="_blank">here</a>;
+        I also have a <a href="photography.html">photography site</a>.
+    </p>
 </div>
+</div>
+
 <div class="section">
-    <h3 id="section-research">Current Research</h3>
-    <ul>
-        <li>
-            <b>Data-Driven Edge Orchestration for Distributed Systems</b>
-            <br>
-            The ability to execute programs in heterogeneous distributed environments while maintaining security and performance isolation is of critical importance as edge and cloud applications become increasingly entangled.
-            The <a href="https://github.com/SilverLineFramework">SilverLine</a> framework is our solution, where we propose using WebAssembly modules as an edge-friendly lighter-weight alternative to virtual machines or containers for maintaining isolation while providing portability.
-            <br>                
-            In this research project, my goal is to explore learning-enabled building blocks for managing distributed systems. Key concerns include performance analysis and runtime prediction, as well as debugging and anomaly detection. My approach emphasizes going beyond black-box approaches (in both a statistical and a systems sense) using techniques like instrumentation injection and statistical machine learning approaches.
-            <div class="image-600"><img src="resources/silverline.png"></img></div>
-        </li>
-    </ul>
+<h3 id="section-research">Current Research</h3>
+<ul>
+    <li>
+        <p><b>Machine Learning for Radar</b></p>
+        <p>
+        Radars are an ideal complement to cameras for applications such as autonomous driving: both are inexpensive, solid-state sensors, with cameras boasting fine angular resolution and radars providing depth resolution and robustness to adverse conditions. Unfortunately, unlike visual images or Lidar points, radar data are harder to interpret, and lack a large body of existing research. In this project, my goal is to develop machine learning-based methods to interpret radar data both spatially and semantically, potentially replacing Lidar as the primary means of 3D perception in robotics and beyond.
+        </p>
+        <div class="image-800"><img src="resources/radar.svg"></img></div>
+    </li>
+</ul>
+<ul>
+    <li>
+        <p><b>Data-Driven Edge Orchestration for Distributed Systems</b></p>
+        <p>
+        The ability to execute programs in heterogeneous distributed environments while maintaining security and performance isolation is of critical importance as edge and cloud applications become increasingly entangled.
+        The <a href="https://github.com/SilverLineFramework">SilverLine</a> framework is our solution, where we propose using WebAssembly modules as an edge-friendly lighter-weight alternative to virtual machines or containers for maintaining isolation while providing portability.
+        </p>
+        <p>                
+        In this research project, my goal is to explore learning-enabled building blocks for managing distributed systems. Key concerns include performance analysis and runtime prediction, as well as debugging and anomaly detection. My approach emphasizes going beyond black-box approaches (in both a statistical and a systems sense) using techniques like instrumentation injection and statistical machine learning approaches.
+        </p>
+        <div class="image-600"><img src="resources/silverline.png"></img></div>
+    </li>
+</ul>
 
-    <ul>
-        <li>
-            <b>Novel Applications for Neural Radiance Fields</b>
-            <br>
-            Since its introduction in 2020, Neural Radiance Fields (NeRFs) have garnered increasing attention. Recent advances have moved Neural Radiance Fields closer and closer to true competition with traditional techniques in computer graphics.
-            <br>
-            I am primarily interested in problems outside the traditional NeRF "canon" (e.g. few-shot, quality), with a focus on using sensors other than traditional cameras, and my current research involves applying NeRF-inspired techniques to radar processing.
-            In particular, I take an alternative view of NeRF research: instead of trying to best reconstruct a scene given sensor inputs, what kind of sensor inputs are necessary to reach a given target reconstruction quality, given available computational resources?
-            <div class="image-600"><img src="resources/dart.png"></img></div>
-        </li>
-    </ul>
+<h3 id="section-publications">Publications</h3>
+<ul>
+    {% for paper in papers -%}
+    <li>
+        {% if paper.url -%}
+        <a href="{{paper.url}}">{{ paper.title }}</a>
+        {%- else -%}
+        {{ paper.title }}
+        {%- endif -%}
+        {%- if paper.resources -%}
+            {% for name, url in paper.resources.items() %}
+            [<a href="{{url}}", target="_blank">{{name}}</a>]
+            {%- endfor -%}
+        {%- endif -%}
+        <br>
+        {% for author in paper.authors %}
+            {%- if author.startswith("Tianshu Huang") -%}
+            <b>{{ author }}</b>
+            {%- else -%}
+                {%- if author.rstrip("*") in people -%}
+                <a href="{{people[author.rstrip('*')]}}">{{ author }}</a>
+                {%- else -%}
+                {{ author }}
+                {%- endif -%}
+            {%- endif -%}
+            {% if not loop.last %}, {% endif %}
+        {% endfor -%}
+        {% if paper.figure -%}
+        <div class="image-800"><img src="{{paper.figure}}"></img></div>
+        {%- else -%}
+        <!-- No figure -->
+        {%- endif %}
+    </li>
+    {%- endfor %}
+</ul>
+</div>
 
-    <h3 id="section-publications">Publications</h3>
-    <ul>
-        <li>
-            Undisclosed Radar-NeRF Paper (In Review)
-            <br>
-            <b>Tianshu Huang*</b>, John Miller*, Akarsh Prabhakara, Tao Jin, Zico Kolter, Anthony Rowe
-            <br>
-            No figures are available to keep our methodology private while under review.
-        </li>
-    </ul>
-    <ul>
-        <li>
-            Undisclosed WebAssembly Debugging Paper (In Review)
-            <br>
-            Arjun Ramesh, <b>Tianshu Huang</b>, Jaspreet Singh Riar, Ben Titzer, Anthony Rowe
-            <br>
-            No figures are available since our system is not yet public.
-        </li>
-    </ul>
-    <ul>
-        <li>
-            Undisclosed WebAssembly System Interface Paper (In Review)
-            <br>
-            Arjun Ramesh, <b>Tianshu Huang</b>, Ben Titzer, Anthony Rowe
-            <br>
-            No figures are available since our system is not yet public.
-        </li>
-    </ul>
-    <ul>
-        <li>
-            Undisclosed Runtime Prediction for WebAssembly Paper (In Review)
-            <br>
-            <b>Tianshu Huang</b>, Arjun Ramesh, Jaspreet Singh Riar, Emily Ruppel, Nuno Pereira, Anthony Rowe, Carlee Joe-Wong
-            <div class="image-800"><img src="resources/pitot.png"></img></div>
-        </li> 
-        <li style="padding-top: 1em">
-            <a href="https://arxiv.org/abs/2203.06474">Optimizer Amalgamation (ICLR 2022)</a>
-            <a href="resources/OptimizerAmalgamation-Poster.pdf">[Poster]</a>
-            <a href="">[Github]</a>
-            <br>
-            <b>Tianshu Huang</b>, Tianlong Chen, Sijia Liu, Shiyu Chang, Lisa Amini, Zhangyang Wang
-            <div class="image-800"><img src="resources/optimizer_amalgamation.png"></img></div>
-        </li>
-    </ul>
+<div class="section">
+<h3 id="section-talks">Invited Talks</h3>
+<ul>
+<li>
+    Leveraging Wasm instrumentation,
+    <a href="https://www.cs.cmu.edu/~wasm/wasm-research-day-2023.html">WebAssembly Research Day 2023</a>
+    (With Arjun Ramesh)
+</li>
+<li>
+    Giving the Cloud an Edge with WebAssembly,
+    <a href="http://www.cs.cmu.edu/~wasm/wasm-research-day-2022.html">WebAssembly Research Day 2022</a>
+    (with Arjun Ramesh)
+</li>
+</ul>
 
-    <h3 id="section-talks">Invited Talks</h3>
-    <ul>
-        <li>
-            Leveraging Wasm instrumentation,
-            <a href="https://www.cs.cmu.edu/~wasm/wasm-research-day-2023.html">WebAssembly Research Day 2023</a>
-            (With Arjun Ramesh)
-        </li>
-        <li>
-            Giving the Cloud an Edge with WebAssembly,
-            <a href="http://www.cs.cmu.edu/~wasm/wasm-research-day-2022.html">WebAssembly Research Day 2022</a>
-            (with Arjun Ramesh)
-        </li>
-    </ul>
+<div class="section">
+<h3 id="section-students">Students</h3>
+<ul>
+    {% for student in students %}
+    <li>{{ student.name }} ({{ student.type }}; {{ student.date }}) &mdash; {{ student.topic }}</li>
+    {% endfor %}
+</ul>
+</div>
 
-    <h3 id="section-students">Students</h3>
-    <ul>
-        <li>Quentin Oschatz (Spring 2023-) &mdash; Towards Digital Twins by Observation</li>
-        <li>Hanke Chen, Undergraduate (Summer 2022 - Summer 2023) &mdash; Real Time Neural Radiance Fields</li>
-        <!-- <li>Kriti Kukreja, Masters (Fall 2022) &mdash; ML for ARENA Network Flow Understanding</li> -->
-        <!-- <li>Shreyashri Biswas, Masters (Fall 2022) &mdash; RL for Distributed Resource Management</li> -->
-        <li>Rahul Jha, Masters (Summer 2022 - Fall 2022) &mdash; SilverLine Demo and Power Measurement</li>
-        <li>Jeremy (Zhanfan) Yu, Masters (Summer 2022) &mdash; SilverLine (compilation server and file store; fault tolerance)</li>
-        <!-- <li>Rituraj Singh, Masters (Spring 2022) &mdash; Neural Network Training in WebAssembly</a> </li> -->
-        <li>Anish Singhani, Undergraduate (Spring 2022) &mdash; LIDAR-guided depth estimation</li>
-    </ul>
+<div class="section">
+<h3 id="section-teaching">Teaching</h3>
+<ul>
+    <li>
+        TA: (CMU) 18-661 Introduction to Machine Learning for Engineers, Spring 2024
+    </li>
+    <li>
+        Guest Lecture: (Duke) ECE/COMPSCI 654 Edge Computing, February 2023
+        <a href="resources/guest_lecture_federated_learning.pdf">(Federated Learning)</a>
+    </li>
+    <li>
+        Guest Lecture: (CMU) 18-649 Distributed Embedded Systems, November 2022
+        <a href="resources/guest_lecture_machine_learning.pdf">(Machine Learning + Edge)</a>
+    </li>
+    <li>
+        TA: (CMU) 18-661 Introduction to Machine Learning for Engineers, Spring 2022
+        <ul>
+            <li>Lecture: <a href="resources/18661-Lecture-Python.pdf">Better and Faster Python</a></li>
+            <li>Lecture: <a href="resources/18661-Lecture-Pytorch.pdf">Pytorch (and how we got here)</a></li>
+        </ul>
+    </li>
+    <li>TA: (UT Austin) EE 351k Probability, Statistics and Random Processes, Fall 2020 - Spring 2021</li>
+</ul>
+</div>
 
-    <h3 id="section-teaching">Teaching</h3>
-    <ul>
-        <li>
-            Guest Lecture: (Duke) ECE/COMPSCI 654 Edge Computing, February 2023
-            <a href="resources/guest_lecture_federated_learning.pdf">(Federated Learning)</a>
-        </li>
-        <li>
-            Guest Lecture: (CMU) 18-649 Distributed Embedded Systems, November 2022
-            <a href="resources/guest_lecture_machine_learning.pdf">(Machine Learning + Edge)</a>
-        </li>
-        <li>
-            TA: (CMU) 18-661 Introduction to Machine Learning for Engineers, Spring 2022
-            <ul>
-                <li>Lecture: <a href="resources/18661-Lecture-Python.pdf">Better and Faster Python</a></li>
-                <li>Lecture: <a href="resources/18661-Lecture-Pytorch.pdf">Pytorch (and how we got here)</a></li>
-            </ul>
-        </li>
-        <li>TA: (UT Austin) EE 351k Probability, Statistics and Random Processes, Fall 2020 - Spring 2021</li>
-    </ul>
+<div class="section">
+<h3>Casual Presentations</h3>
+<ul>
+    <li><a href="resources/NeRFs.pdf">The NeRF is Dead ... Long Live the NeRF.</a></li>
+    <li><a href="resources/TopicsOnTheEdge.pdf">Topics on the Edge (of Federated Learning)</a></li>
+</ul>
+</div>
 
-    <h3>Casual Presentations</h3>
-    <ul>
-        <li><a href="resources/NeRFs.pdf">The NeRF is Dead ... Long Live the NeRF.</a></li>
-        <li><a href="resources/TopicsOnTheEdge.pdf">Topics on the Edge (of Federated Learning)</a></li>
-    </ul>
+<div class="section">
+<h3>Awards</h3>
+<ul>
+{% for award in awards %}
+    <li>
+        ({{ award.date }}) {{ award.name }} <br>
+        <i>{{ award.description }}</i>
+    </li>
+{% endfor %}
+</ul>
+</div>
 
-    <h3>Awards</h3>
-    <ul>
-        <li>(Spring 2023) ECE Department Recognition Award for Exemplary Qualifying Exam Performance &mdash; <i>Recognized by CMU ECE faculty for exemplary Ph.D. qualifying examination performance. This distinction was awarded by faculty vote to select students within the top 10% of Ph.D. student examinees.</i></li>
-        <li>(Fall 2021 - Spring 2024) ARCS Pittsburgh Chapter Scholar &mdash; <i>$15,000 award (over 3 years) for one student nominated by each participating department</i></li>
-        <li>(Fall 2017 - Spring 2021) Virginia & Ernest Cockrell, Jr. Scholarship in Engineering &mdash; <i>$48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program</i></li>
-    </ul>
-
-    <!--
-    <h3>Reviewer</h3>
-    <ul>
-        <li>ICML, 2022-2023</li>
-        <li>NeurIPS, 2022</li>
-        <li>CrossFL @ MLSys, 2022</li>
-    </ul>
-    -->
+<div class="section">
+<h3>Service</h3>
+<ul>
+    <li>Co-Chair, Student Council for Faculty Hiring 2024</li>
+    <li>Reviewer, ICML 2022-2023</li>
+    <li>Reviewer, NeurIPS 2022</li>
+    <li>Reviewer, CrossFL @ MLSys</li>
+</ul>
 </div>
