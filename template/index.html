@@ -6,16 +6,12 @@
 </div><div class="biography">
     <h1 class="no-mobile">Tianshu Huang</h1>
     <p>
-        I am a PhD student co-advised by
-        <a href="https://wise.ece.cmu.edu/about.html" target="_blank">Anthony Rowe</a>
-        and <a href="https://research.ece.cmu.edu/lions/people.html" target="_blank">Carlee Joe-Wong</a>
-        at the Department of <a href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a> at Carnegie Mellon University.
+        I am a PhD student co-advised by {{ ref("Anthony Rowe") }} and {{ ref("Carlee Joe-Wong") }} at the Department of <a href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a> at Carnegie Mellon University.
 
         I'm interested in <b>Learning for Systems</b>: applying machine learning to (cyber-physical) systems in ways that leverage both data-driven learning techniques and a theoretical and intuitive understanding of system properties.
     </p>
     <p>
-        Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021. While at UT Austin, I worked on Learning to Optimize research with
-        <a href="https://vita-group.github.io/index.html">Atlas Wang</a>.
+        Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021. While at UT Austin, I worked on Learning to Optimize research with {{ ref("Atlas Wang") }}.
     </p>
     <p>
         Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
@@ -35,8 +31,6 @@
         </p>
         <div class="image-800"><img src="resources/radar.svg"></img></div>
     </li>
-</ul>
-<ul>
     <li>
         <p><b>Data-Driven Edge Orchestration for Distributed Systems</b></p>
         <p>
@@ -69,11 +63,7 @@
             {%- if author.startswith("Tianshu Huang") -%}
             <b>{{ author }}</b>
             {%- else -%}
-                {%- if author.rstrip("*") in people -%}
-                <a href="{{people[author.rstrip('*')]}}">{{ author }}</a>
-                {%- else -%}
-                {{ author }}
-                {%- endif -%}
+            {{ ref(author) }}
             {%- endif -%}
             {% if not loop.last %}, {% endif %}
         {% endfor -%}
@@ -93,21 +83,21 @@
 <li>
     Leveraging Wasm instrumentation,
     <a href="https://www.cs.cmu.edu/~wasm/wasm-research-day-2023.html">WebAssembly Research Day 2023</a>
-    (With Arjun Ramesh)
+    (With {{ ref("Arjun Ramesh") }})
 </li>
 <li>
     Giving the Cloud an Edge with WebAssembly,
     <a href="http://www.cs.cmu.edu/~wasm/wasm-research-day-2022.html">WebAssembly Research Day 2022</a>
-    (with Arjun Ramesh)
+    (With {{ ref("Arjun Ramesh") }})
 </li>
 </ul>
 
 <div class="section">
 <h3 id="section-students">Students</h3>
 <ul>
-    {% for student in students %}
-    <li>{{ student.name }} ({{ student.type }}; {{ student.date }}) &mdash; {{ student.topic }}</li>
-    {% endfor %}
+    {%- for student in students %}
+    <li>{{ ref(student.name) }} ({{ student.type }}; {{ student.date }}) &mdash; {{ student.topic }}</li>
+    {%- endfor %}
 </ul>
 </div>
 
@@ -147,12 +137,12 @@
 <div class="section">
 <h3>Awards</h3>
 <ul>
-{% for award in awards %}
+{%- for award in awards %}
     <li>
         ({{ award.date }}) {{ award.name }} <br>
         <i>{{ award.description }}</i>
     </li>
-{% endfor %}
+{%- endfor %}
 </ul>
 </div>
 

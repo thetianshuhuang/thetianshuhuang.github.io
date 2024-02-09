@@ -16,6 +16,15 @@ for path in os.listdir("data"):
         context.update(yaml.load(f, Loader=yaml.Loader))
 
 
+def _linkto(name: str) -> str:
+    key = name.rstrip('*')
+    if key in context["people"]:
+        return f'<a href="{context["people"][key]}">{name}</a>'
+    else:
+        return name
+
+
+context["ref"] = _linkto
 targets = {
     "index.html": None,
     "photography.html": "Photography"
