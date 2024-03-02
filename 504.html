@@ -30,31 +30,29 @@ function filter(btn, prefix, tag) {
     }
 }
 </script>
-<title>Tianshu Huang {% if pagetitle %}| {{ pagetitle }}{% endif %}</title>
+<title>Tianshu Huang | Not Available</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">    
 </head>
 
 <body>
 <div class="container">
-{{ contents }}
+This resource is not yet available. Check back later!
 </div>
 
 <div class="no-mobile">
 <div id="footer-ref">
-    Tianshu Huang &copy; 2023
-    {%- for link in footer_links %}{% if link.url != pagefile -%}
-    | {{ link.name }}
-    {%- endif %} {% endfor -%} 
-</div>
+    Tianshu Huang &copy; 2023| Academic Site | Photography | GitHub | LIONS | WiseLab </div>
 <div id="footer-links"
     onmouseover="this.style.width =(document.getElementById('footer-ref').clientWidth + 1) + 'px';"
     onmouseout="this.style.width = '10px';">
     Tianshu Huang &copy; 2023
-    {% for link in footer_links %}{% if link.url != pagefile -%}
-    | <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
-    {% endif %}{% endfor -%}
-</div>
+    | <a href="index.html" target="_blank">Academic Site</a>
+    | <a href="photography.html" target="_blank">Photography</a>
+    | <a href="https://github.com/thetianshuhuang" target="_blank">GitHub</a>
+    | <a href="https://research.ece.cmu.edu/lions/people.html" target="_blank">LIONS</a>
+    | <a href="https://wise.ece.cmu.edu/about.html" target="_blank">WiseLab</a>
+    </div>
 </div>
 
 </body>

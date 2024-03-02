@@ -1,0 +1,49 @@
+people:
+  Akarsh Prabhakara: https://akarsh-prabhakara.github.io/
+  Anthony Rowe: https://users.ece.cmu.edu/~agr/
+  Arjun Ramesh: https://users.ece.cmu.edu/~arjunr2/
+  Ben Titzer: https://s3d.cmu.edu/people/core-faculty/titzer-ben.html
+  Carlee Joe-Wong: https://www.andrew.cmu.edu/user/cjoewong/
+  Tao Jin: https://taojin-6.github.io/
+  Tarana Laroia: https://wise.ece.cmu.edu/about.html
+  Tianlong Chen: https://tianlong-chen.github.io/
+  Tianshu Huang: index.html
+  Zhangyang Wang: https://vita-group.github.io/index.html
+  Atlas Wang: https://vita-group.github.io/index.html
+  Zico Kolter: https://zicokolter.com/
+
+students:
+- name: Quentin Oschatz
+  type: Masters
+  date: Spring 2023-
+  topic: Machine Learning for Radar
+- name: Hanke Chen
+  type: Undergraduate
+  date: Summer 2022 - Summer 2023
+  topic: Neural Radiance Fields in Real Time
+- name: Rahul Jha
+  type: Masters
+  date: Summer 2022 - Fall 2022
+  topic: Silverline Demo
+- name: Jeremy (Zhanfan) Yu
+  type: Masters
+  date: Summer 2022
+  topic: Silverline File Store
+- name: Anish Singhani
+  type: Undergraduate
+  date: Spring 2022
+  topic: Lidar-guided depth estimation
+
+students_hidden:
+- name: Kriti Kukreja
+  type: Masters
+  date: Fall 2022
+  topic: ML for ARENA network flow understanding
+- name: Shreyashri Biswas
+  type: Masters
+  date: Fall 2022
+  topic: RL for distributed resource management
+- Name: Rituraj Singh
+  type: Masters
+  date: Spring 2022
+  topic: Neural Networks in WebAssembly

@@ -22,63 +22,93 @@
 </div>
 
 <div class="section">
-<h3 id="section-research">Current Research</h3>
-<ul>
-    <li>
-        <p><b>Machine Learning for Radar</b></p>
-        <p>
-        Radars are an ideal complement to cameras for applications such as autonomous driving: both are inexpensive, solid-state sensors, with cameras boasting fine angular resolution and radars providing depth resolution and robustness to adverse conditions. Unfortunately, unlike visual images or Lidar points, radar data are harder to interpret, and lack a large body of existing research. In this project, my goal is to develop machine learning-based methods to interpret radar data both spatially and semantically, potentially replacing Lidar as the primary means of 3D perception in robotics and beyond.
-        </p>
-        <div class="image-800"><img src="resources/radar.svg"></img></div>
-    </li>
-    <li>
-        <p><b>Data-Driven Edge Orchestration for Distributed Systems</b></p>
-        <p>
-        The ability to execute programs in heterogeneous distributed environments while maintaining security and performance isolation is of critical importance as edge and cloud applications become increasingly entangled.
-        The <a href="https://github.com/SilverLineFramework">SilverLine</a> framework is our solution, where we propose using WebAssembly modules as an edge-friendly lighter-weight alternative to virtual machines or containers for maintaining isolation while providing portability.
-        </p>
-        <p>                
-        In this research project, my goal is to explore learning-enabled building blocks for managing distributed systems. Key concerns include performance analysis and runtime prediction, as well as debugging and anomaly detection. My approach emphasizes going beyond black-box approaches (in both a statistical and a systems sense) using techniques like instrumentation injection and statistical machine learning approaches.
-        </p>
-        <div class="image-600"><img src="resources/silverline.png"></img></div>
-    </li>
-</ul>
+<h2>Research</h2>
 
-<h3 id="section-publications">Publications</h3>
-<ul>
-    {% for paper in papers -%}
-    <li>
-        {% if paper.url -%}
-        <a href="{{paper.url}}">{{ paper.title }}</a>
-        {%- else -%}
-        {{ paper.title }}
-        {%- endif -%}
-        {%- if paper.resources -%}
-            {% for name, url in paper.resources.items() %}
-            [<a href="{{url}}", target="_blank">{{name}}</a>]
-            {%- endfor -%}
-        {%- endif -%}
-        <br>
-        {% for author in paper.authors %}
-            {%- if author.startswith("Tianshu Huang") -%}
-            <b>{{ author }}</b>
-            {%- else -%}
-            {{ ref(author) }}
-            {%- endif -%}
-            {% if not loop.last %}, {% endif %}
-        {% endfor -%}
-        {% if paper.figure -%}
-        <div class="image-800"><img src="{{paper.figure}}"></img></div>
-        {%- else -%}
-        <!-- No figure -->
-        {%- endif %}
-    </li>
+<div class="tabs">
+    {% for topic, about in topics.items() -%}
+    <div
+        {% if not loop.first %}class="disabled"{% endif -%}
+        id="tab-{{topic}}" onclick="select(['tab-', 'topic-'], '{{topic}}')"
+    >{{ about.name }}</div>
     {%- endfor %}
-</ul>
+</div>
+
+<div class="topics">
+{% for topic, about in topics.items() %}
+<div id="topic-{{topic}}" {% if not loop.first %} class="disabled" {% endif %}>
+{{ about.description }}
+</div>
+{% endfor %}
+</div>
 </div>
 
 <div class="section">
-<h3 id="section-talks">Invited Talks</h3>
+<h2>Publications</h2>
+<table class="toggle-filters"><tbody>
+    <tr><td>Current Research</td><td>
+        <span class="button" id="toggle-radar" onclick="filter(this, 'tag', 'radar')">Radar</span>
+        <span class="button" id="toggle-wasm" onclick="filter(this, 'tag', 'wasm')">Distributed Systems</span>        
+    </td></tr>
+    <tr><td>Past Research</td><td>
+        <span class="button" id="toggle-l2o" onclick="filter(this, 'tag', 'l2o')">Learning to Optimize</span>
+    </td></tr>
+</tbody></table>
+
+<div class="papers">
+{% for paper in papers.values() -%}
+<div class="{% for tag in paper.tags %}tag-{{tag}} {% endfor %}">
+    {% if paper.url %}
+    <a href="{{paper.url}}" class="active">
+    {% else -%}
+    <a>
+    {%- endif %}
+    {% if paper.venue %}<span>({{ paper.venue }})</span>{% endif %}
+    {{ paper.title }}
+    </a>
+    <div>
+        <div>
+        {%- for author in paper.authors -%}
+        {{ ref(author, mode='cv') }}
+        {%- if not loop.last %}, {% endif %}
+        {% endfor -%}
+        </div>
+        {% if paper.summary -%}
+        <div><i>
+            {{ paper.summary }}
+        </i></div>
+        {%- endif %}
+        {%- if paper.resources %}
+        <div class="paper-links">
+        {%- for name, url in paper.resources.items() %}
+        <a href="{{url}}" target="_blank" class="button">{{name}}</a>
+        {%- endfor %}
+        </div>
+        {% endif -%}
+        {% if paper.figure -%}
+        <div class="image-800"><img src="{{paper.figure}}"></img></div>
+        {%- endif %}
+    </div>
+</div>
+{%- endfor %}
+</div>
+</div>
+
+<div class="section">
+<h2>Awards</h2>
+    {%- for award in awards %}
+    <p>
+        {{ award.date }} | <b>{{ award.name }}</b> <br>
+        <i>{{ award.description }}</i>
+        {%- if award.note %}
+        <br>{{ award.note }}
+        {% endif -%}
+    </p>
+    {%- endfor %}
+</div>
+
+
+<div class="section">
+<h2 id="section-talks">Invited Talks</h2>
 <ul>
 <li>
     Leveraging Wasm instrumentation,
@@ -92,17 +122,14 @@
 </li>
 </ul>
 
-<div class="section">
-<h3 id="section-students">Students</h3>
+<h2 id="section-students">Students</h2>
 <ul>
     {%- for student in students %}
     <li>{{ ref(student.name) }} ({{ student.type }}; {{ student.date }}) &mdash; {{ student.topic }}</li>
     {%- endfor %}
 </ul>
-</div>
 
-<div class="section">
-<h3 id="section-teaching">Teaching</h3>
+<h2 id="section-teaching">Teaching</h2>
 <ul>
     <li>
         TA: (CMU) 18-661 Introduction to Machine Learning for Engineers, Spring 2024
@@ -124,30 +151,15 @@
     </li>
     <li>TA: (UT Austin) EE 351k Probability, Statistics and Random Processes, Fall 2020 - Spring 2021</li>
 </ul>
-</div>
 
-<div class="section">
-<h3>Casual Presentations</h3>
+<h2>Casual Presentations</h2>
 <ul>
     <li><a href="resources/NeRFs.pdf">The NeRF is Dead ... Long Live the NeRF.</a></li>
     <li><a href="resources/TopicsOnTheEdge.pdf">Topics on the Edge (of Federated Learning)</a></li>
 </ul>
-</div>
 
-<div class="section">
-<h3>Awards</h3>
-<ul>
-{%- for award in awards %}
-    <li>
-        ({{ award.date }}) {{ award.name }} <br>
-        <i>{{ award.description }}</i>
-    </li>
-{%- endfor %}
-</ul>
-</div>
 
-<div class="section">
-<h3>Service</h3>
+<h2>Service</h2>
 <ul>
     <li>Co-Chair, Student Council for Faculty Hiring 2024</li>
     <li>Reviewer, ICML 2022-2023</li>

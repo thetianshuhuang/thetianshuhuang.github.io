@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+function select(prefixes, target) {
+    prefixes.forEach(prefix => {
+        document.querySelectorAll(`[id^=${prefix}]`).forEach(item => {
+            if (item.id.endsWith(target)) { item.classList.remove("disabled"); }
+            else { item.classList.add("disabled"); }
+        })
+    })
+}
+
+function filter(btn, prefix, tag) {
+    if(btn.classList.contains('disabled')) {
+        btn.classList.remove('disabled');
+        Array.prototype.forEach.call(
+            document.getElementsByClassName(`${prefix}-${tag}`),
+            item => { item.classList.remove("disabled"); });
+    } else {
+        btn.classList.add('disabled');
+        Array.prototype.forEach.call(
+            document.getElementsByClassName(`${prefix}-${tag}`),
+            item => { item.classList.add("disabled"); });
+    }
+}
+</script>
 <title>Tianshu Huang </title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+</head>
 
+<body>
 <div class="container">
 <div class="section">
 <div class="profile">
@@ -31,82 +61,171 @@
 </div>
 
 <div class="section">
-<h3 id="section-research">Current Research</h3>
-<ul>
-    <li>
-        <p><b>Machine Learning for Radar</b></p>
-        <p>
-        Radars are an ideal complement to cameras for applications such as autonomous driving: both are inexpensive, solid-state sensors, with cameras boasting fine angular resolution and radars providing depth resolution and robustness to adverse conditions. Unfortunately, unlike visual images or Lidar points, radar data are harder to interpret, and lack a large body of existing research. In this project, my goal is to develop machine learning-based methods to interpret radar data both spatially and semantically, potentially replacing Lidar as the primary means of 3D perception in robotics and beyond.
-        </p>
-        <div class="image-800"><img src="resources/radar.svg"></img></div>
-    </li>
-    <li>
-        <p><b>Data-Driven Edge Orchestration for Distributed Systems</b></p>
-        <p>
-        The ability to execute programs in heterogeneous distributed environments while maintaining security and performance isolation is of critical importance as edge and cloud applications become increasingly entangled.
-        The <a href="https://github.com/SilverLineFramework">SilverLine</a> framework is our solution, where we propose using WebAssembly modules as an edge-friendly lighter-weight alternative to virtual machines or containers for maintaining isolation while providing portability.
-        </p>
-        <p>                
-        In this research project, my goal is to explore learning-enabled building blocks for managing distributed systems. Key concerns include performance analysis and runtime prediction, as well as debugging and anomaly detection. My approach emphasizes going beyond black-box approaches (in both a statistical and a systems sense) using techniques like instrumentation injection and statistical machine learning approaches.
-        </p>
-        <div class="image-600"><img src="resources/silverline.png"></img></div>
-    </li>
-</ul>
+<h2>Research</h2>
 
-<h3 id="section-publications">Publications</h3>
-<ul>
-    <li>
-        DART: Implicit Doppler Tomography for Radar Novel View Synthesis<br>
-        <b>Tianshu Huang*</b>, 
-        John Miller*, 
+<div class="tabs">
+    <div
+        id="tab-radar" onclick="select(['tab-', 'topic-'], 'radar')"
+    >Machine Learning for Radar</div><div
+        class="disabled"id="tab-wasm" onclick="select(['tab-', 'topic-'], 'wasm')"
+    >Learning for Distributed Systems</div>
+</div>
+
+<div class="topics">
+
+<div id="topic-radar" >
+<p>
+Radars are an ideal complement to cameras for applications such as autonomous driving: both are inexpensive, solid-state sensors, with cameras boasting fine angular resolution and radars providing depth resolution and robustness to adverse conditions. Unfortunately, unlike visual images or Lidar points, radar data are harder to interpret, and lack a large body of existing research. In this project, my goal is to develop machine learning-based methods to interpret radar data both spatially and semantically, potentially replacing Lidar as the primary means of 3D perception in robotics and beyond.
+</p>
+<div class="image-800"><img src="resources/radar.svg"></img></div>
+
+</div>
+
+<div id="topic-wasm"  class="disabled" >
+<p>
+The ability to execute programs in heterogeneous distributed environments while maintaining security and performance isolation is of critical importance as edge and cloud applications become increasingly entangled.
+The <a href="https://github.com/SilverLineFramework">SilverLine</a> framework is our solution, where we propose using WebAssembly modules as an edge-friendly lighter-weight alternative to virtual machines or containers for maintaining isolation while providing portability.
+</p>
+<p>                
+In this research project, my goal is to explore learning-enabled building blocks for managing distributed systems. Key concerns include performance analysis and runtime prediction, as well as debugging and anomaly detection. My approach emphasizes going beyond black-box approaches (in both a statistical and a systems sense) using techniques like instrumentation injection and statistical machine learning approaches.
+</p>
+<div class="image-600"><img src="resources/silverline.png"></img></div>
+
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Publications</h2>
+<table class="toggle-filters"><tbody>
+    <tr><td>Current Research</td><td>
+        <span class="button" id="toggle-radar" onclick="filter(this, 'tag', 'radar')">Radar</span>
+        <span class="button" id="toggle-wasm" onclick="filter(this, 'tag', 'wasm')">Distributed Systems</span>        
+    </td></tr>
+    <tr><td>Past Research</td><td>
+        <span class="button" id="toggle-l2o" onclick="filter(this, 'tag', 'l2o')">Learning to Optimize</span>
+    </td></tr>
+</tbody></table>
+
+<div class="papers">
+<div class="tag-radar tag-primary ">
+    
+    <a href="dart.html" class="active">
+    
+    <span>(CVPR 2024)</span>
+    DART: Implicit Doppler Tomography for Radar Novel View Synthesis
+    </a>
+    <div>
+        <div><b>Tianshu Huang*</b>, 
+        John Miller<sup>*</sup>, 
         <a href="https://akarsh-prabhakara.github.io/">Akarsh Prabhakara</a>, 
         <a href="https://taojin-6.github.io/">Tao Jin</a>, 
         <a href="https://wise.ece.cmu.edu/about.html">Tarana Laroia</a>, 
         <a href="https://zicokolter.com/">Zico Kolter</a>, 
         <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>
+        </div>
+        <div><i>
+            We propose DART &mdash; Doppler Aided Radar Tomography, a Neural Radiance Field-inspired approach to radar novel view synthesis using implicit neural inverse imaging.
+        </i></div>
+        <div class="paper-links">
+        <a href="504.html" target="_blank" class="button">Paper</a>
+        <a href="https://github.com/thetianshuhuang/dart" target="_blank" class="button">Implementation</a>
+        <a href="https://github.com/thetianshuhuang/rover" target="_blank" class="button">Data Collection</a>
+        <a href="https://github.com/thetianshuhuang/dart/blob/main/docs/datasets.md" target="_blank" class="button">Dataset</a>
+        </div>
         <div class="image-800"><img src="resources/dart.svg"></img></div>
-    </li><li>
-        WebAssembly Debugging Paper (In Review)<br>
-        <a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
+    </div>
+</div><div class="tag-l2o tag-primary ">
+    
+    <a href="https://arxiv.org/abs/2203.06474" class="active">
+    
+    <span>(ICLR 2022)</span>
+    Optimizer Amalgamation
+    </a>
+    <div>
+        <div><b>Tianshu Huang</b>, 
+        <a href="https://tianlong-chen.github.io/">Tianlong Chen</a>, 
+        Sijia Liu, 
+        Shiyu Chang, 
+        Lisa Amini, 
+        <a href="https://vita-group.github.io/index.html">Zhangyang Wang</a>
+        </div>
+        
+        <div class="paper-links">
+        <a href="resources/OptimizerAmalgamation-Poster.pdf" target="_blank" class="button">Poster</a>
+        <a href="https://github.com/VITA-Group/OptimizerAmalgamation" target="_blank" class="button">Github</a>
+        </div>
+        <div class="image-800"><img src="resources/optimizer_amalgamation.png"></img></div>
+    </div>
+</div><div class="tag-wasm tag-consulting ">
+    <a>
+    <span>(In Review)</span>
+    WebAssembly Debugging Paper
+    </a>
+    <div>
+        <div><a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
         <b>Tianshu Huang</b>, 
         Jaspreet Singh Riar, 
         <a href="https://s3d.cmu.edu/people/core-faculty/titzer-ben.html">Ben Titzer</a>, 
         <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>
-        <!-- No figure -->
-    </li><li>
-        WebAssembly System Interfaces Paper (In Review)<br>
-        <a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
+        </div>
+        
+    </div>
+</div><div class="tag-wasm tag-consulting ">
+    <a>
+    <span>(In Review)</span>
+    WebAssembly System Interfaces Paper
+    </a>
+    <div>
+        <div><a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
         <b>Tianshu Huang</b>, 
         <a href="https://s3d.cmu.edu/people/core-faculty/titzer-ben.html">Ben Titzer</a>, 
         <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>
-        <!-- No figure -->
-    </li><li>
-        Program Runtime Prediction Paper (In Review)<br>
-        <b>Tianshu Huang</b>, 
+        </div>
+        
+    </div>
+</div><div class="tag-wasm tag-primary ">
+    <a>
+    <span>(In Review)</span>
+    Program Runtime Prediction Paper
+    </a>
+    <div>
+        <div><b>Tianshu Huang</b>, 
         <a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
         Jaspreet Singh Riar, 
         Emily Ruppel, 
         Nuno Pereira, 
         <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>, 
         <a href="https://www.andrew.cmu.edu/user/cjoewong/">Carlee Joe-Wong</a>
+        </div>
         <div class="image-800"><img src="resources/pitot.png"></img></div>
-    </li><li>
-        <a href="https://arxiv.org/abs/2203.06474">Optimizer Amalgamation (ICLR 2022)</a>
-            [<a href="resources/OptimizerAmalgamation-Poster.pdf", target="_blank">Poster</a>]
-            [<a href="https://github.com/VITA-Group/OptimizerAmalgamation", target="_blank">Github</a>]<br>
-        <b>Tianshu Huang</b>, 
-        <a href="https://tianlong-chen.github.io/">Tianlong Chen</a>, 
-        Sijia Liu, 
-        Shiyu Chang, 
-        Lisa Amini, 
-        <a href="https://vita-group.github.io/index.html">Zhangyang Wang</a>
-        <div class="image-800"><img src="resources/optimizer_amalgamation.png"></img></div>
-    </li>
-</ul>
+    </div>
+</div>
+</div>
 </div>
 
 <div class="section">
-<h3 id="section-talks">Invited Talks</h3>
+<h2>Awards</h2>
+    <p>
+        2023-2024 Academic Year | <b>Prabhu and Poonam Goel Graduate Fellowship</b> <br>
+        <i>Awarded to one student in the ECE department each academic year.</i></p>
+    <p>
+        Spring 2023 | <b>ECE Department Recognition Award for Exemplary Qualifying Exam Performance</b> <br>
+        <i>Recognized by CMU ECE faculty for exemplary Ph.D. qualifying examination performance. This distinction was awarded by faculty vote to select students within the top 10% of Ph.D. student examinees.</i>
+        <br>This award is typically given to no more than one student each semester.
+        </p>
+    <p>
+        Fall 2021 - Spring 2024 | <b>ARCS Pittsburgh Chapter Scholar</b> <br>
+        <i>$15,000 award (over 3 years) for one student nominated by each participating department.</i></p>
+    <p>
+        Fall 2017 - Spring 2021 | <b>Virginia & Ernest Cockrell, Jr. Scholarship in Engineering</b> <br>
+        <i>$48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program.</i></p>
+</div>
+
+
+<div class="section">
+<h2 id="section-talks">Invited Talks</h2>
 <ul>
 <li>
     Leveraging Wasm instrumentation,
@@ -120,8 +239,7 @@
 </li>
 </ul>
 
-<div class="section">
-<h3 id="section-students">Students</h3>
+<h2 id="section-students">Students</h2>
 <ul>
     <li>Quentin Oschatz (Masters; Spring 2023-) &mdash; Machine Learning for Radar</li>
     <li>Hanke Chen (Undergraduate; Summer 2022 - Summer 2023) &mdash; Neural Radiance Fields in Real Time</li>
@@ -129,10 +247,8 @@
     <li>Jeremy (Zhanfan) Yu (Masters; Summer 2022) &mdash; Silverline File Store</li>
     <li>Anish Singhani (Undergraduate; Spring 2022) &mdash; Lidar-guided depth estimation</li>
 </ul>
-</div>
 
-<div class="section">
-<h3 id="section-teaching">Teaching</h3>
+<h2 id="section-teaching">Teaching</h2>
 <ul>
     <li>
         TA: (CMU) 18-661 Introduction to Machine Learning for Engineers, Spring 2024
@@ -154,36 +270,15 @@
     </li>
     <li>TA: (UT Austin) EE 351k Probability, Statistics and Random Processes, Fall 2020 - Spring 2021</li>
 </ul>
-</div>
 
-<div class="section">
-<h3>Casual Presentations</h3>
+<h2>Casual Presentations</h2>
 <ul>
     <li><a href="resources/NeRFs.pdf">The NeRF is Dead ... Long Live the NeRF.</a></li>
     <li><a href="resources/TopicsOnTheEdge.pdf">Topics on the Edge (of Federated Learning)</a></li>
 </ul>
-</div>
 
-<div class="section">
-<h3>Awards</h3>
-<ul>
-    <li>
-        (Spring 2023) ECE Department Recognition Award for Exemplary Qualifying Exam Performance <br>
-        <i>Recognized by CMU ECE faculty for exemplary Ph.D. qualifying examination performance. This distinction was awarded by faculty vote to select students within the top 10% of Ph.D. student examinees.</i>
-    </li>
-    <li>
-        (Fall 2021 - Spring 2024) ARCS Pittsburgh Chapter Scholar <br>
-        <i>$15,000 award (over 3 years) for one student nominated by each participating department</i>
-    </li>
-    <li>
-        (Fall 2017 - Spring 2021) Virginia & Ernest Cockrell, Jr. Scholarship in Engineering <br>
-        <i>$48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program</i>
-    </li>
-</ul>
-</div>
 
-<div class="section">
-<h3>Service</h3>
+<h2>Service</h2>
 <ul>
     <li>Co-Chair, Student Council for Faculty Hiring 2024</li>
     <li>Reviewer, ICML 2022-2023</li>

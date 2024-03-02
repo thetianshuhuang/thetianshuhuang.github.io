@@ -1,10 +1,14 @@
 awards:
+- name: Prabhu and Poonam Goel Graduate Fellowship
+  date: 2023-2024 Academic Year
+  description: Awarded to one student in the ECE department each academic year.
 - name: ECE Department Recognition Award for Exemplary Qualifying Exam Performance
   date: Spring 2023
   description: "Recognized by CMU ECE faculty for exemplary Ph.D. qualifying examination performance. This distinction was awarded by faculty vote to select students within the top 10% of Ph.D. student examinees."
+  note: This award is typically given to no more than one student each semester.
 - name: ARCS Pittsburgh Chapter Scholar
   date: Fall 2021 - Spring 2024
-  description: $15,000 award (over 3 years) for one student nominated by each participating department
+  description: $15,000 award (over 3 years) for one student nominated by each participating department.
 - name: Virginia & Ernest Cockrell, Jr. Scholarship in Engineering
   date: Fall 2017 - Spring 2021
-  description: $48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program
+  description: $48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program.
