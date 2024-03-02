@@ -25,8 +25,6 @@ def _linkto(name: str, mode: str = 'simple') -> str:
         affiliations = '*' if '*' in affiliations else ''
         if mode == 'cv' and name.startswith('Tianshu Huang'):
             return f'<b>{name}{affiliations}</b>'
-    else:
-        affiliations = affiliations.replace('*', "&#x1F7B1;")
 
     try:
         res = f'<a href="{context["people"][name]}">{name}</a>'
