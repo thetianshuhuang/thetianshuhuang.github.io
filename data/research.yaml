@@ -1,7 +1,9 @@
 papers:
   dart:
     title: "DART: Implicit Doppler Tomography for Radar Novel View Synthesis"
-    shorttitle: "DART &#127919;"
+    shorttitle: DART
+    displaytitle: "<img src='resources/dart-logo.svg' style='max-height: 1.5em; width: auto'>"
+    icon: icons/dart.svg
     subtitle: Implicit Doppler Tomography for Radar Novel View Synthesis
     summary: We propose DART &mdash; Doppler Aided Radar Tomography, a Neural Radiance Field-inspired approach to radar novel view synthesis using implicit neural inverse imaging.
     venue: CVPR 2024

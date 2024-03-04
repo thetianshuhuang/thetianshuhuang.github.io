@@ -6,6 +6,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+{% if icon -%}
+<link rel="icon" type="image/svg+xml" href="{{icon}}">
+{%- endif %}
+
 <title>{{ shorttitle }}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +19,7 @@
 <div class="container">
 
 <div class="section">
-    <h1 style="font-weight: 500">{{ shorttitle }}</h1>
+    <h1 style="font-weight: 500">{{ displaytitle }}</h1>
     <h2>{{ subtitle }}</h2>
     <div class="authors">
         {% for author in authors -%}
