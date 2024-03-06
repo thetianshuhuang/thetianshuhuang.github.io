@@ -2,14 +2,13 @@ papers:
   dart:
     title: "DART: Implicit Doppler Tomography for Radar Novel View Synthesis"
     shorttitle: DART
-    # displaytitle: "<img src='resources/dart-logo.svg' style='max-height: 1.5em; width: auto'>"
-    displaytitle: DART
+    displaytitle: "DART <img src='icons/dart.svg' style='height: 1.3em; width: auto; vertical-align: text-top'>"
     icon: icons/dart.svg
     subtitle: Implicit Doppler Tomography for Radar Novel View Synthesis
     summary: We propose DART &mdash; Doppler Aided Radar Tomography, a Neural Radiance Field-inspired approach to radar novel view synthesis using implicit neural inverse imaging.
     venue: CVPR 2024
     tags: ["radar", "primary"]
-    url: dart.html
+    url: https://wiselabcmu.github.io/dart/
     figure: resources/dart.svg
     authors:
     - Tianshu Huang:*1
@@ -25,9 +24,9 @@ papers:
       2: Bosch Research
     resources:
       Paper: 504.html
-      Implementation: https://github.com/thetianshuhuang/dart
-      Data Collection: https://github.com/thetianshuhuang/rover
-      Dataset: https://github.com/thetianshuhuang/dart/blob/main/docs/datasets.md
+      Implementation: https://github.com/WiseLabCMU/dart
+      Data Collection: https://github.com/WiseLabCMU/rover
+      Dataset: https://github.com/WiseLabCMU/dart/blob/main/docs/datasets.md
   l2o:
     title: "Optimizer Amalgamation"
     venue: ICLR 2022

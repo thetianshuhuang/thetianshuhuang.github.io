@@ -22,20 +22,19 @@
     <h1 style="font-weight: 500">{{ displaytitle }}</h1>
     <h2>{{ subtitle }}</h2>
     <div class="authors">
-        {% for author in authors -%}
+        {%- for author in authors %}
         <span>{{ ref(author, mode='full') }}</span>
-        {% endfor %}
+        {%- endfor %}
     </div>
     <div class="authors">
-        {% for symbol, affiliation in affiliations.items() -%}
+        {%- for symbol, affiliation in affiliations.items() %}
         <span><sup>{{ symbol }}</sup>{{ affiliation }}</span>
-        {% endfor %}
+        {%- endfor %}
     </div>
-
     <div class="paper-links">
-        {% for name, url in resources.items() %}
+        {%- for name, url in resources.items() %}
         <a href="{{ url }}" target="_blank">{{ name }}</a>
-        {% endfor %}
+        {%- endfor %}
     </div>
 </div>
 
