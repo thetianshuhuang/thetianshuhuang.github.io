@@ -23,7 +23,7 @@ papers:
       1: Carnegie Mellon University
       2: Bosch Research
     resources:
-      Paper: 504.html
+      Paper: https://arxiv.org/abs/2403.03896
       Implementation: https://github.com/WiseLabCMU/dart
       Data Collection: https://github.com/WiseLabCMU/rover
       Dataset: https://github.com/WiseLabCMU/dart/blob/main/docs/datasets.md
