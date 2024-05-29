@@ -1,4 +1,7 @@
 photos:
+- path: mercedes.jpg
+  aspect: x23
+  desc: Side staircases in the Mercedes Museum in Stuttgart.
 - path: taipei-market.jpg
   aspect: x23
   desc: Shilin night market in Taipei with steam coming from a stall.

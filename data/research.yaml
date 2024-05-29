@@ -32,6 +32,7 @@ papers:
     venue: ICLR 2022
     tags: ["l2o", "primary"]
     url: https://arxiv.org/abs/2203.06474
+    summary: While meta-training optimizers from scratch is difficult, much attention has been directed towards developing a diverse body of analytical optimizers. Can we use these optimizers to meta-train a stronger optimizer?
     figure: resources/optimizer_amalgamation.png
     resources:
       Poster: resources/OptimizerAmalgamation-Poster.pdf
@@ -54,9 +55,10 @@ papers:
     - Ben Titzer
     - Anthony Rowe
   wali:
-    title: "WebAssembly System Interfaces Paper"
+    title: "Stop Hiding The Sharp Knives: The WebAssembly Linux Interface"
     venue: In Review
     tags: ["wasm", "consulting"]
+    url: https://arxiv.org/abs/2312.03858
     authors:
     - Arjun Ramesh
     - Tianshu Huang
