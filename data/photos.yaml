@@ -1,12 +1,16 @@
 photos:
 - path: graffiti.jpg
   thumb: 50
+  aspect: x23
 - path: canal.jpg
   thumb: 50
+  aspect: x32
 - path: db.jpg
   thumb: 0
+  aspect: x23
 - path: eiffel.jpg
   thumb: 50
+  aspect: x23
 - path: mercedes.jpg
   aspect: x23
   desc: Side staircases in the Mercedes Museum in Stuttgart.
