@@ -1,7 +1,16 @@
 photos:
+- path: graffiti.jpg
+  thumb: 50
+- path: canal.jpg
+  thumb: 50
+- path: db.jpg
+  thumb: 0
+- path: eiffel.jpg
+  thumb: 50
 - path: mercedes.jpg
   aspect: x23
   desc: Side staircases in the Mercedes Museum in Stuttgart.
+  thumb: 50
 - path: taipei-market.jpg
   aspect: x23
   desc: Shilin night market in Taipei with steam coming from a stall.
