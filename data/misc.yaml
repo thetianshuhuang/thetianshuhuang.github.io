@@ -12,3 +12,44 @@ awards:
 - name: Virginia & Ernest Cockrell, Jr. Scholarship in Engineering
   date: Fall 2017 - Spring 2021
   description: $48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program.
+teaching:
+- type: Guest Lecture
+  host: CMU
+  class: 18-649 Distributed Embedded Systems
+  date: April 2024
+  name: Machine Learning + Edge
+  url: resources/guest_lecture_machine_learning2.pdf
+- type: TA
+  host: CMU
+  class: 18-661 Introduction to Machine Learning
+  date: Spring 2024
+  lectures:
+  - name: SVM I (SVM, Hinge Loss, Max-Margin)
+    url: resources/18661_svm_i.pdf
+  - name: SVM II (Duality, Kernel Trick, What Happened to SVMs?)
+    url: resources/18661_svm_ii.pdf
+- type: Guest Lecture
+  host: Duke
+  class: ECE/COMPSCI 654 Edge Computing
+  date: February 2023
+  name: Federated Learning
+  url: resources/guest_lecture_federated_learning.pdf
+- type: Guest Lecture
+  host: CMU
+  class: 18-649 Distributed Embedded Systems
+  date: November 2022
+  name: Machine Learning + Edge
+  url: resources/guest_lecture_machine_learning.pdf
+- type: TA
+  host: CMU
+  class: 18-661 Introduction to Machine Learning
+  date: Spring 2022
+  lectures:
+  - name: Better and Faster Python
+    url: resources/18661_python.pdf
+  - name: Pytorch (and how we got here)
+    url: resources/18661_pytorch.pdf
+- type: TA
+  host: UT Austin
+  class: EE 351k Probability, Statistics and Random Processes
+  date: Fall 2020 - Spring 2021

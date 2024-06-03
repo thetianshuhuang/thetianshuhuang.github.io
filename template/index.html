@@ -94,20 +94,18 @@
 </div>
 
 <div class="section">
+
 <h2>Awards</h2>
-    {%- for award in awards %}
-    <p>
-        {{ award.date }} | <b>{{ award.name }}</b> <br>
-        <i>{{ award.description }}</i>
-        {%- if award.note %}
-        <br>{{ award.note }}
-        {% endif -%}
-    </p>
-    {%- endfor %}
-</div>
+{%- for award in awards %}
+<p>
+    {{ award.date }} | <b>{{ award.name }}</b> <br>
+    <i>{{ award.description }}</i>
+    {%- if award.note %}
+    <br>{{ award.note }}
+    {% endif -%}
+</p>
+{%- endfor %}
 
-
-<div class="section">
 <h2 id="section-talks">Invited Talks</h2>
 <ul>
 <li>
@@ -130,34 +128,31 @@
 </ul>
 
 <h2 id="section-teaching">Teaching</h2>
-<ul>
-    <li>
-        TA: (CMU) 18-661 Introduction to Machine Learning for Engineers, Spring 2024
-    </li>
-    <li>
-        Guest Lecture: (Duke) ECE/COMPSCI 654 Edge Computing, February 2023
-        <a href="resources/guest_lecture_federated_learning.pdf">(Federated Learning)</a>
-    </li>
-    <li>
-        Guest Lecture: (CMU) 18-649 Distributed Embedded Systems, November 2022
-        <a href="resources/guest_lecture_machine_learning.pdf">(Machine Learning + Edge)</a>
-    </li>
-    <li>
-        TA: (CMU) 18-661 Introduction to Machine Learning for Engineers, Spring 2022
-        <ul>
-            <li>Lecture: <a href="resources/18661-Lecture-Python.pdf">Better and Faster Python</a></li>
-            <li>Lecture: <a href="resources/18661-Lecture-Pytorch.pdf">Pytorch (and how we got here)</a></li>
-        </ul>
-    </li>
-    <li>TA: (UT Austin) EE 351k Probability, Statistics and Random Processes, Fall 2020 - Spring 2021</li>
+{%- for class in teaching %}
+{%- if class.name %}
+<p>
+    {{ class.type }}: <a href="{{ class.url }}"><b>{{ class.name }}</b></a><br>
+    <i>{{ class.host }} {{ class.class }}, {{ class.date }}</i>
+</p>
+{%- elif class.lectures %}
+{{ class.type }}: <b>{{ class.host }} {{ class.class }}</b>, {{ class.date }}
+<ul style="margin-top: 0px">
+    {%- for lecture in class.lectures %}
+    <li>Lecture: <a href="{{ lecture.url }}">{{ lecture.name }}</a></li>
+    {%- endfor %}
 </ul>
+{%- else %}
+<p>
+    {{ class.type }}: <b>{{ class.host }} {{ class.class }}</b>, {{ class.date }}
+</p>
+{%- endif %}
+{%- endfor %}
 
 <h2>Casual Presentations</h2>
 <ul>
     <li><a href="resources/NeRFs.pdf">The NeRF is Dead ... Long Live the NeRF.</a></li>
     <li><a href="resources/TopicsOnTheEdge.pdf">Topics on the Edge (of Federated Learning)</a></li>
 </ul>
-
 
 <h2>Service</h2>
 <ul>
@@ -166,4 +161,5 @@
     <li>Reviewer, NeurIPS 2022</li>
     <li>Reviewer, CrossFL @ MLSys</li>
 </ul>
+
 </div>
