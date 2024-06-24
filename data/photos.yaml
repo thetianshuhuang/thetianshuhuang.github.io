@@ -1,4 +1,20 @@
 photos:
+- path: leaf.jpg
+  thumb: 100
+  aspect: x23
+  desc: A "macro" shot of a leaf and some flowers shot with a telephoto lens.
+- path: moss.jpg
+  thumb: 40
+  aspect: x23
+  desc: A mossy tree in the pacific northwest.
+- path: seattle-night.jpg
+  thumb: 65
+  aspect: x31
+  desc: A late sunset in Seattle.
+- path: seattle-summit.jpg
+  thumb: 50
+  aspect: x23
+  desc: Reflection from the roof of the Summit building at the Seattle convention senter.
 - path: graffiti.jpg
   thumb: 50
   aspect: x23
@@ -31,6 +47,9 @@ photos:
   aspect: x32
   thumb: 50
   desc: Riding the Hong Kong tram at night; the ride is quite shaky, especially on the upper deck, replicating Hong Kong&apos;s signature blurry look.
+- path: sharetea.jpg
+  aspect: x11
+  desc: Sharetea in Honk Kong.
 - path: lianhuashan.jpg
   aspect: x31
   thumb: 40

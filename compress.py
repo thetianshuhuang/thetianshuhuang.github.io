@@ -1,6 +1,5 @@
 from PIL import Image
 import os
-from tqdm import tqdm
 import yaml
 
 
@@ -23,7 +22,7 @@ def _crop(short, long, target):
         return lower, upper
 
 
-for src in tqdm(photos):
+def _compress(src):
     img = Image.open(os.path.join("raw", src['path']))
 
     # Thumbnail
@@ -45,3 +44,11 @@ for src in tqdm(photos):
     scaled = (int(img.size[0] * scale), int(img.size[1] * scale))
     display = img.resize(scaled, Image.Resampling.LANCZOS)
     display.save(os.path.join("photos", src["path"]), 'jpeg', quality=75)
+
+
+for src in photos:
+    try:
+        _compress(src)
+        print("Compressed: {}".format(src['path']))
+    except FileNotFoundError:
+        print("Skipping: {} (source not available)".format(src['path']))
