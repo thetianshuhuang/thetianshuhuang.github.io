@@ -13,14 +13,23 @@ people:
   Zico Kolter: https://zicokolter.com/
 
 students:
+- name: Zhaowei Zhang
+  type: Undergraduate
+  date: Spring 2024-
+  topic: Radar Compression
 - name: Quentin Oschatz
   type: Masters
-  date: Spring 2023-
+  date: Spring 2023 - Summer 2024
   topic: Machine Learning for Radar
+  now: PhD @ CMU ECE
 - name: Hanke Chen
   type: Undergraduate
   date: Summer 2022 - Summer 2023
   topic: Neural Radiance Fields in Real Time
+  now: Startup (Neural Radiance Fields / 3D Synthesis)
+
+
+students_hidden:
 - name: Rahul Jha
   type: Masters
   date: Summer 2022 - Fall 2022
@@ -33,8 +42,6 @@ students:
   type: Undergraduate
   date: Spring 2022
   topic: Lidar-guided depth estimation
-
-students_hidden:
 - name: Kriti Kukreja
   type: Masters
   date: Fall 2022
