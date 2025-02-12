@@ -6,30 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script>
-function select(prefixes, target) {
-    prefixes.forEach(prefix => {
-        document.querySelectorAll(`[id^=${prefix}]`).forEach(item => {
-            if (item.id.endsWith(target)) { item.classList.remove("disabled"); }
-            else { item.classList.add("disabled"); }
-        })
-    })
-}
 
-function filter(btn, prefix, tag) {
-    if(btn.classList.contains('disabled')) {
-        btn.classList.remove('disabled');
-        Array.prototype.forEach.call(
-            document.getElementsByClassName(`${prefix}-${tag}`),
-            item => { item.classList.remove("disabled"); });
-    } else {
-        btn.classList.add('disabled');
-        Array.prototype.forEach.call(
-            document.getElementsByClassName(`${prefix}-${tag}`),
-            item => { item.classList.add("disabled"); });
-    }
-}
-</script>
 <title>Tianshu Huang | Not Available</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">    

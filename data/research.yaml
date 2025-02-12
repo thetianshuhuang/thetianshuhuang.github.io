@@ -1,4 +1,46 @@
 papers:
+  pitot:
+    title: "Uncertainty and Interference-aware Runtime Prediction for Edge Computing with Conformal Matrix Completion"
+    venue: MLSys 2025
+    tags: ["wasm", "primary"]
+    figure: resources/pitot.png
+    authors:
+    - Tianshu Huang
+    - Arjun Ramesh
+    - Emily Ruppel
+    - Nuno Pereira
+    - Anthony Rowe
+    - Carlee Joe-Wong
+  silverline:
+    title: "Silverline: Lightweight Virtualization and Orchestration of Distributed Systems"
+    venue: RTAS 2025
+    tags: ["wasm", "consulting"]
+    figure: resources/silverline.svg
+    authors:
+    - Arjun Ramesh
+    - Emily Ruppel
+    - Anthony Rowe
+    - Dakshina Dasari
+    - Behnaz Pourmohseni
+    - Fedor Smirnov
+    - Tianshu Huang
+    - Nuno Pereira
+    - Marco Giani
+    - Arne Hamann
+    - Dirk Ziegenbein
+    - Charles Shelton
+    - Paolo Pazzaglia
+  wali:
+    title: "Empowering WebAssembly with Thin Kernel Interfaces"
+    venue: EuroSys 2025
+    tags: ["wasm", "consulting"]
+    figure: resources/wali.svg
+    url: https://arxiv.org/abs/2312.03858
+    authors:
+    - Arjun Ramesh
+    - Tianshu Huang
+    - Ben Titzer
+    - Anthony Rowe
   dart:
     title: "DART: Implicit Doppler Tomography for Radar Novel View Synthesis"
     shorttitle: DART
@@ -6,9 +48,9 @@ papers:
     icon: icons/dart.svg
     subtitle: Implicit Doppler Tomography for Radar Novel View Synthesis
     summary: We propose DART &mdash; Doppler Aided Radar Tomography, a Neural Radiance Field-inspired approach to radar novel view synthesis using implicit neural inverse imaging.
+    venue_long: CVPR 2024, <b>Oral Presentation &mdash; Top 0.78% (90) of all submissions</b>
     venue: CVPR 2024
     tags: ["radar", "primary"]
-    url: https://wiselabcmu.github.io/dart/
     figure: resources/dart.svg
     authors:
     - Tianshu Huang:*1
@@ -22,6 +64,7 @@ papers:
       "*": Equal Contribution
       1: Carnegie Mellon University
       2: Bosch Research
+    url: https://wiselabcmu.github.io/dart/
     resources:
       Paper: https://arxiv.org/abs/2403.03896
       Implementation: https://github.com/WiseLabCMU/dart
@@ -31,9 +74,9 @@ papers:
     title: "Optimizer Amalgamation"
     venue: ICLR 2022
     tags: ["l2o", "primary"]
-    url: https://arxiv.org/abs/2203.06474
     summary: While meta-training optimizers from scratch is difficult, much attention has been directed towards developing a diverse body of analytical optimizers. Can we use these optimizers to meta-train a stronger optimizer?
     figure: resources/optimizer_amalgamation.png
+    url: https://arxiv.org/abs/2203.06474
     resources:
       Poster: resources/OptimizerAmalgamation-Poster.pdf
       Github: https://github.com/VITA-Group/OptimizerAmalgamation
@@ -44,39 +87,41 @@ papers:
     - Shiyu Chang
     - Lisa Amini
     - Zhangyang Wang
-  beanstalk:
-    title: "WebAssembly Debugging Paper"
-    venue: In Review
-    tags: ["wasm", "consulting"]
-    authors:
-    - Arjun Ramesh
-    - Tianshu Huang
-    - Jaspreet Singh Riar
-    - Ben Titzer
-    - Anthony Rowe
-  wali:
-    title: "Stop Hiding The Sharp Knives: The WebAssembly Linux Interface"
-    venue: In Review
-    tags: ["wasm", "consulting"]
-    url: https://arxiv.org/abs/2312.03858
-    authors:
-    - Arjun Ramesh
-    - Tianshu Huang
-    - Ben Titzer
-    - Anthony Rowe
-  pitot:
-    title: "Program Runtime Prediction Paper"
-    venue: In Review
-    tags: ["wasm", "primary"]
-    figure: resources/pitot.png
-    authors:
-    - Tianshu Huang
-    - Arjun Ramesh
-    - Jaspreet Singh Riar
-    - Emily Ruppel
-    - Nuno Pereira
-    - Anthony Rowe
-    - Carlee Joe-Wong
+
+  # grt:
+  #   title: "Radar Deep Learning"
+  #   venue: In Review
+  #   tags: ["radar", "primary"]
+  #   figure: resources/grt.svg
+  #   authors:
+  #   - Tianshu Huang
+  #   - Akarsh Prabhakara
+  #   - Chuhan Chen
+  #   - Jay Karhade
+  #   - Deva Ramanan
+  #   - Matthew O'Toole
+  #   - Anthony Rowe
+  # radarsim:
+  #   title: "3D Reconstruction"
+  #   venue: In Review
+  #   tags: ["radar", "primary"]
+  #   authors:
+  #   - Chuhan Chen
+  #   - Tianshu Huang
+  #   - Akarsh Prabhakara
+  #   - Chaithanya Kumar Mummadi
+  #   - Anthony Rowe
+  #   - Matthew O'Toole
+  #   - Deva Ramanan
+  # beanstalk:
+  #   title: "WebAssembly Debugging"
+  #   venue: In Review
+  #   tags: ["wasm", "consulting"]
+  #   authors:
+  #   - Arjun Ramesh
+  #   - Tianshu Huang
+  #   - Ben Titzer
+  #  - Anthony Rowe
 
 topics:
   radar:

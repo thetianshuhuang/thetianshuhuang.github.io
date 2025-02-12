@@ -1,4 +1,8 @@
 photos:
+- path: stride.jpg
+  thumb: 50
+  aspect: x23
+  desc: Jumping from rock to rock at Ohiopyle in the Fall.
 - path: leaf.jpg
   thumb: 100
   aspect: x23

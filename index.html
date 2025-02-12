@@ -6,30 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script>
-function select(prefixes, target) {
-    prefixes.forEach(prefix => {
-        document.querySelectorAll(`[id^=${prefix}]`).forEach(item => {
-            if (item.id.endsWith(target)) { item.classList.remove("disabled"); }
-            else { item.classList.add("disabled"); }
-        })
-    })
-}
 
-function filter(btn, prefix, tag) {
-    if(btn.classList.contains('disabled')) {
-        btn.classList.remove('disabled');
-        Array.prototype.forEach.call(
-            document.getElementsByClassName(`${prefix}-${tag}`),
-            item => { item.classList.remove("disabled"); });
-    } else {
-        btn.classList.add('disabled');
-        Array.prototype.forEach.call(
-            document.getElementsByClassName(`${prefix}-${tag}`),
-            item => { item.classList.add("disabled"); });
-    }
-}
-</script>
 <title>Tianshu Huang </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -96,121 +73,112 @@ In this research project, my goal is to explore learning-enabled building blocks
 </div>
 </div>
 
-<div class="section">
-<h2>Publications</h2>
-<table class="toggle-filters"><tbody>
-    <tr><td>Current Research</td><td>
-        <span class="button" id="toggle-radar" onclick="filter(this, 'tag', 'radar')">Radar</span>
-        <span class="button" id="toggle-wasm" onclick="filter(this, 'tag', 'wasm')">Distributed Systems</span>        
-    </td></tr>
-    <tr><td>Past Research</td><td>
-        <span class="button" id="toggle-l2o" onclick="filter(this, 'tag', 'l2o')">Learning to Optimize</span>
-    </td></tr>
-</tbody></table>
 
-<div class="papers">
-<div class="tag-radar tag-primary ">
-    
-    <a href="https://wiselabcmu.github.io/dart/" class="active">
-    
-    <span>(CVPR 2024)</span>
-    DART: Implicit Doppler Tomography for Radar Novel View Synthesis
-    </a>
-    <div>
-        <div><b>Tianshu Huang*</b>, 
-        John Miller<sup>*</sup>, 
-        <a href="https://akarsh-prabhakara.github.io/">Akarsh Prabhakara</a>, 
-        <a href="https://taojin-6.github.io/">Tao Jin</a>, 
-        <a href="https://wise.ece.cmu.edu/about.html">Tarana Laroia</a>, 
-        <a href="https://zicokolter.com/">Zico Kolter</a>, 
-        <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>
+<div class="section">
+<h2>Publications</h2>   
+<div>
+    <div class="tag-wasm tag-primary " style="padding: 16px 0px">
+        <div style="font-weight: 700; padding: 2px 0px">
+            Uncertainty and Interference-aware Runtime Prediction for Edge Computing with Conformal Matrix Completion
         </div>
-        <div><i>
-            We propose DART &mdash; Doppler Aided Radar Tomography, a Neural Radiance Field-inspired approach to radar novel view synthesis using implicit neural inverse imaging.
-        </i></div>
-        <div class="paper-links">
-        <a href="https://arxiv.org/abs/2403.03896" target="_blank" class="button">Paper</a>
-        <a href="https://github.com/WiseLabCMU/dart" target="_blank" class="button">Implementation</a>
-        <a href="https://github.com/WiseLabCMU/rover" target="_blank" class="button">Data Collection</a>
-        <a href="https://github.com/WiseLabCMU/dart/blob/main/docs/datasets.md" target="_blank" class="button">Dataset</a>
+        <span>
+            <b>Tianshu Huang</b>, 
+            <a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
+            <a href="https://users.ece.cmu.edu/~eruppel/">Emily Ruppel</a>, 
+            Nuno Pereira, 
+            <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>, 
+            <a href="https://www.andrew.cmu.edu/user/cjoewong/">Carlee Joe-Wong</a>
+        </span>
+        <br><span>MLSys 2025</span>
+        <div class="image-800"><img src="resources/pitot.png"></img></div>
+    </div>
+    <hr style="border-color: #bbb"/><div class="tag-wasm tag-consulting " style="padding: 16px 0px">
+        <div style="font-weight: 700; padding: 2px 0px">
+            Silverline: Lightweight Virtualization and Orchestration of Distributed Systems
+        </div>
+        <span>
+            <a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
+            <a href="https://users.ece.cmu.edu/~eruppel/">Emily Ruppel</a>, 
+            <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>, 
+            Dakshina Dasari, 
+            Behnaz Pourmohseni, 
+            Fedor Smirnov, 
+            <b>Tianshu Huang</b>, 
+            Nuno Pereira, 
+            Marco Giani, 
+            Arne Hamann, 
+            Dirk Ziegenbein, 
+            Charles Shelton, 
+            Paolo Pazzaglia
+        </span>
+        <br><span>RTAS 2025</span>
+        <div class="image-800"><img src="resources/silverline.svg"></img></div>
+    </div>
+    <hr style="border-color: #bbb"/><div class="tag-wasm tag-consulting " style="padding: 16px 0px">
+        <div style="font-weight: 700; padding: 2px 0px">
+            <a href="https://arxiv.org/abs/2312.03858">Empowering WebAssembly with Thin Kernel Interfaces</a>
+            
+        </div>
+        <span>
+            <a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
+            <b>Tianshu Huang</b>, 
+            <a href="https://s3d.cmu.edu/people/core-faculty/titzer-ben.html">Ben Titzer</a>, 
+            <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>
+        </span>
+        <br><span>EuroSys 2025</span>
+        <div class="image-800"><img src="resources/wali.svg"></img></div>
+    </div>
+    <hr style="border-color: #bbb"/><div class="tag-radar tag-primary " style="padding: 16px 0px">
+        <div style="font-weight: 700; padding: 2px 0px">
+            <a href="https://wiselabcmu.github.io/dart/">DART: Implicit Doppler Tomography for Radar Novel View Synthesis</a>
+            
+        </div>
+        <span>
+            <b>Tianshu Huang*</b>, 
+            John Miller<sup>*</sup>, 
+            <a href="https://akarsh-prabhakara.github.io/">Akarsh Prabhakara</a>, 
+            <a href="https://taojin-6.github.io/">Tao Jin</a>, 
+            <a href="https://wise.ece.cmu.edu/about.html">Tarana Laroia</a>, 
+            <a href="https://zicokolter.com/">Zico Kolter</a>, 
+            <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>
+        </span>
+        <br><span>CVPR 2024, <b>Oral Presentation &mdash; Top 0.78% (90) of all submissions</b></span>
+        
+        <div style="padding-top: 4px"><i>We propose DART &mdash; Doppler Aided Radar Tomography, a Neural Radiance Field-inspired approach to radar novel view synthesis using implicit neural inverse imaging.</i></div>
+        <div style="padding: 2px 0px">
+            <a href="https://arxiv.org/abs/2403.03896" target="_blank" style="margin-right: 1em">Paper</a>
+            <a href="https://github.com/WiseLabCMU/dart" target="_blank" style="margin-right: 1em">Implementation</a>
+            <a href="https://github.com/WiseLabCMU/rover" target="_blank" style="margin-right: 1em">Data Collection</a>
+            <a href="https://github.com/WiseLabCMU/dart/blob/main/docs/datasets.md" target="_blank" style="margin-right: 1em">Dataset</a>
         </div>
         <div class="image-800"><img src="resources/dart.svg"></img></div>
     </div>
-</div><div class="tag-l2o tag-primary ">
-    
-    <a href="https://arxiv.org/abs/2203.06474" class="active">
-    
-    <span>(ICLR 2022)</span>
-    Optimizer Amalgamation
-    </a>
-    <div>
-        <div><b>Tianshu Huang</b>, 
-        <a href="https://tianlong-chen.github.io/">Tianlong Chen</a>, 
-        Sijia Liu, 
-        Shiyu Chang, 
-        Lisa Amini, 
-        <a href="https://vita-group.github.io/index.html">Zhangyang Wang</a>
+    <hr style="border-color: #bbb"/><div class="tag-l2o tag-primary " style="padding: 16px 0px">
+        <div style="font-weight: 700; padding: 2px 0px">
+            <a href="https://arxiv.org/abs/2203.06474">Optimizer Amalgamation</a>
+            
         </div>
-        <div><i>
-            While meta-training optimizers from scratch is difficult, much attention has been directed towards developing a diverse body of analytical optimizers. Can we use these optimizers to meta-train a stronger optimizer?
-        </i></div>
-        <div class="paper-links">
-        <a href="resources/OptimizerAmalgamation-Poster.pdf" target="_blank" class="button">Poster</a>
-        <a href="https://github.com/VITA-Group/OptimizerAmalgamation" target="_blank" class="button">Github</a>
+        <span>
+            <b>Tianshu Huang</b>, 
+            <a href="https://tianlong-chen.github.io/">Tianlong Chen</a>, 
+            Sijia Liu, 
+            Shiyu Chang, 
+            Lisa Amini, 
+            <a href="https://vita-group.github.io/index.html">Zhangyang Wang</a>
+        </span>
+        <br><span>ICLR 2022</span>
+        <div style="padding-top: 4px"><i>While meta-training optimizers from scratch is difficult, much attention has been directed towards developing a diverse body of analytical optimizers. Can we use these optimizers to meta-train a stronger optimizer?</i></div>
+        <div style="padding: 2px 0px">
+            <a href="resources/OptimizerAmalgamation-Poster.pdf" target="_blank" style="margin-right: 1em">Poster</a>
+            <a href="https://github.com/VITA-Group/OptimizerAmalgamation" target="_blank" style="margin-right: 1em">Github</a>
         </div>
         <div class="image-800"><img src="resources/optimizer_amalgamation.png"></img></div>
     </div>
-</div><div class="tag-wasm tag-consulting ">
-    <a>
-    <span>(In Review)</span>
-    WebAssembly Debugging Paper
-    </a>
-    <div>
-        <div><a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
-        <b>Tianshu Huang</b>, 
-        Jaspreet Singh Riar, 
-        <a href="https://s3d.cmu.edu/people/core-faculty/titzer-ben.html">Ben Titzer</a>, 
-        <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>
-        </div>
-        
-    </div>
-</div><div class="tag-wasm tag-consulting ">
-    
-    <a href="https://arxiv.org/abs/2312.03858" class="active">
-    
-    <span>(In Review)</span>
-    Stop Hiding The Sharp Knives: The WebAssembly Linux Interface
-    </a>
-    <div>
-        <div><a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
-        <b>Tianshu Huang</b>, 
-        <a href="https://s3d.cmu.edu/people/core-faculty/titzer-ben.html">Ben Titzer</a>, 
-        <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>
-        </div>
-        
-    </div>
-</div><div class="tag-wasm tag-primary ">
-    <a>
-    <span>(In Review)</span>
-    Program Runtime Prediction Paper
-    </a>
-    <div>
-        <div><b>Tianshu Huang</b>, 
-        <a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>, 
-        Jaspreet Singh Riar, 
-        Emily Ruppel, 
-        Nuno Pereira, 
-        <a href="https://users.ece.cmu.edu/~agr/">Anthony Rowe</a>, 
-        <a href="https://www.andrew.cmu.edu/user/cjoewong/">Carlee Joe-Wong</a>
-        </div>
-        <div class="image-800"><img src="resources/pitot.png"></img></div>
-    </div>
 </div>
 </div>
-</div>
+
 
 <div class="section">
-
 <h2>Awards</h2>
 <p>
     2023-2024 Academic Year | <b>Prabhu and Poonam Goel Graduate Fellowship</b> <br>
@@ -226,7 +194,9 @@ In this research project, my goal is to explore learning-enabled building blocks
 <p>
     Fall 2017 - Spring 2021 | <b>Virginia & Ernest Cockrell, Jr. Scholarship in Engineering</b> <br>
     <i>$48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program.</i></p>
+</div>
 
+<div class="section">
 <h2 id="section-talks">Invited Talks</h2>
 <ul>
 <li>
@@ -240,7 +210,9 @@ In this research project, my goal is to explore learning-enabled building blocks
     (With <a href="https://users.ece.cmu.edu/~arjunr2/">Arjun Ramesh</a>)
 </li>
 </ul>
+</div>
 
+<div class="section">
 <h2 id="section-students">Students</h2>
 <ul>
     <li>Quentin Oschatz (Masters; Spring 2023-) &mdash; Machine Learning for Radar</li>
@@ -249,7 +221,9 @@ In this research project, my goal is to explore learning-enabled building blocks
     <li>Jeremy (Zhanfan) Yu (Masters; Summer 2022) &mdash; Silverline File Store</li>
     <li>Anish Singhani (Undergraduate; Spring 2022) &mdash; Lidar-guided depth estimation</li>
 </ul>
+</div>
 
+<div class="section">
 <h2 id="section-teaching">Teaching</h2>
 <p>
     Guest Lecture: <a href="resources/guest_lecture_machine_learning2.pdf"><b>Machine Learning + Edge</b></a><br>
@@ -276,22 +250,70 @@ TA: <b>CMU 18-661 Introduction to Machine Learning</b>, Spring 2022
 <p>
     TA: <b>UT Austin EE 351k Probability, Statistics and Random Processes</b>, Fall 2020 - Spring 2021
 </p>
+</div>
 
+
+<div class="section">
 <h2>Casual Presentations</h2>
 <ul>
     <li><a href="resources/NeRFs.pdf">The NeRF is Dead ... Long Live the NeRF.</a></li>
     <li><a href="resources/TopicsOnTheEdge.pdf">Topics on the Edge (of Federated Learning)</a></li>
 </ul>
+</div>
 
+<div class="section">
 <h2>Service</h2>
 <ul>
     <li>Co-Chair, Student Council for Faculty Hiring 2024</li>
+    <li>Reviewer, CVPR 2025</li>
     <li>Reviewer, ICML 2022-2023</li>
     <li>Reviewer, NeurIPS 2022</li>
     <li>Reviewer, CrossFL @ MLSys</li>
 </ul>
+</div>
 
 </div>
+
+<script>
+function select(prefixes, target) {
+    prefixes.forEach(prefix => {
+        document.querySelectorAll(`[id^=${prefix}]`).forEach(item => {
+            if (item.id.endsWith(target)) { item.classList.remove("disabled"); }
+            else { item.classList.add("disabled"); }
+        })
+    })
+}
+
+function _disable(tag) {
+    Array.from(document.getElementsByClassName(`tag-${tag}`)).forEach(
+        item => item.classList.add("disabled"));
+    document.getElementById(`toggle-${tag}`).classList.add("disabled");
+}
+
+function _enable(tag) {
+    Array.from(document.getElementsByClassName(`tag-${tag}`)).forEach(
+        item => item.classList.remove("disabled"));
+    document.getElementById(`toggle-${tag}`).classList.remove("disabled");
+}
+
+tags = ["l2o", "wasm", "radar"];
+
+function filter(btn, tag) {
+    const all_enabled = !tags.some(
+        t => document.getElementById(
+            `toggle-${t}`).classList.contains("disabled"));
+
+    // disabled -> enable this one, then disable all others
+    // or if all are enabled already
+    if (btn.classList.contains('disabled') || all_enabled) {
+        _enable(tag);
+        tags.forEach(item => { if(item != tag){ _disable(item); } })
+    // enabled -> enable all tags (unless they're all enabled already)
+    } else {
+        tags.forEach(item => _enable(item));
+    }
+}
+</script>
 </div>
 
 <div class="no-mobile">
