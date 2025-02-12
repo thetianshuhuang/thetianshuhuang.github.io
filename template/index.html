@@ -121,7 +121,10 @@
 <h2 id="section-students">Students</h2>
 <ul>
     {%- for student in students %}
-    <li>{{ ref(student.name) }} ({{ student.type }}; {{ student.date }}) &mdash; {{ student.topic }}</li>
+    <li>{{ ref(student.name) }} &mdash; <i>{{ student.topic }}</i>
+    <br>{{ student.type }}, {{ student.date }}
+    {%- if student.now %} &#x2192; {{ student.now }} {% endif -%}
+    </li>
     {%- endfor %}
 </ul>
 </div>
