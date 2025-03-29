@@ -1,7 +1,7 @@
-from PIL import Image
 import os
-import yaml
 
+import yaml
+from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 THUMB_SIZE = 320

@@ -1,8 +1,24 @@
 papers:
+  beanstalk:
+    title: "Unveiling Heisenbugs with Diversified Execution"
+    venue: OOPSLA 2025
+    tags: ["wasm", "consulting"]
+    figure: resources/beanstalk.svg
+    authors:
+    - Arjun Ramesh
+    - Tianshu Huang
+    - Jaspreet Singh Riar
+    - Ben Titzer
+    - Anthony Rowe
+    resources:
+      Github: https://github.com/arjunr2/beanstalk
+      Instrumentation Framework: https://github.com/arjunr2/wasm-instrument
   pitot:
     title: "Uncertainty and Interference-aware Runtime Prediction for Edge Computing with Conformal Matrix Completion"
     venue: MLSys 2025
     tags: ["wasm", "primary"]
+    summary: Performance prediction in heterogeneous systems such as edge computing is best formulated as matrix completion, which can be extended to handle complex, edge-specific concerns such as interference and uncertainty quantification.
+    url: https://arxiv.org/abs/2503.06428
     figure: resources/pitot.png
     authors:
     - Tianshu Huang
@@ -11,6 +27,9 @@ papers:
     - Nuno Pereira
     - Anthony Rowe
     - Carlee Joe-Wong
+    resources:
+      Github: https://github.com/WiseLabCMU/pitot
+      Zenodo: https://zenodo.org/records/14977004
   silverline:
     title: "Silverline: Lightweight Virtualization and Orchestration of Distributed Systems"
     venue: RTAS 2025
@@ -35,12 +54,16 @@ papers:
     venue: EuroSys 2025
     tags: ["wasm", "consulting"]
     figure: resources/wali.svg
+    summary: Webassembly (Wasm) adoption for new domains is often hindered by the lack of standard system interfaces. We propose directly exposing OS userspace syscalls as a compromise.
     url: https://arxiv.org/abs/2312.03858
     authors:
     - Arjun Ramesh
     - Tianshu Huang
     - Ben Titzer
     - Anthony Rowe
+    resources:
+      Github: https://github.com/arjunr2/WALI
+      Rust Target: https://doc.rust-lang.org/nightly/rustc/platform-support/wasm32-wali-linux.html
   dart:
     title: "DART: Implicit Doppler Tomography for Radar Novel View Synthesis"
     shorttitle: DART
@@ -113,15 +136,6 @@ papers:
   #   - Anthony Rowe
   #   - Matthew O'Toole
   #   - Deva Ramanan
-  # beanstalk:
-  #   title: "WebAssembly Debugging"
-  #   venue: In Review
-  #   tags: ["wasm", "consulting"]
-  #   authors:
-  #   - Arjun Ramesh
-  #   - Tianshu Huang
-  #   - Ben Titzer
-  #  - Anthony Rowe
 
 topics:
   radar:

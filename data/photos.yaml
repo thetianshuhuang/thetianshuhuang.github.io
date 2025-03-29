@@ -1,4 +1,20 @@
 photos:
+- path: abstract-wave.jpg
+  thumb: 50
+  aspect: x32
+  desc: An abstract scuplture at the Carnegie Museum of Art.
+- path: blue-spheres.jpg
+  thumb: 50
+  aspect: x32
+  desc: An alien landscape at the Carnegie Museum of Natural History.
+- path: purple-flower.jpg
+  thumb: 50
+  aspect: x32
+  desc: Macro shot at Phipps Conservatory in Pittsburgh.
+- path: train-crossing.jpg
+  thumb: 0
+  aspect: x23
+  desc: A level crossing in the South Side of Pittsburgh.
 - path: stride.jpg
   thumb: 50
   aspect: x23
