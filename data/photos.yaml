@@ -1,4 +1,12 @@
 photos:
+- path: ischgl.jpg
+  thumb: 50
+  aspec: x23
+  desc: Idalp at Ischgl; despite being early April already, the snow quality above 2300m is surprisingly good.
+- path: cafe.jpg
+  thumb: 55
+  aspec: x23
+  desc: The cafe is closed, but the sign is definitely not.
 - path: abstract-wave.jpg
   thumb: 50
   aspect: x32
