@@ -72,7 +72,7 @@
         {%- if paper.resources %}
         <div style="padding: 2px 0px">
             {%- for name, url in paper.resources.items() %}
-            <a href="{{url}}" target="_blank" style="margin-right: 1em">{{name}}</a>
+            <a href="{{url}}" target="_blank" {{"style=\"margin-right: 1em\"" if not loop.last}}>{{name}}</a>
             {%- endfor %}
         </div>
         {% endif -%}

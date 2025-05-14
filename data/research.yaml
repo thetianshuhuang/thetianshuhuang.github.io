@@ -1,6 +1,7 @@
 papers:
   beanstalk:
     title: "Unveiling Heisenbugs with Diversified Execution"
+    url: https://dl.acm.org/doi/10.1145/3720428
     venue: OOPSLA 2025
     tags: ["wasm", "consulting"]
     figure: resources/beanstalk.svg
@@ -30,6 +31,7 @@ papers:
     resources:
       Github: https://github.com/WiseLabCMU/pitot
       Zenodo: https://zenodo.org/records/14977004
+      Slides: resources/pitot_slides.pdf
   silverline:
     title: "Silverline: Lightweight Virtualization and Orchestration of Distributed Systems"
     venue: RTAS 2025
