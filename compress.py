@@ -1,3 +1,5 @@
+"""Compress / downsample images."""
+
 import os
 
 import yaml

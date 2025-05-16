@@ -1,7 +1,9 @@
-import yaml
-import os
-from jinja2 import Template
+"""Render templates."""
 
+import os
+
+import yaml
+from jinja2 import Template
 
 TEMPLATE_PATH = "template"
 TEMPLATE_BASE = "template/page.html"
