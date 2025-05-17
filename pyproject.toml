@@ -6,3 +6,4 @@ dependencies = [
     "pillow>=11.2.1",
     "pyyaml>=6.0.2",
 ]
+requires-python = ">= 3.10"

@@ -4,6 +4,7 @@ papers:
     url: https://dl.acm.org/doi/10.1145/3720428
     venue: OOPSLA 2025
     tags: ["wasm", "consulting"]
+    summary: Heisenbugs - bugs which change their behavior under observation - are among the toughest challenges when debugging programs. We propose to catch these bugs using stochastic instrumentation, and demonstrate the surprising effectiveness of debugging across a diverse set of platforms.
     figure: resources/beanstalk.svg
     authors:
     - Arjun Ramesh
@@ -36,6 +37,7 @@ papers:
     title: "Silverline: Lightweight Virtualization and Orchestration of Distributed Systems"
     venue: RTAS 2025
     tags: ["wasm", "consulting"]
+    summary: "We develop Silverline: a framework for programming heterogeneous dynamic distributed systems. Using WebAssembly as a lightweight virtualization framework, we design silverline to be fault-tolerant and real-time, and show it in use on industrial-grade systems."
     figure: resources/silverline.svg
     authors:
     - Arjun Ramesh

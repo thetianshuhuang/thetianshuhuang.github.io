@@ -155,6 +155,8 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
 .paper-links > a:hover, .button:hover, .tabs > div:hover, .tab:hover {
     background-color: var(--highlight-tl); color: var(--light) }
 
+.hidden {display: none !important}
+
 /* Images */
 .image-800, .image-600, .image-500, .image-400 { width: 100%; }
 .image-800 > img, .image-600 > img, .image-500 > img, .image-400 > img

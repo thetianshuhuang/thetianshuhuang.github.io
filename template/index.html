@@ -68,7 +68,7 @@
         {%- endif %}
         {% if paper.summary -%}
         <div style="padding-top: 4px"><i>{{ paper.summary }}</i></div>
-        {%- endif %}
+        {%- endif %}    
         {%- if paper.resources %}
         <div style="padding: 2px 0px">
             {%- for name, url in paper.resources.items() %}
@@ -152,7 +152,6 @@
 {%- endfor %}
 </div>
 
-
 <div class="section">
 <h2>Casual Presentations</h2>
 <ul>
@@ -175,6 +174,11 @@
 </div>
 
 <script>
+function toggle(btn) {
+    const details = btn.parentNode.nextSibling;
+    details.classList.toggle("hidden");
+}
+
 function select(prefixes, target) {
     prefixes.forEach(prefix => {
         document.querySelectorAll(`[id^=${prefix}]`).forEach(item => {

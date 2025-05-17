@@ -42,7 +42,7 @@ context["ref"] = _linkto
 targets = {
     "index.html": None,
     "photography.html": "Photography",
-    "504.html": "Not Available"
+    "404.html": "Not Available"
 }
 
 for target, title in targets.items():
