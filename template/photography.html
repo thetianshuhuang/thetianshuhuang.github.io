@@ -6,7 +6,7 @@
     </div><div class="biography">
         <h1 class="no-mobile">Tianshu Huang</h1>
         <p>
-            I'm an amateur photographer who mostly takes travel photos. I started (somewhat) seriously trying to learn photography in 2022; this page documents my best work so far.
+            I'm an amateur photographer who mostly takes travel photos; recently, I've also been dabbling in events and other research-related work. I started (somewhat) seriously trying to learn photography in 2022; this page documents my best work so far.
         </p>
         <p>
             You can find my academic page <a href="index.html">here</a>. Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
@@ -18,12 +18,12 @@
 
 <div class="photos">
     {% for year in photos -%}
-    <h2>{{year}}</h2>
+    <h3 id="{{year}}">{{year}}</h3>
     {% for photo in photos[year] -%}
     <div class="{{photo.aspect}}">
         <div onclick="selected = 'photos/{{photo.path}}'; open_pre();"></div>
         <span></span>
-        <img src="thumbs/{{photo.path}}" alt="{{photo.caption}}">
+        <img src="thumbs/{{photo.path}}" alt="{{photo.desc}}">
     </div>
     {% endfor -%}
     {% endfor -%}

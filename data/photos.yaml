@@ -172,3 +172,26 @@ photos:
     aspect: x23
     thumb: 50
     desc: A conversation in Lake Erie viewed from a distance in Presque Isle State Park.
+  "Professional Work":
+  - path: realsense.jpg
+    aspect: x23
+    thumb: 0
+    desc: Real-time Volumetric Compression; paper in review.
+  - path: mlsys.jpg
+    aspect: x21
+    thumb: 50
+    desc: Daiyaan Arfeen @ MLSys 2025.
+  - path: debate.jpg
+    aspect: x23
+    thumb: 50
+    desc: Anthony Rowe @ CPS-IoT Debate at CPS-IoT Week 2025.
+  - path: xr.jpg
+    aspect: x11
+    desc: HCI Study Paper on Mixed-Reality Art; paper in review.
+  - path: duck.jpg
+    aspect: x11
+    desc: Towards Foundational Models for Single-Chip Radar, Appendix A.
+  - path: bosch.jpg
+    aspect: x23
+    thumb: 65
+    desc: Bosch Collaboration @ Bosch Research, Renningen.
