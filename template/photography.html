@@ -17,14 +17,17 @@
 <div class="section" style="padding-top: 50px">
 
 <div class="photos">
-    {% for photo in photos -%}
+    {% for year in photos -%}
+    <h2>{{year}}</h2>
+    {% for photo in photos[year] -%}
     <div class="{{photo.aspect}}">
         <div onclick="selected = 'photos/{{photo.path}}'; open_pre();"></div>
         <span></span>
-        <img src="thumbs/{{photo.path}}">
+        <img src="thumbs/{{photo.path}}" alt="{{photo.caption}}">
     </div>
     {% endfor -%}
-</div>  
+    {% endfor -%}
+</div>
 
 <div class="overlay">
     <div id="overlay-pre" style="display: none">

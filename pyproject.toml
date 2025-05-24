@@ -2,8 +2,10 @@
 name = "thetianshuhuang.github.io"
 version = "1.0.0"
 dependencies = [
+    "tyro>=0.9.21",
     "jinja2>=3.1.6",
     "pillow>=11.2.1",
     "pyyaml>=6.0.2",
+    "tqdm>=4.67.1",
 ]
 requires-python = ">= 3.10"

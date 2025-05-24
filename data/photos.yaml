@@ -1,154 +1,174 @@
 photos:
-- path: ischgl.jpg
-  thumb: 50
-  aspect: x23
-  desc: Idalp at Ischgl; despite being early April already, the snow quality above 2300m is surprisingly good.
-- path: cafe.jpg
-  thumb: 55
-  aspect: x23
-  desc: The cafe is closed, bu  t the sign is definitely not.
-- path: abstract-wave.jpg
-  thumb: 50
-  aspect: x32
-  desc: An abstract scuplture at the Carnegie Museum of Art.
-- path: blue-spheres.jpg
-  thumb: 50
-  aspect: x32
-  desc: An alien landscape at the Carnegie Museum of Natural History.
-- path: purple-flower.jpg
-  thumb: 50
-  aspect: x32
-  desc: Macro shot at Phipps Conservatory in Pittsburgh.
-- path: train-crossing.jpg
-  thumb: 0
-  aspect: x23
-  desc: A level crossing in the South Side of Pittsburgh.
-- path: stride.jpg
-  thumb: 50
-  aspect: x23
-  desc: Jumping from rock to rock at Ohiopyle in the Fall.
-- path: leaf.jpg
-  thumb: 100
-  aspect: x23
-  desc: A "macro" shot of a leaf and some flowers shot with a telephoto lens.
-- path: moss.jpg
-  thumb: 40
-  aspect: x23
-  desc: A mossy tree in the pacific northwest.
-- path: seattle-night.jpg
-  thumb: 65
-  aspect: x31
-  desc: A late sunset in Seattle.
-- path: seattle-summit.jpg
-  thumb: 50
-  aspect: x23
-  desc: Reflection from the roof of the Summit building at the Seattle convention senter.
-- path: graffiti.jpg
-  thumb: 50
-  aspect: x23
-  desc: The "Graffiti Bridge" in Amsterdam.
-- path: canal.jpg
-  thumb: 50
-  aspect: x32
-  desc: Van Gogh-esque photo of a Canal in Amsterdam at twilight.
-- path: db.jpg
-  thumb: 0
-  aspect: x23
-  desc: Deutsche Bahn building in Frankfurt is one of the most "evil" buildings in Germany.
-- path: eiffel.jpg
-  thumb: 50
-  aspect: x23
-  desc: Telephoto of elevators in the Eiffel Tower.
-- path: mercedes.jpg
-  aspect: x23
-  thumb: 50
-  desc: Side staircases in the Mercedes Museum in Stuttgart.
-- path: taipei-market.jpg
-  aspect: x23
-  thumb: 100
-  desc: Shilin night market in Taipei with steam coming from a stall.
-- path: hk-night.jpg
-  aspect: x23
-  thumb: 50
-  desc: A seedy Hong Kong crime thriller, complete with sketchy characters sitting in the shadows.
-- path: hk-tram.jpg
-  aspect: x32
-  thumb: 50
-  desc: Riding the Hong Kong tram at night; the ride is quite shaky, especially on the upper deck, replicating Hong Kong&apos;s signature blurry look.
-- path: sharetea.jpg
-  aspect: x11
-  desc: Sharetea in Honk Kong.
-- path: lianhuashan.jpg
-  aspect: x31
-  thumb: 40
-  desc: Large panorama of the Shenzhen Futian CBD at sunset from the Deng XiaoPing monument in Lianhuashan.
-- path: zhaoqing.jpg
-  aspect: x23
-  thumb: 50
-  desc: A ferry on the lake in Zhaoqing.
-- path: gz-beijingroad.jpg
-  aspect: x23
-  thumb: 50
-  desc: A small side street in the "Beijing Road" district in Guangzhou.
-- path: sz-construction.jpg
-  aspect: x21
-  thumb: 0
-  desc: The Nanshan District in Shenzhen is one of the "newest" districts; just about everywhere seems to be under construction.
-- path: sz-mixc.jpg
-  aspect: x23
-  thumb: 100
-  desc: A cat and its ball in the newly-built MixC shopping mall in Shenzhen.
-- path: san-bruno.jpg
-  aspect: x32
-  thumb: 50
-  desc: San Bruno caltrain station taken while landing at SFO; the distortion caused by the window and engine exhaust happens to create a tilt shift-like effect.
-- path: flagstaff-hill.jpg
-  aspect: x31
-  thumb: 50
-  desc: A panorama of Oakland from Flagstaff Hill in Pittsburgh.
-- path: lisbon-bridge.jpg
-  aspect: x32
-  thumb: 100
-  desc: The iconic bridge of Lisbon - which looks suspiciously like the Golden Gate Bridge.
-- path: miradouro-da-graca.jpg
-  aspect: x32
-  thumb: 50
-  desc: View from the Miradouro Da Graca in Lisbon.
-- path: riu-espana.jpg
-  aspect: x31
-  thumb: 35
-  desc: View of Madrid from the roof of the Riu Espana.
-- path: wasen.jpg
-  aspect: x11
-  desc: Stuttgart's Cannstatter Volksfest is the 2nd largest beer festival, rivaling Oktoberfest in Munich.
-- path: surfliner.jpg
-  aspect: x32
-  thumb: 50
-  desc: The Amtrak Surfliner in Torrey Pines from the bridge on Torrey Pines Rd.
-- path: potato-chip.jpg
-  aspect: x11
-  desc: Potato Chip Rock in San Diego being used as intended.
-- path: lha-6.jpg
-  aspect: x23
-  thumb: 50
-  desc: USS America (LHA-6) performing airlift exercises off the coast between San Diego and LA, taken while stuck in traffic.
-- path: big-bend-camper.jpg
-  aspect: x23
-  thumb: 50
-  desc: A camper parked by the side of the road in Big Bend National Park.
-- path: persimmon-gap.jpg
-  aspect: x21
-  thumb: 50
-  desc: Panorama of the Chisos Mountains from Persimmon Gap in Big Bend National Park.
-- path: chestnut-hyde.jpg
-  aspect: x23
-  thumb: 50
-  desc: View of Alcatraz and the San Francisco Bay from Chestnut & Hyde.
-- path: ca-aqueduct.jpg
-  aspect: x23
-  thumb: 50
-  desc: View of the California Aqueduct from above, taken on final approach to SFO.
-- path: presque-isle.jpg
-  aspect: x23
-  thumb: 50
-  desc: A conversation in Lake Erie viewed from a distance in Presque Isle State Park.
+  2025:
+  - path: joshua-tree.jpg
+    thumb: 50
+    aspect: x32
+    desc: Joshua Tree National Park is known not just for its namesake trees, but for unique rock formations which are great for climbing and scrambling.
+  - path: bee.jpg
+    thumb: 0
+    aspect: x32
+    desc: A bee pollinating flowers in Laguna Beach.
+  - path: ischgl.jpg
+    thumb: 50
+    aspect: x23
+    desc: Idalp at Ischgl; despite being early April already, the snow quality above 2300m is surprisingly good.
+  - path: cafe.jpg
+    thumb: 55
+    aspect: x23
+    desc: The cafe is closed, but the sign is definitely not.
+  - path: abstract-wave.jpg
+    thumb: 50
+    aspect: x32
+    desc: An abstract scuplture at the Carnegie Museum of Art.
+  - path: blue-spheres.jpg
+    thumb: 50
+    aspect: x32
+    desc: An alien landscape at the Carnegie Museum of Natural History.
+  - path: purple-flower.jpg
+    thumb: 50
+    aspect: x32
+    desc: Macro shot at Phipps Conservatory in Pittsburgh.
+  - path: train-crossing.jpg
+    thumb: 0
+    aspect: x23
+    desc: A level crossing in the South Side of Pittsburgh.
+  - path: stride.jpg
+    thumb: 50
+    aspect: x23
+    desc: Jumping from rock to rock at Ohiopyle in the Fall.
+  2024:
+  - path: reflection.jpg
+    thumb: 50
+    aspect: x23
+    desc: Bakery Square in Pittsburgh.
+  - path: leaf.jpg
+    thumb: 100
+    aspect: x23
+    desc: A "macro" shot of a leaf and some flowers shot with a telephoto lens.
+  - path: moss.jpg
+    thumb: 40
+    aspect: x23
+    desc: A mossy tree in the pacific northwest.
+  - path: seattle-night.jpg
+    thumb: 65
+    aspect: x31
+    desc: A late sunset in Seattle.
+  - path: seattle-summit.jpg
+    thumb: 50
+    aspect: x23
+    desc: Reflection from the roof of the Summit building at the Seattle convention senter.
+  - path: monkeys.jpg
+    thumb: 0
+    aspect: x23
+    desc: Seen in the Rijksmuseum in Amsterdam; the dutch have some interesting taste...
+  - path: graffiti.jpg
+    thumb: 50
+    aspect: x23
+    desc: The "Graffiti Bridge" in Amsterdam.
+  - path: canal.jpg
+    thumb: 50
+    aspect: x32
+    desc: Van Gogh-esque photo of a Canal in Amsterdam at twilight.
+  - path: db.jpg
+    thumb: 0
+    aspect: x23
+    desc: Deutsche Bahn building in Frankfurt is one of the most "evil" buildings in Germany.
+  - path: eiffel.jpg
+    thumb: 50
+    aspect: x23
+    desc: Telephoto of elevators in the Eiffel Tower.
+  - path: mercedes.jpg
+    aspect: x23
+    thumb: 50
+    desc: Side staircases in the Mercedes Museum in Stuttgart.
+  - path: taipei-market.jpg
+    aspect: x23
+    thumb: 100
+    desc: Shilin night market in Taipei with steam coming from a stall.
+  - path: hk-night.jpg
+    aspect: x23
+    thumb: 50
+    desc: A seedy Hong Kong crime thriller, complete with sketchy characters sitting in the shadows.
+  - path: hk-tram.jpg
+    aspect: x32
+    thumb: 50
+    desc: Riding the Hong Kong tram at night; the ride is quite shaky, especially on the upper deck, replicating Hong Kong&apos;s signature blurry look.
+  - path: sharetea.jpg
+    aspect: x11
+    desc: Sharetea in Honk Kong.
+  2023:
+  - path: lianhuashan.jpg
+    aspect: x31
+    thumb: 40
+    desc: Large panorama of the Shenzhen Futian CBD at sunset from the Deng XiaoPing monument in Lianhuashan.
+  - path: zhaoqing.jpg
+    aspect: x23
+    thumb: 50
+    desc: A ferry on the lake in Zhaoqing.
+  - path: gz-beijingroad.jpg
+    aspect: x23
+    thumb: 50
+    desc: A small side street in the "Beijing Road" district in Guangzhou.
+  - path: sz-construction.jpg
+    aspect: x21
+    thumb: 0
+    desc: The Nanshan District in Shenzhen is one of the "newest" districts; just about everywhere seems to be under construction.
+  - path: sz-mixc.jpg
+    aspect: x23
+    thumb: 100
+    desc: A cat and its ball in the newly-built MixC shopping mall in Shenzhen.
+  - path: san-bruno.jpg
+    aspect: x32
+    thumb: 50
+    desc: San Bruno caltrain station taken while landing at SFO; the distortion caused by the window and engine exhaust happens to create a tilt shift-like effect.
+  - path: flagstaff-hill.jpg
+    aspect: x31
+    thumb: 50
+    desc: A panorama of Oakland from Flagstaff Hill in Pittsburgh.
+  - path: lisbon-bridge.jpg
+    aspect: x32
+    thumb: 100
+    desc: The iconic bridge of Lisbon - which looks suspiciously like the Golden Gate Bridge.
+  - path: miradouro-da-graca.jpg
+    aspect: x32
+    thumb: 50
+    desc: View from the Miradouro Da Graca in Lisbon.
+  - path: riu-espana.jpg
+    aspect: x31
+    thumb: 35
+    desc: View of Madrid from the roof of the Riu Espana.
+  - path: wasen.jpg
+    aspect: x11
+    desc: Stuttgart's Cannstatter Volksfest is the 2nd largest beer festival, rivaling Oktoberfest in Munich.
+  - path: surfliner.jpg
+    aspect: x32
+    thumb: 50
+    desc: The Amtrak Surfliner in Torrey Pines from the bridge on Torrey Pines Rd.
+  - path: potato-chip.jpg
+    aspect: x11
+    desc: Potato Chip Rock in San Diego being used as intended.
+  - path: lha-6.jpg
+    aspect: x23
+    thumb: 50
+    desc: USS America (LHA-6) performing airlift exercises off the coast between San Diego and LA, taken while stuck in traffic.
+  - path: big-bend-camper.jpg
+    aspect: x23
+    thumb: 50
+    desc: A camper parked by the side of the road in Big Bend National Park.
+  - path: persimmon-gap.jpg
+    aspect: x21
+    thumb: 50
+    desc: Panorama of the Chisos Mountains from Persimmon Gap in Big Bend National Park.
+  2022:
+  - path: chestnut-hyde.jpg
+    aspect: x23
+    thumb: 50
+    desc: View of Alcatraz and the San Francisco Bay from Chestnut & Hyde.
+  - path: ca-aqueduct.jpg
+    aspect: x23
+    thumb: 50
+    desc: View of the California Aqueduct from above, taken on final approach to SFO.
+  - path: presque-isle.jpg
+    aspect: x23
+    thumb: 50
+    desc: A conversation in Lake Erie viewed from a distance in Presque Isle State Park.

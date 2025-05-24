@@ -168,7 +168,7 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
 /* Photography */
 .photos {
     width: 100%; display: grid; gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 .photos > div {
     width: 100%;
@@ -192,6 +192,7 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
 .photos > .x11 > span { width: 8px; height:  8px }
 .photos > .x21 > span { width: 20px; height: 8px }
 .photos > .x31 > span { width: 32px; height: 8px }
+.photos > h2 { grid-column: 1 / -1; }
 .overlay > div {
     position: fixed;
     left: 0; top: 0; width: 100vw; height: 100vh;
