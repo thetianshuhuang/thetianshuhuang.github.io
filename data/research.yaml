@@ -38,21 +38,22 @@ papers:
     venue: RTAS 2025
     tags: ["wasm", "consulting"]
     summary: "We develop Silverline: a framework for programming heterogeneous dynamic distributed systems. Using WebAssembly as a lightweight virtualization framework, we design silverline to be fault-tolerant and real-time, and show it in use on industrial-grade systems."
+    url: https://ieeexplore.ieee.org/document/11018768
     figure: resources/silverline.svg
     authors:
     - Arjun Ramesh
+    - Tianshu Huang
     - Emily Ruppel
-    - Anthony Rowe
     - Dakshina Dasari
     - Behnaz Pourmohseni
     - Fedor Smirnov
-    - Tianshu Huang
-    - Nuno Pereira
     - Marco Giani
+    - Paolo Pazzaglia
+    - Charles Shelton
+    - Nuno Pereira
     - Arne Hamann
     - Dirk Ziegenbein
-    - Charles Shelton
-    - Paolo Pazzaglia
+    - Anthony Rowe
   wali:
     title: "Empowering WebAssembly with Thin Kernel Interfaces"
     venue: EuroSys 2025
