@@ -1,0 +1,40 @@
+site_name: Tianshu Huang
+nav:
+  - About: index.md
+  - Research: research.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  # logo: assets/duck.jpg
+  # favicon: assets/duck.jpg
+  icon:
+    annotation: material/arrow-right-circle
+  font:
+    code: monospace
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.tabs
+  palette:
+    primary: black
+    accent: indigo
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+- publications:
+    index: data/research.yaml
+- collaborators:
+    index: data/people.yaml
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+copyright: >
+  &copy; 2025 Tianshu Huang

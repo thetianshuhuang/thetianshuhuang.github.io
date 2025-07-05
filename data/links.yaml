@@ -1,9 +1,0 @@
-footer_links:
-- name: Academic Site
-  url: index.html
-  exclude: template/index.html
-- name: Photography
-  url: photography.html
-  exclude: template/photography.html
-- name: GitHub
-  url: https://github.com/thetianshuhuang

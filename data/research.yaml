@@ -1,9 +1,28 @@
 papers:
+  grt:
+    title: "Towards Foundational Models for Single-Chip mmWave Radar"
+    shorttitle: GRT
+    url: ""
+    venue: ICCV 2025
+    tag: radar
+    summary: We train a foundational model for single-chip mmWave radar. Details to follow!
+  #   figure: resources/grt.svg
+    authors:
+    - Tianshu Huang
+    - Akarsh Prabhakara
+    - Chuhan Chen
+    - Jay Karhade
+    - Deva Ramanan
+    - Matthew O'Toole
+    - Anthony Rowe
+
   beanstalk:
     title: "Unveiling Heisenbugs with Diversified Execution"
+    shorttitle: Beanstalk
     url: https://dl.acm.org/doi/10.1145/3720428
     venue: OOPSLA 2025
-    tags: ["wasm", "consulting"]
+    venue_long: MLSys 2025 | *Artifact Available*
+    tag: wasm
     summary: Heisenbugs - bugs which change their behavior under observation - are among the toughest challenges when debugging programs. We propose to catch these bugs using stochastic instrumentation, and demonstrate the surprising effectiveness of debugging across a diverse set of platforms.
     figure: resources/beanstalk.svg
     authors:
@@ -17,8 +36,10 @@ papers:
       Instrumentation Framework: https://github.com/arjunr2/wasm-instrument
   pitot:
     title: "Uncertainty and Interference-aware Runtime Prediction for Edge Computing with Conformal Matrix Completion"
+    shorttitle: Pitot
     venue: MLSys 2025
-    tags: ["wasm", "primary"]
+    venue_long: MLSys 2025 | *Artifact Available &mdash; Artifact Functional*
+    tag: wasm
     summary: Performance prediction in heterogeneous systems such as edge computing is best formulated as matrix completion, which can be extended to handle complex, edge-specific concerns such as interference and uncertainty quantification.
     url: https://arxiv.org/abs/2503.06428
     figure: resources/pitot.png
@@ -35,8 +56,9 @@ papers:
       Slides: resources/pitot_slides.pdf
   silverline:
     title: "Silverline: Lightweight Virtualization and Orchestration of Distributed Systems"
+    shorttitle: Silverline
     venue: RTAS 2025
-    tags: ["wasm", "consulting"]
+    tag: wasm
     summary: "We develop Silverline: a framework for programming heterogeneous dynamic distributed systems. Using WebAssembly as a lightweight virtualization framework, we design silverline to be fault-tolerant and real-time, and show it in use on industrial-grade systems."
     url: https://ieeexplore.ieee.org/document/11018768
     figure: resources/silverline.svg
@@ -56,8 +78,10 @@ papers:
     - Anthony Rowe
   wali:
     title: "Empowering WebAssembly with Thin Kernel Interfaces"
+    shorttitle: WALI
     venue: EuroSys 2025
-    tags: ["wasm", "consulting"]
+    venue_long: EuroSys 2025 | *Artifact Available &mdash; Artifact Functional &mdash; Results Reproduced*
+    tag: wasm
     figure: resources/wali.svg
     summary: Webassembly (Wasm) adoption for new domains is often hindered by the lack of standard system interfaces. We propose directly exposing OS userspace syscalls as a compromise.
     url: https://arxiv.org/abs/2312.03858
@@ -76,9 +100,9 @@ papers:
     icon: icons/dart.svg
     subtitle: Implicit Doppler Tomography for Radar Novel View Synthesis
     summary: We propose DART &mdash; Doppler Aided Radar Tomography, a Neural Radiance Field-inspired approach to radar novel view synthesis using implicit neural inverse imaging.
-    venue_long: CVPR 2024, <b>Oral Presentation &mdash; Top 0.78% (90) of all submissions</b>
+    venue_long: CVPR 2024, **Oral Presentation &mdash; Top 0.78% (90) of all submissions**
     venue: CVPR 2024
-    tags: ["radar", "primary"]
+    tag: radar
     figure: resources/dart.svg
     authors:
     - Tianshu Huang:*1
@@ -101,7 +125,7 @@ papers:
   l2o:
     title: "Optimizer Amalgamation"
     venue: ICLR 2022
-    tags: ["l2o", "primary"]
+    tag: misc
     summary: While meta-training optimizers from scratch is difficult, much attention has been directed towards developing a diverse body of analytical optimizers. Can we use these optimizers to meta-train a stronger optimizer?
     figure: resources/optimizer_amalgamation.png
     url: https://arxiv.org/abs/2203.06474
@@ -116,19 +140,6 @@ papers:
     - Lisa Amini
     - Zhangyang Wang
 
-  # grt:
-  #   title: "Radar Deep Learning"
-  #   venue: In Review
-  #   tags: ["radar", "primary"]
-  #   figure: resources/grt.svg
-  #   authors:
-  #   - Tianshu Huang
-  #   - Akarsh Prabhakara
-  #   - Chuhan Chen
-  #   - Jay Karhade
-  #   - Deva Ramanan
-  #   - Matthew O'Toole
-  #   - Anthony Rowe
   # radarsim:
   #   title: "3D Reconstruction"
   #   venue: In Review
