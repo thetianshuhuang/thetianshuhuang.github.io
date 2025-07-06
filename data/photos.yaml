@@ -151,6 +151,7 @@ photos:
     aspect: x23
     thumb: 50
     desc: USS America (LHA-6) performing airlift exercises off the coast between San Diego and LA, taken while stuck in traffic.
+  2022:
   - path: big-bend-camper.jpg
     aspect: x23
     thumb: 50
@@ -159,7 +160,6 @@ photos:
     aspect: x21
     thumb: 50
     desc: Panorama of the Chisos Mountains from Persimmon Gap in Big Bend National Park.
-  2022:
   - path: chestnut-hyde.jpg
     aspect: x23
     thumb: 50
@@ -172,7 +172,7 @@ photos:
     aspect: x23
     thumb: 50
     desc: A conversation in Lake Erie viewed from a distance in Presque Isle State Park.
-  "Professional Work":
+  "Events & Research":
   - path: realsense.jpg
     aspect: x23
     thumb: 0

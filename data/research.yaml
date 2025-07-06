@@ -6,7 +6,7 @@ papers:
     venue: ICCV 2025
     tag: radar
     summary: We train a foundational model for single-chip mmWave radar. Details to follow!
-  #   figure: resources/grt.svg
+  #   figure: grt.svg
     authors:
     - Tianshu Huang
     - Akarsh Prabhakara
@@ -24,7 +24,7 @@ papers:
     venue_long: MLSys 2025 | *Artifact Available*
     tag: wasm
     summary: Heisenbugs - bugs which change their behavior under observation - are among the toughest challenges when debugging programs. We propose to catch these bugs using stochastic instrumentation, and demonstrate the surprising effectiveness of debugging across a diverse set of platforms.
-    figure: resources/beanstalk.svg
+    figure: beanstalk.svg
     authors:
     - Arjun Ramesh
     - Tianshu Huang
@@ -42,7 +42,7 @@ papers:
     tag: wasm
     summary: Performance prediction in heterogeneous systems such as edge computing is best formulated as matrix completion, which can be extended to handle complex, edge-specific concerns such as interference and uncertainty quantification.
     url: https://arxiv.org/abs/2503.06428
-    figure: resources/pitot.png
+    figure: pitot.png
     authors:
     - Tianshu Huang
     - Arjun Ramesh
@@ -61,7 +61,7 @@ papers:
     tag: wasm
     summary: "We develop Silverline: a framework for programming heterogeneous dynamic distributed systems. Using WebAssembly as a lightweight virtualization framework, we design silverline to be fault-tolerant and real-time, and show it in use on industrial-grade systems."
     url: https://ieeexplore.ieee.org/document/11018768
-    figure: resources/silverline.svg
+    figure: silverline.svg
     authors:
     - Arjun Ramesh
     - Tianshu Huang
@@ -82,7 +82,7 @@ papers:
     venue: EuroSys 2025
     venue_long: EuroSys 2025 | *Artifact Available &mdash; Artifact Functional &mdash; Results Reproduced*
     tag: wasm
-    figure: resources/wali.svg
+    figure: wali.svg
     summary: Webassembly (Wasm) adoption for new domains is often hindered by the lack of standard system interfaces. We propose directly exposing OS userspace syscalls as a compromise.
     url: https://arxiv.org/abs/2312.03858
     authors:
@@ -103,7 +103,7 @@ papers:
     venue_long: CVPR 2024, **Oral Presentation &mdash; Top 0.78% (90) of all submissions**
     venue: CVPR 2024
     tag: radar
-    figure: resources/dart.svg
+    figure: dart.svg
     authors:
     - Tianshu Huang:*1
     - John Miller:*12
@@ -127,7 +127,7 @@ papers:
     venue: ICLR 2022
     tag: misc
     summary: While meta-training optimizers from scratch is difficult, much attention has been directed towards developing a diverse body of analytical optimizers. Can we use these optimizers to meta-train a stronger optimizer?
-    figure: resources/optimizer_amalgamation.png
+    figure: optimizer_amalgamation.png
     url: https://arxiv.org/abs/2203.06474
     resources:
       Poster: resources/OptimizerAmalgamation-Poster.pdf
@@ -160,7 +160,7 @@ topics:
       <p>
       Radars are an ideal complement to cameras for applications such as autonomous driving: both are inexpensive, solid-state sensors, with cameras boasting fine angular resolution and radars providing depth resolution and robustness to adverse conditions. Unfortunately, unlike visual images or Lidar points, radar data are harder to interpret, and lack a large body of existing research. In this project, my goal is to develop machine learning-based methods to interpret radar data both spatially and semantically, potentially replacing Lidar as the primary means of 3D perception in robotics and beyond.
       </p>
-      <div class="image-800"><img src="resources/radar.svg"></img></div>
+      <div class="image-800"><img src="research/radar.svg"></img></div>
   wasm:
     name: Learning for Distributed Systems
     description: |
@@ -171,4 +171,4 @@ topics:
       <p>                
       In this research project, my goal is to explore learning-enabled building blocks for managing distributed systems. Key concerns include performance analysis and runtime prediction, as well as debugging and anomaly detection. My approach emphasizes going beyond black-box approaches (in both a statistical and a systems sense) using techniques like instrumentation injection and statistical machine learning approaches.
       </p>
-      <div class="image-600"><img src="resources/silverline.png"></img></div>
+      <div class="image-600"><img src="research/silverline.png"></img></div>

@@ -1,3 +1,4 @@
 *.sublime*
 *.code-workspace
 raw/
+*__pycache__*

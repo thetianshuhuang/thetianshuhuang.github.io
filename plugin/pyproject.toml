@@ -25,3 +25,4 @@ dependencies = [
 [project.entry-points."mkdocs.plugins"]
 collaborators = "mkdocs_custom:CollaboratorsPlugin"
 publications = "mkdocs_custom:PublicationsPlugin"
+photos = "mkdocs_custom:PhotosPlugin"

@@ -2,6 +2,8 @@ site_name: Tianshu Huang
 nav:
   - About: index.md
   - Research: research.md
+  - Open Source: open-source.md
+  # - Photography: photography.md
 
 theme:
   name: material
@@ -28,13 +30,21 @@ plugins:
     index: data/research.yaml
 - collaborators:
     index: data/people.yaml
+- photos:
+    index: data/photos.yaml
+- glightbox:
+    manual: true
 
 markdown_extensions:
   - attr_list
   - md_in_html
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: >
   &copy; 2025 Tianshu Huang
