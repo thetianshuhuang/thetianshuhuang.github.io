@@ -3,7 +3,7 @@ hide:
 - navigation
 ---
 
-# Open Source Portfolio
+# Tianshu Huang / **Open Source Portfolio**
 
 <div style="width: 100%; display: grid; gap: 5px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
     <img src="/assets/research/red_rover.jpg">
@@ -13,16 +13,18 @@ hide:
 
 Since my research interests focus on *nonstandard* problems which are generally difficult for a human to interpret &mdash; and sanity-check, my research philosophy places a strong emphasis on writing modular, auditable code. As domains like radar spectrum and computer systems lie outside of the machine learning mainstream, tackling these problems also requires a substantial engineering investment in novel infrastructure for collecting, processing, and experimentation.
 
-Some particular technologies I'm a huge fan of include:
+Some particular up-and-coming[^0] technologies for the python-ML ecosystem which I believe in strongly include:
 
-!!! success "Python Type Annotations & Type Checking"
+[^0]: Tools like `uv`, `ruff`, `mkdocs`, `mkdocstrings` are already de-facto standards for new projects, and don't need any promoting.
+
+??? success "**Type Annotations & Type Checking**"
 
     Between the core python language type specification, now-standard static type checking with tools like [pyright](https://github.com/Microsoft/pyright), array annotation with [jaxtyping](https://docs.kidger.site/jaxtyping/), and runtime type checking with [beartype](https://github.com/beartype/beartype), the python [gradual typing](http://scheme2006.cs.uchicago.edu/13-siek.pdf) [playbook](https://peps.python.org/pep-0484/) has just about gotten to the point where it can cover the majority of machine learning use cases.
 
     - Rigorous adherence to type annotation and type checking best practices eliminates many common classes of bugs[^1], replacing them with `TypeErrors` which are raised at function boundaries.
     - Python's type system also provides a standardized and mechanically-verifiable way of [describing sensor data types](https://wiselabcmu.github.io/abstract-dataloader/types/).
 
-!!! success "Jax"
+??? success "**Jax**"
 
     Compared to it's contemporary competitors Pytorch and Tensorflow, [Jax](https://docs.jax.dev/en/latest/index.html) has an (at least in my view) incredibly elegant and powerful programming model which revolves around functional programming. It's also natively built around a powerful compiler stack which pretty much guarantees that your code will be fast &mdash; if you can get it to compile[^2].
 
@@ -59,6 +61,38 @@ Some particular technologies I'm a huge fan of include:
 
 </div>
 
+## Paper Artifacts
+
+<div class="grid cards" markdown>
+
+- :material-sprout: [`beanstalk`](https://github.com/arjunr2/beanstalk)
+
+    ---
+
+    instrumentation & data analysis for [Beanstalk (OOPSLA '25)](https://dl.acm.org/doi/10.1145/3720428)
+
+- :dart: [`dart`](https://wiselabcmu.github.io/dart/)
+
+    ---
+
+    jax-based [implementation](https://github.com/wiselabcmu/dart) & [dataset](https://zenodo.org/records/10938617) for [DART (CVPR '24)](https://wiselabcmu.github.io/dart/)
+
+- :material-weather-windy: [`pitot`](https://github.com/WiseLabCMU/pitot)
+
+    ---
+
+    jax-based implementation and dataset for [Pitot (MLSys '25)](https://arxiv.org/abs/2503.06428)
+
+- :material-flask-round-bottom: [`OptimizerAmalgamation`](https://github.com/VITA-Group/OptimizerAmalgamation)
+
+    ---
+
+    implementation artifact for [Optimizer Amalgamation (ICLR '22)](https://openreview.net/pdf?id=VqzXzA9hjaX)
+
+</div>
+
+---
+
 ## Deprecated Projects
 
 <div class="grid cards" markdown>
@@ -68,6 +102,12 @@ Some particular technologies I'm a huge fan of include:
     ---
 
     our "second generation[^4]" radar spectrum data collection system
+
+- :material-clouds: [`cirrus`](https://github.com/SilverLineFramework/runtime-manager)
+
+    ---
+
+    minimum viable silverline-compatible python stack for distributed benchmarking
 
 - :material-bookshelf: [`l2o`](https://github.com/thetianshuhuang/l2o)
 
@@ -86,33 +126,3 @@ Some particular technologies I'm a huge fan of include:
 [^4]: "First generation": a non-automated solution using only officially supported TI software; "Second generation": a partially automated and somewhat modular system relying on official TI software, with some custom implementations; "Third generation": a fully automated, modular, and tightly-integrated linux-based data collection system without any TI software dependencies on the data collection computer
 [^5]: Jax's functional programming ["differentiation is a functor"](https://docs.jax.dev/en/latest/key-concepts.html#transformations) approach makes optimization meta-learning vastly simpler to implement, completely eliminating the need for such a complicated framework.
 [^6]: This library has been abandoned since it turns out there is not much demand for Bayesian Clustering algorithms. In particular, these methods are only really suitable for low-dimension (<50) moderate-data (>100, <10000) settings where powerful, fully-automated clustering is required, of which there simply aren't that many.
-
-## Paper Artifacts
-
-<div class="grid cards" markdown>
-
-- :material-sprout: [`beanstalk`](https://github.com/arjunr2/beanstalk)
-
-    ---
-
-    instrumentation & data analysis for heterogeneous distributed debugging
-
-- :dart: [`dart`](https://wiselabcmu.github.io/dart/)
-
-    ---
-
-    jax-based [implementation](github.com/wiselabcmu/dart) & [dataset](https://zenodo.org/records/10938617) for [DART (CVPR '24)](https://wiselabcmu.github.io/dart/)
-
-- :material-weather-windy: [`pitot`](https://github.com/WiseLabCMU/pitot)
-
-    ---
-
-    jax-based implementation and dataset for Pitot (MLSys '25)
-
-- :material-flask-round-bottom: [`OptimizerAmalgamation`](https://github.com/VITA-Group/OptimizerAmalgamation)
-
-    ---
-
-    implementation artifact for Optimizer Amalgamation (ICLR '22)
-
-</div>

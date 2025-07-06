@@ -1,6 +1,6 @@
 papers:
   grt:
-    title: "Towards Foundational Models for Single-Chip mmWave Radar"
+    title: "Towards Foundational Models for Single-Chip Radar"
     shorttitle: GRT
     url: ""
     venue: ICCV 2025
@@ -35,7 +35,7 @@ papers:
       Github: https://github.com/arjunr2/beanstalk
       Instrumentation Framework: https://github.com/arjunr2/wasm-instrument
   pitot:
-    title: "Uncertainty and Interference-aware Runtime Prediction for Edge Computing with Conformal Matrix Completion"
+    title: "Interference-Aware Edge Runtime Prediction with Conformal Matrix Completion"
     shorttitle: Pitot
     venue: MLSys 2025
     venue_long: MLSys 2025 | *Artifact Available &mdash; Artifact Functional*

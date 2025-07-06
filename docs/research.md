@@ -3,6 +3,8 @@ hide:
 - navigation
 ---
 
+# Tianshu Huang / **Research**
+
 <img src="/assets/profile_r.jpg" align="left" style="width: calc(min(300px, 40%));"></img>
 
 My past and current work spans a wide range of topics in machine learning, including large transformer models ([ICCV '25](#grt)), statistical learning ([MLSys '25](#pitot)), NeRF-style neural-implicit inverse rendering ([CVPR '24](#dart)), and meta-learning ([ICLR '22](#l2o)). I also actively support systems researchers by providing machine learning, statistics, and data science expertise ([OOPSLA '25](#beanstalk), [RTAS '25](#silverline), [EuroSys '25](#wali)), while also supporting machine learning researchers working with real-world sensors and systems.
@@ -31,13 +33,13 @@ Currently, I'm focused on rapidly scaling and commercializing my recent work on 
 
 ::: publications
 
-## Talks
+## Conference & Invited Talks
 
 <div class="grid cards" markdown>
 
-- [**Interference-aware Edge Runtime Prediction with Conformal Matrix Completion**](http://localhost:8000/resources/pitot_slides.pdf)
+- [**Interference-aware Edge Runtime Prediction with Conformal Matrix Completion**](resources/pitot_slides.pdf)
 <br>
-MLSys 2025 Conference Talk
+MLSys 2025, Conference Presentation
 
 - **The Radar Spectrum 2.0**
 <br>
@@ -45,17 +47,17 @@ MLSys 2025 Conference Talk
 
 - **Towards Foundational Models for mmWave Radar**
 <br>
-Invited Talks @ Bosch Research & Bosch Mobility, January, February, June 2025
+Invited Talks @ Bosch Research & Bosch Mobility, January + February + June 2025
 
-- **Grey-Box Program Analysis: Runtime Prediction and Beyond**
+- [**Grey-Box Program Analysis: Runtime Prediction and Beyond**](resources/grey-box-program-analysis.pdf)
 <br>
 Reliable Distributed Systems Tech Colloquium @ Bosch Research, October 2024
 
-- **DART: Implicit Doppler Tomography for Radar Novel View Synthesis**
+- [**DART: Implicit Doppler Tomography for Radar Novel View Synthesis**](resources/dart-slides.pdf)
 <br>
-CVPR 2024 Main Conference Oral Presentation
+CVPR 2024, Main Conference Oral Presentation
 
-- **Leveraging Wasm instrumentation**
+- [**Leveraging Wasm instrumentation**](resources/wasm-research-day-2023.pdf)
 <br>
 *With [Arjun Ramesh][?]*
 <br>
@@ -66,5 +68,19 @@ CVPR 2024 Main Conference Oral Presentation
 *With [Arjun Ramesh][?]*
 <br>
 [WebAssembly Research Day 2022](http://www.cs.cmu.edu/~wasm/wasm-research-day-2022.html)
+
+</div>
+
+## Casual Presentations
+
+<div class="grid cards" markdown>
+
+- [**The NeRF is Dead ... Long Live the NeRF**](resources/NeRFs.pdf)
+    <br>
+    (2022) *In a post-NGP landscape, what's a NeRF anyways?*
+
+- [**Topics on the Edge (of Federated Learning)**](resources/TopicsOnTheEdge.pdf)
+    <br>
+    (2022) *What challenges arise in federated learning on edge devices?*
 
 </div>

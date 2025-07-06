@@ -8,12 +8,10 @@ nav:
 theme:
   name: material
   custom_dir: overrides
-  # logo: assets/duck.jpg
-  # favicon: assets/duck.jpg
+  favicon: assets/favicon.png
   icon:
+    logo: octicons/person-16
     annotation: material/arrow-right-circle
-  font:
-    code: monospace
   features:
     - navigation.instant
     - navigation.expand
@@ -21,6 +19,10 @@ theme:
   palette:
     primary: black
     accent: indigo
+
+watch:
+  - docs
+  - data
 
 extra_css:
   - stylesheets/extra.css

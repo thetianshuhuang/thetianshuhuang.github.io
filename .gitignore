@@ -2,3 +2,5 @@
 *.code-workspace
 raw/
 *__pycache__*
+site/
+build/

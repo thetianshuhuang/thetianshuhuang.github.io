@@ -3,13 +3,13 @@ hide:
 - navigation
 ---
 
-# Tianshu Huang
+<h1 style="font-size: 70px; margin-bottom: 30px; font-weight: 100">Tianshu Huang</h1>
 
 <img src="/assets/profile.jpg" align="left" style="width: calc(min(300px, 40%));"></img>
 
 I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University. Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021, where I worked on Learning to Optimize with [Atlas Wang][?].
 
-My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. I describe myself as an applied ML generalist, and [my work](/research) draws from techniques across the machine learning literature to solve problems from different domains.
+My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. I describe myself as an applied ML generalist, and [my work](research.md) draws from techniques across the machine learning literature to solve problems from different domains.
 
 Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
 You can find my GitHub page [here](https://github.com/thetianshuhuang); I also have a [photograph page](photography.md).
@@ -18,8 +18,8 @@ You can find my GitHub page [here](https://github.com/thetianshuhuang); I also h
 
 <a href='research#pitot' style='grid-column: span 2'><img src="/assets/research/cluster.jpg"></a>
 <div style="width: 100%; display: grid; gap: 5px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-    <a href='research#dart'><img src="/assets/research/dart_sq.jpg"></a>
     <a href='research#grt'><img src="/assets/photos/duck.jpg"></a>
+    <a href='research#dart'><img src="/assets/research/dart_sq.jpg"></a>
     <a href='research#beanstalk'><img src="/assets/research/beanstalk_sq.png"></a>
 </div>
 
