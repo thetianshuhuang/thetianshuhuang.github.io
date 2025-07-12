@@ -59,6 +59,12 @@ Some particular up-and-coming[^0] technologies for the python-ML ecosystem which
 
     our "third generation[^4]" radar spectrum data collection system
 
+- :octicons-ai-model-16: `nrdk` *(coming soon!)*
+
+    ---
+
+    the neural radar development kit for deep learning on multimodal radar data
+
 </div>
 
 ## Paper Artifacts
