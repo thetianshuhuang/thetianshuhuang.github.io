@@ -246,6 +246,10 @@ photos:
     desc: A conversation in Lake Erie viewed from a distance in Presque Isle State Park.
     lens: pz16-50
   "Events & Research":
+  - path: akhil.jpg
+    aspect: x32
+    thumb: 50
+    desc: Akhil Padmanabha @ PhD Defense.
   - path: realsense.jpg
     aspect: x23
     thumb: 0
