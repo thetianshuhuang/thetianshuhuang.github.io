@@ -1,5 +1,29 @@
 photos:
   2025:
+  - path: temple.jpg
+    thumb: 32
+    aspect: x21
+    desc: The Freundschaftstempel in Park Sanssouci, Potsdam.
+  - path: circle.jpg
+    thumb: 50
+    aspect: x11
+    desc: Paul-Löbe-Haus by the Spree.
+  - path: thriller.jpg
+    thumb: 50
+    aspect: x23
+    desc: This narrow stairwell up to the Jakob-Mierscheid-Steg is iconically backlit, especially on an overcast day.
+  - path: castle.jpg
+    thumb: 100
+    aspect: x23
+    desc: The Bardentreffen brings street musicians to all over Nuremberg, including its iconic castle.
+  - path: spa.jpg
+    thumb: 50
+    aspect: x23
+    desc: A rainy Belgian Grand Prix weekend.
+  - path: bitburger.jpg
+    thumb: 50
+    aspect: x11
+    desc: Despite the slogan, this hotel-restaurant is actually in Trier, not Bitburg.
   - path: joshua-tree.jpg
     thumb: 50
     aspect: x32

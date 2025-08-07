@@ -12,7 +12,7 @@ I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at t
 My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. I describe myself as an applied ML generalist, and [my work](research.md) draws from techniques across the machine learning literature to solve problems from different domains.
 
 Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
-You can find my GitHub page [here](https://github.com/thetianshuhuang); I also have a [photograph page](photography.md).
+You can find my GitHub page [here](https://github.com/thetianshuhuang); I also have a [photography page](photography.md).
 
 ## Research Gallery
 
@@ -39,6 +39,8 @@ In progress: Radar Compression
 
 
 ## Awards
+
+- 2025 | **ICCV 2025 Oral Presentation**
 
 - 2025 | **CVPR 2025 Outstanding Reviewer**
 <br>

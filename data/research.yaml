@@ -4,6 +4,7 @@ papers:
     shorttitle: GRT
     url: ""
     venue: ICCV 2025
+    venue_long: ICCV 2025, **Oral Presentation**
     tag: radar
     summary: We train a foundational model for single-chip mmWave radar. Details to follow!
   #   figure: grt.svg

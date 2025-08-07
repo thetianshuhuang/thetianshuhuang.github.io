@@ -22,7 +22,7 @@ def _crop(short, long, target):
 
 
 def _compress(
-    src, thumb_size: int = 320, photo_size: int = 1000 * 1000
+    src, thumb_size: int = 320, photo_size: int = 1000 * 1000,
 ) -> None:
     img = Image.open(os.path.join("raw", src['path']))
 
@@ -36,7 +36,7 @@ def _compress(
         left, right = _crop(img.size[1], img.size[0], src['thumb'])
         cropped = img.crop((left, 0, right, img.size[1]))
     thumb = cropped.resize((thumb_size, thumb_size), Image.Resampling.LANCZOS)
-    thumb.save(os.path.join("thumbs", src["path"]), 'jpeg', quality=75)
+    thumb.save(os.path.join("docs/assets/thumbs", src["path"]), 'jpeg', quality=75)
 
     # Display
     aspect = max(img.size) / min(img.size)
@@ -44,14 +44,14 @@ def _compress(
     scale = (target_mp / (img.size[0] * img.size[1])) ** 0.5
     scaled = (int(img.size[0] * scale), int(img.size[1] * scale))
     display = img.resize(scaled, Image.Resampling.LANCZOS)
-    display.save(os.path.join("photos", src["path"]), 'jpeg', quality=75)
+    display.save(os.path.join("docs/assets/photos", src["path"]), 'jpeg', quality=75)
 
 
 def compress(
     index: str = "data/photos.yaml",
     thumb: int = 320,
     photo: int = 1000 * 1000,
-    overwrite: bool = False
+    overwrite: bool = False,
 ) -> None:
     """Compress / downsample images, and generate thumbnails.
 
@@ -67,7 +67,8 @@ def compress(
     skipped, na, success = [], [], []
     photos = sum(photo_index.values(), [])
     for src in tqdm(photos):
-        if overwrite or not os.path.exists(os.path.join("thumbs", src['path'])):
+        _exists = os.path.exists(os.path.join("docs/assets/photos", src['path']))
+        if overwrite or not _exists:
             try:
                 _compress(src, thumb_size=thumb, photo_size=photo)
                 success.append(src['path'])
