@@ -250,6 +250,7 @@ photos:
     aspect: x32
     thumb: 50
     desc: Akhil Padmanabha @ PhD Defense.
+    lens: 28-200
   - path: realsense.jpg
     aspect: x23
     thumb: 0

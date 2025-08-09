@@ -153,23 +153,3 @@ papers:
   #   - Anthony Rowe
   #   - Matthew O'Toole
   #   - Deva Ramanan
-
-topics:
-  radar:
-    name: Machine Learning for Radar
-    description: |
-      <p>
-      Radars are an ideal complement to cameras for applications such as autonomous driving: both are inexpensive, solid-state sensors, with cameras boasting fine angular resolution and radars providing depth resolution and robustness to adverse conditions. Unfortunately, unlike visual images or Lidar points, radar data are harder to interpret, and lack a large body of existing research. In this project, my goal is to develop machine learning-based methods to interpret radar data both spatially and semantically, potentially replacing Lidar as the primary means of 3D perception in robotics and beyond.
-      </p>
-      <div class="image-800"><img src="research/radar.svg"></img></div>
-  wasm:
-    name: Learning for Distributed Systems
-    description: |
-      <p>
-      The ability to execute programs in heterogeneous distributed environments while maintaining security and performance isolation is of critical importance as edge and cloud applications become increasingly entangled.
-      The <a href="https://github.com/SilverLineFramework">SilverLine</a> framework is our solution, where we propose using WebAssembly modules as an edge-friendly lighter-weight alternative to virtual machines or containers for maintaining isolation while providing portability.
-      </p>
-      <p>                
-      In this research project, my goal is to explore learning-enabled building blocks for managing distributed systems. Key concerns include performance analysis and runtime prediction, as well as debugging and anomaly detection. My approach emphasizes going beyond black-box approaches (in both a statistical and a systems sense) using techniques like instrumentation injection and statistical machine learning approaches.
-      </p>
-      <div class="image-600"><img src="research/silverline.png"></img></div>
