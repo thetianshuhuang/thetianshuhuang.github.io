@@ -5,7 +5,7 @@ hide:
 
 # Tianshu Huang / **Open Source Portfolio**
 
-<div style="width: 100%; display: grid; gap: 5px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+<div style="width: 100%; display: grid; gap: 5px; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));">
     <img src="/assets/research/red_rover.jpg">
     <img src="/assets/research/abstract_dataloader.png">
     <img src="/assets/research/iq1m.png">
@@ -113,7 +113,7 @@ Some particular up-and-coming[^0] technologies for the python-ML ecosystem which
 
     ---
 
-    minimum viable silverline-compatible python stack for distributed benchmarking
+    minimum viable [silverline-compatible](https://ieeexplore.ieee.org/document/11018768) stack for distributed benchmarking
 
 - :material-bookshelf: [`l2o`](https://github.com/thetianshuhuang/l2o)
 

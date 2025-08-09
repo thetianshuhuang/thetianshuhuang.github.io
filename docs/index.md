@@ -25,77 +25,60 @@ You can find my GitHub page [here](https://github.com/thetianshuhuang); I also h
 
 ## Students
 
-- **Zhaowei Zhang (Undergraduate)**, Spring 2024 &mdash;
-<br>
-In progress: Radar Compression
+**Zhaowei Zhang (Undergraduate)**, Spring 2024 &mdash;
+: In progress: Radar Compression
 
-- **Quentin Oschatz (Masters)**, Spring 2023 &mdash; Summer 2024
-<br>
-&xrarr; PhD (Carnegie Mellon University, Electrical and Computer Engineering)
+**Quentin Oschatz (Masters)**, Spring 2023 &mdash; Summer 2024
+: &xrarr; PhD (Carnegie Mellon University, Electrical and Computer Engineering)
 
-- **Hanke Chen (Undergraduate)**, Summer 2022 &mdash; Summer 2023
-<br>
-&xrarr; Startup (Neural Radiance Fields / 3D synthesis)
-
+**Hanke Chen (Undergraduate)**, Summer 2022 &mdash; Summer 2023
+: &xrarr; Startup (Neural Radiance Fields / 3D synthesis)
 
 ## Awards
 
-- 2025 | **ICCV 2025 Oral Presentation**
+2025  **ICCV 2025 Oral Presentation**
 
-- 2025 | **CVPR 2025 Outstanding Reviewer**
-<br>
-*Awarded to 5.6% of CVPR 2025 Reviewers*
+2025 | **CVPR 2025 Outstanding Reviewer**
+: Awarded to 5.6% of CVPR 2025 Reviewers
 
-- 2024-2025 Academic Year | **Prabhu and Poonam Goel Graduate Fellowship**
-<br>
-*Awarded to one student in the ECE department each academic year.*
+2024-2025 Academic Year | **Prabhu and Poonam Goel Graduate Fellowship**
+: Awarded to one student in the ECE department each academic year.
 
-- 2024 | **CVPR 2024 Oral Presentation**
-<br>
-*Top 3.3% of accepted papers (0.78% overall)*
+2024 | **CVPR 2024 Oral Presentation**
+: Top 3.3% of accepted papers (0.78% overall)
 
-- Spring 2023 | **ECE Department Recognition Award for Exemplary Qualifying Exam Performance**
-<br>
-*Recognized by CMU ECE faculty for exemplary Ph.D. qualifying examination performance. This distinction was awarded by faculty vote to select students within the top 10% of Ph.D. student examinees.*
-*This award is typically given to no more than one student each semester.*
+Spring 2023 | **ECE Department Recognition Award for Exemplary Qualifying Exam Performance**
+: Recognized by CMU ECE faculty for exemplary Ph.D. qualifying examination performance. This distinction was awarded by faculty vote to select students within the top 10% of Ph.D. student examinees. This award is typically given to no more than one student each semester.
 
-- Fall 2021 - Spring 2024 | **ARCS Pittsburgh Chapter Scholar**
-<br>
-*$15,000 award (over 3 years) for one student nominated by each participating department.*
+Fall 2021 - Spring 2024 | **ARCS Pittsburgh Chapter Scholar**
+: $15,000 award (over 3 years) for one student nominated by each participating department.
 
-- Fall 2017 - Spring 2021 | **Virginia & Ernest Cockrell, Jr. Scholarship in Engineering**
-<br>
-*$48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program.*
+Fall 2017 - Spring 2021 | **Virginia & Ernest Cockrell, Jr. Scholarship in Engineering**
+: $48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program.
 
 ## Teaching
 
-- April 2024 | Guest Lecture: **[Machine Learning + Edge](resources/guest_lecture_machine_learning2.pdf)**
-<br>
-*CMU 18-649 Distributed Embedded Systems*
+April 2024 | Guest Lecture: **[Machine Learning + Edge](resources/guest_lecture_machine_learning2.pdf)**
+: CMU 18-649 Distributed Embedded Systems
 
-- Spring 2024 | TA: **18-661 Introduction to Machine Learning**
-<br>
-Lecture: [SVM I (SVM, Hinge Loss, Max-Margin)](resources/18661_svm_i.pdf)
-<br>
-Lecture: [SVM II (Duality, Kernel Trick, What Happened to SVMs?)](resources/18661_svm_ii.pdf)
+Spring 2024 | TA: **18-661 Introduction to Machine Learning**
+: Lecture: [SVM I (SVM, Hinge Loss, Max-Margin)](resources/18661_svm_i.pdf)
+    <br>
+    Lecture: [SVM II (Duality, Kernel Trick, What Happened to SVMs?)](resources/18661_svm_ii.pdf)
 
-- February 2023 | Guest Lecture: **[Federated Learning](resources/guest_lecture_federated_learning.pdf)**
-<br>
-*Duke ECE/COMPSCI 654 Edge Computing*
+February 2023 | Guest Lecture: **[Federated Learning](resources/guest_lecture_federated_learning.pdf)**
+: Duke ECE/COMPSCI 654 Edge Computing
 
-- November 2022 | Guest Lecture: **[Machine Learning + Edge](resources/guest_lecture_machine_learning.pdf)**
-<br>
-*CMU 18-649 Distributed Embedded Systems*
+November 2022 | Guest Lecture: **[Machine Learning + Edge](resources/guest_lecture_machine_learning.pdf)**
+: CMU 18-649 Distributed Embedded Systems
 
-- Spring 2022 | TA: **18-661 Introduction to Machine Learning**
-<br>
-Lecture: [Better and Faster Python](resources/18661_python.pdf)
-<br>
-Lecture: [Pytorch (and how we got here)](resources/18661_pytorch.pdf)
+Spring 2022 | TA: **18-661 Introduction to Machine Learning**
+: Lecture: [Better and Faster Python](resources/18661_python.pdf)
+    <br>
+    Lecture: [Pytorch (and how we got here)](resources/18661_pytorch.pdf)
 
-- Fall 2020 - Spring 2021 | TA: **EE 351k Probability, Statistics and Random Processes**
-<br>
-*UT Austin (as undergraduate TA)*
+Fall 2020 - Spring 2021 | TA: **EE 351k Probability, Statistics and Random Processes**
+: UT Austin (as undergraduate TA)
 
 ## Service
 
