@@ -37,6 +37,7 @@ You can find my GitHub page [here](https://github.com/thetianshuhuang); I also h
 ## Awards
 
 2025 | **ICCV 2025 Oral Presentation**
+: Top 2.4% of accepted papers (0.57% overall)
 
 2025 | **CVPR 2025 Outstanding Reviewer**
 : Awarded to 5.6% of CVPR 2025 Reviewers
