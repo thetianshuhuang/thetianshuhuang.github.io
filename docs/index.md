@@ -9,7 +9,7 @@ hide:
 
 I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University. Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021, where I worked on Learning to Optimize with [Atlas Wang][?].
 
-My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. I describe myself as an applied ML generalist, and [my work](research.md) draws from techniques across the machine learning literature to solve problems from different domains.
+My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. I consider myself to be applied ML generalist, and [my work](research.md) draws from techniques across statistics and machine learning literature to solve problems from several different domains.
 
 Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
 You can find my GitHub page [here](https://github.com/thetianshuhuang); I also have a [photography page](photography.md).
