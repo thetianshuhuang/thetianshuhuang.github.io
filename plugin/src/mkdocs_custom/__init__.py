@@ -1,5 +1,7 @@
+import os
 import re
 from typing import cast
+import logging
 
 import yaml
 from jinja2 import Template
@@ -124,23 +126,6 @@ class PhotosConfig(Config):
 
 class PhotosPlugin(BasePlugin[PhotosConfig]):
 
-    template = (
-        '<div style="width: 100%; display: grid; gap: 5px; '
-        'grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">'
-        ##
-        '{% for photo in photos %}'
-        '<a href="/assets/photos/{{ photo.path }}" class="glightbox {{ photo.aspect }}"'
-        'data-description="{{ photo.desc }}"'
-        'style="font-size: 0px; position: relative;">'
-        '<span></span>'
-        '<img src="/assets/thumbs/{{ photo.path }}" alt="{{ photo.desc }}"'
-        'style="width: 100%"/>'
-        '</a>'
-        '{% endfor %}'
-        ##
-        '</div>'
-    )
-
     def on_config(self, config: MkDocsConfig) -> MkDocsConfig:
         plugin_cfg = cast(
             PhotosConfig,
@@ -155,23 +140,41 @@ class PhotosPlugin(BasePlugin[PhotosConfig]):
         if "::: photos" not in markdown:
             return markdown
 
-        template = Template(self.template)
+        with open(os.path.join(os.path.dirname(__file__), 'photos.html')) as f:
+            template = Template(f.read())
 
         plugin_cfg = cast(
             PhotosConfig,
             config.plugins['photos'].config)  # type: ignore
 
         with open(plugin_cfg.index) as f:
-            photos_all = yaml.safe_load(f)["photos"]
+            data = yaml.safe_load(f)
 
-        for section, photos in photos_all.items():
+        for section, photos in data["photos"].items():
             for photo in photos:
+                photo['id'] = photo["path"].split('/')[-1].split('.')[0]
+
+                lens = photo.get('lens')
+                if '+' in lens:
+                    lens, body = lens.split('+')
+                else:
+                    body = data['equipment']["default_cameras"].get(lens)
+
+                photo['body'] = data['equipment']['cameras'].get(body, 'Unknown')
+                photo['lens'] = data['equipment']['lenses'].get(lens, 'Unknown')
+
+                if photo['body'] == "Unknown":
+                    logging.warning(f"Unknown body for photo {photo['path']}: {body}")
+                if photo['lens'] == "Unknown":
+                    logging.warning(f"Unknown lens for photo {photo['path']}: {lens}")
+
                 if "desc" in photo:
                     photo["desc"] = photo["desc"].replace('"', '&quot;')
 
         photos_md = ""
-        for section, photos in photos_all.items():
+        for section, photos in data["photos"].items():
             photos_md += f"\n\n## {section}\n\n"
-            photos_md += template.render(photos=photos)
+            photos_md += template.render(
+                photos=photos, equipment=data['equipment'])
 
         return markdown.replace("::: photos", photos_md)

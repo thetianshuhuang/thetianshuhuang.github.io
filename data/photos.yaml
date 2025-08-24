@@ -1,5 +1,10 @@
 photos:
   2025:
+  - path: milky-way.jpg
+    thumb: 60
+    aspect: x23
+    lens: 24gm+a7rv
+    desc: First try at astrophotography at Cherry Springs State Park.
   - path: temple.jpg
     thumb: 32
     aspect: x21
@@ -80,7 +85,7 @@ photos:
     thumb: 50
     aspect: x23
     desc: Bakery Square in Pittsburgh.
-    lens: p8
+    lens: p8tele+p8
   - path: leaf.jpg
     thumb: 100
     aspect: x23
@@ -100,7 +105,7 @@ photos:
     thumb: 50
     aspect: x23
     desc: Reflection from the roof of the Summit building at the Seattle convention senter.
-    lens: p8
+    lens: p8wide+p8
   - path: monkeys.jpg
     thumb: 0
     aspect: x23
@@ -160,7 +165,7 @@ photos:
     aspect: x23
     thumb: 50
     desc: A ferry on the lake in Zhaoqing.
-    lens: nikon70-300
+    lens: nikon70-300+d5600
   - path: gz-beijingroad.jpg
     aspect: x23
     thumb: 50
@@ -229,7 +234,7 @@ photos:
     aspect: x21
     thumb: 50
     desc: Panorama of the Chisos Mountains from Persimmon Gap in Big Bend National Park.
-    lens: kit16-50
+    lens: pz16-50
   - path: chestnut-hyde.jpg
     aspect: x23
     thumb: 50
@@ -273,7 +278,7 @@ photos:
   - path: duck.jpg
     aspect: x11
     desc: Towards Foundational Models for Single-Chip Radar, Appendix A.
-    lens: sony20-70
+    lens: zeiss24-70
   - path: bosch.jpg
     aspect: x23
     thumb: 65
@@ -281,14 +286,29 @@ photos:
     lens: 18-135
 
 equipment:
+  default_cameras:
+    28-200: a7cii
+    35gm: a7cii
+    24gm: a7cii
+    90macro: a7cii
+    18-135: a6100
+    pz16-50: a6100
+    55-210: a6100
+    zeiss24-70: a7rv
+    sigma30: a6100
   lenses:
     28-200: Tamron 28-200mm f/2.8-5.6
     35gm: Sony 35mm f/1.4 GM
     24gm: Sony 24mm f/1.4 GM
+    90macro: Sony 90mm f/2.8 Macro
     18-135: Sony 18-135mm f/3.5-5.6
     pz16-50: Sony PZ 16-50mm f/3.5-5.6
     55-210: Sony 55-210mm f/4.5-6.3
-    70-300: Nikkor 70-300mm f/4.5-6.3
+    nikon70-300: Nikkor 70-300mm f/4.5-6.3
+    zeiss24-70: Zeiss 24-70mm f/4
+    sigma30: Sigma 30mm f/1.4
+    p8wide: Main Lens (25mm f/6 35mm-equivalent)
+    p8tele: Telephoto (112mm f/11 35mm-equivalent)
   cameras:
     a7cii: Sony A7Cii
     a7rv: Sony A7RV
