@@ -11,7 +11,7 @@ hide:
     <img src="/assets/research/iq1m.png">
 </div>
 
-Since my research interests focus on *nonstandard* problems which are generally difficult for a human to interpret &mdash; and sanity-check, my research philosophy places a strong emphasis on writing modular, auditable code. As domains like radar spectrum and computer systems lie outside of the machine learning mainstream, tackling these problems also requires a substantial engineering investment in novel infrastructure for collecting, processing, and experimentation.
+Since my research interests focus on *nonstandard* problems which are generally difficult for a human to interpret &mdash; and sanity-check, my research philosophy places a strong emphasis on writing modular, auditable code. As domains like radar spectrum and computer systems lie outside of the machine learning mainstream, tackling these problems also requires a substantial engineering investment in novel infrastructure for data collection, processing, and experimentation.
 
 Some particular up-and-coming[^0] technologies for the python-ML ecosystem which I believe in strongly include:
 
@@ -130,5 +130,5 @@ Some particular up-and-coming[^0] technologies for the python-ML ecosystem which
 </div>
 
 [^4]: "First generation": a non-automated solution using only officially supported TI software; "Second generation": a partially automated and somewhat modular system relying on official TI software, with some custom implementations; "Third generation": a fully automated, modular, and tightly-integrated linux-based data collection system without any TI software dependencies on the data collection computer
-[^5]: Jax's functional programming ["differentiation is a functor"](https://docs.jax.dev/en/latest/key-concepts.html#transformations) approach makes optimization meta-learning vastly simpler to implement, completely eliminating the need for such a complicated framework.
+[^5]: Jax's functional programming ["differentiation is a higher order function"](https://docs.jax.dev/en/latest/key-concepts.html#transformations) approach makes optimization meta-learning vastly simpler to implement, completely eliminating the need for such a complicated framework.
 [^6]: This library has been abandoned since it turns out there is not much demand for Bayesian Clustering algorithms. In particular, these methods are only really suitable for low-dimension (<50) moderate-data (>100, <10000) settings where powerful, fully-automated clustering is required, of which there simply aren't that many.
