@@ -23,17 +23,31 @@ theme:
 watch:
   - docs
   - data
+  - templates
 
 extra_css:
   - stylesheets/extra.css
 
 plugins:
-- publications:
-    index: data/research.yaml
-- collaborators:
-    index: data/people.yaml
 - photos:
     index: data/photos.yaml
+- template:
+    pattern: "::: {}"
+    templates:
+      publications:
+        template: templates/publications.md
+        context: data/research.yaml
+        key: publications
+      patents:
+        template: templates/patents.md
+        context: data/research.yaml
+        key: patents
+      awards:
+        template: templates/awards.md
+        context: data/cv.yaml
+        key: awards
+- collaborators:
+    index: data/people.yaml
 - glightbox:
     manual: true
 

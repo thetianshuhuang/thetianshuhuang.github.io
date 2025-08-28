@@ -7,12 +7,11 @@ hide:
 
 <img src="/assets/profile.jpg" align="left" style="width: calc(min(300px, 40%));"></img>
 
-I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University. Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021, where I worked on Learning to Optimize with [Atlas Wang][?].
+I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University, and achieved All But Dissertation status in August 2025. Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021, where I worked on Learning to Optimize with [Atlas Wang][?].
 
-My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. I consider myself to be applied ML generalist, and [my work](research.md) draws from techniques across statistics and machine learning literature to solve problems from several different domains.
+My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. While my current work focuses on [radar perception](research.md#thesis), I consider myself to be an applied ML generalist, with [my prior work](research.md) drawing from techniques across statistics and machine learning literature to tackle problems from several different domains.
 
-Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>.
-You can find my GitHub page [here](https://github.com/thetianshuhuang); I also have a [photography page](photography.md).
+Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>. In addition to my [research](research.md) and [open-source](open-source.md) portfolio, you can find my Google Scholar page [here](https://scholar.google.com/citations?user=ZcVpdxQAAAAJ) and my GitHub page [here](https://github.com/thetianshuhuang); I also have a [photography page](photography.md).
 
 ## Research Gallery
 
@@ -25,37 +24,18 @@ You can find my GitHub page [here](https://github.com/thetianshuhuang); I also h
 
 ## Students
 
-**Zhaowei Zhang (Undergraduate)**, Spring 2024 &mdash;
-: In progress: Radar Compression
+<span class="pill">Spring 2024 &mdash; Present</span> **Zhaowei Zhang (Undergraduate)**
+: In progress: Compression for Radar Spectrum
 
-**Quentin Oschatz (Masters)**, Spring 2023 &mdash; Summer 2024
+<span class="pill">Spring 2023 &mdash; Summer 2024</span>**Quentin Oschatz (Masters)**
 : &xrarr; PhD (Carnegie Mellon University, Electrical and Computer Engineering)
 
-**Hanke Chen (Undergraduate)**, Summer 2022 &mdash; Summer 2023
+<span class="pill">Summer 2022 &mdash; Summer 2023</span>**Hanke Chen (Undergraduate)**
 : &xrarr; Startup (Neural Radiance Fields / 3D synthesis)
 
 ## Awards
 
-2025 | **ICCV 2025 Oral Presentation**
-: Top 2.4% of accepted papers (0.57% overall)
-
-2025 | **CVPR 2025 Outstanding Reviewer**
-: Awarded to 5.6% of CVPR 2025 Reviewers
-
-2024-2025 Academic Year | **Prabhu and Poonam Goel Graduate Fellowship**
-: Awarded to one student in the ECE department each academic year.
-
-2024 | **CVPR 2024 Oral Presentation**
-: Top 3.3% of accepted papers (0.78% overall)
-
-Spring 2023 | **ECE Department Recognition Award for Exemplary Qualifying Exam Performance**
-: Recognized by CMU ECE faculty for exemplary Ph.D. qualifying examination performance. This distinction was awarded by faculty vote to select students within the top 10% of Ph.D. student examinees. This award is typically given to no more than one student each semester.
-
-Fall 2021 - Spring 2024 | **ARCS Pittsburgh Chapter Scholar**
-: $15,000 award (over 3 years) for one student nominated by each participating department.
-
-Fall 2017 - Spring 2021 | **Virginia & Ernest Cockrell, Jr. Scholarship in Engineering**
-: $48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program.
+::: awards
 
 ## Teaching
 

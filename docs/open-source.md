@@ -39,9 +39,11 @@ Some particular up-and-coming[^0] technologies for the python-ML ecosystem which
 
 ## Active Projects
 
+My current active projects are centered around the RadarML initiative, which seeks to build a software ecosystem for learning on mmWave radar spectrum.
+
 <div class="grid cards" markdown>
 
-- :material-cube-outline: [`abstract_dataloader`](https://wiselabcmu.github.io/abstract-dataloader/)
+- :material-cube-outline: [`abstract_dataloader`](https://radarml.github.io/abstract-dataloader/)
 
     ---
 

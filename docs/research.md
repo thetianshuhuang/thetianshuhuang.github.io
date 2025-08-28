@@ -14,6 +14,7 @@ Currently, I'm focused on rapidly scaling and commercializing my recent work on 
 !!! abstract "PhD Thesis: Learning on Spectrum for Radar-Enabled 3D Perception"
 
     > 3D perception systems should use learning-based methods on unfiltered 4D spectra. When fused with cameras and trained at scale, spectrum-based systems will far outperform classical signal processing-based methods, and match the quality of lidar-based systems even when using only low-cost single-chip radars.
+    { #thesis }
 
     *Committee: [Anthony Rowe][?], [Carlee Joe-Wong][?], [Deva Ramanan][?], [Zico Kolter][?]*
 
@@ -32,6 +33,10 @@ Currently, I'm focused on rapidly scaling and commercializing my recent work on 
 ## Publications
 
 ::: publications
+
+## Patents
+
+::: patents
 
 ## Conference & Invited Talks
 

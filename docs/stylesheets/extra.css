@@ -9,7 +9,20 @@
 /** Make definition lists have less extra white space, left bar */
 .md-typeset dd {
     margin-bottom: 0.8em; margin-top: 0.1em; margin-left: 0.8em !important;
-    padding-left: 0.8em; border-left: 3px solid var(--md-typeset-a-color);
+    padding-left: 0.8em;
+    /** border-left: 3px solid var(--md-typeset-a-color); */
+}
+
+.md-typeset span.pill {
+    background-color: var(--md-typeset-a-color);
+    color: white;
+    border-radius: 0.5em;
+    padding: 0.2em 0.4em;
+    margin-right: 0.4em;
+    font-size: 0.9em;
+    font-size: 80%;
+    font-weight: normal;
+    white-space: nowrap;
 }
 
 :root {

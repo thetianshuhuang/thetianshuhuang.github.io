@@ -13,6 +13,57 @@ from mkdocs.structure.files import Files
 from mkdocs.structure.pages import Page
 
 
+class _TemplateConfig(Config):
+    template = opt.File(exists=True, default='template.md')
+    context = opt.File(exists=True, default='context.yaml')
+    key = opt.Type(str)
+
+class TemplateConfig(Config):
+    pattern = opt.Type(str, default="::: {}")
+    templates = opt.DictOfItems(opt.SubConfig(_TemplateConfig), default={})
+
+
+class TemplatePlugin(BasePlugin[TemplateConfig]):
+
+    def on_config(self, config: MkDocsConfig) -> MkDocsConfig:
+        plugin_cfg = cast(
+            TemplateConfig,
+            config.plugins['template'].config)  # type: ignore
+
+        self.patterns = {
+            k: plugin_cfg.pattern.format(k) for k in plugin_cfg.templates
+        }
+        return config
+
+    def _apply_template(self, markdown: str, config: _TemplateConfig) -> str:
+        with open(config.template) as f:
+            template = Template(f.read())
+        with open(config.context) as f:
+            context = yaml.safe_load(f)
+
+        if isinstance(config.key, str):
+            collected = {config.key: context[config.key]}
+        else:
+            collected = {k: context[k] for k in config.key}
+
+        return template.render(**collected)
+
+    def on_page_markdown(
+        self, markdown: str, /, *, page: Page,
+        config: MkDocsConfig, files: Files
+    ) -> str:
+        plugin_cfg = cast(
+            TemplateConfig,
+            config.plugins['template'].config)  # type: ignore
+
+        for name, pattern in self.patterns.items():
+            if pattern in markdown:
+                rendered = self._apply_template(
+                    markdown, plugin_cfg.templates[name])
+                markdown = markdown.replace(pattern, rendered)
+        return markdown
+
+
 class CollaboratorsConfig(Config):
     name = "Tianshu Huang"
     index = opt.Type(str, default='data/people.yaml')
@@ -49,75 +100,6 @@ class CollaboratorsPlugin(BasePlugin[CollaboratorsConfig]):
 
         pattern = re.compile(r"\[([^\[\]]*?)\]\[\?\]")
         return pattern.sub(replace_pattern, markdown)
-
-
-class PublicationsConfig(Config):
-    index = opt.Type(str, default='data/research.yaml')
-
-
-class PublicationsPlugin(BasePlugin[PublicationsConfig]):
-
-    template = (
-        # Summary / header
-        '??? {{ paper.tag }} "'
-        '{% if paper.url %}'
-        '[**{{ paper.title }}**]({{ paper.url }})'
-        '{% else %}'
-        '**{{ paper.title }}**'
-        '{% endif %}'
-        '<br>'
-        '{% for author in paper.authors %}'
-        '[{{ author }}][?]'
-        '{% if not loop.last %}, {% endif %}'
-        '{% endfor %}'
-        '<br>'
-        '{{ paper.venue_long if paper.venue_long else paper.venue }}'
-        '"\n\n'
-        # Expandable body...
-        #   Summary
-        '{% if paper.summary %}'
-        '    {{ paper.summary }}\n'
-        '    {{"{"}}: #{{label}} {{"}"}}\n\n'
-        '{% endif %}'
-        #   Resources
-        '{% if paper.resources %}'
-        '    '
-        '{% for name, url in paper.resources.items() %}'
-        '<span style="padding-right: 24px">[[{{ name }}]]({{ url }})</span>'
-        '{% endfor %}'
-        '\n\n'
-        '{% endif %}'
-        #   Figure
-        '{% if paper.figure %}'
-        '    ![{{ paper.title }}](assets/research/{{ paper.figure }}){ width="1000" }\n\n'
-        '{% endif %}'
-    )
-
-    def on_config(self, config: MkDocsConfig) -> MkDocsConfig:
-        plugin_cfg = cast(
-            PublicationsConfig,
-            config.plugins['publications'].config)  # type: ignore
-        with open(plugin_cfg.index) as f:
-            self.publications = yaml.safe_load(f)["papers"]
-
-        return config
-
-    def on_page_markdown(
-        self, markdown: str, /, *, page: Page,
-        config: MkDocsConfig, files: Files
-    ) -> str:
-        if "::: publications" not in markdown:
-            return markdown
-
-        template = Template(self.template)
-
-        publications = []
-        for label, paper in self.publications.items():
-            publications.append(template.render(paper=paper, label=label))
-
-        publications_md = "".join(publications)
-
-        return markdown.replace("::: publications", publications_md)
 
 
 class PhotosConfig(Config):

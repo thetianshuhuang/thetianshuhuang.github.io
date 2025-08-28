@@ -1,4 +1,4 @@
-papers:
+publications:
   grt:
     title: "Towards Foundational Models for Single-Chip Radar"
     shorttitle: GRT
@@ -153,3 +153,34 @@ papers:
   #   - Anthony Rowe
   #   - Matthew O'Toole
   #   - Deva Ramanan
+
+patents:
+  - name: Generation and use of synthetic radar views of a scene
+    status: Pending
+    number: WO2025131366A1 (WO DE)
+    date: Filed, October 2024
+    assignee: Robert Bosch GmbH
+
+  - name: Method for detecting a memory access error in a multi-threaded application
+    status: Pending
+    number: US20250117309 (US JP KR DE)
+    date: Filed, September 2024
+    assignee: Robert Bosch GmbH, Carnegie Mellon University
+
+  - name: Method for Predicting the Performance of a Software Program
+    status: Pending
+    number: US20250077389 (US CN DE JP)
+    date: Filed, March 2024
+    assignee: Robert Bosch GmbH, Carnegie Mellon University
+
+  - name: Method for carrying out a decision for upgrading and/or deploying software on multiple heterogenous devices
+    status: Pending
+    number: US20240211241A1 (US CN DE)
+    date: Filed, December 2023
+    assignee: Robert Bosch GmbH, Carnegie Mellon University
+
+  - name: Method for predicting resource usage for applications in a distributed system
+    status: Pending
+    number: US20240283750A1 (US CN DE)
+    date: Filed, November 2023
+    assignee: Robert Bosch GmbH, Carnegie Mellon University
