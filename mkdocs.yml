@@ -46,6 +46,10 @@ plugins:
         template: templates/awards.md
         context: data/cv.yaml
         key: awards
+      teaching:
+        template: templates/teaching.md
+        context: data/cv.yaml
+        key: teaching
 - collaborators:
     index: data/people.yaml
 - glightbox:

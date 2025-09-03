@@ -4,10 +4,10 @@ publications:
     shorttitle: GRT
     url: ""
     venue: ICCV 2025
-    venue_long: ICCV 2025, **Oral Presentation &mdash; Top 0.57% (64) of all submissions**
+    comment: "**Oral Presentation &mdash; Top 0.57% (64/11152) of all submissions**"
     tag: radar
     summary: We train a foundational model for single-chip mmWave radar. Details to follow!
-  #   figure: grt.svg
+    figure: grt.svg
     authors:
     - Tianshu Huang
     - Akarsh Prabhakara
@@ -16,13 +16,12 @@ publications:
     - Deva Ramanan
     - Matthew O'Toole
     - Anthony Rowe
-
   beanstalk:
     title: "Unveiling Heisenbugs with Diversified Execution"
     shorttitle: Beanstalk
     url: https://dl.acm.org/doi/10.1145/3720428
     venue: OOPSLA 2025
-    venue_long: MLSys 2025 | *Artifact Available*
+    comment: "*Artifact Available &mdash; Artifact Functional &mdash; Results Reproduced*"
     tag: wasm
     summary: Heisenbugs - bugs which change their behavior under observation - are among the toughest challenges when debugging programs. We propose to catch these bugs using stochastic instrumentation, and demonstrate the surprising effectiveness of debugging across a diverse set of platforms.
     figure: beanstalk.svg
@@ -39,7 +38,7 @@ publications:
     title: "Interference-Aware Edge Runtime Prediction with Conformal Matrix Completion"
     shorttitle: Pitot
     venue: MLSys 2025
-    venue_long: MLSys 2025 | *Artifact Available &mdash; Artifact Functional*
+    comment: "*Artifact Available &mdash; Artifact Functional*"
     tag: wasm
     summary: Performance prediction in heterogeneous systems such as edge computing is best formulated as matrix completion, which can be extended to handle complex, edge-specific concerns such as interference and uncertainty quantification.
     url: https://arxiv.org/abs/2503.06428
@@ -81,7 +80,7 @@ publications:
     title: "Empowering WebAssembly with Thin Kernel Interfaces"
     shorttitle: WALI
     venue: EuroSys 2025
-    venue_long: EuroSys 2025 | *Artifact Available &mdash; Artifact Functional &mdash; Results Reproduced*
+    comment: "*Artifact Available &mdash; Artifact Functional &mdash; Results Reproduced*"
     tag: wasm
     figure: wali.svg
     summary: Webassembly (Wasm) adoption for new domains is often hindered by the lack of standard system interfaces. We propose directly exposing OS userspace syscalls as a compromise.
@@ -101,7 +100,7 @@ publications:
     icon: icons/dart.svg
     subtitle: Implicit Doppler Tomography for Radar Novel View Synthesis
     summary: We propose DART &mdash; Doppler Aided Radar Tomography, a Neural Radiance Field-inspired approach to radar novel view synthesis using implicit neural inverse imaging.
-    venue_long: CVPR 2024, **Oral Presentation &mdash; Top 0.78% (90) of all submissions**
+    comment: "**Oral Presentation &mdash; Top 0.78% (90/11532) of all submissions**"
     venue: CVPR 2024
     tag: radar
     figure: dart.svg

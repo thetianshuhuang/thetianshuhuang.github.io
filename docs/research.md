@@ -42,6 +42,10 @@ Currently, I'm focused on rapidly scaling and commercializing my recent work on 
 
 <div class="grid cards" markdown>
 
+- **Towards Foundational Models for mmWave Radar**
+<br>
+Invited Talk @ Bosch Research Sunnyvale, September 2025
+
 - [**Interference-aware Edge Runtime Prediction with Conformal Matrix Completion**](resources/pitot_slides.pdf)
 <br>
 MLSys 2025, Conference Presentation

@@ -9,7 +9,10 @@
 <br>
 {%- for author in paper.authors -%}
 [{{ author }}][?]{% if not loop.last %}, {% endif %}{%- endfor -%}
-<br>{{ paper.venue_long if paper.venue_long else paper.venue }}"
+<br>{{ paper.venue_long if paper.venue_long else paper.venue }}
+{%- if paper.comment -%}
+<span class="sep">&bullet;</span>{{ paper.comment }}
+{%- endif -%}"
 
     {% if paper.summary -%}
     {{ paper.summary }}

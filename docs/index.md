@@ -39,27 +39,7 @@ Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cm
 
 ## Teaching
 
-April 2024 | Guest Lecture: **[Machine Learning + Edge](resources/guest_lecture_machine_learning2.pdf)**
-: CMU 18-649 Distributed Embedded Systems
-
-Spring 2024 | TA: **18-661 Introduction to Machine Learning**
-: Lecture: [SVM I (SVM, Hinge Loss, Max-Margin)](resources/18661_svm_i.pdf)
-    <br>
-    Lecture: [SVM II (Duality, Kernel Trick, What Happened to SVMs?)](resources/18661_svm_ii.pdf)
-
-February 2023 | Guest Lecture: **[Federated Learning](resources/guest_lecture_federated_learning.pdf)**
-: Duke ECE/COMPSCI 654 Edge Computing
-
-November 2022 | Guest Lecture: **[Machine Learning + Edge](resources/guest_lecture_machine_learning.pdf)**
-: CMU 18-649 Distributed Embedded Systems
-
-Spring 2022 | TA: **18-661 Introduction to Machine Learning**
-: Lecture: [Better and Faster Python](resources/18661_python.pdf)
-    <br>
-    Lecture: [Pytorch (and how we got here)](resources/18661_pytorch.pdf)
-
-Fall 2020 - Spring 2021 | TA: **EE 351k Probability, Statistics and Random Processes**
-: UT Austin (as undergraduate TA)
+::: teaching
 
 ## Service
 
