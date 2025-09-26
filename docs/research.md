@@ -9,7 +9,7 @@ hide:
 
 My past and current work spans a wide range of topics in machine learning, including large transformer models ([ICCV '25](#grt)), statistical learning ([MLSys '25](#pitot)), NeRF-style neural-implicit inverse rendering ([CVPR '24](#dart)), and meta-learning ([ICLR '22](#l2o)). I also actively support systems researchers by providing machine learning, statistics, and data science expertise ([OOPSLA '25](#beanstalk), [RTAS '25](#silverline), [EuroSys '25](#wali)), while also supporting machine learning researchers working with real-world sensors and systems.
 
-Currently, I'm focused on rapidly scaling and commercializing my recent work on creating foundational models for radar via a technology transfer collaboration with Robert Bosch GmbH, a leading automotive radar manufacturer.
+Currently, I'm focused on scaling and building out my low-level spectrum-based radar perception approach, as well as establishing a [RadarML Community](https://radarml.github.io/) and Radar Interest Group @ CMU to support and facilitate research in learning for radar.
 
 !!! abstract "PhD Thesis: Learning on Spectrum for Radar-Enabled 3D Perception"
 

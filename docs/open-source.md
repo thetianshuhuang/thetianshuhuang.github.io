@@ -45,19 +45,22 @@ My current active projects are centered around the RadarML initiative, which see
 
 - :material-cube-outline: [`abstract_dataloader`](https://radarml.github.io/abstract-dataloader/)
 
-    ---
+    [![pypi version](https://img.shields.io/pypi/v/abstract-dataloader.svg)](https://pypi.org/project/abstract-dataloader/)
+    [![GitHub](https://img.shields.io/github/license/RadarML/abstract-dataloader)](https://github.com/RadarML/abstract-dataloader)
 
     abstract interface for composable dataloaders and preprocessing pipelines
 
-- :material-antenna: `xwr` *(coming soon!)*
+- :material-antenna: [`xwr`](https://radarml.github.io/xwr/)
 
-    ---
+    [![pypi version](https://img.shields.io/pypi/v/xwr.svg)](https://pypi.org/project/xwr/)
+    [![GitHub](https://img.shields.io/github/license/RadarML/xwr)](https://github.com/RadarML/xwr)
 
     python interface for collecting raw time signal data from TI mmWave radars
 
-- :material-video-wireless-outline: `red-rover` *(coming soon!)*
+- :material-video-wireless-outline: [`red-rover`](https://radarml.github.io/red-rover/)
 
-    ---
+    [![GitHub](https://img.shields.io/github/v/release/RadarML/red-rover)](https://github.com/RadarML/red-rover)
+    [![GitHub](https://img.shields.io/github/license/RadarML/red-rover)](https://github.com/RadarML/red-rover)
 
     our "third generation[^4]" radar spectrum data collection system
 
