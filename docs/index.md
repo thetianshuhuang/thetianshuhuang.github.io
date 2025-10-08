@@ -7,20 +7,22 @@ hide:
 
 <img src="/assets/profile.jpg" align="left" style="width: calc(min(300px, 40%));"></img>
 
-I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University, and achieved All But Dissertation status in August 2025. Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021, where I worked on Learning to Optimize with [Atlas Wang][?].
+I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University. I reached All But Dissertation status in August 2025, with the intent to graduate in summer or fall 2026.
 
-My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. While my current work focuses on [radar perception](research.md#thesis), I consider myself to be an applied ML generalist, with [my prior work](research.md) drawing from techniques across statistics and machine learning literature to tackle problems from several different domains.
+My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. While my current work focuses on [radar perception](research.md#thesis), I consider myself to be applied ML generalist, and [my work](research.md) draws from techniques across statistics and machine learning literature.
+
+Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021, where I worked on Learning to Optimize with [Atlas Wang][?].
 
 Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>. In addition to my [research](research.md) and [open-source](open-source.md) portfolio, you can find my Google Scholar page [here](https://scholar.google.com/citations?user=ZcVpdxQAAAAJ) and my GitHub page [here](https://github.com/thetianshuhuang); I also have a [photography page](photography.md).
 
 ## Research Gallery
 
-<a href='research#pitot' style='grid-column: span 2'><img src="/assets/research/cluster.jpg"></a>
 <div style="width: 100%; display: grid; gap: 5px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
     <a href='research#grt'><img src="/assets/photos/duck.jpg"></a>
     <a href='research#dart'><img src="/assets/research/dart_sq.jpg"></a>
     <a href='research#beanstalk'><img src="/assets/research/beanstalk_sq.png"></a>
 </div>
+<a href='research#pitot' style='grid-column: span 2'><img src="/assets/research/cluster.jpg"></a>
 
 ## Students
 

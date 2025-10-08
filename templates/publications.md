@@ -21,7 +21,7 @@
 
     {% if paper.resources -%}
     {%- for name, url in paper.resources.items() -%}
-    <span style="padding-right: 24px">[[{{ name }}]]({{ url }})</span>
+    <a href="{{ url }}" target="_blank"><span style="margin-right: 16px; font-size: 14px" class="button">{{ name }}</span></a>
     {%- endfor -%}
     {%- endif %}
 

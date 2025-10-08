@@ -2,11 +2,11 @@ publications:
   grt:
     title: "Towards Foundational Models for Single-Chip Radar"
     shorttitle: GRT
-    url: ""
+    url: "https://wiselabcmu.github.io/grt/"
     venue: ICCV 2025
     comment: "**Oral Presentation &mdash; Top 0.57% (64/11152) of all submissions**"
     tag: radar
-    summary: We train a foundational model for single-chip mmWave radar. Details to follow!
+    summary: With enough training data, transformer models can extract 3D outputs of surprising quality from indexpensive, low-resolution single-chip radar. These models scale well with additional training data, and can generalize across different settings and be readily fine tuned for new tasks.
     figure: grt.svg
     authors:
     - Tianshu Huang
@@ -16,6 +16,10 @@ publications:
     - Deva Ramanan
     - Matthew O'Toole
     - Anthony Rowe
+    resources:
+      Paper: https://arxiv.org/pdf/2509.12482?
+      RadarML: https://radarml.github.io/
+
   beanstalk:
     title: "Unveiling Heisenbugs with Diversified Execution"
     shorttitle: Beanstalk

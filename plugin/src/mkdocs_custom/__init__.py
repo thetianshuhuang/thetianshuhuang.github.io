@@ -1,7 +1,7 @@
+import logging
 import os
 import re
 from typing import cast
-import logging
 
 import yaml
 from jinja2 import Template

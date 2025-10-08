@@ -86,7 +86,7 @@ My current active projects are centered around the RadarML initiative, which see
 
     ---
 
-    jax-based [implementation](https://github.com/wiselabcmu/dart) & [dataset](https://zenodo.org/records/10938617) for [DART (CVPR '24)](https://wiselabcmu.github.io/dart/)
+    jax-based [implementation](https://github.com/wiselabcmu/dart) & [dataset](https://zenodo.org/records/10938617) for [DART (CVPR Oral '24)](https://wiselabcmu.github.io/dart/)
 
 - :material-weather-windy: [`pitot`](https://github.com/WiseLabCMU/pitot)
 
