@@ -1,5 +1,15 @@
 photos:
   2025:
+  - path: shoreline.jpg
+    thumb: 50
+    aspect: x32
+    lens: 35gm
+    desc: Midnight at shoreline park in Mountain View.
+  - path: skyline.jpg
+    thumb: 50
+    aspect: x32
+    lens: 28-200
+    desc: Sunrise over the San Francisco Bay from Skyline Blvd.
   - path: milky-way.jpg
     thumb: 60
     aspect: x23
