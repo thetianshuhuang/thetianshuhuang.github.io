@@ -39,7 +39,7 @@ Some particular up-and-coming[^0] technologies for the python-ML ecosystem which
 
 ## Active Projects
 
-My current active projects are centered around the RadarML initiative, which seeks to build a software ecosystem for learning on mmWave radar spectrum.
+My current active projects are centered around the [RadarML project](https://radarml.github.io/), which seeks to build a software ecosystem for learning on mmWave radar spectrum.
 
 <div class="grid cards" markdown>
 
@@ -64,9 +64,10 @@ My current active projects are centered around the RadarML initiative, which see
 
     our "third generation[^4]" radar spectrum data collection system
 
-- :octicons-ai-model-16: `nrdk` *(coming soon!)*
+- :octicons-ai-model-16: [`nrdk`](https://radarml.github.io/nrdk/)
 
-    ---
+    [![GitHub](https://img.shields.io/github/v/release/RadarML/nrdk)](https://github.com/RadarML/nrdk)
+    [![GitHub](https://img.shields.io/github/license/RadarML/nrdk)](https://github.com/RadarML/nrdk)
 
     the neural radar development kit for deep learning on multimodal radar data
 
