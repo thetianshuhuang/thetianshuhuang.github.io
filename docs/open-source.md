@@ -77,17 +77,23 @@ My current active projects are centered around the [RadarML project](https://rad
 
 <div class="grid cards" markdown>
 
+- :fontawesome-solid-hexagon-nodes: [`grt`](https://wiselabcmu.github.io/grt/)
+
+    ---
+
+    original research code for [GRT (ICCV Oral '25)](https://wiselabcmu.github.io/grt/)
+
 - :material-sprout: [`beanstalk`](https://github.com/arjunr2/beanstalk)
 
     ---
 
-    instrumentation & data analysis for [Beanstalk (OOPSLA '25)](https://dl.acm.org/doi/10.1145/3720428)
+    instrumentation tooling & data analysis for [Beanstalk (OOPSLA '25)](https://dl.acm.org/doi/10.1145/3720428)
 
 - :dart: [`dart`](https://wiselabcmu.github.io/dart/)
 
     ---
 
-    jax-based [implementation](https://github.com/wiselabcmu/dart) & [dataset](https://zenodo.org/records/10938617) for [DART (CVPR Oral '24)](https://wiselabcmu.github.io/dart/)
+    standalone jax-based [implementation](https://github.com/wiselabcmu/dart) & [dataset](https://zenodo.org/records/10938617) for [DART (CVPR Oral '24)](https://wiselabcmu.github.io/dart/)
 
 - :material-weather-windy: [`pitot`](https://github.com/WiseLabCMU/pitot)
 
@@ -99,7 +105,7 @@ My current active projects are centered around the [RadarML project](https://rad
 
     ---
 
-    implementation artifact for [Optimizer Amalgamation (ICLR '22)](https://openreview.net/pdf?id=VqzXzA9hjaX)
+    implementation for [Optimizer Amalgamation (ICLR '22)](https://openreview.net/pdf?id=VqzXzA9hjaX) using the `l2o` framework
 
 </div>
 
