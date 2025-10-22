@@ -77,7 +77,7 @@ My current active projects are centered around the [RadarML project](https://rad
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-hexagon-nodes: [`grt`](https://wiselabcmu.github.io/grt/)
+- :fontawesome-solid-hexagon-nodes: [`grt`](https://github.com/wiseLabCMU/grt/)
 
     ---
 
