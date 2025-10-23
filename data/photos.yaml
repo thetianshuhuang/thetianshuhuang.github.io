@@ -1,5 +1,25 @@
 photos:
   2025:
+  - path: lanikai.jpg
+    thumb: 60
+    aspect: x13
+    lens: 35gm
+    desc: Sunrise over Lanikai Beach from the pillbox trail.
+  - path: southpoint.jpg
+    thumb: 50
+    lens: 35gm
+    aspect: x23
+    desc: The southernmost point of the United States is a windy plain which is unique from the rest of Hawaii.
+  - path: eruption.jpg
+    thumb: 50
+    aspect: x32
+    lens: 28-200
+    desc: A crowd gathers to watch a rather underwhelming eruption.
+  - path: crater.jpg
+    thumb: 0
+    aspect: x23
+    lens: 35gm
+    desc: Sunrise at Kilauea, just prior to Episode 35.
   - path: shoreline.jpg
     thumb: 50
     aspect: x32
