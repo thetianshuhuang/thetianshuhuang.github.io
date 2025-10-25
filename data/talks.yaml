@@ -1,0 +1,36 @@
+talks:
+
+- title: Towards Foundational Models for Single-Chip Radar
+  url: https://youtu.be/c3itbi11OZM?t=4359
+  location: ICCV 2025 Main Conference Talk
+
+- title: Towards Foundational Models for mmWave Radar
+  location: Invited Talk @ Bosch Research Sunnyvale, September 2025
+
+- title: Interference-aware Edge Runtime Prediction with Conformal Matrix Completion
+  url: resources/pitot_slides.pdf
+  location: MLSys 2025, Conference Presentation
+
+- title: The Radar Spectrum 2.0
+  comment: With Bosch Collaborators
+  location: 2025 Signal Processing Colloquium @ Bosch Research
+
+- title: Towards Foundational Models for mmWave Radar
+  location: Invited Talks @ Bosch Research (January / September 2025), Bosch Mobility (February 2025)
+
+- title: "Grey-Box Program Analysis: Runtime Prediction and Beyond"
+  url: resources/grey-box-program-analysis.pdf
+  location: Reliable Distributed Systems Tech Colloquium @ Bosch Research, October 2024
+
+- title: "DART: Implicit Doppler Tomography for Radar Novel View Synthesis"
+  url: resources/dart-slides.pdf
+  location: CVPR 2024, Main Conference Oral Presentation
+
+- title: Leveraging Wasm instrumentation
+  url: resources/wasm-research-day-2023.pdf
+  comment: With [Arjun Ramesh][?]
+  location: "[WebAssembly Research Day 2023](https://www.cs.cmu.edu/~wasm/wasm-research-day-2023.html)"
+
+- title: Giving the Cloud an Edge with WebAssembly
+  comment: With [Arjun Ramesh][?]
+  location: "[WebAssembly Research Day 2022](http://www.cs.cmu.edu/~wasm/wasm-research-day-2022.html)"

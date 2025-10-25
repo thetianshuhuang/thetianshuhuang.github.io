@@ -32,24 +32,8 @@ plugins:
 - photos:
     index: data/photos.yaml
 - template:
-    pattern: "::: {}"
-    templates:
-      publications:
-        template: templates/publications.md
-        context: data/research.yaml
-        key: publications
-      patents:
-        template: templates/patents.md
-        context: data/research.yaml
-        key: patents
-      awards:
-        template: templates/awards.md
-        context: data/cv.yaml
-        key: awards
-      teaching:
-        template: templates/teaching.md
-        context: data/cv.yaml
-        key: teaching
+    context: ./data
+    templates: ./templates
 - collaborators:
     index: data/people.yaml
 - glightbox:

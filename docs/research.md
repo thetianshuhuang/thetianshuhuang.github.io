@@ -40,56 +40,8 @@ Currently, I'm focused on scaling and building out foundational models for low-l
 
 ## Conference & Invited Talks
 
-<div class="grid cards" markdown>
-
-- **Towards Foundational Models for mmWave Radar**
-<br>
-Invited Talk @ Bosch Research Sunnyvale, September 2025
-
-- [**Interference-aware Edge Runtime Prediction with Conformal Matrix Completion**](resources/pitot_slides.pdf)
-<br>
-MLSys 2025, Conference Presentation
-
-- **The Radar Spectrum 2.0**
-<br>
-2025 Signal Processing Colloquium @ Bosch Research
-
-- **Towards Foundational Models for mmWave Radar**
-<br>
-Invited Talks @ Bosch Research (January / September 2025), Bosch Mobility (February 2025)
-
-- [**Grey-Box Program Analysis: Runtime Prediction and Beyond**](resources/grey-box-program-analysis.pdf)
-<br>
-Reliable Distributed Systems Tech Colloquium @ Bosch Research, October 2024
-
-- [**DART: Implicit Doppler Tomography for Radar Novel View Synthesis**](resources/dart-slides.pdf)
-<br>
-CVPR 2024, Main Conference Oral Presentation
-
-- [**Leveraging Wasm instrumentation**](resources/wasm-research-day-2023.pdf)
-<br>
-*With [Arjun Ramesh][?]*
-<br>
-[WebAssembly Research Day 2023](https://www.cs.cmu.edu/~wasm/wasm-research-day-2023.html)
-
-- **Giving the Cloud an Edge with WebAssembly**
-<br>
-*With [Arjun Ramesh][?]*
-<br>
-[WebAssembly Research Day 2022](http://www.cs.cmu.edu/~wasm/wasm-research-day-2022.html)
-
-</div>
+::: talks
 
 ## Casual Presentations
 
-<div class="grid cards" markdown>
-
-- [**The NeRF is Dead ... Long Live the NeRF**](resources/NeRFs.pdf)
-    <br>
-    (2022) *In a post-NGP landscape, what's a NeRF anyways?*
-
-- [**Topics on the Edge (of Federated Learning)**](resources/TopicsOnTheEdge.pdf)
-    <br>
-    (2022) *What challenges arise in federated learning on edge devices?*
-
-</div>
+::: presentations@talks

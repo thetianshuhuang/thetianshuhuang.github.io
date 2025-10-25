@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mkdocs_custom"
+name = "mkdocs_template"
 version = "0.0.0"
 
 requires-python = ">=3.10"
@@ -23,5 +23,4 @@ dependencies = [
 ]
 
 [project.entry-points."mkdocs.plugins"]
-collaborators = "mkdocs_custom:CollaboratorsPlugin"
-photos = "mkdocs_custom:PhotosPlugin"
+template = "mkdocs_template:TemplatePlugin"

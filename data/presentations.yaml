@@ -1,0 +1,9 @@
+talks:
+
+- title: The NeRF is Dead ... Long Live the NeRF
+  url: resources/NeRFs.pdf
+  location: (2022) In a post-NGP landscape, what's a NeRF anyways?
+
+- title: Topics on the Edge (of Federated Learning)
+  url: resources/TopicsOnTheEdge.pdf
+  location: (2022) What challenges arise in federated learning on edge devices?
