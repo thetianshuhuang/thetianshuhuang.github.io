@@ -1,4 +1,20 @@
 publications:
+  radarsim:
+    title: "RadarSim: Simulating Single-Chip Radar via Multimodal Neural Fields"
+    shorttitle: RadarSim
+    venue: 3DV 2026
+    tag: radar
+    summary: We propose a unified differentiable renderer, RadarSim, which leverages the high angular resolution of RGB cameras to generate Doppler radar range images with accurate radar properties from a camera-initialized neural field.
+    authors:
+    - Chuhan Chen
+    - Tianshu Huang
+    - Akarsh Prabhakara
+    - Chaithanya Kumar Mummadi
+    - Zhongxia Cong
+    - Anthony Rowe
+    - Matthew O'Toole
+    - Deva Ramanan
+
   grt:
     title: "Towards Foundational Models for Single-Chip Radar"
     shorttitle: GRT
@@ -145,16 +161,3 @@ publications:
     - Shiyu Chang
     - Lisa Amini
     - Zhangyang Wang
-
-  # radarsim:
-  #   title: "3D Reconstruction"
-  #   venue: In Review
-  #   tags: ["radar", "primary"]
-  #   authors:
-  #   - Chuhan Chen
-  #   - Tianshu Huang
-  #   - Akarsh Prabhakara
-  #   - Chaithanya Kumar Mummadi
-  #   - Anthony Rowe
-  #   - Matthew O'Toole
-  #   - Deva Ramanan
