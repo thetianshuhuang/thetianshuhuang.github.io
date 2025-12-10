@@ -4,17 +4,17 @@ publications:
     shorttitle: RadarSim
     venue: 3DV 2026
     tag: radar
-    summary: We propose a unified differentiable renderer, RadarSim, which leverages the high angular resolution of RGB cameras to generate Doppler radar range images with accurate radar properties from a camera-initialized neural field.
+    summary: While radar reconstructions can accurately capture radar-specific properties, they are fundamentally limited by the low resolution of the underlying sensor. We propose a unified differentiable renderer, RadarSim, which leverages the high angular resolution of RGB cameras to generate Doppler radar range images with accurate radar properties from a camera-initialized neural field.
+    figure: radarsim.jpg
     authors:
     - Chuhan Chen
     - Tianshu Huang
     - Akarsh Prabhakara
     - Chaithanya Kumar Mummadi
-    - Zhongxia Cong
+    - Zhongxiao Cong
     - Anthony Rowe
     - Matthew O'Toole
     - Deva Ramanan
-
   grt:
     title: "Towards Foundational Models for Single-Chip Radar"
     shorttitle: GRT
@@ -37,7 +37,6 @@ publications:
       RadarML: https://radarml.github.io/
       Slides: https://wiselabcmu.github.io/grt/grt-slides.pdf
       Poster: https://wiselabcmu.github.io/grt/grt-poster.pdf
-
   beanstalk:
     title: "Unveiling Heisenbugs with Diversified Execution"
     shorttitle: Beanstalk

@@ -7,7 +7,7 @@ hide:
 
 <img src="/assets/profile.jpg" align="left" style="width: calc(min(300px, 40%));"></img>
 
-I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University. I reached All But Dissertation status in August 2025, with the intent to graduate in summer or fall 2026.
+I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University. I reached All But Dissertation status in August 2025.
 
 My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. While my current work focuses on [radar perception](research.md#thesis), I consider myself to be applied ML generalist, and [my work](research.md) draws from techniques across statistics and machine learning literature.
 
@@ -49,7 +49,7 @@ Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cm
 
 - **CVPR 2025 Outstanding Reviewer** &mdash; [Awarded to 5.6% of Reviewers](https://media.eventhosts.cc/Conferences/CVPR2025/CVPR_main_conf_2025.pdf)
 
-- **Reviewer** &mdash; for CVPR 2025, ICML 2022, NeurIPS 2022
+- **Reviewer** &mdash; for TMRL 2026-, CVPR 2026, CVPR 2025, ICML 2022, NeurIPS 2022
 
 - **Faculty Search Student Council Co-Chair** &mdash; for the CMU ECE department 2024 and 2025 hiring cycles
 

@@ -1,4 +1,10 @@
 patents:
+  - name: Method for predicting resource usage for applications in a distributed system
+    status: Active
+    number: US 12,463,919
+    date: November 2025
+    assignee: Robert Bosch GmbH, Carnegie Mellon University
+
   - name: Generation and use of synthetic radar views of a scene
     status: Pending
     number: WO2025131366A1 (WO DE)
@@ -21,10 +27,4 @@ patents:
     status: Pending
     number: US20240211241A1 (US CN DE)
     date: Filed, December 2023
-    assignee: Robert Bosch GmbH, Carnegie Mellon University
-
-  - name: Method for predicting resource usage for applications in a distributed system
-    status: Pending
-    number: US20240283750A1 (US CN DE)
-    date: Filed, November 2023
     assignee: Robert Bosch GmbH, Carnegie Mellon University
