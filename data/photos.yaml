@@ -110,6 +110,11 @@ photos:
     aspect: x23
     desc: A level crossing in the South Side of Pittsburgh.
     lens: 28-200
+  - path: flagstaff-winter.jpg
+    thumb: 50
+    aspect: x32
+    desc: A snowy evening on Flagstaff Hill.
+    lens: sigma30
   2024:
   - path: stride.jpg
     thumb: 50
