@@ -1,5 +1,10 @@
 photos:
   2025:
+  - path: clock.jpg
+    thumb: 55
+    aspect: x23
+    lens: 50-400
+    desc: Snow shower at Carnegie Mellon University.
   - path: san-mateo.jpg
     thumb: 50
     aspect: x23
@@ -327,6 +332,7 @@ photos:
 
 equipment:
   default_cameras:
+    50-400: a7cii
     28-200: a7cii
     35gm: a7cii
     24gm: a7cii
@@ -338,6 +344,7 @@ equipment:
     sigma30: a6100
   lenses:
     28-200: Tamron 28-200mm f/2.8-5.6
+    50-400: Tamron 50-400 f/4.5-6.3
     35gm: Sony 35mm f/1.4 GM
     24gm: Sony 24mm f/1.4 GM
     90macro: Sony 90mm f/2.8 Macro
