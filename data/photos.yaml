@@ -295,16 +295,30 @@ photos:
     thumb: 50
     desc: A conversation in Lake Erie viewed from a distance in Presque Isle State Park.
     lens: pz16-50
-  "Events & Research":
-  - path: akhil.jpg
+  Events:
+  - path: harry-close.jpg
+    aspect: x32
+    thumb: 66
+    desc: Harry Dong @ PhD Defense
+    lens: 24-70gmii+a7rv
+  - path: harry-wide.jpg
+    thumb: 25
+    desc: Harry Dong @ PhD Defense
+    lens: 24-70gmii+a7rv
+  - path: ken-mai.jpg
+    aspect: x21
+    thumb: 35
+    desc: Ken Mai @ ECE Department Event
+    lens: 24-70gmii
+  - path: akhil-close.jpg
     aspect: x32
     thumb: 50
     desc: Akhil Padmanabha @ PhD Defense.
     lens: 28-200
-  - path: realsense.jpg
-    aspect: x23
-    thumb: 0
-    desc: Real-time Volumetric Compression; paper in review.
+  - path: akhil.jpg
+    aspect: x32
+    thumb: 50
+    desc: Akhil Padmanabha @ PhD Defense.
     lens: 28-200
   - path: mlsys.jpg
     aspect: x21
@@ -316,24 +330,41 @@ photos:
     thumb: 50
     desc: Anthony Rowe @ CPS-IoT Debate at CPS-IoT Week 2025.
     lens: 28-200
-  - path: xr.jpg
-    aspect: x11
-    desc: HCI Study Paper on Mixed-Reality Art; paper in review.
-    lens: 28-200
-  - path: duck.jpg
-    aspect: x11
-    desc: Towards Foundational Models for Single-Chip Radar, Appendix A.
-    lens: zeiss24-70
   - path: bosch.jpg
     aspect: x23
     thumb: 65
     desc: Bosch Collaboration @ Bosch Research, Renningen.
     lens: 18-135
+  Research:
+  - path: realsense.jpg
+    aspect: x23
+    thumb: 0
+    desc: Real-time Volumetric Capture.
+    lens: 28-200
+  - path: xr.jpg
+    aspect: x11
+    desc: HCI Study on Mixed-Reality Art.
+    lens: 28-200
+  - path: red-rover.jpg
+    axpect: x32
+    thumb: 50
+    desc: Towards Foundational Models for Single-Chip Radar
+    lens: zeiss24-70+a7rv
+  - path: duck.jpg
+    aspect: x11
+    desc: Towards Foundational Models for Single-Chip Radar, Appendix A.
+    lens: zeiss24-70+a7rv
+  - path: imaging-radar.jpg
+    aspect: x32
+    thumb: 50
+    desc: TI Imaging Radar.
+    lens: sigma30
 
 equipment:
   default_cameras:
     50-400: a7cii
     28-200: a7cii
+    24-70gmii: a7cii
     35gm: a7cii
     24gm: a7cii
     90macro: a7cii
@@ -345,6 +376,7 @@ equipment:
   lenses:
     28-200: Tamron 28-200mm f/2.8-5.6
     50-400: Tamron 50-400 f/4.5-6.3
+    24-70gmii: Sony 24-70 f/2.8 GM II
     35gm: Sony 35mm f/1.4 GM
     24gm: Sony 24mm f/1.4 GM
     90macro: Sony 90mm f/2.8 Macro
