@@ -1,4 +1,19 @@
 publications:
+  istc:
+    title: "Implicit Surface Compression &mdash; with Good Old Discrete Cosine Transform and Motion Compensation"
+    shorttitle: ISTC
+    venue: ACM Transactions on Graphics 
+    comment: (SIGGRAPH 2026)
+    tag: misc
+    summary: Popular representations for 3D geometry such as meshes and point clouds are spatially and temporally discontinuous, and thus difficult to compress. Using implicit surface representations which are spatially continuous and temporally stable enables a simple compression scheme based on classical video coding paradigms to achieve order-of-magnitude bitrate reduction.
+    figure: istc.webp
+    authors:
+    - Tao Jin
+    - Shengxi Wu
+    - Tianshu Huang
+    - Mallesham Dasari
+    - Srinivasan Seshan
+    - Anthony Rowe
   radarsim:
     title: "RadarSim: Simulating Single-Chip Radar via Multimodal Neural Fields"
     shorttitle: RadarSim

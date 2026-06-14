@@ -1,10 +1,41 @@
 photos:
+  2026:
+  - path: sailboat_sausalito.jpg
+    aspect: x31
+    thumb: 50
+    lens: 28-200
+    desc: A sailboat in a gap between the clouds, as seen from across the Golden Gate.
+  - path: pit_takeoff.jpg
+    thumb: 50
+    aspect: x23
+    lens: 50-400
+    desc: Sunset takeoff from Pittsburgh; flying west, facing north.
+  - path: bird_worm.jpg
+    thumb: 50
+    aspect: x23
+    lens: 50-400
+    desc: The early bird gets the worm (and the 50-400 just about gets the shot).
+  - path: red_cube.jpg
+    thumb: 50
+    aspect: x23
+    lens: 35gm
+    desc: At the Mattress Factory &mdash; closely inspecting a mysterious red cube.
+  - path: light_curtain.jpg
+    thumb: 50
+    aspect: x11
+    lens: 35gm
+    desc: At the Mattress Factory &mdash; deep in thought behind a light curtain.
   2025:
   - path: clock.jpg
     thumb: 55
     aspect: x23
     lens: 50-400
     desc: Snow shower at Carnegie Mellon University.
+  - path: flagstaff_snow.jpg
+    thumb: 60
+    aspect: x23
+    lens: 50-400
+    desc: A snow-covered flagstaff hill.
   - path: san-mateo.jpg
     thumb: 50
     aspect: x23
