@@ -1,5 +1,15 @@
 photos:
   2026:
+  - path: sequoia.jpg
+    aspect: x32
+    thumb: 50
+    lens: 28-200
+    desc: A sunny meadown in Sequoia National Park.
+  - path: fort-point.jpg
+    aspect: x23
+    thumb: 50
+    lens: 28-200
+    desc: Golden Gate Bridge at sunset.
   - path: sailboat_sausalito.jpg
     aspect: x31
     thumb: 50
