@@ -1,5 +1,10 @@
 photos:
   2026:
+  - path: clouds.jpg
+    aspect: x21
+    thumb: 50
+    lens: 50-400
+    desc: The marine layer rolls into the Santa Cruz mountains.
   - path: sequoia.jpg
     aspect: x32
     thumb: 50

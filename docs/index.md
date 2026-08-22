@@ -24,10 +24,14 @@ Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cm
 </div>
 <a href='research#pitot' style='grid-column: span 2'><img src="/assets/research/cluster.jpg"></a>
 
+## Teaching
+
+::: teaching
+
 ## Students
 
-<span class="pill">Spring 2024 &mdash; Present</span> **Zhaowei Zhang (Undergraduate)**
-: In progress: Compression for Radar Spectrum
+<span class="pill">Spring 2024 &mdash; Summer 2026</span> **Zhaowei Zhang (Undergraduate)**
+: &xrarr; PhD (University of Wisconsin-Madison, Electrical and Computer Engineering)
 
 <span class="pill">Spring 2023 &mdash; Summer 2024</span>**Quentin Oschatz (Masters)**
 : &xrarr; PhD (Carnegie Mellon University, Electrical and Computer Engineering)
@@ -38,10 +42,6 @@ Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cm
 ## Awards
 
 ::: awards
-
-## Teaching
-
-::: teaching
 
 ## Service
 
