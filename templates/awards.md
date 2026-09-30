@@ -1,7 +1,8 @@
 {% for award in awards %}
-<span class="pill">{{ award.tag }}</span> **{{ award.title }}**
+<span class="pill">{{ award.tag }}</span>
 {%- if award.date -%}
-<span class="sep">&bullet;</span>{{ award.date }}
-{%- endif %}
+<span class="pill-light">{{ award.date }}</span>
+{%- endif -%}
+**{{ award.title }}**
 : {{ award.desc }}
 {% endfor %}

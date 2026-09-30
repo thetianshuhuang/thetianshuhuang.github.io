@@ -1,15 +1,18 @@
 awards:
-- tag: ICCV 2025
+- tag: ICCV
+  date: 2025
   title: Oral Presentation
   desc: Top 2.4% of accepted papers (0.57% overall)
-- tag: CVPR 2025
+- tag: CVPR
+  date: 2025
   title: Outstanding Reviewer
   desc: "Awarded to 5.6% of CVPR 2025 Reviewers"
 - tag: Fellowship
-  date: "2024-2025 Academic Year"
+  date: "2024-2025"
   title: "Prabhu and Poonam Goel Graduate Fellowship"
   desc: "Awarded to one student in the ECE department each academic year."
-- tag: CVPR 2024
+- tag: CVPR
+  date: 2024
   title: Oral Presentation
   desc: "Top 3.3% of accepted papers (0.78% overall)"
 - tag: Qualifying Exam
@@ -17,10 +20,10 @@ awards:
   title: "ECE Department Award for Exemplary Qualifying Exam Performance"
   desc: "Recognized by CMU ECE faculty for exemplary Ph.D. qualifying examination performance. This distinction was awarded by faculty vote to select students within the top 10% of Ph.D. student examinees.<br>*This award is typically given to no more than one student each semester*."
 - tag: Fellowship
-  date: "Fall 2021 - Spring 2024"
+  date: "2021-2024"
   title: "ARCS Pittsburgh Chapter Scholar"
   desc: "$15,000 award (over 3 years) for one student nominated by each participating department."
 - tag: Fellowship
-  date: "Fall 2017 - Spring 2021"
+  date: "2017-2021"
   title: "Virginia & Ernest Cockrell, Jr. Scholarship in Engineering"
   desc: "$48,000 award (over 4 years) for undergraduate students admitted to the ECE Honors program."
