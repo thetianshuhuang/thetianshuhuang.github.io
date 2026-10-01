@@ -52,6 +52,7 @@ publications:
       RadarML: https://radarml.github.io/
       Slides: https://wiselabcmu.github.io/grt/grt-slides.pdf
       Poster: https://wiselabcmu.github.io/grt/grt-poster.pdf
+      ICCV Talk: https://youtu.be/4jS-x-cGZww?si=_EWxK3KZIxgHuKdz&t=3196
   beanstalk:
     title: "Unveiling Heisenbugs with Diversified Execution"
     shorttitle: Beanstalk
