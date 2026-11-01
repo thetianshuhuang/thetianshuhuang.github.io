@@ -1,6 +1,7 @@
 teaching:
 - date: Fall 2026
   type: Instructor
+  emph: true
   title: "[Machine Learning for Radar](https://radarml.github.io/18848/)"
   desc:
   - CMU 18-848B (as instructor of record; 12-credit hour special topics course)

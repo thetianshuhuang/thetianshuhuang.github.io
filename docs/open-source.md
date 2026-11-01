@@ -117,7 +117,7 @@ My current active projects are centered around the [RadarML project](https://rad
 
 ---
 
-## Deprecated Projects
+## Past Projects
 
 <div class="grid cards" markdown>
 

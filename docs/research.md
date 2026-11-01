@@ -11,25 +11,6 @@ My past and current work spans a wide range of topics in machine learning, inclu
 
 Currently, I'm focused on scaling and building out foundational models for low-level spectrum-based radar perception, as well as establishing an ecosystem and community for radar research more broadly via the [RadarML open source initiative](https://radarml.github.io/) and Radar Interest Group @ CMU.
 
-!!! abstract "PhD Thesis: Learning on Spectrum for Radar-Enabled 3D Perception"
-
-    > 3D perception systems should use learning-based methods on unfiltered 4D spectra. When fused with cameras and trained at scale, spectrum-based systems will far outperform classical signal processing-based methods, and match the quality of lidar-based systems even when using only low-cost single-chip radars.
-    { #thesis }
-
-    *Committee: [Anthony Rowe][?], [Carlee Joe-Wong][?], [Deva Ramanan][?], [Zico Kolter][?]*
-
-???+ radar "**Machine Learning for Radar**"
-
-    Radars are an ideal complement to cameras for applications such as autonomous driving: both are inexpensive, solid-state sensors, with cameras boasting fine angular resolution and radars providing depth resolution and robustness to adverse conditions. Unfortunately, unlike visual images or Lidar points, radar data are harder to interpret, and lack a large body of existing research. In this project, my goal is to develop machine learning-based methods to interpret radar data both spatially and semantically, potentially replacing Lidar as the primary means of 3D perception in robotics and beyond. 
-
-    ![Radar Imaging](assets/research/radar.svg){ width="1000" }
-
-??? wasm "**Learning for Distributed Systems**"
-
-    Recent advances in lightweight, bytecode-based virtualization &mdash; WebAssembly &mdash; raise the possibility of flexibly executing distributed programs in heterogeneous environments. While this promises substantial opportunity for optimizing over static, homogenous deployments, exploiting this opportunity requires mastering key building blocks for managing distributed systems. Along with my collaborators, I explore key concerns including orchestration, performance analysis, as well as debugging and anomaly detection. My approach emphasizes going beyond black-box approaches (in both a statistical and a systems sense) using techniques like instrumentation injection and statistical machine learning approaches. 
-
-    ![Silverline](assets/research/silverline.svg){ width="1000" }
-
 ## Publications
 
 ::: publications
@@ -41,7 +22,3 @@ Currently, I'm focused on scaling and building out foundational models for low-l
 ## Conference & Invited Talks
 
 ::: talks
-
-## Casual Presentations
-
-::: presentations@talks

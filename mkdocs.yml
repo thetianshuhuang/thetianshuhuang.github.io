@@ -16,9 +16,20 @@ theme:
     - navigation.instant
     - navigation.expand
     - navigation.tabs
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
-    primary: black
-    accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-night, name: Dark mode}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-sunny, name: Light mode}
 
 watch:
   - docs
@@ -26,6 +37,7 @@ watch:
   - templates
 
 extra_css:
+  - https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300..800&display=swap
   - stylesheets/extra.css
 
 plugins:
@@ -52,4 +64,4 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: >
-  &copy; 2025 Tianshu Huang
+  &copy; 2026 Tianshu Huang

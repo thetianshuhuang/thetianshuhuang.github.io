@@ -9,13 +9,13 @@ hide:
 
 I am a PhD student co-advised by [Anthony Rowe][?] and [Carlee Joe-Wong][?] at the Department of [Electrical and Computer Engineering](https://www.ece.cmu.edu/) at Carnegie Mellon University. I reached All But Dissertation status in August 2025.
 
-My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. While my current work focuses on [radar perception](research.md#thesis), I consider myself to be applied ML generalist, and [my work](research.md) draws from techniques across statistics and machine learning literature.
+My research interest lies broadly in learning for cyber-physical systems &mdash; applying machine learning to systems in ways that leverage both data-driven learning techniques and a low-level understanding of system properties &mdash; and taking a systems approach to machine learning. While my current work focuses on [radar perception](research.md), I consider myself to be applied ML generalist, and [my work](research.md) draws from techniques across statistics and machine learning literature.
 
 Previously, I obtained my B.S. in Electrical Engineering at the University of Texas at Austin in May 2021, where I worked on Learning to Optimize with [Atlas Wang][?].
 
 Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cmu.edu</a>. In addition to my [research](research.md) and [open-source](open-source.md) portfolio, you can find my Google Scholar page [here](https://scholar.google.com/citations?user=ZcVpdxQAAAAJ) and my GitHub page [here](https://github.com/thetianshuhuang); I also have a [photography page](photography.md).
 
-## Research Gallery
+---
 
 <div style="width: 100%; display: grid; gap: 5px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
     <a href='research#grt'><img src="/assets/photos/duck.jpg"></a>
@@ -45,16 +45,6 @@ Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cm
 
 ## Service
 
-<div class="grid cards" markdown>
-
-- **CVPR 2025 Outstanding Reviewer** &mdash; [Awarded to 5.6% of Reviewers](https://media.eventhosts.cc/Conferences/CVPR2025/CVPR_main_conf_2025.pdf)
-
-- **Reviewer** &mdash; for TMRL 2026-, CVPR 2026, CVPR 2025, ICML 2022, NeurIPS 2022
-
+- **Reviewer** &mdash; for AAAI 2027, ICRA 2027, ECCV 2026, CVPR 2025-2026, TMLR, ICML 2022, NeurIPS 2022, Cross-Community Federated Learning Workshop @ MLSys 2022
 - **Faculty Search Student Council Co-Chair** &mdash; for the CMU ECE department 2024 and 2025 hiring cycles
-
-- **Technical Program Committee Member** &mdash; for the Cross-Community Federated Learning Workshop @ MLSys 2022
-
 - **Peer Mentor** &mdash; as part of the CMU ECE Peer Mentor Program, 2023-2024
-
-</div>

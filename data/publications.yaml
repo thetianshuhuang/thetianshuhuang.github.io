@@ -2,6 +2,7 @@ publications:
   istc:
     title: "Implicit Surface Compression &mdash; with Good Old Discrete Cosine Transform and Motion Compensation"
     shorttitle: ISTC
+    url: https://implicit-surface-codec.github.io/
     venue: ACM Transactions on Graphics 
     comment: (SIGGRAPH 2026)
     tag: misc
@@ -17,6 +18,7 @@ publications:
   radarsim:
     title: "RadarSim: Simulating Single-Chip Radar via Multimodal Neural Fields"
     shorttitle: RadarSim
+    url: https://sally-chen.github.io/radar-sim/
     venue: 3DV 2026
     tag: radar
     summary: While radar reconstructions can accurately capture radar-specific properties, they are fundamentally limited by the low resolution of the underlying sensor. We propose a unified differentiable renderer, RadarSim, which leverages the high angular resolution of RGB cameras to generate Doppler radar range images with accurate radar properties from a camera-initialized neural field.

@@ -13,35 +13,159 @@
     /** border-left: 3px solid var(--md-typeset-a-color); */
 }
 
+/**
+ * Site theme: one-row frosted header with inline nav, tight grotesk headings,
+ * monospace section labels, bordered cards with soft hover lift.
+ */
+[data-md-color-scheme="default"] {
+    --site-bg: #ffffff;
+    --site-fg: #0a0a0a;
+    --site-muted: #6b7280;
+    --site-line: #e5e7eb;
+    --site-chip: #f3f4f6;
+    --site-accent: #2563eb;
+    --site-glass: rgba(255, 255, 255, .78);
+    --md-default-bg-color: var(--site-bg);
+    --md-typeset-color: #1f2937;
+}
+[data-md-color-scheme="slate"] {
+    --site-bg: #0a0a0a;
+    --site-fg: #fafafa;
+    --site-muted: #9ca3af;
+    --site-line: #262626;
+    --site-chip: #171717;
+    --site-accent: #60a5fa;
+    --site-glass: rgba(10, 10, 10, .72);
+    --md-default-bg-color: var(--site-bg);
+    --md-typeset-color: #d4d4d4;
+}
+[data-md-color-scheme] {
+    --md-primary-fg-color: var(--site-glass);
+    --md-primary-fg-color--dark: var(--site-bg);
+    --md-primary-bg-color: var(--site-fg);
+    --md-primary-bg-color--light: var(--site-muted);
+    --md-accent-fg-color: var(--site-fg);
+    --md-typeset-a-color: var(--site-accent);
+    --md-default-fg-color--light: var(--site-muted);
+    --site-display: "Inter Tight", "Inter", sans-serif;
+    --site-mono: var(--md-code-font-family);
+}
+
+/** Frosted header; tabs pulled up into the header row on desktop */
+.md-header, .md-header--shadow {
+    box-shadow: 0 1px 0 var(--site-line);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    backdrop-filter: saturate(180%) blur(12px);
+}
+.md-header__title { font-family: var(--site-display); font-weight: 700; letter-spacing: -0.02em; }
+@media screen and (min-width: 76.25em) {
+    .md-tabs {
+        position: fixed; top: 0; left: 0; right: 0; z-index: 5;
+        background: transparent; pointer-events: none;
+    }
+    /* leave room for the palette toggle at the far right of the header */
+    .md-tabs__list { float: right; pointer-events: auto; margin: 0 2.8rem 0 0; }
+    /* Material hides tabs once scrolled past; they live in the header now */
+    .md-tabs[hidden] .md-tabs__link { opacity: 1; transform: none; transition: none; }
+    .md-tabs__item { height: 2.4rem; }
+    .md-tabs__link { margin-top: .75rem; font-size: .68rem; font-weight: 500; opacity: 1; color: var(--site-muted); }
+    .md-tabs__item--active .md-tabs__link, .md-tabs__link:hover { color: var(--site-fg); }
+}
+
+/** Headings: tight grotesk; h2 as mono eyebrow label with rule */
+.md-typeset h1 {
+    font-family: var(--site-display); color: var(--site-fg);
+    font-weight: 100 !important; letter-spacing: 0.0em;
+}
+.md-typeset h1 strong { font-weight: 700 }
+.md-content h1[style] { font-size: 4em !important; line-height: 1; }
+.md-typeset h2 {
+    font-family: var(--site-mono); font-size: .68rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: .14em; color: var(--site-muted);
+    border-top: 1px solid var(--site-line); padding-top: 1.2em; margin-top: 3em;
+}
+.md-typeset h3 { font-family: var(--site-display); letter-spacing: -0.01em; }
+.md-typeset a { text-underline-offset: .2em; }
+.md-typeset a:hover { text-decoration: underline; }
+
+.md-nav__title { font-family: var(--site-mono); text-transform: uppercase; letter-spacing: .12em; font-size: .55rem; }
+.md-nav__link { color: var(--site-muted); }
+.md-nav__link--active, .md-nav__link:hover { color: var(--site-fg) !important; }
+
+.md-content img { border-radius: 12px; }
+.md-content img[align="left"] { margin-right: 1.5em; }
+
+/** Cards for collapsibles: neutral border, color only on the icon */
+.md-typeset details, .md-typeset .admonition {
+    border: 1px solid var(--site-line) !important; border-radius: 12px;
+    background: var(--site-bg); box-shadow: none; font-size: .72rem;
+    transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.md-typeset details:hover {
+    box-shadow: 0 8px 24px -12px rgba(0, 0, 0, .18);
+    transform: translateY(-1px);
+}
+[data-md-color-scheme="slate"] .md-typeset details:hover { border-color: #404040 !important; }
+.md-typeset details > summary, .md-typeset .admonition > .admonition-title {
+    background: transparent !important; border: none; font-size: .76rem; line-height: 1.55;
+    padding-top: .7em; padding-bottom: .7em;
+}
+.md-typeset summary strong { color: var(--site-fg); font-weight: 600; }
+/** No research-area icon on publications */
+.md-typeset details.pub > summary::before { display: none; }
+[dir=ltr] .md-typeset details.pub > summary { padding-left: .6rem; }
+/** Condensed publication list */
+.md-typeset details.pub { margin: .8em 0; }
+.md-typeset details.pub > summary { padding-top: .5em; padding-bottom: .5em; line-height: 1.45; }
+
+.md-typeset .grid.cards > ul > li { border-radius: 12px; border-color: var(--site-line); }
+.md-footer-meta { background: transparent; border-top: 1px solid var(--site-line); }
+.md-footer-meta, .md-copyright { color: var(--site-muted); }
+
+/** Pills: mono chips */
 .md-typeset span.pill, .md-typeset span.button {
-    background-color: var(--md-typeset-a-color);
-    color: white;
-    border-radius: 0.5em;
+    background-color: var(--site-chip);
+    color: var(--site-fg);
+    border: 1px solid var(--site-line);
+    border-radius: 6px;
     padding: 0.2em 0.4em;
     margin-right: 0.4em;
-    font-size: 0.9em;
-    font-size: 80%;
-    font-weight: normal;
+    font-family: var(--site-mono);
+    font-size: 62%;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .04em;
     white-space: nowrap;
 }
+/** Shaded (inverted) pill for tags that deserve emphasis; `emph: true` in data */
+.md-typeset span.pill.pill-strong {
+    background-color: var(--site-fg);
+    color: var(--site-bg);
+    border-color: var(--site-fg);
+    font-weight: 600;
+}
 .md-typeset span.button {
-    padding: 0.4em 0.8em;
+    padding: 0.5em 0.9em;
 }
 .md-typeset span.button:hover {
-    background-color: var(--md-accent-fg-color);
+    background-color: var(--site-fg);
+    color: var(--site-bg);
     cursor: pointer;
 }
 
-/** Outlined counterpart to span.pill, for secondary metadata next to one */
+/** Borderless counterpart to span.pill, for secondary metadata next to one */
 .md-typeset span.pill-light {
     background-color: transparent;
     color: var(--md-default-fg-color--light);
-    border: 0.05rem solid var(--md-default-fg-color--lighter);
-    border-radius: 0.5em;
+    border: 1px solid transparent;
+    border-radius: 6px;
     padding: 0.15em 0.4em;
     margin-right: 0.4em;
-    font-size: 80%;
+    font-family: var(--site-mono);
+    font-size: 62%;
     font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .04em;
     white-space: nowrap;
 }
 

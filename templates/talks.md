@@ -1,17 +1,13 @@
-<div class="grid cards" markdown>
 {% for talk in talks %}
-
-- {% if talk.url -%}
+{% if talk.type %}<span class="pill{% if talk.emph %} pill-strong{% endif %}">{{ talk.type }}</span> {% endif %}
+{%- if talk.url -%}
 [**{{ talk.title }}**]({{ talk.url }})
 {%- else -%}
 **{{ talk.title }}**
-{%- endif -%}
+{%- endif %}
 <br>
-{%- if talk.comment -%}
-{{ talk.comment }}
-<br>
-{%- endif -%}
 {{ talk.location }}
-
+{%- if talk.comment %}
+<span class='sep'>&bullet;</span> {{ talk.comment }}
+{%- endif %}
 {% endfor %}
-</div>

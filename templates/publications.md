@@ -1,6 +1,6 @@
 {% for label, paper in publications.items() %}
 
-??? {{ paper.tag }} "
+??? {{ paper.tag }} pub "
 {%- if paper.url -%}
 [**{{ paper.title }}**]({{ paper.url }})
 {%- else -%}

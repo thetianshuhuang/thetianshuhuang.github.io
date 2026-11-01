@@ -382,6 +382,11 @@ photos:
     desc: Bosch Collaboration @ Bosch Research, Renningen.
     lens: 18-135
   Research:
+  - path: awr1843aop.jpg
+    aspect: x23
+    thumb: 50
+    desc: Package-shot of the AWR1843AOP antenna-on-package mmWave radar.
+    lens: 90macro
   - path: realsense.jpg
     aspect: x23
     thumb: 0
