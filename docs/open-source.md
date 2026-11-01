@@ -71,6 +71,13 @@ My current active projects are centered around the [RadarML project](https://rad
 
     the neural radar development kit for deep learning on multimodal radar data
 
+- :material-zip-box-outline: [`iqz`](https://radarml.github.io/iqz/)
+
+    [![pypi version](https://img.shields.io/pypi/v/iqz.svg)](https://pypi.org/project/iqz/)
+    [![GitHub](https://img.shields.io/github/license/RadarML/iqz)](https://github.com/RadarML/iqz)
+
+    a simple, fast, and modestly effective (1.5-2.5×) lossless compression codec for I/Q radar data
+
 </div>
 
 ## Paper Artifacts

@@ -1,0 +1,30 @@
+students:
+- from: Summer 2026
+  to: Present
+  name: Bill Chang
+  level: Undergraduate
+  topic: Fundamental infrastructure for low-level radar (power, time sync, modulation, etc.)
+
+- from: Summer 2026
+  to: Present
+  name: Ayaan Shaikh
+  level: Undergraduate
+  topic: Data scaling for radar foundation models
+
+- from: Spring 2024
+  to: Summer 2026
+  name: Zhaowei Zhang
+  level: Undergraduate
+  next: PhD (University of Wisconsin-Madison, Electrical and Computer Engineering)
+
+- from: Spring 2023
+  to: Summer 2024
+  name: Quentin Oschatz
+  level: Masters
+  next: PhD (Carnegie Mellon University, Electrical and Computer Engineering)
+
+- from: Summer 2022
+  to: Summer 2023
+  name: Hanke Chen
+  level: Undergraduate
+  next: PhD, Georgia Tech, Computer Science

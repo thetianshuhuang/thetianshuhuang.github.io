@@ -30,14 +30,7 @@ Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cm
 
 ## Students
 
-<span class="pill">Spring 2024 &mdash; Summer 2026</span> **Zhaowei Zhang (Undergraduate)**
-: &xrarr; PhD (University of Wisconsin-Madison, Electrical and Computer Engineering)
-
-<span class="pill">Spring 2023 &mdash; Summer 2024</span>**Quentin Oschatz (Masters)**
-: &xrarr; PhD (Carnegie Mellon University, Electrical and Computer Engineering)
-
-<span class="pill">Summer 2022 &mdash; Summer 2023</span>**Hanke Chen (Undergraduate)**
-: &xrarr; Startup (Neural Radiance Fields / 3D synthesis)
+::: students
 
 ## Awards
 
@@ -45,6 +38,4 @@ Please contact me at <a href="mailto:tianshu2@andrew.cmu.edu">tianshu2@andrew.cm
 
 ## Service
 
-- **Reviewer** &mdash; for AAAI 2027, ICRA 2027, ECCV 2026, CVPR 2025-2026, TMLR, ICML 2022, NeurIPS 2022, Cross-Community Federated Learning Workshop @ MLSys 2022
-- **Faculty Search Student Council Co-Chair** &mdash; for the CMU ECE department 2024 and 2025 hiring cycles
-- **Peer Mentor** &mdash; as part of the CMU ECE Peer Mentor Program, 2023-2024
+::: service

@@ -1,6 +1,7 @@
 talks:
 
 - type: Conference
+  emph: true
   title: Towards Foundational Models for Single-Chip Radar
   url: https://youtu.be/c3itbi11OZM?t=4359
   location: ICCV 2025 Main Conference Talk
@@ -29,6 +30,7 @@ talks:
   location: Reliable Distributed Systems Tech Colloquium @ Bosch Research, October 2024
 
 - type: Conference
+  emph: true
   title: "DART: Implicit Doppler Tomography for Radar Novel View Synthesis"
   url: resources/dart-slides.pdf
   location: CVPR 2024, Main Conference Oral Presentation

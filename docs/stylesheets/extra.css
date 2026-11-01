@@ -58,13 +58,17 @@
     backdrop-filter: saturate(180%) blur(12px);
 }
 .md-header__title { font-family: var(--site-display); font-weight: 700; letter-spacing: -0.02em; }
+/** Light/dark toggle: small and muted until hovered */
+.md-header__option .md-header__button { color: var(--site-muted); transition: color .2s; }
+.md-header__option .md-header__button:hover { color: var(--site-fg); opacity: 1; }
+.md-header__option .md-header__button svg { width: .8rem; height: .8rem; }
 @media screen and (min-width: 76.25em) {
     .md-tabs {
         position: fixed; top: 0; left: 0; right: 0; z-index: 5;
         background: transparent; pointer-events: none;
     }
     /* leave room for the palette toggle at the far right of the header */
-    .md-tabs__list { float: right; pointer-events: auto; margin: 0 2.8rem 0 0; }
+    .md-tabs__list { float: right; pointer-events: auto; margin: 0 2.4rem 0 0; }
     /* Material hides tabs once scrolled past; they live in the header now */
     .md-tabs[hidden] .md-tabs__link { opacity: 1; transform: none; transition: none; }
     .md-tabs__item { height: 2.4rem; }
@@ -171,6 +175,11 @@
 
 .md-typeset span.sep {
     padding: 0em 0.5em;
+}
+/** Secondary inline text, e.g. a student's level next to their name */
+.md-typeset span.muted {
+    color: var(--md-default-fg-color--light);
+    font-weight: normal;
 }
 
 :root {

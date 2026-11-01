@@ -24,12 +24,12 @@ theme:
       scheme: default
       primary: custom
       accent: custom
-      toggle: {icon: material/weather-night, name: Dark mode}
+      toggle: {icon: octicons/moon-16, name: Dark mode}
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
-      toggle: {icon: material/weather-sunny, name: Light mode}
+      toggle: {icon: octicons/sun-16, name: Light mode}
 
 watch:
   - docs

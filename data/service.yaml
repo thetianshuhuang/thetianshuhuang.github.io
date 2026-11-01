@@ -1,0 +1,9 @@
+service:
+- name: Reviewer
+  description: for AAAI 2027, ICRA 2027, ECCV 2026, CVPR 2025-2026, TMLR, ICML 2022, NeurIPS 2022, Cross-Community Federated Learning Workshop @ MLSys 2022
+
+- name: Faculty Search Student Council Co-Chair
+  description: for the CMU ECE department 2024 and 2025 hiring cycles
+
+- name: Peer Mentor
+  description: as part of the CMU ECE Peer Mentor Program, 2023-2024
