@@ -1,4 +1,5 @@
 site_name: Tianshu Huang
+site_url: https://tianshu.io/
 nav:
   - About: index.md
   - Research: research.md

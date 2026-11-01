@@ -174,6 +174,50 @@
 .md-typeset span.sep {
     padding: 0em 0.5em;
 }
+/** Callout box for announcements (job market, student recruiting, ...) */
+.md-typeset .callout {
+    clear: both;
+    margin: 2em 0 1.5em;
+    padding: 1.6em 1.8em;
+    border: 1px solid color-mix(in srgb, var(--site-accent) 35%, var(--site-line));
+    border-radius: 16px;
+}
+/* low-key eyebrow with a pulsing dot */
+.md-typeset .callout__eyebrow {
+    display: inline-flex; align-items: center; gap: .7em; margin-bottom: .5em;
+    font-family: var(--site-mono); font-size: .62rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: .14em; color: var(--site-accent);
+}
+.md-typeset .callout__eyebrow::before {
+    content: ""; width: .6em; height: .6em; border-radius: 50%;
+    /* don't squish when the label wraps; stay level with the first line */
+    flex: none; align-self: flex-start; margin-top: calc((1lh - .6em) / 2);
+    background: var(--site-accent); animation: callout-pulse 2s infinite;
+}
+@keyframes callout-pulse {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--site-accent) 55%, transparent); }
+    70%, 100% { box-shadow: 0 0 0 .7em transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .md-typeset .callout__eyebrow::before { animation: none; }
+}
+.md-typeset .callout__title {
+    font-family: var(--site-display); font-size: 2em; font-weight: 600;
+    line-height: 1.15; letter-spacing: -0.02em; color: var(--site-fg);
+    margin: 0 0 .3em;
+}
+.md-typeset .callout > p:not(.callout__title) { margin: .4em 0 0; }
+.md-typeset .callout__links { display: flex; flex-wrap: wrap; gap: .6em; margin-top: 1.2em; }
+.md-typeset .callout__links a {
+    font-size: .68rem; font-weight: 600; padding: .55em 1.1em; border-radius: 999px;
+    border: 1px solid var(--site-line); color: var(--site-fg); text-decoration: none;
+}
+.md-typeset .callout__links a:first-child { background: var(--site-fg); color: var(--site-bg); border-color: var(--site-fg); }
+.md-typeset .callout__links a:hover { text-decoration: none; border-color: var(--site-fg); }
+
+/** 404 page (overrides/404.html) */
+.md-typeset .not-found img { display: block; width: 100%; max-width: 520px; margin: 1.5em 0; }
+
 /** Secondary inline text, e.g. a student's level next to their name */
 .md-typeset span.muted {
     color: var(--md-default-fg-color--light);

@@ -1,0 +1,37 @@
+{% extends "main.html" %}
+
+{#
+  Same as Material's site_nav, but with the navigation sidebar always hidden
+  (like `hide: navigation` on the other pages). The (empty) TOC sidebar stays,
+  so the content lines up with the rest of the site.
+#}
+{% block site_nav %}
+  {% if nav %}
+    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          {% include "partials/nav.html" %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+    <div class="md-sidebar__scrollwrap">
+      <div class="md-sidebar__inner">
+        {% include "partials/toc.html" %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="not-found">
+  <h1>404</h1>
+  <p>This page doesn't exist. Perhaps it's anonymous?</p>
+  <img
+    src="{{ 'assets/photos/duck.jpg' | url }}"
+    alt="A cyclist in a duck mask riding a sensor-laden e-bike"
+  >
+  <p><a href="{{ '' | url }}">&larr; Back to the home page</a></p>
+</div>
+{% endblock %}
