@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{#
+  Logo / favicon set (see brand/). theme.favicon emits the SVG icon; the ICO
+  is the fallback for browsers without SVG favicons. sizes="32x32" keeps
+  Chrome from preferring the ICO over the SVG.
+#}
+{% block extrahead %}
+  {{ super() }}
+  <link rel="icon" href="{{ 'favicon.ico' | url }}" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ 'apple-touch-icon.png' | url }}">
+  <link rel="manifest" href="{{ 'manifest.webmanifest' | url }}">
+  <meta name="theme-color" content="#141A2E">
+{% endblock %}

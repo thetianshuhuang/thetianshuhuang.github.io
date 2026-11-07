@@ -1,0 +1,27 @@
+{
+  "_note": "Tuned values from the G8 board on the design canvas. Edit these and run generate.py to rebuild every file.",
+  "ramp": { "low": 82, "high": 56, "drop_x": 76, "after_drop": true, "x_start": 8, "x_end": 94 },
+  "duck": { "along": 0.59, "float_height": 7, "tilt": 0.5, "size": 0.95 },
+  "stroke": 5,
+  "corner": { "radius": 18, "smoothing": 0.6 },
+  "small_size_adjust": { "stroke_multiplier": 2, "size_add": 0.04, "eye_radius": 5 },
+  "full_size_eye_radius": 3.5,
+  "colors": {
+    "tile": "#141A2E",
+    "duck": "#FFF8EE",
+    "wave": "#F2B300",
+    "beak": "#F2B300",
+    "wave_on_light": "#D99A00",
+    "mono_dark": "#141A2E",
+    "mono_light": "#FFFFFF",
+    "social_background": "#FFF8EE",
+    "social_text": "#141A2E",
+    "social_subtext": "#4A4F63"
+  },
+  "site": {
+    "name": "Tianshu Huang",
+    "short_name": "Tianshu",
+    "tagline": "Machine Learning · Sensing · Cyber-Physical Systems",
+    "url": "tianshu.io"
+  }
+}

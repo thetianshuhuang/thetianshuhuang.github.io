@@ -9,9 +9,9 @@ nav:
 theme:
   name: material
   custom_dir: overrides
-  favicon: assets/favicon.png
+  logo: assets/logo.svg
+  favicon: icon.svg
   icon:
-    logo: octicons/person-16
     annotation: material/arrow-right-circle
   features:
     - navigation.instant
